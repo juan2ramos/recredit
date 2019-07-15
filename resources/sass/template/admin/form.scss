@@ -1,0 +1,53 @@
+
+form.search {
+  position: relative;
+  height: 3.4rem;
+
+  input {
+    background: #F8F9FB;
+    border-radius: 1.2rem !important;
+    border: none !important;
+    padding: 0 1rem 0 4rem !important;
+    max-height: 3.4rem;
+    min-width: 30rem;
+    font-size: 1.3rem !important;
+  }
+
+  button {
+    position: absolute;
+    left: 1rem;
+    top: .8rem;
+    background: transparent;
+    min-width: auto;
+    min-height: auto;
+    padding: 0;
+  }
+}
+
+.Form {
+  &-column {
+    &:nth-child(2) {
+      @include respond-to(medium) {
+        padding-right: 2rem;
+      }
+    }
+
+    &:last-child {
+      @include respond-to(medium) {
+        padding-left: 2rem;
+      }
+    }
+  }
+
+  &-labelContent {
+    margin: 2rem 0;
+
+    label {
+      margin-bottom: .2rem;
+    }
+  }
+}
+.Request-formSelect{
+  max-width: 100% !important;
+  margin: .7rem 0 0 !important;
+}

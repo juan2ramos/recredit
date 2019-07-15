@@ -1,0 +1,20 @@
+@import 'variables';
+@import 'general';
+@import 'plugins/dropzone';
+@import 'plugins/autocomplete';
+//Front
+@import 'template/front/load';
+@import 'template/front/header';
+@import 'template/front/footer';
+@import 'template/front/nav';
+@import 'template/front/home';
+@import 'template/front/modal';
+@import 'template/front/contact';
+@import 'template/front/faq';
+@import 'template/front/request';
+//Back
+@import "template/admin/loader";
+@import 'template/admin/nav';
+@import 'template/admin/form';
+
+

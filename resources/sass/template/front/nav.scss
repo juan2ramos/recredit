@@ -1,0 +1,161 @@
+.Nav {
+  border-bottom: 2px solid #dadada;
+  margin-bottom: 2rem;
+
+  a {
+    display: block;
+    padding: 0 3.2rem 1rem;
+    position: relative;
+    top: 2px;
+
+    &.active {
+      border-bottom: 2px solid var(--primary-color);
+    }
+  }
+}
+
+.Nav-mobile {
+  position: fixed;
+  width: calc(100vw - 52px);
+  height: 100vh;
+  top: 0;
+  left: 100vw;
+  background: white;
+  z-index: 10;
+  transition: all 0.6s ease;
+
+  li {
+    margin: 2rem 0;
+  }
+
+
+  &Button {
+    background: var(--primary-color);
+    padding: 0.15rem .4rem .1rem;
+    transition: all 0.6s ease;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    display: block;
+    @include respond-to(large) {
+      display: none;
+    }
+
+    &.open {
+      transform: translateX(calc(-100vw + 52px));
+      will-change: translateX;
+    }
+
+    span {
+      display: block;
+      height: .3rem;
+      margin: .4rem;
+      width: 3.6rem;
+      background: white;
+    }
+  }
+
+}
+
+.Header.open {
+  .Nav-mobile {
+    transform: translateX(calc(-100vw + 52px));
+    will-change: translateX;
+
+    &Button {
+      transform: translateX(calc(-100vw + 52px));
+      will-change: translateX;
+    }
+  }
+}
+
+.Request-nav {
+  counter-reset: section;
+
+  &Svg {
+    position: relative;
+
+    a {
+
+      &:hover:not(.button) {
+        opacity: 1 !important;
+      }
+      .Request-navSpan {
+        color: var(--primary-color);
+      }
+
+      svg {
+        fill: var(--primary-color);
+      }
+    }
+
+    &:before {
+      counter-increment: section;
+      content: counter(section);
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: white;
+      position: absolute;
+      top: .2rem;
+      left: 0;
+      width: 4.4rem;
+      text-align: center;
+    }
+  }
+
+  &Container {
+    position: relative;
+    margin: 1rem 0;
+    @include respond-to(mediums) {
+      margin: 3rem 0;
+    }
+    @include respond-to(large) {
+      margin: 4rem 0;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      background: #d0d0d0;
+      width: 100%;
+      height: 0.1rem;
+      top: calc(50% + 10px);
+      left: 0;
+      display: none;
+      @include respond-to(large) {
+        display: block;
+      }
+    }
+  }
+
+  &Span {
+    font-size: 1.6rem;
+    color: var(--link-color);
+    margin-left: .8rem;
+    @include respond-to(medium) {
+      font-size: 1.8rem;
+    }
+  }
+
+  li {
+    padding: 0.8rem .2rem;
+    @include respond-to(medium) {
+      padding: 1rem;
+    }
+  }
+
+  @media (max-width: 36rem) {
+    li {
+      width: 100%;
+
+    }
+  }
+  @media (max-width: 1025px) and (min-width: 37rem) {
+    li {
+      width: 50%;
+
+    }
+  }
+
+}

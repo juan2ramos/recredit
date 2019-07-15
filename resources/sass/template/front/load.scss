@@ -1,0 +1,34 @@
+.Load{
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background: #ffffffc4;
+}
+.path {
+  stroke-dasharray: 20;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear alternate infinite;
+  will-change: stroke-dashoffset, fill;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+    fill: none;
+  }
+  50% {
+    fill: none;
+  }
+  60% {
+    fill: var(--primary-color);
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: var(--primary-color)
+  }
+}

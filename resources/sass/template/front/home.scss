@@ -1,0 +1,119 @@
+.Home {
+  &-forms {
+    background: url("../images/back-home.png") center;
+    background-size: cover;
+    max-width: 100vw;
+    padding: 1rem 0;
+    @include respond-to(medium) {
+      padding: 4rem 0;
+    }
+
+    &Group {
+      margin-bottom: 1.6rem;
+
+      &.is-invalidGroup {
+        label {
+          color: #c4183c;
+        }
+
+        input {
+          border-bottom-color: #c4183c !important
+        }
+      }
+    }
+
+    &Links {
+      margin: .5rem 0 1.2rem;
+    }
+
+    &Form {
+      background: white;
+      padding: 2rem 3.2rem;
+
+      h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--primary-color);
+        text-align: center;
+
+        &.second {
+          color: var(--secondary-color);
+        }
+      }
+
+      label {
+        color: var(--link-color);
+      }
+
+      input {
+        border: none !important;
+        border-radius: 0 !important;
+        border-bottom: .1rem solid var(--link-color) !important;
+        padding: .4rem 0 .1rem !important;
+        color: var(--link-color) !important;
+      }
+
+      button {
+        width: 100%;
+        border-radius: 3rem;
+        font-size: 2rem;
+        box-shadow: 0 .4rem 1rem #00000052;
+        padding: 1rem 0 1.1rem;
+
+        &.second {
+          background: var(--secondary-color);
+        }
+      }
+
+      &:first-child {
+        margin-bottom: 1rem;
+        @include respond-to(medium) {
+          margin-bottom: 2rem;
+        }
+      }
+
+      &:last-child {
+        margin-top: 1rem;
+        @include respond-to(medium) {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+
+    &Message {
+      align-self: flex-end;
+      display: none;
+      padding-bottom: 2rem;
+      @include respond-to(medium) {
+        display: block;
+      }
+
+      p {
+        text-align: center;
+        font-size: 5.4rem;
+        font-weight: 600;
+        color: white;
+        line-height: 1.1;
+        text-shadow: .1rem .3rem .2rem #00000080;
+        letter-spacing: .1rem;
+        position: relative;
+
+        &:before {
+          position: absolute;
+          content: '';
+          border: 2px solid white;
+          bottom: -.8rem;
+          width: 80%;
+          left: 10%;
+        }
+      }
+
+    }
+  }
+}
+
+.Mini-form {
+  max-width: 60rem;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}

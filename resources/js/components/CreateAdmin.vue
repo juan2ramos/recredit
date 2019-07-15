@@ -1,0 +1,140 @@
+<template>
+    <div class="col-16  p-20 row justify-between middle-items">
+        <div class="col-16 ">
+            <div v-if="isError" class="alert-error"><span>¡Oh no, Algo sucedió! revisa los campos</span></div>
+            <div v-if="isSuccess" class="alert-success"><span>¡Se ha creado el usuario! </span></div>
+            <div><h2>Crear usuario</h2></div>
+            <form @submit.prevent="submit" method="post">
+                <div class="row">
+                    <div class="col-16 col-m-8 pr-md-8 ">
+                        <label class="p-b-16 is-block">
+                            <input type="text" v-model="form.name" placeholder="Nombre">
+                            <span class="is-invalid" v-if="this.errors.name">{{this.errors.name[0]}}</span>
+                        </label>
+                        <label class="is-block p-b-16">
+                            <input type="text" v-model="form.last_name"
+                                   placeholder="Apellido">
+                            <span class="is-invalid" v-if="this.errors.last_name">{{this.errors.last_name[0]}}</span>
+                        </label>
+                        <label class="is-block p-b-16">
+                            <select v-model="form.document_type">
+                                <option value="">Seleccione tipo de documento</option>
+                                <option value="cédula">cédula</option>
+                                <option value="cédula">cédula de extranjería</option>
+                            </select>
+                            <span class="is-invalid"
+                                  v-if="this.errors.document_type">{{this.errors.document_type[0]}}</span>
+                        </label>
+                        <label class="is-block p-b-16">
+                            <input type="text" placeholder="Documento"
+                                   v-model="form.document">
+                            <span class="is-invalid" v-if="this.errors.document">{{this.errors.document[0]}}</span>
+                        </label>
+                        <label class="is-block p-b-16">
+                            <select id="" v-if="form.role === 'Point'" v-model="form.region"
+                                    @change="change">
+                                <option value="">Seleccione una region</option>
+                                <option v-for="region in regions" :value="region.id">{{region.name}}</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="col-16 col-m-8 pl-md-8 ">
+                        <label class="is-block p-b-16">
+                            <input type="email" v-model="form.email" placeholder="Email">
+                            <span class="is-invalid" v-if="this.errors.email">{{this.errors.email[0]}}</span>
+                        </label>
+                        <label class="is-block p-b-16">
+                            <input type="password" v-model="form.password" placeholder="Contraseña">
+                            <span class="is-invalid" v-if="this.errors.password">{{this.errors.password[0]}}</span>
+                        </label>
+                        <label class="is-block p-b-16">
+                            <input type="password" class="m-b-16" v-model="form.password_confirmation"
+                                   placeholder="Repetir contraseña">
+                        </label>
+                        <label class="is-block p-b-16">
+                            <select v-model="form.role">
+                                <option value="" selected>Seleccione un rol</option>
+                                <option :value="role.value" v-for="role in rolesOptions">{{role.text}}</option>
+                            </select>
+                            <span class="is-invalid" v-if="this.errors.role">{{this.errors.role[0]}}</span>
+                        </label>
+                        <label class="is-block p-b-16">
+                            <select id="point" v-model="form.point" class="Request-formSelect "
+                                    v-if="form.role === 'Point'">
+                                <option value="">Seleccione un punto</option>
+                                <option v-for="point in pointsLocal" :value="point.id">{{point.name}}</option>
+                            </select>
+                            <span class="is-invalid" v-if="this.errors.point">{{this.errors.point[0]}}</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="row justify-center ">
+                    <button :disabled="disabled" type="submit">Crear usuario</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</template>
+<script>
+    import ajax from 'axios';
+
+    export default {
+        name: 'CreateAdmin',
+        props: ['regions', 'points', 'token', 'route'],
+        data: function () {
+            return {
+                form: {
+                    name: '',
+                    last_name: '',
+                    document: '',
+                    document_type: '',
+                    email: '',
+                    password: '',
+                    password_confirmation: '',
+                    role: '',
+                    point: '',
+                    region: '',
+                    _token: this.token
+                },
+                disabled: false,
+                errors: {},
+                isError: false,
+                isSuccess: false,
+                rolesOptions: [
+                    {'value': 'SuperAdmin', 'text': 'Super administrador'},
+                    {'value': 'Admin', 'text': 'Administrador',},
+                    {'value': 'Point', 'text': 'Punto de venta',}
+                ]
+            }
+        },
+        computed: {
+            pointsLocal: function () {
+                return this.points.filter(point => point.region_id === this.form.region)
+            }
+        }, methods: {
+            change: function () {
+                this.point = '';
+            },
+            submit(event) {
+                this.disabled = true;
+                this.isError = false;
+                this.isSuccess = false;
+
+                ajax.post(this.route, this.form).then(() => {
+                    this.disabled = false;
+                    this.isSuccess = true;
+                    this.errors = {};
+                    Object.keys(this.form).forEach((key, index) => {
+                        this.form[key] = ''
+                    });
+                }).catch((error) => {
+                    this.disabled = false;
+                    this.isError = true;
+                    if (error.response.status === 422) {
+                        this.errors = Object.assign({}, error.response.data.errors);
+                    }
+                });
+            }
+        }
+    }
+</script>

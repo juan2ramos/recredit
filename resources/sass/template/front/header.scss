@@ -1,0 +1,101 @@
+.Header {
+  background: white;
+
+  &-logo {
+    &Big {
+      margin: 2rem;
+      @include respond-to(medium) {
+        margin: 3.6rem 0 3.2rem;
+      }
+    }
+
+    &Intima {
+      vertical-align: bottom;
+      margin-bottom: .4rem;
+    }
+
+    &Lili {
+      background: white;
+      display: inline-block;
+      position: relative;
+      border-radius: 1rem 1rem 0 0;
+
+      &Link {
+        display: block;
+        padding: 0 1.4rem;
+
+        &:before {
+          background-color: #e6007e;
+          border-bottom-right-radius: 10px;
+          content: "";
+          bottom: 0;
+          height: 25px;
+          left: -15px;
+          position: absolute;
+          width: 15px;
+        }
+
+        &:after {
+          background-color: #e6007e;
+          border-bottom-left-radius: 10px;
+          content: "";
+          bottom: 0;
+          height: 25px;
+          right: -15px;
+          position: absolute;
+          width: 15px;
+          z-index: 1;
+        }
+      }
+
+      &:before {
+        background-color: #fff;
+        content: "";
+        height: 15px;
+        position: absolute;
+        left: -15px;
+        bottom: 0;
+        width: 15px;
+      }
+
+      &:after {
+        background-color: #fff;
+        content: "";
+        height: 15px;
+        position: absolute;
+        right: -15px;
+        bottom: 0;
+        width: 15px;
+      }
+    }
+  }
+
+  &-credits {
+    background: white;
+    color: var(--primary-color);
+    font-weight: 600;
+    position: relative;
+
+    &Content {
+      padding: 0 2rem 0;
+      box-shadow: 0 .2rem 1rem -.2rem #00000030;
+      position: relative;
+      top: .6rem;
+      background: white;
+
+      &Span {
+        margin: 0 1rem .4rem 0;
+        font-size: 1.8rem;
+      }
+
+      &Svg {
+        display: contents;
+        margin-left: .5rem;
+      }
+    }
+  }
+
+  &-close{
+    display: block;
+  }
+}

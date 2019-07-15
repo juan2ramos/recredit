@@ -1,0 +1,107 @@
+.Contact {
+  h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.4rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  span {
+    text-align: center;
+    margin: 2rem;
+    position: relative;
+    color: var(--primary-color);
+    font-size: 2rem;
+    padding: 0 1.6rem;
+    font-weight: 600;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      width: 5rem;
+      height: .1rem;
+      background: var(--primary-color);
+      right: 100%;
+      top: 1.4rem;
+    }
+
+    &:after {
+      left: 100%;
+    }
+  }
+
+  a {
+    font-weight: 700;
+    color: black;
+  }
+
+  &-content {
+    position: relative;
+    background: white;
+    max-width: 92rem;
+    width: 90%;
+
+    &Info {
+      padding: 6rem;
+    }
+
+    &Form {
+      background: #fafafa;
+      padding: 1rem 2rem;
+      @include respond-to(medium) {
+        padding: 2rem 4rem;
+      }
+    }
+
+    & article:nth-child(2) {
+      background: url("../images/back-contact.png") center;
+      background-size: cover;
+    }
+
+    & article:last-child {
+      padding: 2rem;
+    }
+  }
+
+  input {
+    background: #fafafa !important;
+    margin: 3rem 0;
+    border: none !important;
+    padding: 2rem 0 .8rem !important;
+    border-radius: 0 !important;
+    border-bottom: .1rem solid var(--primary-color) !important;
+    color: var(--primary-color)
+  }
+
+  label {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 200;
+  }
+
+  textarea {
+    background: white;
+    border: none !important;
+    margin: .6rem 0 1.6rem;
+    height: 10rem;
+  }
+
+  button {
+    border-radius: 3rem;
+    min-width: 20rem;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+  }
+
+  ::placeholder {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 200;
+  }
+}

@@ -1,0 +1,33 @@
+.Modal {
+  background: rgba(0, 0, 0, .5);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: 20;
+  align-items: center;
+
+  &-content {
+    position: relative;
+    background: white;
+    max-width: 92rem;
+    width: 90%;
+
+    &Close {
+      position: absolute;
+      top: -1.5rem;
+      right: -1.5rem;
+      color: var(--primary-color);
+      font-size: 2rem;
+      border-radius: 50%;
+      background: white;
+      line-height: 4rem;
+      width: 4rem;
+      text-align: center;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: -2px 2px 2px #0000000d;
+    }
+  }
+}

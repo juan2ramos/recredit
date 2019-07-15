@@ -1,0 +1,194 @@
+.Request {
+  background: #F9FAFB;
+  padding: 2rem 1rem;
+  @include respond-to(medium) {
+    padding: 4rem 1rem
+  }
+
+  .error p {
+    color: var(--error-color);
+  }
+
+  &-disabled {
+    color: var(--primary-color) !important;
+    opacity: 1 !important;
+  }
+
+  &-form {
+    background: white;
+    max-width: 102rem;
+    padding: 2rem;
+    @include respond-to(medium) {
+      padding: 4rem 6rem;
+    }
+
+    &Group {
+      margin: 2rem 0;
+      position: relative;
+
+      &.error {
+        input {
+          border-color: var(--error-color) !important;
+        }
+
+        label {
+          color: var(--error-color);
+        }
+
+        &:after {
+          content: attr(data-errorMessage);
+          top: 0;
+          color: var(--error-color);
+        }
+
+      }
+
+      &.middle select {
+        min-width: 100%;
+        margin: 1rem 0;
+        @include respond-to(medium) {
+          margin: 3.6rem 0;
+        }
+      }
+    }
+
+
+    &SelectEmail {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 60%;
+      @include respond-to(medium) {
+        width: 50%;
+      }
+
+      &Content {
+        width: calc(100% - 30px);
+      }
+
+      select {
+        max-width: 100% !important;
+      }
+    }
+
+    label {
+      font-size: 2.4rem;
+    }
+
+    input {
+      border: none !important;
+      border-bottom: 1px solid !important;
+      border-radius: 0 !important;
+      padding: 1.2rem 0 !important;
+    }
+
+
+    select {
+      margin: 3.6rem 0;
+      border-radius: 3rem !important;
+      border-color: var(--primary-color);
+      outline: 0;
+      padding: .8rem 1.6rem;
+      @include respond-to(medium) {
+        max-width: 50%;
+      }
+    }
+
+    button {
+      font-size: 2.4rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      padding: 1.7rem 2.5rem 1.5rem;
+      border-radius: .8rem;
+      margin-top: 2.4rem;
+      min-width: 26rem;
+      box-shadow: 0 .8rem 2rem -.6rem #9a9a9a;
+    }
+  }
+
+  &-validateNumber {
+    position: absolute;
+    right: 0;
+    top: 4rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+}
+
+.g-recaptcha {
+  margin: 4.4rem auto 0;
+  max-width: 30rem;
+}
+
+.validateCode-Modal {
+  .Modal-content {
+    max-width: 80rem;
+    margin: 0 1rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #545454;
+    @include respond-to(medium) {
+      font-size: 2.4rem;
+      font-weight: 200;
+    }
+  }
+
+  a {
+    text-align: center;
+    display: inline-block;
+    margin: 1rem auto 2rem;
+    font-size: 2rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid;
+    font-weight: 800;
+    font-style: italic;
+  }
+
+  input {
+    border-radius: 0 !important;
+    max-width: 30rem !important;
+    margin: 2rem auto 0;
+    padding: 2rem 0 !important;
+    text-align: center;
+  }
+
+  &Form p {
+    padding: 2rem;
+    border: 1px solid var(--primary-color);
+    background: #ffecf7;
+  }
+
+  button {
+    border-radius: .8rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    min-width: 21rem;
+    min-height: 5.4rem;
+    box-shadow: 0 .6rem .8rem -.4rem #00000045;
+    @include respond-to(medium) {
+      min-width: 26rem;
+    }
+  }
+}
+.File{
+  position: relative;
+  &-delete{
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    border-radius: 50%;
+    background: var(--error-color);
+    height: 2rem;
+    width: 2rem;
+    color: white;
+    line-height: 1.8rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+}
