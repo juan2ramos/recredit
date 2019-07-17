@@ -23,15 +23,19 @@
             @csrf
             @if ($update) @method('put') @endif
             @include('creditRequest.include.headerForm')
+            @if(Auth::user()->isPoint())
+                <input type="hidden" name="point" value="{{Auth::user()->point->id}}">
+            @else
+                <points-autocomplete
+                        :cities="{{$cities}}"
+                        :points="{{$points}}"
+                        error="{{$errors->has('point') ? true : false}}"
+                        city-old="{{old('city',$city)}}"
+                        point="{{old('point',$client->point_id)}}"
+                        city-display="{{old('city')}}"
 
-            <points-autocomplete
-                    :cities="{{$cities}}"
-                    :points="{{$points}}"
-                    error="{{$errors->has('point') ? true : false}}"
-                    city-old="{{old('city',$city)}}"
-                    point="{{old('point',$client->point_id)}}"
-                    city-display="{{old('city')}}"
-            ></points-autocomplete>
+                ></points-autocomplete>
+            @endif
 
             <div class="Request-formGroup {{$errors->has('residency_city')?'error':''}}"
                  data-errorMessage="El campo es requerido">

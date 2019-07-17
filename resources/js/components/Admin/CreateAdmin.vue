@@ -31,10 +31,10 @@
                             <span class="is-invalid" v-if="this.errors.document">{{this.errors.document[0]}}</span>
                         </label>
                         <label class="is-block p-b-16">
-                            <select id="" v-if="form.role === 'Point'" v-model="form.region"
+                            <select id="" v-if="form.role === 'Point'" v-model="form.city"
                                     @change="change">
-                                <option value="">Seleccione una region</option>
-                                <option v-for="region in regions" :value="region.id">{{region.name}}</option>
+                                <option value="">Seleccione una Ciudad</option>
+                                <option v-for="city in cities" :value="city.id">{{city.name}}</option>
                             </select>
                         </label>
                     </div>
@@ -80,7 +80,7 @@
 
     export default {
         name: 'CreateAdmin',
-        props: ['regions', 'points', 'token', 'route'],
+        props: ['cities', 'points', 'token', 'route'],
         data: function () {
             return {
                 form: {
@@ -93,7 +93,7 @@
                     password_confirmation: '',
                     role: '',
                     point: '',
-                    region: '',
+                    city: '',
                     _token: this.token
                 },
                 disabled: false,
@@ -102,14 +102,14 @@
                 isSuccess: false,
                 rolesOptions: [
                     {'value': 'SuperAdmin', 'text': 'Super administrador'},
-                    {'value': 'Admin', 'text': 'Administrador',},
+                    {'value': 'Analysts', 'text': 'Analista',},
                     {'value': 'Point', 'text': 'Punto de venta',}
                 ]
             }
         },
         computed: {
             pointsLocal: function () {
-                return this.points.filter(point => point.region_id === this.form.region)
+                return this.points.filter(point => point.city_id === this.form.city)
             }
         }, methods: {
             change: function () {
@@ -131,7 +131,9 @@
                     this.disabled = false;
                     this.isError = true;
                     if (error.response.status === 422) {
+
                         this.errors = Object.assign({}, error.response.data.errors);
+                        console.log(    this.errors)
                     }
                 });
             }

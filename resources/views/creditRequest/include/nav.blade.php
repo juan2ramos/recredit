@@ -31,8 +31,8 @@
         </li>
         <li>
             <div class="Request-navSvg">
-                @can('createUserReference')
-                    <a href="" class="row middle-items ">
+                @can('view', \App\Models\Reference::class)
+                    <a href="{{route('references.index')}}" class="row middle-items ">
                         <svg width="44px" viewBox="0 0 68 60">
                             <use href="#icon-heartActive"></use>
                         </svg>
@@ -50,8 +50,8 @@
         </li>
         <li>
             <div class="Request-navSvg">
-                @can('createUserFiles')
-                    <a href="" class="row middle-items ">
+                @can('view', \App\Models\File::class)
+                    <a href="{{route('files.index')}}" class="row middle-items ">
                         <svg width="44px" viewBox="0 0 68 60">
                             <use href="#icon-heartActive"></use>
                         </svg>

@@ -10,11 +10,10 @@ class UserPolicy
     use HandlesAuthorization;
     use PolicyManager;
 
-    function update(User $user, User $model)
+    function update(User $user, User $model):bool
     {
         $user = $this->getUserToEvaluate($user);
-
-        return $user->id === $model->id;
+        return $user['id'] === $model->id;
     }
 
 }

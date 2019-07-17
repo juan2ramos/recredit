@@ -28,6 +28,8 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapCreditRequestRoutes();
 
+        $this->mapClientRoutes();
+
         $this->mapSMSRoutes();
 
         //
@@ -63,6 +65,22 @@ class RouteServiceProvider extends ServiceProvider
             ->group(base_path('app/Modules/CreditRequest/routes.php'));
     }
 
+    protected function mapAdminRoutes()
+    {
+        Route::prefix('admin')
+            ->middleware(['web', 'auth', 'isAdmin'])
+            ->namespace('App\Modules\Admin\Controllers')
+            ->group(base_path('app/Modules/Admin/routes.php'));
+    }
+
+    protected function mapClientRoutes()
+    {
+        Route::prefix('cliente')
+            ->middleware(['web', 'auth'])
+            ->namespace('App\Modules\Client\Controllers')
+            ->group(base_path('app/Modules/Client/routes.php'));
+    }
+
     protected function mapSMSRoutes()
     {
         Route::middleware(['web', 'auth', 'withoutCredit'])
@@ -70,11 +88,4 @@ class RouteServiceProvider extends ServiceProvider
             ->group(base_path('app/Modules/SMS/routes.php'));
     }
 
-    protected function mapAdminRoutes()
-    {
-        Route::prefix('admin')
-            ->middleware(['web', 'auth'])
-            ->namespace($this->namespace . '\Admin')
-            ->group(base_path('routes/admin.php'));
-    }
 }

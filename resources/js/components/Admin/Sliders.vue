@@ -8,7 +8,7 @@
 </template>
 
 <script>
-    import uploadFiles from '../services/UploadFile';
+    import uploadFiles from '../../services/UploadFile';
 
     export default {
         name: "Sliders",

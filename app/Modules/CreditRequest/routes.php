@@ -12,6 +12,18 @@ Route::middleware(['auth', 'withoutCredit'])->group(function () {
         ->names('clients')
         ->parameters(['datos-contacto' => 'client'])
         ->except(['show', 'create', 'destroy']);
+
+    Route::resource('referencias-personales', 'ReferenceController')
+        ->names('references')
+        ->parameters(['referencias-personales' => 'user'])
+        ->except(['show', 'create', 'destroy']);
+
+    Route::resource('archivos', 'FileController')
+        ->names('files')
+        ->parameters(['archivos' => 'file'])
+        ->except(['show', 'create',]);
+
+    Route::post('credit-finish', 'CreditController')->name('credit.created');
 });
 
 

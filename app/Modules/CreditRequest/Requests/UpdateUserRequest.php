@@ -11,7 +11,7 @@ class UpdateUserRequest extends FormRequest
 
     public function authorize()
     {
-        return Gate::allows('editUser', $this->user);
+        return Gate::allows('update', $this->user);
     }
 
 

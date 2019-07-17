@@ -13,9 +13,9 @@ class ClientPolicy
 
     function view(User $user)
     {
-        $this->getUserToEvaluate($user);
+        $user = $this->getUserToEvaluate($user);
 
-        return true;
+        return !is_null($user->document) ?? true;
     }
 
     public function create(User $user)

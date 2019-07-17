@@ -8,12 +8,12 @@ use App\User;
 
 trait PolicyManager
 {
-    protected function getUserToEvaluate($authUser): User
+    protected function getUserToEvaluate($authUser)
     {
         $user = $authUser->isAdmin() ? session('userProcess') : $authUser;
 
         if (!$user) {
-            abort('404');
+            return new User();
         }
 
         return $user;

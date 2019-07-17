@@ -17,8 +17,12 @@ trait CreditRequestManager
             return;
         }
 
-        Auth::login($user);
+        if (!Auth::check() ) {
+            Auth::login($user);
+        }
+
     }
+
 
     protected function canEditUser()
     {
@@ -33,7 +37,7 @@ trait CreditRequestManager
     {
         if ($user = $this->canEditUser()) {
 
-            return $user->hasClient() ?? $user;
+            return $user->hasClient() ? $user : false;
         }
 
         return false;
@@ -41,13 +45,29 @@ trait CreditRequestManager
 
     protected function canEditReference()
     {
+
         if ($user = $this->canEditClient()) {
 
-            return $user->client->hasReference() ?? $user;
+            return $user->hasReferences() ? $user : false;
         }
 
         return false;
     }
 
+    protected function canEditFile()
+    {
+        if ($user = $this->canEditReference()) {
 
+            return $user->hasFiles() ? $user : false;
+        }
+
+        return false;
+    }
+
+    protected function files()
+    {
+        $user = Auth::user()->isAdmin() ? session('userProcess') :  Auth::user();
+
+        return $user->files()->get();
+    }
 }

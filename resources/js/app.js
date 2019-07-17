@@ -1,27 +1,22 @@
-import contact from './Modal';
-import nav from './nav';
-import uploadFiles from './uploadFiles';
-import swal from 'sweetalert';
 
 import Vue from 'vue';
-import adminComponents from './components';
+import adminComponents from './components/Admin';
 import creditRequestComponents from './components/CreditRequest';
-import Autocomplete from 'vuejs-auto-complete'
 
 const components =adminComponents.concat(creditRequestComponents);
 
 components.forEach(component => {
     Vue.component(component.name, component);
 });
-Vue.component( Autocomplete);
-
 
 new Vue({el: '#app',});
 
+
+import contact from './Modal';
+import nav from './nav';
 nav();
 contact();
-uploadFiles();
-
+import swal from 'sweetalert';
 const alertMessage = document.querySelector('#alertMessage');
 if (alertMessage) {
     const message = alertMessage.dataset.message,

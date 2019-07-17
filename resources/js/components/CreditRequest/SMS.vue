@@ -2,7 +2,7 @@
     <div>
 
         <div :class="[{ error: error }, 'Request-formGroup'] "
-             data-errorMessage="El campo es requerido y debe ser verificado">
+             data-errorMessage="El campo es requerido, numérico, de 10 dígitos y debe ser verificado">
             <label>Celular</label>
             <input v-model="mobile" type="text" name="mobile" placeholder="3102123456">
             <a class="Request-validateNumber" @click="sendSMS">Verificar número</a>

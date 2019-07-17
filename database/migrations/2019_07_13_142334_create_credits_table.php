@@ -20,9 +20,11 @@ class CreateCreditsTable extends Migration
             $table->integer('value')->default(0);
             $table->integer('state')->default(0);
             $table->boolean('validated')->default(0);
+            $table->unsignedBigInteger('reasons_id')->nullable();
 
             $table->unsignedBigInteger('finished_user');
-            $table->unsignedBigInteger('reasons_id')->nullable();
+            $table->unsignedBigInteger('user_reviewed')->nullable();
+            $table->unsignedBigInteger('user_reviewing')->nullable();
 
             $table->unsignedInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');

@@ -19,7 +19,7 @@ class ClientRequest extends FormRequest
         return [
             'address' => 'required',
             'residency_city' => 'required',
-            'mobile' => ['required', function ($attribute, $value, $fail) {
+            'mobile' => ['required','digits:10', function ($attribute, $value, $fail) {
                 $user = $this->getUserToCreate();
                 if (!$user->verification_state) {
                     $fail('No se ha validado el número de celular');

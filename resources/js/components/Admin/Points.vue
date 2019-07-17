@@ -32,8 +32,8 @@
                 </td>
                 <td width="5%">
                     <div class="row justify-center middle-items">
-                        <a><img src="../../images/edit.svg" alt=""></a>
-                        <a><img class="m-l-8" src="../../images/delete.svg" alt=""></a>
+                        <a><img src="../../../images/edit.svg" alt=""></a>
+                        <a><img class="m-l-8" src="../../../images/delete.svg" alt=""></a>
 
                     </div>
                 </td>

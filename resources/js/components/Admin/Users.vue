@@ -19,18 +19,19 @@
                     <span>{{!client.credit? 'En proceso':stateCredit(client.credit)}}</span>
                 </td>
                 <td width="5%">
-                    <div class="row justify-center middle-items">
+
+                    <div class="row justify-center middle-items" v-if="isAdmin">
                         <a v-if="!client.credit" :href="`/admin/usuario-sesion/${client.document}`">
-                            <img src="../../images/settings.svg" alt="">
+                            <img src="../../../images/settings.svg" alt="">
                         </a>
                         <a :href="`/admin/usuarios/${client.document}`" v-else-if="client.credit.state === 1">
-                            <img src="../../images/edit.svg" alt="">
+                            <img src="../../../images/edit.svg" alt="">
                         </a>
                         <a  :href="`/admin/creditos/${client.credit.id}`"  v-else>
-                            <img src="../../images/user-check.svg" alt="">
+                            <img src="../../../images/user-check.svg" alt="">
                         </a>
                         <a @click.prevent="deleteClient(client, i)">
-                            <img src="../../images/delete.svg" alt="">
+                            <img src="../../../images/delete.svg" alt="">
                         </a>
                     </div>
                 </td>
@@ -49,7 +50,7 @@
 
     export default {
         name: "Users",
-        props: ['clients', 'token','search'],
+        props: ['clients', 'token','search','isAdmin'],
         data: function () {
             return {
                 clientsLocal: this.clients

@@ -151,7 +151,7 @@ th {
   position: absolute;
 }
 
-.Link-secondary {
+.Link-primary, .Link-secondary {
   padding: 10px;
   background: #A24C9C;
   color: white;
@@ -159,6 +159,12 @@ th {
   margin: 27px 0 0 18px;
   display: block;
   border-radius: 3px;
+  cursor: pointer;
+}
+
+.Link-primary{
+  background: var(--primary-color);
+  color: white;
 }
 
 .is-block {

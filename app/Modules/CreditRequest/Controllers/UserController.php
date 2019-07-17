@@ -36,7 +36,7 @@ class UserController extends Controller
 
     public function edit(User $user)
     {
-       $this->authorize('update', $user);
+        $this->authorize('update', $user);
         return $this->view($user);
     }
 
@@ -45,7 +45,7 @@ class UserController extends Controller
         $user = $request->UpdateUser($user);
         $this->createUserSession($user);
 
-        return redirect()->back()->with(['success' => 'ok']);
+        return redirect()->route('users.edit', $user)->with(['success' => 'ok']);
     }
 
     private function view($user)

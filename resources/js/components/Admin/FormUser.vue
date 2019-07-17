@@ -153,7 +153,7 @@
             <div class="col-16 row justify-start m-t-20 m-b-20">
                 <figure v-for="file in user.user_files" class="row  is-text-center">
                     <a class="row" :href="file.temporaryUrl" target="_blank">
-                        <img src="../../images/file.svg" alt="" width="80px" class="m-a">
+                        <img src="../../../images/file.svg" alt="" width="80px" class="m-a">
                         <span class="col-16 is-text-center">
                             {{`${file.name}.${file.metaData.extension}` }}
                         </span>

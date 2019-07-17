@@ -42,9 +42,10 @@
                     :emails="{{$emails}}"
                     before="{{old('beforeEmail',isset($userMail) ? $userMail[0]:'')}}"
                     after="{{old('afterEmail',isset($userMail) ? $userMail[1]:'')}}"
-                    >
-                    error="{{$errors->has('email') ? true : false}}"
-            ></email>
+            >
+                error="{{$errors->has('email') ? true : false}}"
+                >
+            </email>
 
             <div class="Request-formGroup {{$errors->has('document_type')?'error':''}}"
                  data-errorMessage="El campo es requerido">
@@ -61,9 +62,11 @@
             <div class="Request-formGroup {{$errors->has('document')?'error':''}}"
                  data-errorMessage="El campo es requerido o documento ya ha sido registrado">
                 <label for="document">Nº de documento</label>
-                <input value="{{old('document', $user->document, app('request')->input('identification'))}}" type="text"
-                       id="document"
-                       name="document">
+                <input
+                        value="{{old('document', $user->document ? $user->document : app('request')->input('identification'))}}"
+                        type="text"
+                        id="document"
+                        name="document">
             </div>
             @if (!$update)
                 {!! Captcha::display(['add-js' => false]) !!}

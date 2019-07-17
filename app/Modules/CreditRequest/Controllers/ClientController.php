@@ -6,7 +6,6 @@ use App\Models\Client;
 use App\Models\City;
 use App\Models\Point;
 use App\Modules\CreditRequest\Requests\ClientRequest;
-use App\Modules\CreditRequest\Requests\UpdateUserRequest;
 use App\Http\Controllers\Controller;
 
 class ClientController extends Controller
@@ -23,18 +22,17 @@ class ClientController extends Controller
         $this->authorize('view', Client::class);
 
         if ($user = $this->canEditClient()) {
-
-            return redirect()->route('clients.edit', $user);
+            return redirect()->route('clients.edit', $user->client);
         }
 
-        return $this->view(Client::class);
+        return $this->view(new Client());
     }
 
     public function store(ClientRequest $request)
     {
         $request->createClient();
 
-        return redirect()->route('reference.index');
+        return redirect()->route('references.index');
     }
 
 
@@ -53,7 +51,8 @@ class ClientController extends Controller
     {
         $cities = City::all();
         $points = Point::all();
-        $city = $client ? $client->point->city->id : ' ';
+
+        $city = ($client)->point ? $client->point->city->id : '';
 
         return view('creditRequest.client', compact('cities', 'points', 'client', 'city'));
     }

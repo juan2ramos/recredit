@@ -9,7 +9,7 @@ class Point extends Model
 {
     public function city()
     {
-        return $this->belongsTo(Region::class);
+        return $this->belongsTo(City::class);
     }
 
     public function user()
