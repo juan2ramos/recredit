@@ -5,6 +5,7 @@ namespace App\Modules\CreditRequest\Requests;
 use App\User;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
+use Illuminate\Support\Str;
 
 class CreateUserRequest extends FormRequest
 {
@@ -22,6 +23,8 @@ class CreateUserRequest extends FormRequest
             'last_name' => 'required',
             'email' => ['required', 'email', 'unique:users,email'],
             'document_type' => 'required',
+            'policyPinkLife' => 'required',
+            'privacyPolicy' => 'required',
             'document' => ['required', Rule::unique('users')],
             'g-recaptcha-response' => 'required|captcha'
         ];
@@ -36,7 +39,7 @@ class CreateUserRequest extends FormRequest
             'email' => $data['email'],
             'document_type' => $data['document_type'],
             'document' => $data['document'],
-            'password' => bcrypt(str_random(8)),
+            'password' => bcrypt(Str::random(10)),
             'verification_code' => strtoupper(substr(base_convert(sha1(uniqid(mt_rand())), 16, 36), 0, 5)),
         ]);
         $user->assignRole('Credit');

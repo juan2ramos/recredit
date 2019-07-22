@@ -17,6 +17,7 @@
                             <th>Prioridad</th>
                             <th>Ciudad</th>
                             <th>Punto</th>
+                            <th>Asignada</th>
                             <th class="is-text-center">Revisar</th>
                         </tr>
                         </thead>
@@ -28,6 +29,7 @@
                                 <td>{{$credit->priorityName}}</td>
                                 <td>{{$credit->user->client->point->city->name}}</td>
                                 <td>{{$credit->user->client->point->trade_name}}</td>
+                                <td >{{$credit->assigned ? $credit->assigned->name : 'Ninguno'}}</td>
                                 <td>
                                     <div class="row justify-center">
                                         <a href="{{route('creditsAdmin.show',$credit->id)}}">

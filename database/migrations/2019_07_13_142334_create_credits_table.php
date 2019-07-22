@@ -17,14 +17,16 @@ class CreateCreditsTable extends Migration
             $table->bigIncrements('id');
 
             $table->tinyInteger('priority')->default(0);
-            $table->integer('value')->default(0);
             $table->integer('state')->default(0);
             $table->boolean('validated')->default(0);
+            $table->dateTime('check_date')->nullable();
+            $table->integer('number_requested')->default(1);
+
             $table->unsignedBigInteger('reasons_id')->nullable();
 
             $table->unsignedBigInteger('finished_user');
-            $table->unsignedBigInteger('user_reviewed')->nullable();
-            $table->unsignedBigInteger('user_reviewing')->nullable();
+            $table->unsignedBigInteger('assigned_user')->default(0);
+            $table->unsignedBigInteger('reviewed_user')->nullable();
 
             $table->unsignedInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');

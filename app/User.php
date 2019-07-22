@@ -7,7 +7,6 @@ use App\Models\Credit;
 use App\Models\File;
 use App\Models\Point;
 use App\Models\Reference;
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Spatie\Permission\Traits\HasRoles;
@@ -40,7 +39,7 @@ class User extends Authenticatable
         static::deleting(function ($user) {
 
             $user->references()->delete();
-            $user->userFiles->each->delete();
+            $user->files->each->delete();
             $user->client()->delete();
 
         });

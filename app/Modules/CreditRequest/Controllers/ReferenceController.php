@@ -36,7 +36,6 @@ class ReferenceController extends Controller
         $references = $user->load('references')->references;
         $this->authorize('update', [Reference::class, $references]);
 
-
         return $this->view($user, $references);
 
     }

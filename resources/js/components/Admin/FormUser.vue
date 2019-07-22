@@ -1,202 +1,282 @@
 <template>
-    <form action="" class=" Request-form col-16">
-        <div class="row">
-            <h4 class="col-16 h-4">Datos personales</h4>
-            <div class="col-16 col-m-8 Form-column">
-                <div class="Form-labelContent">
-                    <label for="name">Nombre</label>
-                    <input
-                            type="text"
-                            :value="user.name"
-                            name="name"
-                            id="name">
+    <div>
+        <form :action="`/admin/usuarios/${user.document}`" method="post" class="Request-form col-16">
+            <input name="_method" type="hidden" value="PUT">
+            <input name="_token" type="hidden" :value="token">
+            <div class="row">
+                <h4 class="col-16 h-4">Datos del crédito</h4>
+                <div class="col-8">
+                    <p><b>Estado del credito:</b> {{credit.state === 1 ? 'Aprobado':'Denegado'}}</p>
+                    <p v-if="credit.reasons_id"><b>Denegado por:</b> {{credit.reason.name}}</p>
+                    <p><b>Fecha de solicitud: </b>{{credit.created_at}}</p>
+                    <p><b>Fecha de validación: </b>{{credit.check_date}}</p>
                 </div>
-                <div class="Form-labelContent">
-                    <label for="document_type">Tipo de documento</label>
-                    <select name="document_type" id="document_type" class="Request-formSelect" v-model="selectedUser">
-                        <option value="null" selected>Select a name</option>
-                        <option v-for="option in typeDocument" :value="option">{{ option }}</option>
-                    </select>
-                </div>
-                <div class="Form-labelContent">
-                    <label for="email">Correo Electrónico</label>
-                    <input
-                            type="email"
-                            :value="user.email"
-                            name="email"
-                            id="email">
+                <div class="col-8">
+                    <p><b>Número de solicitudes:</b> {{credit.number_requested}}</p>
+                    <p><b>Usuario que finalizó la solicitud:</b> {{credit.finished.name}}</p>
+                    <p><b>Usuario que valido el crédito:</b> {{credit.reviewed.name}}</p>
                 </div>
             </div>
-            <div class="col-16 col-m-8 Form-column">
-                <div class="Form-labelContent">
-                    <label for="last_name">Apellido</label>
-                    <input
-                            type="text"
-                            :value="user.last_name"
-                            name="last_name"
-                            id="last_name">
-                </div>
-                <div class="Form-labelContent">
-                    <label for="document">Documento</label>
-                    <input
-                            type="text"
-                            :value="user.document"
-                            name="document"
-                            id="document">
-                </div>
-                <div class="Form-labelContent">
-                    <label for="password">Contraseña</label>
-                    <input
-                            type="password"
-                            name="password"
-                            id="password">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <h4 class="col-16 h-4">Datos de contacto</h4>
-            <div class="col-16 col-m-8 Form-column">
-                <div class="Form-labelContent">
-                    <label for="residency_city">Ciudad de residencia</label>
-                    <input
-                            type="text"
-                            :value="user.user_client.residency_city"
-                            name="residency_city"
-                            id="residency_city">
-                </div>
-                <div class="Form-labelContent">
-                    <label for="address">Dirección</label>
-                    <input
-                            type="text"
-                            :value="user.user_client.address"
-                            name="address"
-                            id="address">
-                </div>
-                <div class="Form-labelContent">
-                    <label for="address_type">Tipo de Dirección</label>
-                    <select name="address_type" id="address_type" class="Request-formSelect"
-                            v-model="selectedAddressType">
-                        <option v-for="type in addressType" :value="type">{{type}}</option>
-                    </select>
-                </div>
-                <div class="Form-labelContent">
-                    <label for="office_address">Dirección oficina</label>
-                    <input
-                            type="text"
-                            :value="user.user_client.office_address"
-                            name="office_address"
-                            id="office_address">
-                </div>
-            </div>
-            <div class="col-16 col-m-8 Form-column">
-
-                <div class="Form-labelContent">
-                    <label for="mobile">Celular</label>
-                    <input
-                            type="text"
-                            :value="user.user_client.mobile"
-                            name="mobile"
-                            id="mobile">
-                </div>
-                <div class="Form-labelContent">
-                    <label for="phone">Teléfono</label>
-                    <input
-                            type="text"
-                            :value="user.user_client.phone"
-                            name="phone"
-                            id="phone">
-                </div>
-                <div class="Form-labelContent">
-                    <label for="birth_city">Región</label>
-                    <select id="birth_city" v-model="selectedRegion" class="Request-formSelect" @change="change">
-                        <option v-for="region in regions" :value="region.id">{{region.name}}</option>
-                    </select>
-                </div>
-                <div class="Form-labelContent">
-                    <label for="point">Punto</label>
-                    <select id="point" name="point" v-model="selectedPoint" class="Request-formSelect">
-                        <option value="0">Seleccione un punto</option>
-                        <option v-for="point in pointsLocal" :value="point.id">{{point.name}}</option>
-                    </select>
-                </div>
-
-            </div>
-        </div>
-        <div class="row">
-            <h4 class="col-16 h-4">Referencias personales </h4>
-            <div class="col-16 row" v-for="(references, i) in user.user_references">
-                <h5 class="col-16">Refencia {{ i + 1 }}</h5>
+            <div class="row">
+                <h4 class="col-16 h-4">Datos personales</h4>
                 <div class="col-16 col-m-8 Form-column">
                     <div class="Form-labelContent">
-                        <label :for="`name${i}`">Nombre</label>
+                        <label for="name">Nombre</label>
                         <input
                                 type="text"
-                                :value="references.name"
-                                :name="`references.name[${i}]`"
-                                :id="`references.name${i}`">
+                                :value="user.name"
+                                name="name"
+                                id="name">
+                    </div>
+                    <div class="Form-labelContent">
+                        <label for="document_type">Tipo de documento</label>
+                        <select name="document_type" id="document_type" class="Request-formSelect"
+                                v-model="selectedUser">
+                            <option value="null" selected>Select a name</option>
+                            <option v-for="option in typeDocument" :value="option">{{ option }}</option>
+                        </select>
+                    </div>
+                    <div class="Form-labelContent">
+                        <label for="email">Correo Electrónico</label>
+                        <input
+                                type="email"
+                                :value="user.email"
+                                name="email"
+                                id="email">
                     </div>
                 </div>
                 <div class="col-16 col-m-8 Form-column">
                     <div class="Form-labelContent">
-                        <label :for="`references.phone${i}`">Teléfono</label>
+                        <label for="last_name">Apellido</label>
                         <input
                                 type="text"
-                                :value="references.phone"
-                                :name="`references.phone[${i}]`"
-                                :id="`references.phone${i}`">
+                                :value="user.last_name"
+                                name="last_name"
+                                id="last_name">
+                    </div>
+                    <div class="Form-labelContent">
+                        <label for="document">Documento</label>
+                        <input
+                                type="text"
+                                :value="user.document"
+                                name="document"
+                                id="document">
+                    </div>
+                    <div class="Form-labelContent">
+                        <label for="password">Contraseña</label>
+                        <input
+                                type="password"
+                                name="password"
+                                id="password">
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <h4 class="col-16 h-4">Archivos</h4>
-            <div class="col-16 row justify-start m-t-20 m-b-20">
-                <figure v-for="file in user.user_files" class="row  is-text-center">
-                    <a class="row" :href="file.temporaryUrl" target="_blank">
-                        <img src="../../../images/file.svg" alt="" width="80px" class="m-a">
-                        <span class="col-16 is-text-center">
-                            {{`${file.name}.${file.metaData.extension}` }}
-                        </span>
-                    </a>
-                </figure>
+            <div class="row">
+                <h4 class="col-16 h-4">Datos de contacto</h4>
+                <div class="col-16 col-m-8 Form-column">
+                    <div class="Form-labelContent">
+                        <label for="residency_city">Ciudad de residencia</label>
+                        <input
+                                type="text"
+                                :value="user.client.residency_city"
+                                name="residency_city"
+                                id="residency_city">
+                    </div>
+                    <div class="Form-labelContent">
+                        <label for="address">Dirección</label>
+                        <input
+                                type="text"
+                                :value="user.client.address"
+                                name="address"
+                                id="address">
+                    </div>
+
+                    <div class="Form-labelContent">
+                        <label for="birth_city">Ciudad</label>
+                        <select id="birth_city" v-model="selectedCity" class="Request-formSelect" @change="change">
+                            <option v-for="city in cities" :value="city.id">{{city.name}}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-16 col-m-8 Form-column">
+
+                    <div class="Form-labelContent">
+                        <label for="mobile">Celular</label>
+                        <input
+                                type="text"
+                                :value="user.client.mobile"
+                                name="mobile"
+                                id="mobile">
+                    </div>
+                    <div class="Form-labelContent">
+                        <label for="phone">Teléfono</label>
+                        <input
+                                type="text"
+                                :value="user.client.phone"
+                                name="phone"
+                                id="phone">
+                    </div>
+                    <div class="Form-labelContent">
+                        <label for="point">Punto</label>
+                        <select id="point" name="point" v-model="selectedPoint" class="Request-formSelect">
+                            <option value="0">Seleccione un punto</option>
+                            <option v-for="point in pointsLocal" :value="point.id">{{point.name}}</option>
+                        </select>
+                    </div>
+
+                </div>
             </div>
-        </div>
-        <div class="row justify-center ">
-            <button type="submit">Actualizar</button>
-        </div>
-    </form>
+            <div class="row">
+                <h4 class="col-16 h-4">Referencias personales </h4>
+                <div class="col-16 row" v-for="(reference, i) in user.references">
+                    <h5 class="col-16">Refencia {{ i + 1 }}</h5>
+                    <div class="col-16 col-m-8 Form-column">
+                        <input
+                                type="hidden"
+                                :name="`references[${i}][id]`"
+                                :value="reference.id">
+                        <div class="Form-labelContent">
+                            <label :for="`name${i}`">Nombre</label>
+                            <input
+                                    type="text"
+                                    :value="reference.name"
+                                    :name="`references[${i}][name]`"
+                                    :id="`reference.name${i}`">
+                        </div>
+                    </div>
+                    <div class="col-16 col-m-8 Form-column">
+                        <div class="Form-labelContent">
+                            <label :for="`references.phone${i}`">Teléfono</label>
+                            <input
+                                    type="text"
+                                    :value="reference.phone"
+                                    :name="`references[${i}][phone]`"
+                                    :id="`reference.phone${i}`">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-16">
+                <h4 class="col-16 h-4">Archivos</h4>
+                <vue-dropzone v-if="superAdmin"
+                              id="MyDropZoneFileAdmin"
+                              :options="dropzoneOptions"
+                              @vdropzone-file-added="addFile"
+                              @vdropzone-success="successFile"
+                              @vdropzone-error="error"
+                              ref="FilesIDAdmin"
+                >
+                </vue-dropzone>
+                <div class="row m-t-20 justify-around">
+                    <div class="File col-3" v-for="(file, index) in userFiles">
+                        <div class="File-delete" v-if="superAdmin" @click="deleteFile(file, index)">x</div>
+                        <div class="m-auto is-text-center">
+                            <div class="m-auto is-text-center">
+                                <img width="80px" src="../../../images/file.svg" alt="">
+                            </div>
+                        </div>
+                        <p class="is-text-center">{{file.name}}<br>
+                            <a target="_blank" :href="file.temporaryUrl">Ver archivo</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row justify-center " v-if="superAdmin">
+                <button type="submit" :disabled="sending">Actualizar</button>
+            </div>
+        </form>
+    </div>
 </template>
 
 <script>
+    import vue2Dropzone from 'vue2-dropzone'
+    import 'vue2-dropzone/dist/vue2Dropzone.min.css'
+    import axios from 'axios'
+
     export default {
+        components: {vueDropzone: vue2Dropzone},
         name: "form-user",
-        props: ['user', 'regions', 'points'],
+        props: ['user', 'cities', 'points', 'token', 'authUser', 'superAdmin', 'credit'],
         data: function () {
             return {
                 selectedUser: null,
-                selectedRegion: null,
+                selectedCity: null,
                 selectedAddressType: null,
                 selectedPoint: null,
+                sending: false,
                 typeDocument: ['cédula', 'Cédula de extranjería'],
-                addressType: ['casa', 'apartamento']
+                userFiles: this.user.files,
+                addressType: ['casa', 'apartamento'],
+                dropzoneOptions: {
+                    url: '/admin/files',
+                    thumbnailWidth: 150,
+                    maxFilesize: 0.5,
+                    paramName: 'files',
+                    dictDefaultMessage: '<div class="dropzone-buttonMessage">Selecciona los documentos</div>',
+                    headers: {"X-CSRF-TOKEN": document.head.querySelector("[name=csrf-token]").content},
+                    params: {user: this.user.id}
+                }
             }
         },
         created() {
             this.selectedUser = this.user.document_type;
-            this.selectedPoint = this.user.user_client.point.id;
-            this.selectedRegion = this.user.user_client.point.region.id;
-            this.selectedAddressType = this.user.user_client.address_type;
+            this.selectedPoint = this.user.client.point.id;
+            this.selectedCity = this.user.client.point.city.id;
+            console.log(this.superAdmin)
 
         },
         computed: {
             pointsLocal: function () {
-                return this.points.filter(point => point.region_id === this.selectedRegion)
+                return this.points.filter(point => point.city_id === this.selectedCity)
             }
         },
         methods: {
             change: function () {
                 this.selectedPoint = 0;
-            }
+            },
+            addFile: function () {
+                this.sending = true
+            },
+            successFile: function (file, response) {
+                this.sending = false;
+                this.userFiles.push(response);
+                this.$refs.FilesIDAdmin.removeAllFiles()
+            },
+            error: function () {
+                this.sending = false
+            },
+            deleteFile: function (file, index) {
+                swal({
+                    title: "Estas seguro de eliminar el archivo?",
+                    text: "Una vez eliminado, no podrás recuperar este archivo!",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+                    .then((willDelete) => {
+                        if (willDelete) {
+                            axios.delete(`/admin/files/${file.id}`, {
+                                _token: this.token
+                            }).then((response) => {
+                                swal("Archivo eliminado", {icon: "success",});
+                                this.userFiles.splice(index, 1);
+                            });
+
+                        }
+                    });
+            },
+
         }
     }
 </script>
+
+<style scoped>
+    input {
+        text-transform: uppercase;
+    }
+
+    .dropzone {
+        width: 100%;
+    }
+</style>

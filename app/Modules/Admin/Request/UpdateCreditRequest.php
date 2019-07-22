@@ -9,7 +9,6 @@ class UpdateCreditRequest extends FormRequest
 {
     public function authorize()
     {
-
         return !$this->credit->validated;
     }
 
@@ -25,9 +24,10 @@ class UpdateCreditRequest extends FormRequest
     {
         $this->credit->fill([
             'state' => $this->input('approved') ? 1 : 2,
-            'reasons_id' => $this->input('reason'),
-            'user_reviewed' => Auth::user()->id,
             'validated' => 1,
+            'check_date' => now(),
+            'reasons_id' => $this->input('reason'),
+            'reviewed_user' => Auth::user()->id,
         ]);
 
         $this->credit->save();

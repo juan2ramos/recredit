@@ -40,7 +40,7 @@
                     .then(({data}) => {
                         console.log(data)
                         swal(message, {icon: "success"});
-                        //  setTimeout(() => window.location = "/admin", 3000)
+                        setTimeout(() => window.location = "/admin", 3000)
                     });
             }
         }

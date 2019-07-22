@@ -25,8 +25,9 @@ class CreditRequest extends FormRequest
 
         $user->credit()->save(new Credit([
             'priority' => $this->user()->isAdmin() ,
-            'value' => '300000',
             'state' => 0,
+            'validated' => 0,
+            'number_requested' => 1,
             'finished_user' => $this->user()->id ,
         ]));
 

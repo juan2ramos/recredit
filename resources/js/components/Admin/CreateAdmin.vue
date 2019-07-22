@@ -131,7 +131,6 @@
                     this.disabled = false;
                     this.isError = true;
                     if (error.response.status === 422) {
-
                         this.errors = Object.assign({}, error.response.data.errors);
                         console.log(    this.errors)
                     }

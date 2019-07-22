@@ -19,7 +19,7 @@
             <div class="col-16 col-m-8 p-l-4 ">
                 <select name="point" v-model="pointSelect">
                     <option value="">SELECCIONE UN PUNTO DE VENTA</option>
-                    <option v-for="point in pointsLocal" :value="point.id">{{point.name}}</option>
+                    <option v-for="point in pointsLocal" :value="point.id">{{point.full_name }}</option>
                 </select>
             </div>
         </div>

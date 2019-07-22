@@ -6,7 +6,7 @@
         <div class="row justify-between middle-items">
             <div>
                 <h3 class="">Usuarios</h3>
-                @if (Auth::user()->isAnalysts())
+                @if (Auth::user()->isSuperAdmin())
                     <a href="{{route('usersAdmin.create')}}" class="link-show">Crear usuario admin</a>
                 @endif
 
@@ -44,7 +44,7 @@
 
         <users :clients="{{$clients}}"
                :search="{{Request()->search ? 1 : 0}}"
-               is-admin="{{auth()->user()->isAnalysts()}}"
+               is-analysts="{{auth()->user()->isAnalysts()}}"
         ></users>
 
 

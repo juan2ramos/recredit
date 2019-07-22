@@ -4,7 +4,15 @@
 
     <div class="container container-admin mt">
         <div class="row justify-between middle-items">
-            <form-user :user="{{$user}}" :regions="{{$regions}}" :points="{{$points}}"> </form-user>
+
+            <form-user
+                    :user="{{$user}}"
+                    :cities="{{$cities}}"
+                    :points="{{$points}}"
+                    token="{{csrf_token()}}"
+                    :credit="{{$credit}}"
+                    super-admin="{{auth()->user()->isSuperAdmin()}}"
+            ></form-user>
         </div>
     </div>
 @endsection

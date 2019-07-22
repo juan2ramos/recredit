@@ -3,35 +3,44 @@
         <table v-if="clients.length">
             <thead>
             <tr>
-                <th  width="20%">Nombre</th>
-                <th  width="20%">Cédula</th>
-                <th  width="25%">Email</th>
-                <th  width="20%">Estado</th>
-                <th  width="5%" class="is-text-center">Acciones</th>
+                <th width="20%">Nombre</th>
+                <th width="20%">Cédula</th>
+                <th width="25%">Email</th>
+                <th width="20%">Estado</th>
+                <th width="5%" class="is-text-center">Acciones</th>
             </tr>
             </thead>
             <tbody>
             <tr v-for="(client, i) in clientsLocal ">
-                <td  width="20%">{{client.name}}</td>
-                <td  width="20%">{{client.document}}</td>
-                <td  width="25%">{{client.email}}</td>
+                <td width="20%">{{client.name}}</td>
+                <td width="20%">{{client.document}}</td>
+                <td width="25%">{{client.email}}</td>
                 <td width="20%">
                     <span>{{!client.credit? 'En proceso':stateCredit(client.credit)}}</span>
                 </td>
                 <td width="5%">
 
-                    <div class="row justify-center middle-items" v-if="isAdmin">
+                    <div class="row justify-center middle-items" v-if="isAnalysts">
                         <a v-if="!client.credit" :href="`/admin/usuario-sesion/${client.document}`">
                             <img src="../../../images/settings.svg" alt="">
                         </a>
-                        <a :href="`/admin/usuarios/${client.document}`" v-else-if="client.credit.state === 1">
+                        <a :href="`/admin/usuarios/${client.document}`"
+                           v-else-if="client.credit.state === 1 || client.credit.state === 2 ">
                             <img src="../../../images/edit.svg" alt="">
                         </a>
-                        <a  :href="`/admin/creditos/${client.credit.id}`"  v-else>
+                        <a :href="`/admin/creditos/${client.credit.id}`" v-else>
                             <img src="../../../images/user-check.svg" alt="">
                         </a>
-                        <a @click.prevent="deleteClient(client, i)">
+                        <a @click.prevent="deleteClient(client, i)" v-if="false">
                             <img src="../../../images/delete.svg" alt="">
+                        </a>
+                        <a @click.prevent="viewCode(client.document)">
+                            <img src="../../../images/token.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="row justify-center middle-items" v-else>
+                        <a v-if="!client.credit" :href="`/admin/usuario-sesion/${client.document}`">
+                            <img src="../../../images/settings.svg" alt="">
                         </a>
                     </div>
                 </td>
@@ -39,7 +48,7 @@
             </tbody>
         </table>
         <div v-else-if="search">
-           <p>No hemos encontrado ningún registro con el término de búsqueda</p>
+            <p>No hemos encontrado ningún registro con el término de búsqueda</p>
         </div>
     </section>
 </template>
@@ -50,21 +59,21 @@
 
     export default {
         name: "Users",
-        props: ['clients', 'token','search','isAdmin'],
+        props: ['clients', 'token', 'search', 'isAnalysts'],
         data: function () {
             return {
                 clientsLocal: this.clients
             }
         },
         methods: {
-            stateCredit(credit){
+            stateCredit(credit) {
                 switch (credit.state) {
                     case 0:
                         return 'Por aprobar';
                     case 1:
                         return 'Aprobado';
                     case 2:
-                        return 'Denegado'
+                        return `Denegado - ${credit.reason.name}`
                 }
             },
             deleteClient(client, index) {
@@ -89,6 +98,10 @@
 
                     }
                 });
+            },
+            viewCode: function (client) {
+                axios.get(`/admin/codigo-usuario/${client}`)
+                    .then(({data}) => swal(`El código es : ${data.code}`, {icon: "success",}))
             }
         }
     }

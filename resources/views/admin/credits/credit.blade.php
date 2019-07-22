@@ -4,6 +4,8 @@
     <div class="container container-admin mt">
 
         <h2 class="is-text-center">Validar crédito</h2>
+        <validated-credit :user="{{auth()->user()->id}}" credit_id="{{$credit->id}}"
+                          :assigned="{{$credit->assigned_user}}"></validated-credit>
         <div class="row justify-between Request-form " method="post"
              action="{{route('creditsAdmin.update', $credit->id)}}">
             @csrf
@@ -33,16 +35,30 @@
 
 
             <h3 class="col-16 h-3 m-t-20">Referencias</h3>
-            <div class="row col-16">
+            <div class="row col-16 is-text-center">
+                <div class="col-5 m-b-12">
+                    <p></p>
+                </div>
+                <div class="col-5 m-b-12">
+                    <p><b> Nombre</b></p>
+                </div>
+
+                <div class="col-5 m-b-12">
+                    <p><b>Celular</b></p>
+                </div>
                 @foreach ($user->references as $reference)
-                    <div class="col-8 row">
-                        <h4 class="col-16">Referecia {{$loop->iteration}}</h4>
-                        <div class="col-8 m-b-12">
-                            <p><b>Nombre : </b>{{$reference->name}}</p>
+
+                    <div class="col-16 row ">
+
+                        <div class="col-5 m-b-12">
+                            <p>Referecia {{$loop->iteration}}</p>
+                        </div>
+                        <div class="col-5 m-b-12">
+                            <p>{{$reference->name}}</p>
                         </div>
 
-                        <div class="col-8 m-b-12">
-                            <p><b>Cedula : </b>{{$reference->phone}}</p>
+                        <div class="col-5 m-b-12">
+                            <p>{{$reference->phone}}</p>
                         </div>
                     </div>
                 @endforeach
@@ -70,3 +86,11 @@
     </div>
 
 @endsection
+<style scope lang="scss">
+    p {
+        text-transform: uppercase;
+    }
+    p b {
+        text-transform: capitalize;
+    }
+</style>

@@ -22,6 +22,8 @@ class UpdateUserRequest extends FormRequest
             'last_name' => 'required',
             'email' => ['required', 'email', Rule::unique('users')->ignore($this->user)],
             'document_type' => 'required',
+            'policyPinkLife' => 'required',
+            'privacyPolicy' => 'required',
             'document' => ['required', Rule::unique('users')->ignore($this->user)],
         ];
     }

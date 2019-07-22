@@ -21,7 +21,7 @@
 
         <form action="{{$update ? route('users.update', $user): route('users.store')}}"
               method="post" class="Request-form container">
-
+            @include('creditRequest.include.headerForm')
             @csrf
             @if ($update) @method('put') @endif
 
@@ -67,6 +67,31 @@
                         type="text"
                         id="document"
                         name="document">
+            </div>
+            <div class="Request-formGroup {{$errors->has('policyPinkLife') ? 'error':'' }}"
+                 data-errorMessage="Debes aceptar las politicas de Pink Life">
+                <p class="m-t-40 row middle-items">
+                    <input type="checkbox" id="policyPinkLife" name="policyPinkLife"
+                           value="1" {{old('policyPinkLife') || $user->document ?'checked':''}}>
+                    <label for="policyPinkLife">
+                        Acepto las politicas de uso del sitio de PINK LIFE SAS
+                        <a target="_blank" href="{{url('files/politicas-creditos-lilipink.pdf')}}"
+                           class="link-show">Descargar</a>
+                    </label>
+                </p>
+            </div>
+
+            <div class="Request-formGroup {{$errors->has('privacyPolicy') ? 'error':'' }}"
+                 data-errorMessage="Debes aceptar las politicas de privacidad">
+                <p class="m-t-20 row middle-items">
+                    <input type="checkbox" id="privacyPolicy" name="privacyPolicy"
+                           value="1" {{old('privacyPolicy') || $user->document ? 'checked':'' }}>
+                    <label for="privacyPolicy">
+                        Acepto las politicas de privacidad de datos
+                        <a target="_blank" href="{{url('files/politicas-datos-creditos-lilipink.pdf')}}"
+                           class="link-show">Descargar</a>
+                    </label>
+                </p>
             </div>
             @if (!$update)
                 {!! Captcha::display(['add-js' => false]) !!}

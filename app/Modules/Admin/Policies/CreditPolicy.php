@@ -12,6 +12,7 @@ class CreditPolicy
 
     public function update(User $user, Credit $credit): bool
     {
+
         if ($credit->validated || $user->isPoint()) {
             return false;
         }

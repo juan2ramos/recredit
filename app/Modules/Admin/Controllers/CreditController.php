@@ -22,7 +22,6 @@ class CreditController extends Controller
     public function show(Credit $credit)
     {
         $this->authorize('update', $credit);
-
         $user = $credit->user->load('client.point.city', 'files', 'references');
         $reasons = Reason::all();
 
@@ -32,6 +31,14 @@ class CreditController extends Controller
     public function update(UpdateCreditRequest $request, Credit $credit)
     {
         $request->updateCredit();
+    }
+
+    public function assigned(Request $request, Credit $credit)
+    {
+        $credit->assigned_user = $request->input('assigned');
+        $credit->save();
+
+        return ['succes' => 0];
     }
 
 }

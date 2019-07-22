@@ -7,11 +7,36 @@ use Illuminate\Database\Eloquent\Model;
 
 class Credit extends Model
 {
-    protected $fillable = ['priority', 'value', 'state', 'validated', 'finished_user', 'reasons_id'];
+    protected $casts = [
+        'created_at' => 'datetime:d-m-Y h:m:s',
+        'check_date' => 'datetime:d-m-Y h:m:s',
+    ];
+    protected $fillable = ['priority', 'state', 'validated', 'check_date',
+        'number_requested', 'finished_user', 'assigned_user', 'reviewed_user', 'reasons_id'];
 
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function reason()
+    {
+        return $this->belongsTo(Reason::class, 'reasons_id');
+    }
+
+    public function assigned()
+    {
+        return $this->belongsTo(User::class, 'assigned_user');
+    }
+
+    public function reviewed()
+    {
+        return $this->belongsTo(User::class, 'reviewed_user');
+    }
+
+    public function finished()
+    {
+        return $this->belongsTo(User::class, 'finished_user');
     }
 
 
@@ -30,4 +55,5 @@ class Credit extends Model
     {
         return $this->priority ? 'Alta' : 'Baja';
     }
+
 }

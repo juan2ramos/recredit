@@ -1,10 +1,6 @@
 <template>
     <form :action="route" @submit.prevent="sendCredit" method="post" class="Request-form container">
-
-        <p>Estás editando el usuario puedes
-            <a class="link-show" href="">Eliminar el usuario</a> o
-            <a class="link-show" href="">Continuar editando después</a>
-        </p>
+        <links-header :user="user"></links-header>
         <vue-dropzone
                 id="MyDropZoneFile"
                 :options="dropzoneOptions"
@@ -40,7 +36,7 @@
     import axios from 'axios'
 
     export default {
-        props: ['files', 'route'],
+        props: ['files', 'route', 'user'],
         name: 'Files',
         components: {
             vueDropzone: vue2Dropzone

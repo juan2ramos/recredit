@@ -24,6 +24,12 @@ Route::middleware(['auth', 'withoutCredit'])->group(function () {
         ->except(['show', 'create',]);
 
     Route::post('credit-finish', 'CreditController')->name('credit.created');
+
+    Route::get('delete-user/{action}', 'UserSessionController')
+        ->name('session.delete')
+        ->middleware('can:admin');
+
+
 });
 
 

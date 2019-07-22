@@ -2,88 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9dde37d-980e-4471-b7b8-b7b7dd75cffa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Helpers/Menu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Admin/Controllers/CreditController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Admin/Controllers/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Admin/Controllers/UserSessionController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Admin/Middleware/isAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Admin/Policies/CreditPolicy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Admin/Request/CreateUserAdminRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Admin/Request/UpdateCreditRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Admin/routes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Client/routes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/CreditController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/FileController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/ReferenceController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/Policies/FilePolicy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/Policies/ReferencePolicy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/CreditRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/FileRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/ReferenceRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Providers/MenuServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/folder-check.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Admin/CreditButton.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/CreditRequest/Files.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/credits/credit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/credits/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/general/headerBar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/general/nav.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/general/navUl.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/points/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/sliders/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/users/user.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/client/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Admin/Controllers/CodeRequestController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Admin/Controllers/FileController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Admin/Controllers/PointsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Admin/Request/FileRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Admin/Request/PointRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Admin/Request/UpdateUserRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/UserSessionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/files/politicas-creditos-lilipink.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/files/politicas-datos-creditos-lilipink.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/token.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Admin/ValidatedCredit.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/CreditRequest/LinksHeader.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/points/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/099abab8-17ba-472f-957b-93c6ffbf2e2e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/099abab8-17ba-472f-957b-93c6ffbf2e2e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Credit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Credit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/File.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/File.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Point.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Point.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Reference.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Reference.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/ClientController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Controllers/CreditController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Controllers/CreditController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Policies/CreditPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Policies/CreditPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Request/UpdateCreditRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Request/UpdateCreditRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/CreditRequestManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/CreditRequestManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/CreditRequest/Policies/ClientPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/Policies/ClientPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/CreditRequest/Policies/PolicyManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/Policies/PolicyManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/CreditRequest/Policies/UserPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/Policies/UserPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/ClientRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/ClientRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/ReferenceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/ReferenceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/CreateUserRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/CreateUserRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/CreditRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/CreditRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/UpdateUserRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/UpdateUserRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Modules/CreditRequest/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_13_142334_create_credits_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_07_13_142334_create_credits_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/CreateAdmin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Admin/CreateAdmin.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/CreditRequest/SMS.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/CreditRequest/SMS.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Admin/CreateAdmin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Admin/CreateAdmin.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Admin/CreditButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Admin/CreditButton.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Admin/FormUser.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Admin/FormUser.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Admin/Points.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Admin/Points.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Admin/Users.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Admin/Users.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Admin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Admin/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/CreditRequest/Files.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/CreditRequest/Files.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/CreditRequest/PointsAutocomplete.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/CreditRequest/PointsAutocomplete.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/CreditRequest/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/CreditRequest/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/FormUser.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Admin/FormUser.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Points.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Admin/Points.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Sliders.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Admin/Sliders.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Users.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Admin/Users.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Admin/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/services/UploadFile.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/services/UploadFile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/uploadFiles.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/uploadFiles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_general.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_general.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/plugins/dropzone.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/creditRequest/client.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/creditRequest/client.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/credits/credit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/credits/credit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/credits/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/credits/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/general/navUl.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/general/navUl.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/points/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/points/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/user.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/creditRequest/files.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/creditRequest/files.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/creditRequest/include/headerForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/creditRequest/include/headerForm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/creditRequest/include/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/creditRequest/include/nav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/creditRequest/references.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/creditRequest/references.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/creditRequest/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/creditRequest/user.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -124,6 +93,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="recreditos: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="recreditos: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="points: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -133,10 +109,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/PointsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="46" column="51" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+            <state relative-caret-position="522">
+              <caret line="47" column="3" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
+              <folding>
+                <element signature="e#49#85#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,28 +131,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ser</find>
-      <find>document</find>
-      <find>cred</find>
-      <find>CreditRequest</find>
-      <find>yo</find>
-      <find>credit</find>
-      <find>has</find>
-      <find>validarte</find>
-      <find>UpdateUserRequest</find>
-      <find>sendSMS</find>
-      <find>birth_city</find>
-      <find>cityOld</find>
-      <find>user</find>
-      <find>client</find>
-      <find>&lt;</find>
-      <find>refere</find>
-      <find>hasRed</find>
-      <find>files</find>
-      <find>addfile</find>
-      <find>id</find>
-      <find>isadmin</find>
-      <find>userD</find>
       <find>loadUserSession</find>
       <find>userClient</find>
       <find>jun</find>
@@ -181,7 +138,29 @@
       <find>images</find>
       <find>region</find>
       <find>ana</find>
+      <find>isad</find>
+      <find>isAnalysts</find>
+      <find>cli</find>
+      <find>addres</find>
+      <find>tipo</find>
+      <find>accione</find>
+      <find>accion</find>
+      <find>slider</find>
+      <find>delete</find>
+      <find>documen</find>
       <find>point</find>
+      <find>refere</find>
+      <find>pass</find>
+      <find>_id</find>
+      <find>po</find>
+      <find>superAdmin</find>
+      <find>dropz</find>
+      <find>error</find>
+      <find>credit</find>
+      <find>entrepreneur</find>
+      <find>createPoint</find>
+      <find>$update</find>
+      <find>client</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -193,57 +172,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/FileController.php" />
-        <option value="$PROJECT_DIR$/app/Modules/CreditRequest/Policies/FilePolicy.php" />
-        <option value="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/ReferenceRequest.php" />
-        <option value="$PROJECT_DIR$/resources/views/creditRequest/references.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_07_13_142334_create_credits_table.php" />
-        <option value="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/CreditRequest.php" />
-        <option value="$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/CreditRequestManager.php" />
-        <option value="$PROJECT_DIR$/resources/views/creditRequest/files.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/CreditRequest/routes.php" />
-        <option value="$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/CreditController.php" />
-        <option value="$PROJECT_DIR$/routes/admin.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/UserController.php" />
-        <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/app/Models/Credit.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/credits/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/js/components/CreditRequest/Files.vue" />
-        <option value="$PROJECT_DIR$/resources/sass/_general.scss" />
-        <option value="$PROJECT_DIR$/resources/js/app.js" />
-        <option value="$PROJECT_DIR$/resources/js/components/Admin/index.js" />
-        <option value="$PROJECT_DIR$/resources/js/components/Admin/FormUser.vue" />
-        <option value="$PROJECT_DIR$/resources/js/components/Admin/Sliders.vue" />
-        <option value="$PROJECT_DIR$/resources/js/components/Admin/Points.vue" />
-        <option value="$PROJECT_DIR$/resources/views/admin/credits/credit.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/Middleware/ApprovedCredit.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/Policies/UserPolicy.php" />
-        <option value="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/UpdateUserRequest.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/Controllers/UserSessionController.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/Controllers/CreditController.php" />
-        <option value="$PROJECT_DIR$/resources/js/components/Admin/CreditButton.vue" />
-        <option value="$PROJECT_DIR$/resources/js/components/Admin/CreateAdmin.vue" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_07_19_105445_add_assigned_user_credit.php" />
+        <option value="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/CreditRequest.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_07_13_142334_create_credits_table.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/routes.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Policies/CreditController.php" />
+        <option value="$PROJECT_DIR$/app/Policies/RolesPolicy.php" />
+        <option value="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
+        <option value="$PROJECT_DIR$/resources/images/token.svg" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Controllers/CodeRequestController.php" />
+        <option value="$PROJECT_DIR$/resources/js/components/CreditRequest/PointsAutocomplete.vue" />
+        <option value="$PROJECT_DIR$/resources/js/components/Admin/CreditButton.vue" />
         <option value="$PROJECT_DIR$/app/Modules/Admin/Request/UpdateCreditRequest.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/Request/CreateUserAdminRequest.php" />
-        <option value="$PROJECT_DIR$/app/Modules/CreditRequest/Middleware/isAdmin.php" />
-        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
-        <option value="$PROJECT_DIR$/resources/views/client/dashboard.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/general/navUl.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Client/routes.php" />
-        <option value="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/Middleware/isAdmin.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/099abab8-17ba-472f-957b-93c6ffbf2e2e/console.sql" />
-        <option value="$PROJECT_DIR$/app/Models/Client.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/Controllers/UserController.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/resources/views/creditRequest/client.blade.php" />
-        <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/app/Modules/Admin/Policies/CreditPolicy.php" />
-        <option value="$PROJECT_DIR$/resources/js/components/Admin/Users.vue" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Controllers/CreditController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/credits/credit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/general/navUl.blade.php" />
+        <option value="$PROJECT_DIR$/resources/js/components/Admin/Users.vue" />
+        <option value="$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/ReferenceController.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Request/UpdateUserRequest.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Request/UpdateFileRequest.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Request/FileRequest.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/routes.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Controllers/FileController.php" />
+        <option value="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/CreateUserRequest.php" />
+        <option value="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/UpdateUserRequest.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/users/user.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/resources/js/components/Admin/FormUser.vue" />
+        <option value="$PROJECT_DIR$/app/Models/Credit.php" />
+        <option value="$PROJECT_DIR$/resources/views/creditRequest/user.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/CreditRequestManager.php" />
+        <option value="$PROJECT_DIR$/resources/js/components/CreditRequest/index.js" />
+        <option value="$PROJECT_DIR$/resources/js/components/Admin/ValidatedCredit.vue" />
+        <option value="$PROJECT_DIR$/resources/views/creditRequest/include/headerForm.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/UserSessionController.php" />
+        <option value="$PROJECT_DIR$/resources/js/components/CreditRequest/LinksHeader.vue" />
+        <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/resources/views/creditRequest/files.blade.php" />
+        <option value="$PROJECT_DIR$/resources/js/components/CreditRequest/Files.vue" />
+        <option value="$PROJECT_DIR$/app/Modules/CreditRequest/routes.php" />
+        <option value="$PROJECT_DIR$/resources/js/components/Admin/CreateAdmin.vue" />
+        <option value="$PROJECT_DIR$/app/Models/Point.php" />
+        <option value="$PROJECT_DIR$/resources/views/creditRequest/client.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/points/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/points/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/images/check.svg" />
+        <option value="$PROJECT_DIR$/resources/js/components/Admin/Points.vue" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Request/PointRequest.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Controllers/PointsController.php" />
       </list>
     </option>
   </component>
@@ -346,7 +325,7 @@
       <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -356,7 +335,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -378,40 +356,25 @@
             <path>
               <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
               <item name="recreditos" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recreditos" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-              <item name="Policies" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
               <item name="recreditos" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
               <item name="recreditos" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recreditos" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="creditRequest" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -419,26 +382,26 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/client" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Modules/Admin/Request" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/client" />
-      <recent name="$PROJECT_DIR$/app/Modules/Admin" />
-      <recent name="$PROJECT_DIR$/app/Modules/CreditRequest/Middleware" />
-      <recent name="$PROJECT_DIR$/app/Modules/Admin/Request" />
-      <recent name="$PROJECT_DIR$/app/Modules/Admin/Controllers" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/files" />
       <recent name="$PROJECT_DIR$/app/Modules/Admin/Request" />
       <recent name="$PROJECT_DIR$/resources/js/components/Admin" />
       <recent name="$PROJECT_DIR$/resources/js/components" />
       <recent name="$PROJECT_DIR$/app/Modules/Admin/Controllers" />
-      <recent name="$PROJECT_DIR$/app/Modules/admin" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Modules/Admin/Request" />
+      <recent name="$PROJECT_DIR$/resources/views/admin/points" />
+      <recent name="$PROJECT_DIR$/app/Modules/Admin/Controllers" />
+      <recent name="$PROJECT_DIR$/app/Modules/CreditRequest/Controllers" />
+      <recent name="$PROJECT_DIR$/resources/views/client" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -496,20 +459,24 @@
       <workItem from="1562959828227" duration="20999000" />
       <workItem from="1563017956757" duration="65428000" />
       <workItem from="1563187124422" duration="19675000" />
-      <workItem from="1563217468113" duration="63701000" />
+      <workItem from="1563217468113" duration="64178000" />
+      <workItem from="1563362134963" duration="80000" />
+      <workItem from="1563379448940" duration="876000" />
+      <workItem from="1563549268038" duration="6639000" />
+      <workItem from="1563600260108" duration="45657000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171833000" />
+    <option name="totallyTimeSpent" value="225562000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32407406" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32333332" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -517,16 +484,16 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.28333333" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.17444444" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32962963" />
-      <window_info anchor="right" id="Database" order="0" weight="0.32916668" />
+      <window_info anchor="right" id="Database" order="0" weight="0.2701389" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="4" sideWeight="0.49351853" weight="0.27083334" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="4" sideWeight="0.4909688" weight="0.27083334" />
       <window_info anchor="right" id="Structure" order="5" sideWeight="0.5011111" side_tool="true" weight="0.33333334" />
-      <window_info anchor="right" id="npm" order="6" sideWeight="0.50648147" side_tool="true" weight="0.27135417" />
+      <window_info anchor="right" id="npm" order="6" sideWeight="0.5090312" side_tool="true" weight="0.27083334" />
       <window_info anchor="right" id="Favorites" order="7" sideWeight="0.5011111" side_tool="true" weight="0.33333334" />
     </layout>
   </component>
@@ -538,400 +505,406 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/User.php</url>
-          <line>12</line>
+          <line>11</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/index.js">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/general/navUl.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/FormUser.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="155" column="49" selection-start-line="155" selection-start-column="43" selection-end-line="155" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/Sliders.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/Points.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://099abab8-17ba-472f-957b-93c6ffbf2e2e/schema/recreditos/table/reasons">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="d8774fcc-7d2e-48b8-96de-1a647d74b3cd">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/CreditRequest/Files.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
-          <caret line="93" column="23" lean-forward="true" selection-start-line="76" selection-start-column="16" selection-end-line="93" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/credits/credit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="62" column="26" lean-forward="true" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/CreditController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#57#93#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Requests/CreditRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Credit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding>
-            <element signature="e#30#43#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_13_142334_create_credits_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://099abab8-17ba-472f-957b-93c6ffbf2e2e/schema/recreditos/table/credits">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="d8774fcc-7d2e-48b8-96de-1a647d74b3cd">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Policies/FilePolicy.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Middleware/ApprovedCredit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="17" column="31" lean-forward="true" selection-start-line="12" selection-end-line="17" selection-end-column="31" />
-          <folding>
-            <element signature="e#48#61#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Policies/PostPolicy.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="53" column="3" selection-start-line="53" selection-start-column="3" selection-end-line="56" selection-end-column="5" />
-          <folding>
-            <element signature="e#32#45#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Requests/ClientRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Requests/UpdateUserRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/UserSessionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/CreditButton.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/CreditController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding>
-            <element signature="e#50#72#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/users/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="1009">
+          <caret line="67" column="7" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Request/UpdateCreditRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Request/CreateUserAdminRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="51" column="13" lean-forward="true" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+        <state relative-caret-position="474">
+          <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
           <folding>
-            <element signature="e#45#66#0#PHP" expanded="true" />
+            <element signature="e#45#88#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/CreateAdmin.vue">
+    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Requests/ClientRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="531">
-          <caret line="123" column="42" lean-forward="true" selection-start-line="123" selection-start-column="42" selection-end-line="123" selection-end-column="42" />
+          <caret line="37" column="35" lean-forward="true" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Middleware/isAdmin.php">
+    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Requests/CreditRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-40" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Middleware/WithoutCredit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="58" column="71" lean-forward="true" selection-start-line="58" selection-start-column="71" selection-end-line="58" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/client/dashboard.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/admin.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/general/navUl.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/general/nav.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Client/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/RouteServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="75" column="40" lean-forward="true" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Requests/CreateUserRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="38" column="46" lean-forward="true" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/099abab8-17ba-472f-957b-93c6ffbf2e2e/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://099abab8-17ba-472f-957b-93c6ffbf2e2e/schema/recreditos/table/permissions">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="d8774fcc-7d2e-48b8-96de-1a647d74b3cd">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
+        <state relative-caret-position="-234">
           <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Point.php">
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Request/UpdateUserRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="390">
+          <caret line="46" column="37" lean-forward="true" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
           <folding>
-            <element signature="e#49#69#0#PHP" expanded="true" />
+            <element signature="e#45#58#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://099abab8-17ba-472f-957b-93c6ffbf2e2e/schema/recreditos/table/clients">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="d8774fcc-7d2e-48b8-96de-1a647d74b3cd">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://099abab8-17ba-472f-957b-93c6ffbf2e2e/schema/recreditos/table/points">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="d8774fcc-7d2e-48b8-96de-1a647d74b3cd">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/creditRequest/client.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Requests/ReferenceRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+        <state relative-caret-position="320">
+          <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="das://099abab8-17ba-472f-957b-93c6ffbf2e2e/schema/recreditos/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="d8774fcc-7d2e-48b8-96de-1a647d74b3cd">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Middleware/isAdmin.php">
+    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/ReferenceController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        <state relative-caret-position="380">
+          <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/creditRequest/references.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="103" column="30" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="30" />
+        <state relative-caret-position="522">
+          <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Request/UpdateFileRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Requests/FileRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="28" column="44" lean-forward="true" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="32" />
           <folding>
-            <element signature="e#23#45#0#PHP" expanded="true" />
+            <element signature="e#33#55#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Policies/CreditPolicy.php">
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/Access/AuthorizesRequests.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="300">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Request/FileRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="723">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/FileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/FileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
           <folding>
-            <element signature="e#46#68#0#PHP" expanded="true" />
+            <element signature="e#50#86#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/Users.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="22" column="78" selection-start-line="22" selection-start-column="78" selection-end-line="22" selection-end-column="78" />
+        <state relative-caret-position="899">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/credits/credit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="46" column="51" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+        <state relative-caret-position="182">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Requests/UpdateUserRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="890">
+          <caret line="30" column="37" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Requests/CreateUserRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="37" column="46" lean-forward="true" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+          <folding>
+            <element signature="e#54#67#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="48" column="80" selection-start-line="48" selection-start-column="80" selection-end-line="48" selection-end-column="80" />
+          <folding>
+            <element signature="e#49#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Credit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="e#30#43#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/creditRequest/user.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/CreditRequest/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/CreditButton.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="42" column="67" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/ValidatedCredit.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding>
+            <element signature="e#219#245#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/CreditRequest/PointsAutocomplete.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/CreditRequestManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="81" column="47" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="47" />
+          <folding>
+            <element signature="e#59#72#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://099abab8-17ba-472f-957b-93c6ffbf2e2e/schema/recreditos/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="30788593-f599-48c1-a567-0ce9e5642ad9">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="44" column="11" lean-forward="true" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
+          <folding>
+            <element signature="e#23#45#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/CreditRequest/Files.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/CreditRequest/LinksHeader.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/creditRequest/files.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/creditRequest/include/headerForm.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="1" column="80" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/UserSessionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+          <folding>
+            <element signature="e#57#93#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Policies/RolesPolicy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="804">
+          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="18" column="44" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/FormUser.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6790">
+          <caret line="196" column="20" selection-start-line="196" selection-start-column="19" selection-end-line="196" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/CreateAdmin.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1409">
+          <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/users/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Point.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/creditRequest/client.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="64" column="84" lean-forward="true" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/users/user.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="10" column="41" lean-forward="true" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/points/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="70" column="80" selection-start-line="70" selection-start-column="80" selection-end-line="70" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/points/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/Points.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/images/check.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="das://099abab8-17ba-472f-957b-93c6ffbf2e2e/schema/recreditos/table/points">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="30788593-f599-48c1-a567-0ce9e5642ad9">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Request/PointRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="e#45#66#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/PointsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="47" column="3" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
+          <folding>
+            <element signature="e#49#85#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

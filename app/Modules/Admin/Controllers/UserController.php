@@ -4,8 +4,8 @@ namespace App\Modules\Admin\Controllers;
 
 use App\Models\City;
 use App\Models\Point;
-use App\Models\Region;
 use App\Modules\Admin\Request\CreateUserAdminRequest;
+use App\Modules\Admin\Request\UpdateUserRequest;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -20,7 +20,7 @@ class UserController extends Controller
             return view('admin.dashboard', ['clients' => collect()]);
         }
 
-        $clients = User::role(['Credit','Entrepreneur'])->search($request->search)->with('credit')->take(40)->get();
+        $clients = User::role(['Credit', 'Entrepreneur'])->search($request->search)->with('credit.reason')->take(40)->get();
 
         return view('admin.dashboard', compact('clients'));
 
@@ -29,6 +29,7 @@ class UserController extends Controller
 
     public function create()
     {
+        $this->authorize('superAdmin');
         $cities = City::all('name', 'id');
         $points = Point::all();
 
@@ -44,12 +45,12 @@ class UserController extends Controller
 
     public function show(User $user)
     {
-        $user->load(['userClient.point.region', 'userReferences', 'userFiles', 'credit']);
-
-        $regions = Region::all('name', 'id');
+        $user->load(['client.point.city', 'references', 'files', 'credit']);
+        $credit = $user->credit->load('reason', 'assigned', 'reviewed','finished');
+        $cities = City::all('name', 'id');
         $points = Point::all();
 
-        return view('admin.users.user', compact('user', 'points', 'regions'));
+        return view('admin.users.user', compact('user', 'points', 'cities', 'credit'));
     }
 
     public function edit($id)
@@ -57,9 +58,10 @@ class UserController extends Controller
         //
     }
 
-    public function update(Request $request, $id)
+    public function update(UpdateUserRequest $request, User $user)
     {
-        //
+        $request->updateUser($user);
+        return redirect()->back();
     }
 
 

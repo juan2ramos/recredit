@@ -20,7 +20,7 @@
             </a>
         </li>
     @endif
-    @if(auth()->user()->isSuperAdmin())
+    @if(auth()->user()->isAnalysts())
         <li>
             <a href="{{route('creditsAdmin.index')}}" class=" {{\Menu::active('admin/creditos')}}">
                 <div class="row middle-items">
@@ -65,25 +65,6 @@
 
 
 
-        <li>
-            <a href="{{route('sliders.index')}}" class=" {{\Menu::active('admin/sliders')}}">
-                <div class="row middle-items">
-                    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                         xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Envíos" transform="translate(-76.000000, -155.000000)">
-                                <g id="slideshow-line" transform="translate(76.000000, 155.000000)">
-                                    <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="16" height="16"></rect>
-                                    <path d="M8.7,13.6 L8.7,15 L7.3,15 L7.3,13.6 L1.7,13.6 C1.31340068,13.6 1,13.2865993 1,12.9 L1,3.1 L15,3.1 L15,12.9 C15,13.2865993 14.6865993,13.6 14.3,13.6 L8.7,13.6 Z M2.4,12.2 L13.6,12.2 L13.6,4.5 L2.4,4.5 L2.4,12.2 Z M8.7,5.9 L12.2,5.9 L12.2,7.3 L8.7,7.3 L8.7,5.9 Z M8.7,8.7 L12.2,8.7 L12.2,10.1 L8.7,10.1 L8.7,8.7 Z M5.9,5.9 L5.9,8 L8,8 C8,9.15979797 7.05979797,10.1 5.9,10.1 C4.74020203,10.1 3.8,9.15979797 3.8,8 C3.8,6.84020203 4.74020203,5.9 5.9,5.9 Z M1,1 L15,1 L15,2.4 L1,2.4 L1,1 Z"
-                                          id="Shape" fill="#94979B" fill-rule="nonzero"></path>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                    <span>Slider</span>
-                </div>
-            </a>
-        </li>
 
 
     @endif

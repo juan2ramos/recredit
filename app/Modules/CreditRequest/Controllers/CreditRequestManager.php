@@ -6,6 +6,7 @@ namespace App\Modules\CreditRequest\Controllers;
 
 use App\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
 
 trait CreditRequestManager
 {
@@ -17,7 +18,7 @@ trait CreditRequestManager
             return;
         }
 
-        if (!Auth::check() ) {
+        if (!Auth::check()) {
             Auth::login($user);
         }
 
@@ -66,8 +67,26 @@ trait CreditRequestManager
 
     protected function files()
     {
-        $user = Auth::user()->isAdmin() ? session('userProcess') :  Auth::user();
+        $user = Auth::user()->isAdmin() ? session('userProcess') : Auth::user();
 
         return $user->files()->get();
+    }
+
+    protected function deleteUserProcess(Request $request)
+    {
+        $user = $request->session()->get('userProcess');
+        $user->delete();
+        return $this->deleteSession($request);
+    }
+
+    protected function deleteSessionUserProcess(Request $request)
+    {
+        return $this->deleteSession($request);
+    }
+
+    private function deleteSession($request)
+    {
+        $request->session()->forget('userProcess');
+        return redirect()->route('home');
     }
 }
