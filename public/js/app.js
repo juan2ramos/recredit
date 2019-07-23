@@ -2325,7 +2325,7 @@ __webpack_require__.r(__webpack_exports__);
       dropzoneOptions: {
         url: '/admin/files',
         thumbnailWidth: 150,
-        maxFilesize: 0.5,
+        maxFilesize: 5,
         paramName: 'files',
         dictDefaultMessage: '<div class="dropzone-buttonMessage">Selecciona los documentos</div>',
         headers: {
@@ -2822,7 +2822,7 @@ __webpack_require__.r(__webpack_exports__);
       dropzoneOptions: {
         url: '/archivos',
         thumbnailWidth: 150,
-        maxFilesize: 0.5,
+        maxFilesize: 5,
         paramName: 'files',
         dictDefaultMessage: '<div class="dropzone-buttonMessage">Selecciona tus documentos</div>' + '<div class="dropzone-message">(FOTOCOPIA DE LA CÉDULA AL 150%)</div>',
         headers: {
