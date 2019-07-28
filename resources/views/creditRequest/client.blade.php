@@ -24,7 +24,11 @@
             @if ($update) @method('put') @endif
             @include('creditRequest.include.headerForm')
             @if(Auth::user()->isPoint())
-                <input type="hidden" name="point" value="{{Auth::user()->point->id}}">
+                <div class="m-t-40">
+                    <label for="">Tienda</label>
+                    <input type="hidden" name="point" value="{{Auth::user()->point->id}}">
+                    <input type="text" disabled value="{{Auth::user()->point->name}}">
+                </div>
             @else
                 <points-autocomplete
                         :cities="{{$cities}}"
