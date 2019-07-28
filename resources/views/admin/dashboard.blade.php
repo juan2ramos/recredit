@@ -6,9 +6,6 @@
         <div class="row justify-between middle-items">
             <div>
                 <h3 class="">Usuarios</h3>
-                @if (Auth::user()->isSuperAdmin())
-                    <a href="{{route('usersAdmin.create')}}" class="link-show">Crear usuario admin</a>
-                @endif
 
             </div>
             <div class="row middle-items">
