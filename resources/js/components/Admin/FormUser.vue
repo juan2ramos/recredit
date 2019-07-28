@@ -9,7 +9,7 @@
                     <p><b>Estado del credito:</b> {{credit.state === 1 ? 'Aprobado':'Denegado'}}</p>
                     <p v-if="credit.reasons_id"><b>Denegado por:</b> {{credit.reason.name}}</p>
                     <p><b>Fecha de solicitud: </b>{{credit.created_at}}</p>
-                    <p><b>Fecha de validación: </b>{{credit.check_date}}</p>
+                    <p><b>Fecha de cierre: </b>{{credit.check_date}}</p>
                 </div>
                 <div class="col-8">
                     <p><b>Número de solicitudes:</b> {{credit.number_requested}}</p>
