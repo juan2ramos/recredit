@@ -52,7 +52,7 @@
                 <select name="document_type" id="document_type">
                     <option value="">Tipo de documento</option>
                     <option {{old('document_type',$user->document_type) == 'cédula' ? 'selected' : '' }} value="cédula">
-                        Cédula
+                        Cédula de ciudadanía
                     </option>
                     <option {{old('document_type',$user->document_type) == 'cédula de extranjería' ? 'selected' : '' }} value="cédula de extranjería">
                         Cédula de extranjería
