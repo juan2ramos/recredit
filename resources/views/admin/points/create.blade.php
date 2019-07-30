@@ -13,7 +13,7 @@
                 <h2>Crear tienda</h2>
 
                 <div class="row">
-                    <a class="Link-secondary" href="{{route('points.create')}}">Crear una ciudad</a>
+                    <a class="Link-secondary" href="{{route('cities.index')}}">Ver ciudades</a>
                     @if ($update )
                         <a class="Link-secondary" href="{{route('points.create')}}">Crear una tienda</a>
                     @endif
@@ -79,5 +79,6 @@
 
             </form>
         </div>
+
     </div>
 @endsection

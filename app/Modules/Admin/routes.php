@@ -23,6 +23,10 @@ Route::resource('tiendas', 'PointsController')
 Route::resource('files', 'FileController')
     ->names('filesAdmin');
 
+Route::resource('ciudades', 'CityController')
+    ->names('cities')
+    ->parameters(['ciudades' => 'city']);
+
 
 
 

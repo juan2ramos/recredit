@@ -49,8 +49,8 @@ class ClientController extends Controller
 
     private function view($client)
     {
-        $cities = City::all();
-        $points = Point::all();
+        $cities = City::orderBy('name')->get();
+        $points = Point::orderBy('name')->get();
 
         $city = ($client)->point ? $client->point->city->id : '';
 

@@ -3961,6 +3961,11 @@ th {
   }
 }
 
+select option {
+  background: white;
+  color: #000;
+}
+
 .autocomplete__box {
   background: none !important;
   border: none !important;

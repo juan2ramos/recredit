@@ -162,7 +162,7 @@ th {
   cursor: pointer;
 }
 
-.Link-primary{
+.Link-primary {
   background: var(--primary-color);
   color: white;
 }
@@ -181,4 +181,9 @@ th {
   @include respond-to(medium) {
     padding-right: 8px;
   }
+}
+
+select option{
+  background: white;
+  color: #000;
 }

@@ -1933,7 +1933,7 @@ __webpack_require__.r(__webpack_exports__);
         if (willDelete) {
           _this.clientsLocal.splice(index, 1);
 
-          axios__WEBPACK_IMPORTED_MODULE_1___default.a["delete"]("/admin/categorias/".concat(category.id)).then(function (response) {
+          axios__WEBPACK_IMPORTED_MODULE_1___default.a["delete"]("/admin/users/".concat(category.id)).then(function (response) {
             if (response.data.success) {
               _this.categoriesLocal.splice(index, 1);
 
@@ -4710,7 +4710,7 @@ var render = function() {
             _c(
               "tbody",
               _vm._l(_vm.adminsLocal, function(admin, i) {
-                return _c("tr", [
+                return _c("tr", { key: admin.id }, [
                   _c("td", { attrs: { width: "20%" } }, [
                     _vm._v(_vm._s(admin.name))
                   ]),
@@ -5362,7 +5362,7 @@ var render = function() {
             ]),
             _vm._v(" "),
             _c("p", [
-              _c("b", [_vm._v("Fecha de validación: ")]),
+              _c("b", [_vm._v("Fecha de cierre: ")]),
               _vm._v(_vm._s(_vm.credit.check_date))
             ])
           ]),

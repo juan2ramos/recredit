@@ -48,8 +48,8 @@ class UserController extends Controller
     {
         $user->load(['client.point.city', 'references', 'files', 'credit']);
         $credit = $user->credit->load('reason', 'assigned', 'reviewed','finished');
-        $cities = City::all('name', 'id');
-        $points = Point::all();
+        $cities = City::orderBy('name')->get();
+        $points = Point::orderBy('name')->get();
 
         return view('admin.users.user', compact('user', 'points', 'cities', 'credit'));
     }
