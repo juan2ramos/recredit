@@ -15,7 +15,7 @@
                 <div class="File-delete" @click="deleteFile(file, index)">x</div>
                 <div class="m-auto is-text-center">
                     <div class="m-auto is-text-center">
-                        <img width="80px" src="../../../images/file.svg" alt="">
+                        <img width="80px" :src="file.temporaryUrl" alt="">
                     </div>
                 </div>
                 <p class="is-text-center">{{file.name}}<br>
@@ -47,6 +47,7 @@
                 filesLocal: this.files,
                 dropzoneOptions: {
                     url: '/archivos',
+                    acceptedFiles: 'image/*',
                     thumbnailWidth: 150,
                     maxFilesize: 5,
                     paramName: 'files',

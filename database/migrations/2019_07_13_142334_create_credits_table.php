@@ -21,6 +21,7 @@ class CreateCreditsTable extends Migration
             $table->boolean('validated')->default(0);
             $table->dateTime('check_date')->nullable();
             $table->integer('number_requested')->default(1);
+            $table->string('value')->default('400000');
 
             $table->unsignedBigInteger('reasons_id')->nullable();
 

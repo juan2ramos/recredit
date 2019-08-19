@@ -69,7 +69,7 @@
                     <div class="col-4 m-b-12">
                         <figure class="is-text-center">
                             <a href="{{$file->temporaryUrl}}" target="_blank">
-                                <img width="80px" src="{{asset('images/file.svg')}}" alt="">
+                                <img width="80px" src="{{$file->temporaryUrl}}" alt="">
                                 <p class="m-t-8">{{$file->name}} {{$file->metaData['extension']}}</p>
                             </a>
                         </figure>

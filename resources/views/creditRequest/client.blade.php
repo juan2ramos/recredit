@@ -61,7 +61,7 @@
             ></sms>
 
             <div class="Request-formGroup">
-                <label for="phone">Teléfono (opcional)</label>
+                <label for="phone">Teléfono fijo</label>
                 <input value="{{old('phone',$client->phone)}}" type="text" id="phone" name="phone">
             </div>
 

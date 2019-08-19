@@ -2407,6 +2407,29 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -2430,6 +2453,7 @@ __webpack_require__.r(__webpack_exports__);
         url: '/admin/files',
         thumbnailWidth: 150,
         maxFilesize: 5,
+        acceptedFiles: 'image/*',
         paramName: 'files',
         dictDefaultMessage: '<div class="dropzone-buttonMessage">Selecciona los documentos</div>',
         headers: {
@@ -2925,6 +2949,7 @@ __webpack_require__.r(__webpack_exports__);
       filesLocal: this.files,
       dropzoneOptions: {
         url: '/archivos',
+        acceptedFiles: 'image/*',
         thumbnailWidth: 150,
         maxFilesize: 5,
         paramName: 'files',
@@ -3287,7 +3312,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\ninput[data-v-6943813a] {\n    text-transform: uppercase;\n}\n.dropzone[data-v-6943813a] {\n    width: 100%;\n}\n", ""]);
+exports.push([module.i, "\ninput[data-v-6943813a] {\n    text-transform: uppercase;\n}\n.dropzone[data-v-6943813a] {\n    width: 100%;\n}\np[data-v-6943813a] {\n    text-transform: uppercase;\n}\n", ""]);
 
 // exports
 
@@ -5392,10 +5417,16 @@ var render = function() {
             _c("div", { staticClass: "Form-labelContent" }, [
               _c("label", { attrs: { for: "name" } }, [_vm._v("Nombre")]),
               _vm._v(" "),
-              _c("input", {
-                attrs: { type: "text", name: "name", id: "name" },
-                domProps: { value: _vm.user.name }
-              })
+              _vm.superAdmin
+                ? _c("input", {
+                    attrs: { type: "text", name: "name", id: "name" },
+                    domProps: { value: _vm.user.name }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.superAdmin
+                ? _c("p", [_vm._v(_vm._s(_vm.user.name))])
+                : _vm._e()
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "Form-labelContent" }, [
@@ -5403,48 +5434,54 @@ var render = function() {
                 _vm._v("Tipo de documento")
               ]),
               _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
+              _vm.superAdmin
+                ? _c(
+                    "select",
                     {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.selectedUser,
-                      expression: "selectedUser"
-                    }
-                  ],
-                  staticClass: "Request-formSelect",
-                  attrs: { name: "document_type", id: "document_type" },
-                  on: {
-                    change: function($event) {
-                      var $$selectedVal = Array.prototype.filter
-                        .call($event.target.options, function(o) {
-                          return o.selected
-                        })
-                        .map(function(o) {
-                          var val = "_value" in o ? o._value : o.value
-                          return val
-                        })
-                      _vm.selectedUser = $event.target.multiple
-                        ? $$selectedVal
-                        : $$selectedVal[0]
-                    }
-                  }
-                },
-                [
-                  _c("option", { attrs: { value: "null", selected: "" } }, [
-                    _vm._v("Select a name")
-                  ]),
-                  _vm._v(" "),
-                  _vm._l(_vm.typeDocument, function(option) {
-                    return _c("option", { domProps: { value: option } }, [
-                      _vm._v(_vm._s(option))
-                    ])
-                  })
-                ],
-                2
-              )
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.selectedUser,
+                          expression: "selectedUser"
+                        }
+                      ],
+                      staticClass: "Request-formSelect",
+                      attrs: { name: "document_type", id: "document_type" },
+                      on: {
+                        change: function($event) {
+                          var $$selectedVal = Array.prototype.filter
+                            .call($event.target.options, function(o) {
+                              return o.selected
+                            })
+                            .map(function(o) {
+                              var val = "_value" in o ? o._value : o.value
+                              return val
+                            })
+                          _vm.selectedUser = $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        }
+                      }
+                    },
+                    [
+                      _c("option", { attrs: { value: "null", selected: "" } }, [
+                        _vm._v("Select a name")
+                      ]),
+                      _vm._v(" "),
+                      _vm._l(_vm.typeDocument, function(option) {
+                        return _c("option", { domProps: { value: option } }, [
+                          _vm._v(_vm._s(option))
+                        ])
+                      })
+                    ],
+                    2
+                  )
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.superAdmin
+                ? _c("p", [_vm._v(_vm._s(_vm.selectedUser))])
+                : _vm._e()
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "Form-labelContent" }, [
@@ -5452,10 +5489,16 @@ var render = function() {
                 _vm._v("Correo Electrónico")
               ]),
               _vm._v(" "),
-              _c("input", {
-                attrs: { type: "email", name: "email", id: "email" },
-                domProps: { value: _vm.user.email }
-              })
+              _vm.superAdmin
+                ? _c("input", {
+                    attrs: { type: "email", name: "email", id: "email" },
+                    domProps: { value: _vm.user.email }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.superAdmin
+                ? _c("p", [_vm._v(_vm._s(_vm.user.email))])
+                : _vm._e()
             ])
           ]),
           _vm._v(" "),
@@ -5465,10 +5508,16 @@ var render = function() {
                 _vm._v("Apellido")
               ]),
               _vm._v(" "),
-              _c("input", {
-                attrs: { type: "text", name: "last_name", id: "last_name" },
-                domProps: { value: _vm.user.last_name }
-              })
+              _vm.superAdmin
+                ? _c("input", {
+                    attrs: { type: "text", name: "last_name", id: "last_name" },
+                    domProps: { value: _vm.user.last_name }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.superAdmin
+                ? _c("p", [_vm._v(_vm._s(_vm.user.last_name))])
+                : _vm._e()
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "Form-labelContent" }, [
@@ -5476,10 +5525,16 @@ var render = function() {
                 _vm._v("Documento")
               ]),
               _vm._v(" "),
-              _c("input", {
-                attrs: { type: "text", name: "document", id: "document" },
-                domProps: { value: _vm.user.document }
-              })
+              _vm.superAdmin
+                ? _c("input", {
+                    attrs: { type: "text", name: "document", id: "document" },
+                    domProps: { value: _vm.user.document }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.superAdmin
+                ? _c("p", [_vm._v(_vm._s(_vm.user.document))])
+                : _vm._e()
             ]),
             _vm._v(" "),
             _vm._m(0)
@@ -5497,134 +5552,186 @@ var render = function() {
                 _vm._v("Ciudad de residencia")
               ]),
               _vm._v(" "),
-              _c("input", {
-                attrs: {
-                  type: "text",
-                  name: "residency_city",
-                  id: "residency_city"
-                },
-                domProps: { value: _vm.user.client.residency_city }
-              })
+              _vm.superAdmin
+                ? _c("input", {
+                    attrs: {
+                      type: "text",
+                      name: "residency_city",
+                      id: "residency_city"
+                    },
+                    domProps: { value: _vm.user.client.residency_city }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.superAdmin
+                ? _c("p", [_vm._v(_vm._s(_vm.user.client.residency_city))])
+                : _vm._e()
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "Form-labelContent" }, [
               _c("label", { attrs: { for: "address" } }, [_vm._v("Dirección")]),
               _vm._v(" "),
-              _c("input", {
-                attrs: { type: "text", name: "address", id: "address" },
-                domProps: { value: _vm.user.client.address }
-              })
+              _vm.superAdmin
+                ? _c("input", {
+                    attrs: { type: "text", name: "address", id: "address" },
+                    domProps: { value: _vm.user.client.address }
+                  })
+                : _vm._e()
             ]),
+            _vm._v(" "),
+            !_vm.superAdmin
+              ? _c("p", [_vm._v(_vm._s(_vm.user.client.address))])
+              : _vm._e(),
             _vm._v(" "),
             _c("div", { staticClass: "Form-labelContent" }, [
               _c("label", { attrs: { for: "birth_city" } }, [_vm._v("Ciudad")]),
               _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
+              _vm.superAdmin
+                ? _c(
+                    "select",
                     {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.selectedCity,
-                      expression: "selectedCity"
-                    }
-                  ],
-                  staticClass: "Request-formSelect",
-                  attrs: { id: "birth_city" },
-                  on: {
-                    change: [
-                      function($event) {
-                        var $$selectedVal = Array.prototype.filter
-                          .call($event.target.options, function(o) {
-                            return o.selected
-                          })
-                          .map(function(o) {
-                            var val = "_value" in o ? o._value : o.value
-                            return val
-                          })
-                        _vm.selectedCity = $event.target.multiple
-                          ? $$selectedVal
-                          : $$selectedVal[0]
-                      },
-                      _vm.change
-                    ]
-                  }
-                },
-                _vm._l(_vm.cities, function(city) {
-                  return _c("option", { domProps: { value: city.id } }, [
-                    _vm._v(_vm._s(city.name))
-                  ])
-                }),
-                0
-              )
-            ])
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.selectedCity,
+                          expression: "selectedCity"
+                        }
+                      ],
+                      staticClass: "Request-formSelect",
+                      attrs: { id: "birth_city" },
+                      on: {
+                        change: [
+                          function($event) {
+                            var $$selectedVal = Array.prototype.filter
+                              .call($event.target.options, function(o) {
+                                return o.selected
+                              })
+                              .map(function(o) {
+                                var val = "_value" in o ? o._value : o.value
+                                return val
+                              })
+                            _vm.selectedCity = $event.target.multiple
+                              ? $$selectedVal
+                              : $$selectedVal[0]
+                          },
+                          _vm.change
+                        ]
+                      }
+                    },
+                    _vm._l(_vm.cities, function(city) {
+                      return _c("option", { domProps: { value: city.id } }, [
+                        _vm._v(_vm._s(city.name))
+                      ])
+                    }),
+                    0
+                  )
+                : _vm._e()
+            ]),
+            _vm._v(" "),
+            !_vm.superAdmin
+              ? _c("p", [
+                  _vm._v(
+                    _vm._s(
+                      _vm.cities.filter(function(c) {
+                        return c.id === _vm.selectedCity
+                      })[0].name
+                    )
+                  )
+                ])
+              : _vm._e()
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "col-16 col-m-8 Form-column" }, [
             _c("div", { staticClass: "Form-labelContent" }, [
               _c("label", { attrs: { for: "mobile" } }, [_vm._v("Celular")]),
               _vm._v(" "),
-              _c("input", {
-                attrs: { type: "text", name: "mobile", id: "mobile" },
-                domProps: { value: _vm.user.client.mobile }
-              })
+              _vm.superAdmin
+                ? _c("input", {
+                    attrs: { type: "text", name: "mobile", id: "mobile" },
+                    domProps: { value: _vm.user.client.mobile }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.superAdmin
+                ? _c("p", [_vm._v(_vm._s(_vm.user.client.mobile))])
+                : _vm._e()
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "Form-labelContent" }, [
               _c("label", { attrs: { for: "phone" } }, [_vm._v("Teléfono")]),
               _vm._v(" "),
-              _c("input", {
-                attrs: { type: "text", name: "phone", id: "phone" },
-                domProps: { value: _vm.user.client.phone }
-              })
+              _vm.superAdmin
+                ? _c("input", {
+                    attrs: { type: "text", name: "phone", id: "phone" },
+                    domProps: { value: _vm.user.client.phone }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.superAdmin
+                ? _c("p", [_vm._v(_vm._s(_vm.user.client.phone))])
+                : _vm._e()
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "Form-labelContent" }, [
               _c("label", { attrs: { for: "point" } }, [_vm._v("Punto")]),
               _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
+              _vm.superAdmin
+                ? _c(
+                    "select",
                     {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.selectedPoint,
-                      expression: "selectedPoint"
-                    }
-                  ],
-                  staticClass: "Request-formSelect",
-                  attrs: { id: "point", name: "point" },
-                  on: {
-                    change: function($event) {
-                      var $$selectedVal = Array.prototype.filter
-                        .call($event.target.options, function(o) {
-                          return o.selected
-                        })
-                        .map(function(o) {
-                          var val = "_value" in o ? o._value : o.value
-                          return val
-                        })
-                      _vm.selectedPoint = $event.target.multiple
-                        ? $$selectedVal
-                        : $$selectedVal[0]
-                    }
-                  }
-                },
-                [
-                  _c("option", { attrs: { value: "0" } }, [
-                    _vm._v("Seleccione un punto")
-                  ]),
-                  _vm._v(" "),
-                  _vm._l(_vm.pointsLocal, function(point) {
-                    return _c("option", { domProps: { value: point.id } }, [
-                      _vm._v(_vm._s(point.name))
-                    ])
-                  })
-                ],
-                2
-              )
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.selectedPoint,
+                          expression: "selectedPoint"
+                        }
+                      ],
+                      staticClass: "Request-formSelect",
+                      attrs: { id: "point", name: "point" },
+                      on: {
+                        change: function($event) {
+                          var $$selectedVal = Array.prototype.filter
+                            .call($event.target.options, function(o) {
+                              return o.selected
+                            })
+                            .map(function(o) {
+                              var val = "_value" in o ? o._value : o.value
+                              return val
+                            })
+                          _vm.selectedPoint = $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        }
+                      }
+                    },
+                    [
+                      _c("option", { attrs: { value: "0" } }, [
+                        _vm._v("Seleccione un punto")
+                      ]),
+                      _vm._v(" "),
+                      _vm._l(_vm.pointsLocal, function(point) {
+                        return _c("option", { domProps: { value: point.id } }, [
+                          _vm._v(_vm._s(point.name))
+                        ])
+                      })
+                    ],
+                    2
+                  )
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.superAdmin
+                ? _c("p", [
+                    _vm._v(
+                      _vm._s(
+                        _vm.pointsLocal.filter(function(p) {
+                          return p.id === _vm.selectedPoint
+                        })[0].name
+                      )
+                    )
+                  ])
+                : _vm._e()
             ])
           ])
         ]),
@@ -5644,27 +5751,35 @@ var render = function() {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "col-16 col-m-8 Form-column" }, [
-                  _c("input", {
-                    attrs: {
-                      type: "hidden",
-                      name: "references[" + i + "][id]"
-                    },
-                    domProps: { value: reference.id }
-                  }),
+                  _vm.superAdmin
+                    ? _c("input", {
+                        attrs: {
+                          type: "hidden",
+                          name: "references[" + i + "][id]"
+                        },
+                        domProps: { value: reference.id }
+                      })
+                    : _vm._e(),
                   _vm._v(" "),
                   _c("div", { staticClass: "Form-labelContent" }, [
                     _c("label", { attrs: { for: "name" + i } }, [
                       _vm._v("Nombre")
                     ]),
                     _vm._v(" "),
-                    _c("input", {
-                      attrs: {
-                        type: "text",
-                        name: "references[" + i + "][name]",
-                        id: "reference.name" + i
-                      },
-                      domProps: { value: reference.name }
-                    })
+                    _vm.superAdmin
+                      ? _c("input", {
+                          attrs: {
+                            type: "text",
+                            name: "references[" + i + "][name]",
+                            id: "reference.name" + i
+                          },
+                          domProps: { value: reference.name }
+                        })
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.superAdmin
+                      ? _c("p", [_vm._v(_vm._s(reference.name))])
+                      : _vm._e()
                   ])
                 ]),
                 _vm._v(" "),
@@ -5674,14 +5789,20 @@ var render = function() {
                       _vm._v("Teléfono")
                     ]),
                     _vm._v(" "),
-                    _c("input", {
-                      attrs: {
-                        type: "text",
-                        name: "references[" + i + "][phone]",
-                        id: "reference.phone" + i
-                      },
-                      domProps: { value: reference.phone }
-                    })
+                    _vm.superAdmin
+                      ? _c("input", {
+                          attrs: {
+                            type: "text",
+                            name: "references[" + i + "][phone]",
+                            id: "reference.phone" + i
+                          },
+                          domProps: { value: reference.phone }
+                        })
+                      : _vm._e(),
+                    _vm._v(" "),
+                    !_vm.superAdmin
+                      ? _c("p", [_vm._v(_vm._s(reference.phone))])
+                      : _vm._e()
                   ])
                 ])
               ])
@@ -5731,7 +5852,17 @@ var render = function() {
                       )
                     : _vm._e(),
                   _vm._v(" "),
-                  _vm._m(1, true),
+                  _c("div", { staticClass: "m-auto is-text-center" }, [
+                    _c("div", { staticClass: "m-auto is-text-center" }, [
+                      _c("img", {
+                        attrs: {
+                          width: "80px",
+                          src: file.temporaryUrl,
+                          alt: ""
+                        }
+                      })
+                    ])
+                  ]),
                   _vm._v(" "),
                   _c("p", { staticClass: "is-text-center" }, [
                     _vm._v(_vm._s(file.name)),
@@ -5775,22 +5906,6 @@ var staticRenderFns = [
       _c("input", {
         attrs: { type: "password", name: "password", id: "password" }
       })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "m-auto is-text-center" }, [
-      _c("div", { staticClass: "m-auto is-text-center" }, [
-        _c("img", {
-          attrs: {
-            width: "80px",
-            src: __webpack_require__(/*! ../../../images/file.svg */ "./resources/images/file.svg"),
-            alt: ""
-          }
-        })
-      ])
     ])
   }
 ]
@@ -6448,7 +6563,13 @@ var render = function() {
               [_vm._v("x")]
             ),
             _vm._v(" "),
-            _vm._m(0, true),
+            _c("div", { staticClass: "m-auto is-text-center" }, [
+              _c("div", { staticClass: "m-auto is-text-center" }, [
+                _c("img", {
+                  attrs: { width: "80px", src: file.temporaryUrl, alt: "" }
+                })
+              ])
+            ]),
             _vm._v(" "),
             _c("p", { staticClass: "is-text-center" }, [
               _vm._v(_vm._s(file.name)),
@@ -6482,24 +6603,7 @@ var render = function() {
     1
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "m-auto is-text-center" }, [
-      _c("div", { staticClass: "m-auto is-text-center" }, [
-        _c("img", {
-          attrs: {
-            width: "80px",
-            src: __webpack_require__(/*! ../../../images/file.svg */ "./resources/images/file.svg"),
-            alt: ""
-          }
-        })
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -19023,17 +19127,6 @@ module.exports = "/images/delete.svg?499abeb6526a1c2ac354b72110ad5c64";
 /***/ (function(module, exports) {
 
 module.exports = "/images/edit.svg?39493a0ac9950c03ea6d005154497417";
-
-/***/ }),
-
-/***/ "./resources/images/file.svg":
-/*!***********************************!*\
-  !*** ./resources/images/file.svg ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/file.svg?b04151b5afddbb59fac6fbcdc1ffcd3f";
 
 /***/ }),
 

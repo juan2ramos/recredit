@@ -1,27 +1,40 @@
 .Footer {
-  color: white;
   padding: 2rem;
-  li{
-    height: 5.4rem;
+
+  li {
     margin: 0 .5rem;
-    @include respond-to(medium){
+    @include respond-to(medium) {
       margin: 0 1rem;
     }
   }
-  &-span{
+
+  &-span {
     font-size: 2.8rem;
     font-weight: 200;
     line-height: 3.2rem;
   }
+
   & > div:first-child {
     border-right: .1rem solid;
     padding-right: 2rem;
   }
 
+  & > div:last-child {
+    border-left: .1rem solid;
+    padding-left: 2rem;
+  }
+
   & > ul {
-    @include respond-to(medium){
-      padding-left: 2rem;
+    @include respond-to(medium) {
+      padding: 0 2rem;
+    }
+    b{
+      color: var(--pink-color);
     }
   }
 
+  p {
+    margin: 0;
+  }
 }
+

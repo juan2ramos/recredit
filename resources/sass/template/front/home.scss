@@ -1,6 +1,6 @@
 .Home {
   &-forms {
-    background: url("../images/back-home.png") center;
+    background: url("../images/back-home-2.jpg") center;
     background-size: cover;
     max-width: 100vw;
     padding: 1rem 0;
@@ -81,31 +81,19 @@
     }
 
     &Message {
-      align-self: flex-end;
       display: none;
-      padding-bottom: 2rem;
       @include respond-to(medium) {
         display: block;
       }
 
       p {
-        text-align: center;
-        font-size: 5.4rem;
+        font-size: 3.2rem;
         font-weight: 600;
         color: white;
         line-height: 1.1;
         text-shadow: .1rem .3rem .2rem #00000080;
         letter-spacing: .1rem;
         position: relative;
-
-        &:before {
-          position: absolute;
-          content: '';
-          border: 2px solid white;
-          bottom: -.8rem;
-          width: 80%;
-          left: 10%;
-        }
       }
 
     }

@@ -21,46 +21,53 @@
                 <h4 class="col-16 h-4">Datos personales</h4>
                 <div class="col-16 col-m-8 Form-column">
                     <div class="Form-labelContent">
+
                         <label for="name">Nombre</label>
-                        <input
-                                type="text"
-                                :value="user.name"
-                                name="name"
-                                id="name">
+                        <input v-if="superAdmin"
+                               type="text"
+                               :value="user.name"
+                               name="name"
+                               id="name">
+                        <p v-if="!superAdmin">{{user.name}}</p>
                     </div>
                     <div class="Form-labelContent">
                         <label for="document_type">Tipo de documento</label>
-                        <select name="document_type" id="document_type" class="Request-formSelect"
+                        <select v-if="superAdmin" name="document_type" id="document_type" class="Request-formSelect"
                                 v-model="selectedUser">
                             <option value="null" selected>Select a name</option>
                             <option v-for="option in typeDocument" :value="option">{{ option }}</option>
                         </select>
+                        <p v-if="!superAdmin">{{selectedUser}}</p>
                     </div>
                     <div class="Form-labelContent">
                         <label for="email">Correo Electrónico</label>
                         <input
+                                v-if="superAdmin"
                                 type="email"
                                 :value="user.email"
                                 name="email"
                                 id="email">
+                        <p v-if="!superAdmin">{{user.email}}</p>
                     </div>
                 </div>
                 <div class="col-16 col-m-8 Form-column">
                     <div class="Form-labelContent">
                         <label for="last_name">Apellido</label>
-                        <input
-                                type="text"
-                                :value="user.last_name"
-                                name="last_name"
-                                id="last_name">
+                        <input v-if="superAdmin"
+                               type="text"
+                               :value="user.last_name"
+                               name="last_name"
+                               id="last_name">
+                        <p v-if="!superAdmin">{{user.last_name}}</p>
                     </div>
                     <div class="Form-labelContent">
                         <label for="document">Documento</label>
-                        <input
-                                type="text"
-                                :value="user.document"
-                                name="document"
-                                id="document">
+                        <input v-if="superAdmin"
+                               type="text"
+                               :value="user.document"
+                               name="document"
+                               id="document">
+                        <p v-if="!superAdmin">{{user.document}}</p>
                     </div>
                     <div class="Form-labelContent">
                         <label for="password">Contraseña</label>
@@ -77,51 +84,62 @@
                     <div class="Form-labelContent">
                         <label for="residency_city">Ciudad de residencia</label>
                         <input
+                                v-if="superAdmin"
                                 type="text"
                                 :value="user.client.residency_city"
                                 name="residency_city"
                                 id="residency_city">
+                        <p v-if="!superAdmin">{{user.client.residency_city}}</p>
                     </div>
                     <div class="Form-labelContent">
                         <label for="address">Dirección</label>
                         <input
+                                v-if="superAdmin"
                                 type="text"
                                 :value="user.client.address"
                                 name="address"
                                 id="address">
                     </div>
-
+                    <p v-if="!superAdmin">{{user.client.address}}</p>
                     <div class="Form-labelContent">
                         <label for="birth_city">Ciudad</label>
-                        <select id="birth_city" v-model="selectedCity" class="Request-formSelect" @change="change">
+                        <select v-if="superAdmin" id="birth_city" v-model="selectedCity" class="Request-formSelect"
+                                @change="change">
                             <option v-for="city in cities" :value="city.id">{{city.name}}</option>
                         </select>
                     </div>
+                    <p v-if="!superAdmin">{{cities.filter((c)=>c.id === selectedCity)[0].name}}</p>
                 </div>
                 <div class="col-16 col-m-8 Form-column">
 
                     <div class="Form-labelContent">
                         <label for="mobile">Celular</label>
                         <input
+                                v-if="superAdmin"
                                 type="text"
                                 :value="user.client.mobile"
                                 name="mobile"
                                 id="mobile">
+                        <p v-if="!superAdmin">{{user.client.mobile}}</p>
                     </div>
                     <div class="Form-labelContent">
                         <label for="phone">Teléfono</label>
                         <input
+                                v-if="superAdmin"
                                 type="text"
                                 :value="user.client.phone"
                                 name="phone"
                                 id="phone">
+                        <p v-if="!superAdmin">{{user.client.phone}}</p>
                     </div>
                     <div class="Form-labelContent">
                         <label for="point">Punto</label>
-                        <select id="point" name="point" v-model="selectedPoint" class="Request-formSelect">
+                        <select v-if="superAdmin" id="point" name="point" v-model="selectedPoint"
+                                class="Request-formSelect">
                             <option value="0">Seleccione un punto</option>
                             <option v-for="point in pointsLocal" :value="point.id">{{point.name}}</option>
                         </select>
+                        <p v-if="!superAdmin">{{pointsLocal.filter((p)=>p.id === selectedPoint)[0].name}}</p>
                     </div>
 
                 </div>
@@ -132,26 +150,31 @@
                     <h5 class="col-16">Refencia {{ i + 1 }}</h5>
                     <div class="col-16 col-m-8 Form-column">
                         <input
+                                v-if="superAdmin"
                                 type="hidden"
                                 :name="`references[${i}][id]`"
                                 :value="reference.id">
                         <div class="Form-labelContent">
                             <label :for="`name${i}`">Nombre</label>
                             <input
+                                    v-if="superAdmin"
                                     type="text"
                                     :value="reference.name"
                                     :name="`references[${i}][name]`"
                                     :id="`reference.name${i}`">
+                            <p v-if="superAdmin">{{reference.name}}</p>
                         </div>
                     </div>
                     <div class="col-16 col-m-8 Form-column">
                         <div class="Form-labelContent">
                             <label :for="`references.phone${i}`">Teléfono</label>
                             <input
+                                    v-if="superAdmin"
                                     type="text"
                                     :value="reference.phone"
                                     :name="`references[${i}][phone]`"
                                     :id="`reference.phone${i}`">
+                            <p v-if="!superAdmin">{{reference.phone}}</p>
                         </div>
                     </div>
                 </div>
@@ -172,7 +195,7 @@
                         <div class="File-delete" v-if="superAdmin" @click="deleteFile(file, index)">x</div>
                         <div class="m-auto is-text-center">
                             <div class="m-auto is-text-center">
-                                <img width="80px" src="../../../images/file.svg" alt="">
+                                <img width="80px" :src="file.temporaryUrl" alt="">
                             </div>
                         </div>
                         <p class="is-text-center">{{file.name}}<br>
@@ -212,6 +235,7 @@
                     url: '/admin/files',
                     thumbnailWidth: 150,
                     maxFilesize: 5,
+                    acceptedFiles: 'image/*',
                     paramName: 'files',
                     dictDefaultMessage: '<div class="dropzone-buttonMessage">Selecciona los documentos</div>',
                     headers: {"X-CSRF-TOKEN": document.head.querySelector("[name=csrf-token]").content},
@@ -278,5 +302,9 @@
 
     .dropzone {
         width: 100%;
+    }
+
+    p {
+        text-transform: uppercase;
     }
 </style>

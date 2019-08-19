@@ -3754,13 +3754,14 @@ input[disabled]:hover {
 }
 
 :root {
-  --primary-color: #EC008C;
-  --secondary-color: #A24C9C;
+  --primary-color: #46b065;
+  --secondary-color: #30904c;
   --link-color: #767676;
   --fontPrimary--color: #000;
   --lightGrey-color: #828282;
   --darkGrey-color: #7C7C7C;
   --dark-color: #000;
+  --pink-color: #EC008C;
   --active-color: #EC008C;
   --grid-maxWidth: 1120px;
 }
@@ -3814,7 +3815,7 @@ input:focus {
 }
 
 .h-4 {
-  color: #EC008C;
+  color: var(--primary-color);
   font-size: 2.8rem;
   font-weight: 400;
 }
@@ -3825,7 +3826,7 @@ input:focus {
 }
 
 .back-primary {
-  background: var(--primary-color);
+  background: var(--pink-color);
 }
 
 .color-primary {
@@ -3931,7 +3932,7 @@ th {
 .Link-primary,
 .Link-secondary {
   padding: 10px;
-  background: #A24C9C;
+  background: var(--primary-color);
   color: white;
   font-weight: 400;
   margin: 27px 0 0 18px;
@@ -4136,12 +4137,10 @@ select option {
 }
 
 .Footer {
-  color: white;
   padding: 2rem;
 }
 
 .Footer li {
-  height: 5.4rem;
   margin: 0 0.5rem;
 }
 
@@ -4162,10 +4161,23 @@ select option {
   padding-right: 2rem;
 }
 
+.Footer > div:last-child {
+  border-left: 0.1rem solid;
+  padding-left: 2rem;
+}
+
 @media (min-width: 45rem) {
   .Footer > ul {
-    padding-left: 2rem;
+    padding: 0 2rem;
   }
+}
+
+.Footer > ul b {
+  color: var(--pink-color);
+}
+
+.Footer p {
+  margin: 0;
 }
 
 .Nav {
@@ -4335,7 +4347,7 @@ select option {
 }
 
 .Home-forms {
-  background: url(/images/back-home.png?c1bd58342d65d69feda9e4eed9fc6558) center;
+  background: url(/images/back-home-2.jpg?1adc003d451022998cb41d1aaa538cfd) center;
   background-size: cover;
   max-width: 100vw;
   padding: 1rem 0;
@@ -4424,9 +4436,7 @@ select option {
 }
 
 .Home-formsMessage {
-  align-self: flex-end;
   display: none;
-  padding-bottom: 2rem;
 }
 
 @media (min-width: 45rem) {
@@ -4436,23 +4446,13 @@ select option {
 }
 
 .Home-formsMessage p {
-  text-align: center;
-  font-size: 5.4rem;
+  font-size: 3.2rem;
   font-weight: 600;
   color: white;
   line-height: 1.1;
   text-shadow: 0.1rem 0.3rem 0.2rem #00000080;
   letter-spacing: 0.1rem;
   position: relative;
-}
-
-.Home-formsMessage p:before {
-  position: absolute;
-  content: "";
-  border: 2px solid white;
-  bottom: -0.8rem;
-  width: 80%;
-  left: 10%;
 }
 
 .Mini-form {

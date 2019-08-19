@@ -5,7 +5,7 @@
         <section class="Home-forms">
             <div class="container row justify-between  p-0">
                 <article class="col-m-8 col-5  Home-formsMessage">
-                    <p>SÓLO CON<br>TU CÉDULA</p>
+                    <p>SÓLO CON<br>TU CÉDULA.</p>
                 </article>
                 <article class="col-16 col-m-6">
                     <form method="POST" action="{{ route('login') }}" class="Home-formsForm">
@@ -53,9 +53,6 @@
                 </article>
             </div>
         </section>
-        <figure class="container m-t-a-36">
-            <img src="{{url('images/minibanner.png')}}" alt="">
-        </figure>
 
         @if (session()->has('createdUser'))
             <div id="alertMessage"

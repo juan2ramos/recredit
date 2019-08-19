@@ -22,7 +22,7 @@
 <main class="Main {{Route::current()->uri }} " id="app">
     @yield('content')
 </main>
-<footer class="Footer row justify-center back-primary align-center">
+<footer class="Footer row justify-center middle-items align-center">
     @include('front.general.footer')
 </footer>
 
