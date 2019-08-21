@@ -93,3 +93,20 @@
         </div>
     </div>
 </div>
+@section('script')
+
+    <script>
+        Notification.requestPermission().then(function(result) {
+            console.log(result);
+        });
+        Echo.private('App.User.{{Auth::user()->id}}')
+            .notification( function (e) {
+                console.log(e)
+                if (Notification.permission === "granted") {
+                    // Si esta correcto lanzamos la notificación
+                    var notification = new Notification("Holiwis :D");
+                }
+
+            });
+    </script>
+@stop

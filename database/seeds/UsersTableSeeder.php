@@ -44,6 +44,18 @@ class UsersTableSeeder extends Seeder
         ]);
         $SuperAdmin->assignRole('SuperAdmin');
 
+        $SuperAdmin = User::create([
+            'name' => 'juan',
+            'last_name' => 'analista',
+            'email' => 'analista@lilipink.com',
+            'password' => bcrypt('1234567'),
+            'document_type' => 'Cédula',
+            'document' => '12345697',
+            'verification_code' => '',
+            'verification_state' => 0,
+        ]);
+        $SuperAdmin->assignRole('Analysts');
+
 
     }
 }

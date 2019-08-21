@@ -2,33 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9dde37d-980e-4471-b7b8-b7b7dd75cffa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/back-home-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/face.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/inst.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/back-home-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/recreditos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/recreditos.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Controllers/UserSessionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Controllers/UserSessionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_13_142334_create_credits_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_07_13_142334_create_credits_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/CitiesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CitiesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/PointsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/PointsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/RegionsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/RegionsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/CreditRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/CreditRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Admin/FormUser.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Admin/FormUser.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/CreditRequest/Files.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/CreditRequest/Files.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_general.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_general.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/template/front/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/template/front/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/template/front/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/template/front/home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/credits/credit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/credits/credit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/creditRequest/client.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/creditRequest/client.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/creditRequest/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/creditRequest/user.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/general/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/general/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/general/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/general/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/general/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/general/nav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/general/svg.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/general/svg.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/general/headerBar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/general/headerBar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/front.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/front.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,10 +73,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/seeds/PointsTableSeeder.php">
+        <entry file="file://$PROJECT_DIR$/app/Notifications/NewRequestCredit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11655">
-              <caret line="334" column="157" selection-start-line="334" selection-start-column="157" selection-end-line="334" selection-end-column="157" />
+            <state relative-caret-position="263">
+              <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+              <folding>
+                <element signature="e#37#66#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,9 +96,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>accione</find>
-      <find>accion</find>
-      <find>slider</find>
       <find>delete</find>
       <find>documen</find>
       <find>refere</find>
@@ -135,6 +123,9 @@
       <find>dula</find>
       <find>vueDropzone</find>
       <find>.Link-primary, .</find>
+      <find>user</find>
+      <find>role</find>
+      <find>Analysts</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -142,31 +133,23 @@
     <dirStrings>
       <dir>$PROJECT_DIR$/resources/sass/template/front</dir>
       <dir>$PROJECT_DIR$/resources/sass</dir>
+      <dir>$PROJECT_DIR$/app</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/UserSessionController.php" />
-        <option value="$PROJECT_DIR$/resources/js/components/CreditRequest/LinksHeader.vue" />
-        <option value="$PROJECT_DIR$/app/User.php" />
-        <option value="$PROJECT_DIR$/resources/views/creditRequest/files.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/CreditRequest/routes.php" />
-        <option value="$PROJECT_DIR$/resources/js/components/Admin/CreateAdmin.vue" />
-        <option value="$PROJECT_DIR$/app/Models/Point.php" />
-        <option value="$PROJECT_DIR$/resources/images/check.svg" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/Request/PointRequest.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/Controllers/PointsController.php" />
-        <option value="$PROJECT_DIR$/resources/js/components/Admin/Points.vue" />
         <option value="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/general/navUl.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/components/Admin/index.js" />
         <option value="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/components/Admin/Admins.vue" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Modules/Admin/routes.php" />
         <option value="$PROJECT_DIR$/app/Modules/Admin/Request/CreateCityAdminRequest.php" />
         <option value="$PROJECT_DIR$/app/Models/City.php" />
@@ -184,7 +167,6 @@
         <option value="$PROJECT_DIR$/resources/sass/template/front/home.scss" />
         <option value="$PROJECT_DIR$/resources/images/face.svg" />
         <option value="$PROJECT_DIR$/public/images/inst.svg" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/front.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/front/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/sass/template/front/footer.scss" />
         <option value="$PROJECT_DIR$/resources/views/front/general/footer.blade.php" />
@@ -201,6 +183,19 @@
         <option value="$PROJECT_DIR$/database/seeds/RegionsTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/CitiesTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/PointsTableSeeder.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/app/Events/NotificationCredit.php" />
+        <option value="$PROJECT_DIR$/routes/channels.php" />
+        <option value="$PROJECT_DIR$/resources/js/app.js" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/front.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/general/headerBar.blade.php" />
+        <option value="$PROJECT_DIR$/routes/front.php" />
+        <option value="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/CreditRequest.php" />
+        <option value="$PROJECT_DIR$/app/Notifications/NewRequestCredit.php" />
+        <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
       </list>
     </option>
   </component>
@@ -301,13 +296,13 @@
       <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
       <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/vendor/pusher/pusher-php-server" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/sodium_compat" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-190" />
-    <option name="y" value="-1080" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -315,13 +310,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
               <item name="recreditos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="recreditos" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="recreditos" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
@@ -334,10 +338,52 @@
               <item name="database" type="462c0819:PsiDirectoryNode" />
               <item name="seeds" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="recreditos" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="recreditos" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="recreditos" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="recreditos" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="recreditos" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="recreditos" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="recreditos" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -433,20 +479,22 @@
       <workItem from="1564325866482" duration="7729000" />
       <workItem from="1564501658531" duration="3994000" />
       <workItem from="1565224461482" duration="16000" />
-      <workItem from="1566162640512" duration="10906000" />
+      <workItem from="1566162640512" duration="11330000" />
+      <workItem from="1566350005099" duration="11943000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="253617000" />
+    <option name="totallyTimeSpent" value="265984000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-190" y="-1080" width="1920" height="1080" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info anchor="bottom" id="Command Line Tools Console" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32314816" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32222223" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -454,16 +502,16 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.4351852" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3188889" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32962963" />
       <window_info anchor="right" id="Database" order="0" weight="0.2701389" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="4" sideWeight="0.48563612" visible="true" weight="0.27083334" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="4" sideWeight="0.48360655" visible="true" weight="0.27083334" />
       <window_info anchor="right" id="Structure" order="5" sideWeight="0.5011111" side_tool="true" weight="0.33333334" />
-      <window_info anchor="right" id="npm" order="6" sideWeight="0.5143639" side_tool="true" weight="0.27083334" />
+      <window_info anchor="right" id="npm" order="6" sideWeight="0.5163934" side_tool="true" weight="0.27083334" />
       <window_info anchor="right" id="Favorites" order="7" sideWeight="0.5011111" side_tool="true" weight="0.33333334" />
     </layout>
   </component>
@@ -482,141 +530,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/cities/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Request/CreateCityRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-          <folding>
-            <element signature="e#45#65#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/cities/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="19" column="60" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/CityController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
-          <folding>
-            <element signature="e#50#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/ClientController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="49" column="78" selection-start-line="49" selection-start-column="78" selection-end-line="49" selection-end-column="78" />
-          <folding>
-            <element signature="e#49#69#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/creditRequest/files.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://099abab8-17ba-472f-957b-93c6ffbf2e2e/schema/recreditos/table/regions">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="67be4a4b-c751-4f55-bca2-be193e69d52c">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://099abab8-17ba-472f-957b-93c6ffbf2e2e/schema/recreditos/table/cities">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="67be4a4b-c751-4f55-bca2-be193e69d52c">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://099abab8-17ba-472f-957b-93c6ffbf2e2e/schema/recreditos/table/points">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="67be4a4b-c751-4f55-bca2-be193e69d52c">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://099abab8-17ba-472f-957b-93c6ffbf2e2e/schema/recreditos/table/clients">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="67be4a4b-c751-4f55-bca2-be193e69d52c">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://099abab8-17ba-472f-957b-93c6ffbf2e2e/schema/recreditos/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="67be4a4b-c751-4f55-bca2-be193e69d52c">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://099abab8-17ba-472f-957b-93c6ffbf2e2e/schema/recreditos/table/references">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="67be4a4b-c751-4f55-bca2-be193e69d52c">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://099abab8-17ba-472f-957b-93c6ffbf2e2e/schema/recreditos/table/credits">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="92a64698-f2e5-4edb-b678-37050cd2dc55">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/template/front/home.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="603">
@@ -629,13 +542,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/images/inst.svg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/front.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/front/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -675,13 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/general/navUl.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2625">
-          <caret line="75" column="63" selection-start-line="75" selection-start-column="54" selection-end-line="75" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/front/general/nav.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -700,13 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="729">
           <caret line="196" column="46" selection-start-line="196" selection-start-column="46" selection-end-line="196" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -737,20 +629,10 @@
     <entry file="file://$PROJECT_DIR$/resources/js/uploadFiles.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/front.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/UserSessionController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
           <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="26" column="41" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -767,9 +649,6 @@
           <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/Users.vue">
       <provider selected="true" editor-type-id="text-editor">
@@ -836,8 +715,164 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/PointsTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11655">
-          <caret line="334" column="157" selection-start-line="334" selection-start-column="157" selection-end-line="334" selection-end-column="157" />
+        <state relative-caret-position="327">
+          <caret line="33" column="123" lean-forward="true" selection-start-line="33" selection-start-column="123" selection-end-line="33" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="173" column="8" lean-forward="true" selection-start-line="173" selection-start-column="8" selection-end-line="173" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1525" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/broadcasting.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="38" column="22" selection-start-line="38" selection-end-line="38" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Events/NotificationCredit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+          <folding>
+            <element signature="e#30#66#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/channels.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/general/navUl.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/general/nav.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="67" column="36" lean-forward="true" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/general/headerBar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/admin.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/front.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/front.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/FileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/CreditRequestManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-263">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/CreditController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Requests/CreditRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+          <folding>
+            <element signature="e#54#76#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="104" column="71" selection-start-line="104" selection-start-column="63" selection-end-line="104" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Notifications/NewRequestCredit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <folding>
+            <element signature="e#37#66#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
