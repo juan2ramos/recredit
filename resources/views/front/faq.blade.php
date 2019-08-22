@@ -72,7 +72,7 @@
                 </ul>
                 <div class="Faq-contentInfo">
                     <h4 class="color-primary ">¿QUIERES MÁS INFORMACIÓN?</h4>
-                    <p>PBX: (571) 670 2400 Ext: 114 emprendedoras@i-q.com.co //Cra 19A No 196-23 Bogotá</p>
+                    <p>PBX: (571) 670 2400 Ext: 114 carteralilipink@lilipink.com //Cra 19A No 196-23 Bogotá</p>
                 </div>
             </article>
         </section>
