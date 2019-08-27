@@ -2931,7 +2931,7 @@ __webpack_require__.r(__webpack_exports__);
         thumbnailWidth: 150,
         maxFilesize: 5,
         paramName: 'files',
-        dictDefaultMessage: '<div class="dropzone-buttonMessage">Selecciona tus documentos</div>' + '<div class="dropzone-message">(FOTOCOPIA DE LA CÉDULA AL 150%)</div>',
+        dictDefaultMessage: '<div class="dropzone-buttonMessage">Selecciona tus documentos</div>' + '<div class="dropzone-message">(FOTOCOPIA DE LA CÉDULA)</div>',
         headers: {
           "X-CSRF-TOKEN": document.head.querySelector("[name=csrf-token]").content
         }

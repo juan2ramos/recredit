@@ -12,7 +12,6 @@ class RegionsTableSeeder extends Seeder
      */
     public function run()
     {
-
         DB::table('regions')->insert(['id' => '1', 'name' => 'Amazonas']);
         DB::table('regions')->insert(['id' => '2', 'name' => 'Antioquia']);
         DB::table('regions')->insert(['id' => '3', 'name' => 'Arauca']);
@@ -32,14 +31,15 @@ class RegionsTableSeeder extends Seeder
         DB::table('regions')->insert(['id' => '17', 'name' => 'Magdalena']);
         DB::table('regions')->insert(['id' => '18', 'name' => 'Meta']);
         DB::table('regions')->insert(['id' => '19', 'name' => 'Nariño']);
-        DB::table('regions')->insert(['id' => '20', 'name' => 'Neiva']);
+        DB::table('regions')->insert(['id' => '20', 'name' => 'Huila']);
         DB::table('regions')->insert(['id' => '21', 'name' => 'Norte de santander']);
         DB::table('regions')->insert(['id' => '22', 'name' => 'Putumayo']);
         DB::table('regions')->insert(['id' => '23', 'name' => 'Quindio']);
         DB::table('regions')->insert(['id' => '24', 'name' => 'Risaralda']);
         DB::table('regions')->insert(['id' => '25', 'name' => 'San andres']);
         DB::table('regions')->insert(['id' => '26', 'name' => 'Santander']);
-        DB::table('regions')->insert(['id' => '27', 'name' => 'Tolima']);
-        DB::table('regions')->insert(['id' => '28', 'name' => 'Valle del Cuaca']);
+        DB::table('regions')->insert(['id' => '27', 'name' => 'sucre']);
+        DB::table('regions')->insert(['id' => '28', 'name' => 'Tolima']);
+        DB::table('regions')->insert(['id' => '29', 'name' => 'Valle del Cuaca']);
     }
 }

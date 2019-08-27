@@ -52,7 +52,7 @@
                     maxFilesize: 5,
                     paramName: 'files',
                     dictDefaultMessage: '<div class="dropzone-buttonMessage">Selecciona tus documentos</div>' +
-                        '<div class="dropzone-message">(FOTOCOPIA DE LA CÉDULA AL 150%)</div>',
+                        '<div class="dropzone-message">(FOTOCOPIA DE LA CÉDULA)</div>',
                     headers: {"X-CSRF-TOKEN": document.head.querySelector("[name=csrf-token]").content}
                 }
             }

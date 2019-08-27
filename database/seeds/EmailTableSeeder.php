@@ -13,6 +13,7 @@ class EmailTableSeeder extends Seeder
     {
         DB::table('emails')->insert([ 'name' => 'gmail.com']);
         DB::table('emails')->insert([ 'name' => 'hotmail.com']);
+        DB::table('emails')->insert([ 'name' => 'hotmail.es']);
         DB::table('emails')->insert([ 'name' => 'mail.com']);
         DB::table('emails')->insert([ 'name' => 'outlook.com']);
         DB::table('emails')->insert([ 'name' => 'yahoo.es']);

@@ -51,7 +51,7 @@
                  data-errorMessage="El campo es requerido">
                 <select name="document_type" id="document_type">
                     <option value="">Tipo de documento</option>
-                    <option {{old('document_type',$user->document_type) == 'Cédula de ciudadanía' ? 'selected' : '' }} value="cédula">
+                    <option {{old('document_type',$user->document_type) == 'Cédula de ciudadanía' ? 'selected' : '' }} value="Cédula de ciudadanía">
                         Cédula de ciudadanía
                     </option>
                     <option {{old('document_type',$user->document_type) == 'cédula de extranjería' ? 'selected' : '' }} value="cédula de extranjería">

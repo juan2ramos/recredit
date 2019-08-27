@@ -5,7 +5,6 @@ namespace App\Notifications;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Messages\BroadcastMessage;
 use Illuminate\Notifications\Notification;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 
 class NewRequestCredit extends Notification
@@ -59,7 +58,6 @@ class NewRequestCredit extends Notification
 
     public function toBroadCast($notifiable)
     {
-
-        return new BroadcastMessage($this->user);
+        return new BroadcastMessage(['user' => $this->user]);
     }
 }

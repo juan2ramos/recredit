@@ -6,7 +6,7 @@
         <h2 class="is-text-center">Validar crédito</h2>
         <validated-credit :user="{{auth()->user()->id}}" credit_id="{{$credit->id}}"
                           :assigned="{{$credit->assigned_user}}"></validated-credit>
-        <div class="row justify-between Request-form " method="post"
+        <div class="row Request-form " method="post"
              action="{{route('creditsAdmin.update', $credit->id)}}">
             @csrf
             @method('put')
@@ -31,6 +31,9 @@
             </div>
             <div class="col-16 col-m-8 col-l-5 m-b-12">
                 <p><b>Punto : </b>{{$user->client->point->name}}</p>
+            </div>
+            <div class="col-16 col-m-8 col-l-5 m-b-12">
+                <p><b>Teléfono : </b>{{$user->client->phone}}</p>
             </div>
 
 

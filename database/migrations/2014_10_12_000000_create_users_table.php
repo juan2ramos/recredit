@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->tinyInteger('other_mail')->default(0);
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->enum('document_type', ['cédula','cédula de extranjería']);
+            $table->enum('document_type', ['Cédula de ciudadanía','cédula de extranjería']);
             $table->string('document')->unique();
             $table->string('verification_code')->nullable();
             $table->boolean('verification_state')->default(0);
