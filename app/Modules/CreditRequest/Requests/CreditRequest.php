@@ -23,8 +23,6 @@ class CreditRequest extends FormRequest
 
     public function createCredit()
     {
-        $this->notify($this->user());
-        return
         $user = $this->getUserToCreate();
 
         $user->credit()->save(new Credit([
