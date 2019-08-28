@@ -19,8 +19,8 @@
                         <label class="is-block p-b-16">
                             <select v-model="form.document_type">
                                 <option value="">Seleccione tipo de documento</option>
-                                <option value="cédula">cédula</option>
-                                <option value="cédula">cédula de extranjería</option>
+                                <option value="Cédula de ciudadanía">Cédula de ciudadanía</option>
+                                <option value="cédula de extranjería">cédula de extranjería</option>
                             </select>
                             <span class="is-invalid"
                                   v-if="this.errors.document_type">{{this.errors.document_type[0]}}</span>
