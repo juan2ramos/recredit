@@ -3307,6 +3307,33 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Modal',
   data: function data() {
@@ -3315,7 +3342,9 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
-    isNumberValidate: function isNumberValidate() {}
+    modal: function modal() {
+      this.openModal = !this.openModal;
+    }
   }
 });
 
@@ -15309,13 +15338,17 @@ var render = function() {
                         _vm._v("Seleccione tipo de documento")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "cédula" } }, [
-                        _vm._v("cédula")
-                      ]),
+                      _c(
+                        "option",
+                        { attrs: { value: "Cédula de ciudadanía" } },
+                        [_vm._v("Cédula de ciudadanía")]
+                      ),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "cédula" } }, [
-                        _vm._v("cédula de extranjería")
-                      ])
+                      _c(
+                        "option",
+                        { attrs: { value: "cédula de extranjería" } },
+                        [_vm._v("cédula de extranjería")]
+                      )
                     ]
                   ),
                   _vm._v(" "),
@@ -17294,174 +17327,283 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c("section", { staticClass: "Faq-content container row" }, [
+      _c("article", { staticClass: "col-16 col-m-8" }, [
+        _c("ul", { staticClass: "is-list-less" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _vm._m(1),
+          _vm._v(" "),
+          _vm._m(2),
+          _vm._v(" "),
+          _vm._m(3),
+          _vm._v(" "),
+          _c("li", [
+            _c("h4", [_vm._v("TIENE CUOTA DE UTILIZACIÓN O DE MANEJO")]),
+            _vm._v(" "),
+            _vm._m(4),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "button openModal",
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    return _vm.modal($event)
+                  }
+                }
+              },
+              [_vm._v("Ver tasas de interés")]
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(5)
+    ]),
+    _vm._v(" "),
+    _c(
+      "section",
+      {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value: _vm.openModal,
+            expression: "openModal"
+          }
+        ],
+        staticClass: "Modal row justify-center align-middle Faq-Modal"
+      },
+      [
+        _c("div", { staticClass: "Modal-content row Contact-content" }, [
+          _c(
+            "div",
+            {
+              staticClass: "Modal-contentClose modalClose",
+              on: {
+                click: function($event) {
+                  $event.preventDefault()
+                  return _vm.modal($event)
+                }
+              }
+            },
+            [_vm._v("X")]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: " table-container" }, [
+            _c("table", { staticClass: "Faq-modalTable" }, [
+              _vm._m(6),
+              _vm._v(" "),
+              _c(
+                "tbody",
+                [
+                  _vm._m(7),
+                  _vm._v(" "),
+                  _vm._l(13, function(i) {
+                    return _c("tr", { key: i }, [
+                      _c("td", [_vm._v(_vm._s(i))]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(_vm._s(i * 2.34) + "%")])
+                    ])
+                  })
+                ],
+                2
+              )
+            ])
+          ])
+        ])
+      ]
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("section", { staticClass: "Faq-content container row" }, [
-        _c("article", { staticClass: "col-16 col-m-8" }, [
-          _c("ul", { staticClass: "is-list-less" }, [
-            _c("li", [
-              _c("h4", [_vm._v("CÓMO PUEDO OBTENER MI CRÉDITO LILI PINK")]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "Solo debes presentar la cédula original, dos referencias personales y tener buenos hábitos\n                        de\n                        pago; los cuales serán consultados y verificados en centrales de riesgo.\n                        "
-                ),
-                _c("b", [_vm._v("NO NECESITAS CODEUDORES")]),
-                _vm._v(".")
-              ])
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("h4", [_vm._v("CUÁNDO RECIBO MI CRÉDITO LILI PINK")]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  'Presentando la cédula original en la tienda en donde solicitaste el crédito o si lo hiciste\n                        por la página www.creditoslilipink.com, debes pedirla en la tienda que escogiste en el\n                        momento de la inscripción"\n                    '
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("h4", [
-                _vm._v("CÓMO PUEDO INICIAR SESIÓN EN WWW.CREDITOSLILIPINK.COM")
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "\n                        Debes tener en cuenta lo siguiente: "
-                ),
-                _c("br"),
-                _vm._v(
-                  "\n                        1. Tu usuario es el e-mail registrado en el momento de la solicitud del crédito "
-                ),
-                _c("br"),
-                _vm._v(
-                  "\n                        2. Seguido este paso, das CLICK en “Olvidaste contraseña” para reestablecer una contraseña que sea única para ti.\n                    "
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("h4", [
-                _vm._v(
-                  "CÓMO PUEDO CONSULTAR EL ESTADO DE MI CRÉDITO O EL PAGO MÍNIMO"
-                )
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v("Puedes hacerlo a través de los siguientes medios: "),
-                _c("br"),
-                _vm._v(
-                  "\n                        1. Iniciando sesión en www.creditoslilipink.com "
-                ),
-                _c("br"),
-                _vm._v(
-                  "\n                        2. Llamando a la línea de servicio al cliente en bogotá 670 2400 ext: 137 - 133 "
-                ),
-                _c("br"),
-                _vm._v(
-                  "\n                        3. Solicitando la información en cualquier tienda Lili Pink."
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("h4", [_vm._v("TIENE CUOTA DE UTILIZACIÓN O DE MANEJO")]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v("1. No hay cuota de manejo."),
-                _c("br"),
-                _vm._v(
-                  "\n                        2. Diferir las compras entre 1 y 12 cuotas quincenales generan un cobro de tasas."
-                ),
-                _c("br"),
-                _vm._v(
-                  "\n                        de interés de cuantías mínimas que van a ser aplicadas de la siguiente forma:"
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "button openModal",
-                  attrs: { href: "", "data-modal": "faqModal" }
-                },
-                [_vm._v("Ver tasas de interés")]
-              )
-            ])
+    return _c("li", [
+      _c("h4", [_vm._v("CÓMO PUEDO OBTENER MI CRÉDITO LILI PINK")]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "Solo debes presentar la cédula original, dos referencias personales y tener buenos hábitos\n                        de\n                        pago; los cuales serán consultados y verificados en centrales de riesgo.\n                        "
+        ),
+        _c("b", [_vm._v("NO NECESITAS CODEUDORES")]),
+        _vm._v(".")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("h4", [_vm._v("CUÁNDO RECIBO MI CRÉDITO LILI PINK")]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          'Presentando la cédula original en la tienda en donde solicitaste el crédito o si lo hiciste\n                        por la página www.creditoslilipink.com, debes pedirla en la tienda que escogiste en el\n                        momento de la inscripción"\n                    '
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("h4", [
+        _vm._v("CÓMO PUEDO INICIAR SESIÓN EN WWW.CREDITOSLILIPINK.COM")
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "\n                        Debes tener en cuenta lo siguiente: "
+        ),
+        _c("br"),
+        _vm._v(
+          "\n                        1. Tu usuario es el e-mail registrado en el momento de la solicitud del crédito "
+        ),
+        _c("br"),
+        _vm._v(
+          "\n                        2. Seguido este paso, das CLICK en “Olvidaste contraseña” para reestablecer una contraseña que sea única para ti.\n                    "
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("h4", [
+        _vm._v("CÓMO PUEDO CONSULTAR EL ESTADO DE MI CRÉDITO O EL PAGO MÍNIMO")
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v("Puedes hacerlo a través de los siguientes medios: "),
+        _c("br"),
+        _vm._v(
+          "\n                        1. Iniciando sesión en www.creditoslilipink.com "
+        ),
+        _c("br"),
+        _vm._v(
+          "\n                        2. Llamando a la línea de servicio al cliente en bogotá 670 2400 ext: 127 133 y 236"
+        ),
+        _c("br"),
+        _vm._v(
+          "\n                        3. Solicitando la información en cualquier tienda Lili Pink."
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("1. No hay cuota de manejo."),
+      _c("br"),
+      _vm._v(
+        "\n                        2. Diferir las compras entre 1 y 12 cuotas quincenales generan un cobro de tasas."
+      ),
+      _c("br"),
+      _vm._v(
+        "\n                        de interés de cuantías mínimas que van a ser aplicadas de la siguiente forma:"
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("article", { staticClass: "col-16 col-m-8" }, [
+      _c("ul", { staticClass: "is-list-less" }, [
+        _c("li", [
+          _c("h4", [
+            _vm._v(
+              "QUE DEBO HACER SI NO PUEDO INICIAR SESIÓN EN WWW.CREDITOSLILIPINK.COM"
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Comunicate a la línea de servicio al cliente en bogotá 670 2400 ext: 133 236."
+            )
           ])
         ]),
         _vm._v(" "),
-        _c("article", { staticClass: "col-16 col-m-8" }, [
-          _c("ul", { staticClass: "is-list-less" }, [
-            _c("li", [
-              _c("h4", [
-                _vm._v(
-                  "QUE DEBO HACER SI NO PUEDO INICIAR SESIÓN EN WWW.CREDITOSLILIPINK.COM"
-                )
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "Comunicate a la línea de servicio al cliente en bogotá 670 2400 ext: 127 133 236."
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("h4", [
-                _vm._v(
-                  "ES POSIBLE CAMBIAR LAS FECHAS LIMITES DE PAGO DE MI CRÉDITO"
-                )
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "No. Las fechas del pago del crédito Lili Pink no pueden ser modificadas a solicitud del cliente"
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("h4", [_vm._v("SI PRESENTO RETRASO EN MIS CUOTAS")]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "Serás reportado a centrales de riesgo y de persistir o continuar la mora o ser superior a 90 días se realizará cobro jurídico. Recuerda que tener buenos hábitos de pago es su mejor carta de presentación ante el comercio\n                        y sector financiero\n                    "
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("h4", [_vm._v("CUÁNDO PUEDE ESTAR BLOQUEADO EL CRÉDITO")]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "Puede estar bloqueado si presenta mora superior a 30 días, suplantación o perdida."
-                )
-              ])
-            ])
+        _c("li", [
+          _c("h4", [
+            _vm._v(
+              "ES POSIBLE CAMBIAR LAS FECHAS LIMITES DE PAGO DE MI CRÉDITO"
+            )
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "Faq-contentInfo" }, [
-            _c("h4", { staticClass: "color-primary " }, [
-              _vm._v("¿QUIERES MÁS INFORMACIÓN?")
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "PBX: (571) 670 2400 Ext: 127 133 236 carteralilipink@lilipink.com //Cra 19A No 196-23 Bogotá"
-              )
-            ])
+          _c("p", [
+            _vm._v(
+              "No. Las fechas del pago del crédito Lili Pink no pueden ser modificadas a solicitud del cliente"
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("h4", [_vm._v("SI PRESENTO RETRASO EN MIS CUOTAS")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Serás reportado a centrales de riesgo y de persistir o continuar la mora o ser superior a 90 días se realizará cobro jurídico. Recuerda que tener buenos hábitos de pago es su mejor carta de presentación ante el comercio\n                        y sector financiero\n                    "
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("h4", [_vm._v("CUÁNDO PUEDE ESTAR BLOQUEADO EL CRÉDITO")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Puede estar bloqueado si presenta mora superior a 30 días, suplantación o perdida."
+            )
           ])
         ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "Faq-contentInfo" }, [
+        _c("h4", { staticClass: "color-primary " }, [
+          _vm._v("¿QUIERES MÁS INFORMACIÓN?")
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "PBX: (571) 670 2400 Ext: 127 133 236 carteralilipink@lilipink.com //Cra 19A No 196-23 Bogotá"
+          )
+        ])
       ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_vm._v("Taza mÍnima legal EA")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Taza mÍnima legal EA")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", [_vm._v("Cuotas")]),
+      _vm._v(" "),
+      _c("td", [_vm._v("Interés")])
     ])
   }
 ]

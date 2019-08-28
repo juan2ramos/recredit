@@ -38,7 +38,7 @@
                             2. Diferir las compras entre 1 y 12 cuotas quincenales generan un cobro de tasas.<br>
                             de interés de cuantías mínimas que van a ser aplicadas de la siguiente forma:</p>
 
-                        <a href="" class="button openModal" data-modal="faqModal">Ver tasas de interés</a>
+                        <a @click.prevent="modal" class="button openModal">Ver tasas de interés</a>
                     </li>
                 </ul>
             </article>
@@ -73,6 +73,33 @@
                 </div>
             </article>
         </section>
+        <section class="Modal row justify-center align-middle Faq-Modal" v-show="openModal">
+            <div class="Modal-content row Contact-content">
+                <div class="Modal-contentClose modalClose" @click.prevent="modal" >X</div>
+                <div class=" table-container">
+                    <table class="Faq-modalTable">
+                        <thead>
+                        <tr>
+                            <th>Taza mÍnima legal EA</th>
+                            <th>Taza mÍnima legal EA</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Cuotas</td>
+                            <td>Interés</td>
+                        </tr>
+
+                        <tr v-for="i in 13" :key="i">
+                            <td>{{i}}</td>
+                            <td>{{i*2.34}}%</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
     </div>
 </template>
 <script>
@@ -86,8 +113,8 @@
             }
         },
         methods: {
-            isNumberValidate() {
-
+            modal() {
+                this.openModal = !this.openModal
             }
         }
     }
