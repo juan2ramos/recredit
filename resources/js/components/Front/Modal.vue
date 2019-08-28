@@ -29,7 +29,7 @@
                         <h4>CÓMO PUEDO CONSULTAR EL ESTADO DE MI CRÉDITO O EL PAGO MÍNIMO</h4>
                         <p>Puedes hacerlo a través de los siguientes medios: <br>
                             1. Iniciando sesión en www.creditoslilipink.com <br>
-                            2. Llamando a la línea de servicio al cliente en bogotá 670 2400 ext: 137 - 133 <br>
+                            2. Llamando a la línea de servicio al cliente en bogotá 670 2400 ext: 127 133 y 236<br>
                             3. Solicitando la información en cualquier tienda Lili Pink.</p>
                     </li>
                     <li>
@@ -47,7 +47,7 @@
 
                     <li>
                         <h4>QUE DEBO HACER SI NO PUEDO INICIAR SESIÓN EN WWW.CREDITOSLILIPINK.COM</h4>
-                        <p>Comunicate a la línea de servicio al cliente en bogotá 670 2400 ext: 127 133 236.</p>
+                        <p>Comunicate a la línea de servicio al cliente en bogotá 670 2400 ext: 133 236.</p>
                     </li>
 
                     <li>
