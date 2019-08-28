@@ -8,7 +8,7 @@
                 <p><a href="mailto:carteralilipink@lilipink.com">carteralilipink@lilipink.com</a></p>
                 <div class="is-text-center m-t-a-12"><span>o</span></div>
                 <p>Comunícate con servicio al cliente al
-                    <a href="tel:5716702400">(571) 6702400 EXT 127 133 7 236 en Bogotá</a>
+                    <a href="tel:5716702400">(571) 6702400 EXT 127 133 y 236 en Bogotá</a>
                 </p>
             </div>
         </article>
