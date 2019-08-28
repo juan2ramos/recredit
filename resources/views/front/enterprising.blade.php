@@ -86,12 +86,12 @@
 
                     <li>
                         <h4>CUÁNDO PUEDE ESTAR BLOQUEADO EL CRÉDITO</h4>
-                        <p>Puede estar cloqueado si presenta mora superior a 30 días, suplantación o perdida.</p>
+                        <p>Puede estar bloqueado si presenta mora superior a 30 días, suplantación o perdida.</p>
                     </li>
                 </ul>
                 <div class="Faq-contentInfo">
                     <h4 class="color-primary ">¿QUIERES MÁS INFORMACIÓN?</h4>
-                    <p>PBX: (571) 670 2400 Ext: 114 carteralilipink@lilipink.com //Cra 19A No 196-23 Bogotá</p>
+                    <p>PBX: (571) 670 2400 Ext: 127 133 236 carteralilipink@lilipink.com //Cra 19A No 196-23 Bogotá</p>
                 </div>
             </article>
         </section>

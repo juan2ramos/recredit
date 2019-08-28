@@ -3221,6 +3221,106 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Front/Modal.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Front/Modal.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'Modal',
+  data: function data() {
+    return {
+      openModal: false
+    };
+  },
+  methods: {
+    isNumberValidate: function isNumberValidate() {}
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/vue2-dropzone/dist/vue2Dropzone.min.css":
 /*!**********************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue2-dropzone/dist/vue2Dropzone.min.css ***!
@@ -17179,6 +17279,198 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Front/Modal.vue?vue&type=template&id=4fd3ba8c&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Front/Modal.vue?vue&type=template&id=4fd3ba8c& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("section", { staticClass: "Faq-content container row" }, [
+        _c("article", { staticClass: "col-16 col-m-8" }, [
+          _c("ul", { staticClass: "is-list-less" }, [
+            _c("li", [
+              _c("h4", [_vm._v("CÓMO PUEDO OBTENER MI CRÉDITO LILI PINK")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Solo debes presentar la cédula original, dos referencias personales y tener buenos hábitos\n                        de\n                        pago; los cuales serán consultados y verificados en centrales de riesgo.\n                        "
+                ),
+                _c("b", [_vm._v("NO NECESITAS CODEUDORES")]),
+                _vm._v(".")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("h4", [_vm._v("CUÁNDO RECIBO MI CRÉDITO LILI PINK")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  'Presentando la cédula original en la tienda en donde solicitaste el crédito o si lo hiciste\n                        por la página www.creditoslilipink.com, debes pedirla en la tienda que escogiste en el\n                        momento de la inscripción"\n                    '
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("h4", [
+                _vm._v("CÓMO PUEDO INICIAR SESIÓN EN WWW.CREDITOSLILIPINK.COM")
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        Debes tener en cuenta lo siguiente: "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        1. Tu usuario es el e-mail registrado en el momento de la solicitud del crédito "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        2. Seguido este paso, das CLICK en “Olvidaste contraseña” para reestablecer una contraseña que sea única para ti.\n                    "
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("h4", [
+                _vm._v(
+                  "CÓMO PUEDO CONSULTAR EL ESTADO DE MI CRÉDITO O EL PAGO MÍNIMO"
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v("Puedes hacerlo a través de los siguientes medios: "),
+                _c("br"),
+                _vm._v(
+                  "\n                        1. Iniciando sesión en www.creditoslilipink.com "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        2. Llamando a la línea de servicio al cliente en bogotá 670 2400 ext: 137 - 133 "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        3. Solicitando la información en cualquier tienda Lili Pink."
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("h4", [_vm._v("TIENE CUOTA DE UTILIZACIÓN O DE MANEJO")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v("1. No hay cuota de manejo."),
+                _c("br"),
+                _vm._v(
+                  "\n                        2. Diferir las compras entre 1 y 12 cuotas quincenales generan un cobro de tasas."
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        de interés de cuantías mínimas que van a ser aplicadas de la siguiente forma:"
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "button openModal",
+                  attrs: { href: "", "data-modal": "faqModal" }
+                },
+                [_vm._v("Ver tasas de interés")]
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("article", { staticClass: "col-16 col-m-8" }, [
+          _c("ul", { staticClass: "is-list-less" }, [
+            _c("li", [
+              _c("h4", [
+                _vm._v(
+                  "QUE DEBO HACER SI NO PUEDO INICIAR SESIÓN EN WWW.CREDITOSLILIPINK.COM"
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Comunicate a la línea de servicio al cliente en bogotá 670 2400 ext: 127 133 236."
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("h4", [
+                _vm._v(
+                  "ES POSIBLE CAMBIAR LAS FECHAS LIMITES DE PAGO DE MI CRÉDITO"
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "No. Las fechas del pago del crédito Lili Pink no pueden ser modificadas a solicitud del cliente"
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("h4", [_vm._v("SI PRESENTO RETRASO EN MIS CUOTAS")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Serás reportado a centrales de riesgo y de persistir o continuar la mora o ser superior a 90 días se realizará cobro jurídico. Recuerda que tener buenos hábitos de pago es su mejor carta de presentación ante el comercio\n                        y sector financiero\n                    "
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("h4", [_vm._v("CUÁNDO PUEDE ESTAR BLOQUEADO EL CRÉDITO")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Puede estar bloqueado si presenta mora superior a 30 días, suplantación o perdida."
+                )
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "Faq-contentInfo" }, [
+            _c("h4", { staticClass: "color-primary " }, [
+              _vm._v("¿QUIERES MÁS INFORMACIÓN?")
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "PBX: (571) 670 2400 Ext: 127 133 236 carteralilipink@lilipink.com //Cra 19A No 196-23 Bogotá"
+              )
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js":
 /*!********************************************************************!*\
   !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.js ***!
@@ -29458,23 +29750,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Admin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Admin */ "./resources/js/components/Admin/index.js");
 /* harmony import */ var _components_CreditRequest__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/CreditRequest */ "./resources/js/components/CreditRequest/index.js");
-/* harmony import */ var laravel_echo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! laravel-echo */ "./node_modules/laravel-echo/dist/echo.js");
-/* harmony import */ var _Modal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Modal */ "./resources/js/Modal.js");
-/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./nav */ "./resources/js/nav.js");
-/* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! sweetalert */ "./node_modules/sweetalert/dist/sweetalert.min.js");
-/* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(sweetalert__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _components_Front__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Front */ "./resources/js/components/Front/index.js");
+/* harmony import */ var laravel_echo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! laravel-echo */ "./node_modules/laravel-echo/dist/echo.js");
+/* harmony import */ var _Modal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Modal */ "./resources/js/Modal.js");
+/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./nav */ "./resources/js/nav.js");
+/* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! sweetalert */ "./node_modules/sweetalert/dist/sweetalert.min.js");
+/* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(sweetalert__WEBPACK_IMPORTED_MODULE_7__);
+
 
 
 
 
 window.Pusher = __webpack_require__(/*! pusher-js */ "./node_modules/pusher-js/dist/web/pusher.js");
-window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_3__["default"]({
+window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_4__["default"]({
   broadcaster: 'pusher',
   key: "b2d6161f7b63c431452c",
   cluster: 'us2',
   encrypted: true
 });
-var components = _components_Admin__WEBPACK_IMPORTED_MODULE_1__["default"].concat(_components_CreditRequest__WEBPACK_IMPORTED_MODULE_2__["default"]);
+var components = _components_Admin__WEBPACK_IMPORTED_MODULE_1__["default"].concat(_components_CreditRequest__WEBPACK_IMPORTED_MODULE_2__["default"]).concat(_components_Front__WEBPACK_IMPORTED_MODULE_3__["default"]);
 components.forEach(function (component) {
   vue__WEBPACK_IMPORTED_MODULE_0___default.a.component(component.name, component);
 });
@@ -29483,8 +29777,8 @@ new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
 });
 
 
-Object(_nav__WEBPACK_IMPORTED_MODULE_5__["default"])();
-Object(_Modal__WEBPACK_IMPORTED_MODULE_4__["default"])();
+Object(_nav__WEBPACK_IMPORTED_MODULE_6__["default"])();
+Object(_Modal__WEBPACK_IMPORTED_MODULE_5__["default"])();
 
 var alertMessage = document.querySelector('#alertMessage');
 
@@ -29492,7 +29786,7 @@ if (alertMessage) {
   var message = alertMessage.dataset.message,
       secondMessage = alertMessage.dataset.secondmessage,
       typeMessage = alertMessage.dataset.typemessage;
-  sweetalert__WEBPACK_IMPORTED_MODULE_6___default()(message, secondMessage, typeMessage);
+  sweetalert__WEBPACK_IMPORTED_MODULE_7___default()(message, secondMessage, typeMessage);
 }
 
 /***/ }),
@@ -30569,6 +30863,90 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = ([_Email__WEBPACK_IMPORTED_MODULE_0__["default"], _PointsAutocomplete__WEBPACK_IMPORTED_MODULE_1__["default"], _SMS__WEBPACK_IMPORTED_MODULE_2__["default"], _Files__WEBPACK_IMPORTED_MODULE_3__["default"], _LinksHeader__WEBPACK_IMPORTED_MODULE_4__["default"]]);
+
+/***/ }),
+
+/***/ "./resources/js/components/Front/Modal.vue":
+/*!*************************************************!*\
+  !*** ./resources/js/components/Front/Modal.vue ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Modal_vue_vue_type_template_id_4fd3ba8c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Modal.vue?vue&type=template&id=4fd3ba8c& */ "./resources/js/components/Front/Modal.vue?vue&type=template&id=4fd3ba8c&");
+/* harmony import */ var _Modal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Modal.vue?vue&type=script&lang=js& */ "./resources/js/components/Front/Modal.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Modal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Modal_vue_vue_type_template_id_4fd3ba8c___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Modal_vue_vue_type_template_id_4fd3ba8c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Front/Modal.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Front/Modal.vue?vue&type=script&lang=js&":
+/*!**************************************************************************!*\
+  !*** ./resources/js/components/Front/Modal.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Modal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Modal.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Front/Modal.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Modal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Front/Modal.vue?vue&type=template&id=4fd3ba8c&":
+/*!********************************************************************************!*\
+  !*** ./resources/js/components/Front/Modal.vue?vue&type=template&id=4fd3ba8c& ***!
+  \********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Modal_vue_vue_type_template_id_4fd3ba8c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Modal.vue?vue&type=template&id=4fd3ba8c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Front/Modal.vue?vue&type=template&id=4fd3ba8c&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Modal_vue_vue_type_template_id_4fd3ba8c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Modal_vue_vue_type_template_id_4fd3ba8c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Front/index.js":
+/*!************************************************!*\
+  !*** ./resources/js/components/Front/index.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Modal */ "./resources/js/components/Front/Modal.vue");
+
+/* harmony default export */ __webpack_exports__["default"] = ([_Modal__WEBPACK_IMPORTED_MODULE_0__["default"]]);
 
 /***/ }),
 

@@ -7,6 +7,8 @@ use App\Models\Credit;
 use App\Models\File;
 use App\Models\Point;
 use App\Models\Reference;
+use Carbon\Carbon;
+use Carbon\Traits\Date;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Spatie\Permission\Traits\HasRoles;

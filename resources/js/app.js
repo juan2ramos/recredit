@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import adminComponents from './components/Admin';
 import creditRequestComponents from './components/CreditRequest';
+import Front from './components/Front';
 import Echo from 'laravel-echo'
 
 window.Pusher = require('pusher-js');
@@ -11,7 +12,7 @@ window.Echo = new Echo({
     encrypted: true
 });
 
-const components = adminComponents.concat(creditRequestComponents);
+const components = adminComponents.concat(creditRequestComponents).concat(Front);
 
 components.forEach(component => {
     Vue.component(component.name, component);

@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\User;
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
 class Credit extends Model
@@ -54,6 +55,18 @@ class Credit extends Model
     public function getPriorityNameAttribute()
     {
         return $this->priority ? 'Alta' : 'Baja';
+    }
+
+    public function getCreatedAtAttribute($value)
+    {
+        return Carbon::parse($value)->toDateTimeString();
+
+    }
+
+    public function getCheckDateAttribute($value)
+    {
+        return Carbon::parse($value)->toDateTimeString();
+
     }
 
 }
