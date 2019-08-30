@@ -43,6 +43,11 @@
                             <img src="../../../images/settings.svg" alt="">
                         </a>
                     </div>
+                    <div class="row justify-center middle-items" v-if="isPoint">
+                        <a v-if="client.credit" @click="openModalMethod(client.credit)">
+                            ver info
+                        </a>
+                    </div>
                 </td>
             </tr>
             </tbody>
@@ -50,22 +55,34 @@
         <div v-else-if="search">
             <p>No hemos encontrado ningún registro con el término de búsqueda</p>
         </div>
+        <modal-info v-if="openModal" :credit="credit" @close-modal="closeModal"></modal-info>
     </section>
+
 </template>
 
 <script>
     import swal from 'sweetalert';
     import axios from 'axios';
+    import ModalInfo from './ModalInfo'
 
     export default {
         name: "Users",
-        props: ['clients', 'token', 'search', 'isAnalysts'],
+        props: ['clients', 'token', 'search', 'isAnalysts', 'isPoint', 'ModalInfo'],
         data: function () {
             return {
-                clientsLocal: this.clients
+                clientsLocal: this.clients,
+                credit: {},
+                openModal: false
             }
         },
         methods: {
+            openModalMethod(credit){
+                this.credit = credit;
+                this.openModal = true
+            },
+            closeModal() {
+                this.openModal = false
+            },
             stateCredit(credit) {
                 switch (credit.state) {
                     case 0:

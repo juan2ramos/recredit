@@ -38,7 +38,7 @@
             <div class="Request-formGroup p-t-28
             {{$errors->has('references.1.name') || $errors->has('references.1.phone') ?'error':''}}"
                  data-errorMessage="El nombre es requerido, el celular debe de ser de 10 dígitos,
-                 no debe la cédula ni el celular del usuario y debe ser diferente al del la refencia 1">
+                 no debe la cédula ni el celular del usuario y debe ser diferente al del la referencia 1">
                 <label for="name">Referencia personal 2</label>
 
                 <input type="hidden" name="references[1][id]"

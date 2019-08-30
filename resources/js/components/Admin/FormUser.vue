@@ -139,7 +139,7 @@
                             <option value="0">Seleccione un punto</option>
                             <option v-for="point in pointsLocal" :value="point.id">{{point.name}}</option>
                         </select>
-                        <p v-if="!superAdmin">{{pointsLocal.filter((p)=>p.id === selectedPoint)[0].name}}</p>
+                        <p v-if="!superAdmin">{{pointsLocal.filter((p)=>p.id === selectedPoint)[0].trade_name}}</p>
                     </div>
 
                 </div>
@@ -147,7 +147,7 @@
             <div class="row">
                 <h4 class="col-16 h-4">Referencias personales </h4>
                 <div class="col-16 row" v-for="(reference, i) in user.references">
-                    <h5 class="col-16">Refencia {{ i + 1 }}</h5>
+                    <h5 class="col-16">Referencia {{ i + 1 }}</h5>
                     <div class="col-16 col-m-8 Form-column">
                         <input
                                 v-if="superAdmin"
@@ -162,7 +162,7 @@
                                     :value="reference.name"
                                     :name="`references[${i}][name]`"
                                     :id="`reference.name${i}`">
-                            <p v-if="superAdmin">{{reference.name}}</p>
+                            <p v-if="!superAdmin">{{reference.name}}</p>
                         </div>
                     </div>
                     <div class="col-16 col-m-8 Form-column">

@@ -54,7 +54,7 @@
                     <div class="col-16 row ">
 
                         <div class="col-5 m-b-12">
-                            <p>Referecia {{$loop->iteration}}</p>
+                            <p>Referencia {{$loop->iteration}}</p>
                         </div>
                         <div class="col-5 m-b-12">
                             <p>{{$reference->name}}</p>

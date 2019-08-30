@@ -21,6 +21,6 @@ class Point extends Model
 
     public function getFullNameAttribute()
     {
-        return "$this->trade_name $this->name";
+        return "$this->name / $this->trade_name ";
     }
 }
