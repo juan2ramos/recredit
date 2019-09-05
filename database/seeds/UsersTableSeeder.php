@@ -178,7 +178,7 @@ class UsersTableSeeder extends Seeder
         $point123 = User::create(['name' => 'Centro Chia', 'last_name' => 'LiliPink', 'email' => 'lilipink.centrochia@lilipink.com', 'password' => bcrypt('1234567'), 'document_type' => 'Cédula de ciudadanía', 'document' => 'ALMT0851', 'verification_code' => '', 'verification_state' => 0,]);
         $point124 = User::create(['name' => 'Titan Calle 80', 'last_name' => 'LiliPink', 'email' => 'lilipink.titancll80@ililipink.com', 'password' => bcrypt('1234567'), 'document_type' => 'Cédula de ciudadanía', 'document' => 'ALMT0852', 'verification_code' => '', 'verification_state' => 0,]);
         $point125 = User::create(['name' => 'Santa Lucia', 'last_name' => 'LiliPink', 'email' => 'lilipink.santalucia@lilipink.com', 'password' => bcrypt('1234567'), 'document_type' => 'Cédula de ciudadanía', 'document' => 'ALMT0856', 'verification_code' => '', 'verification_state' => 0,]);
-        $point126 = User::create(['name' => 'Unicentro V/dupar', 'last_name' => 'LiliPink', 'email' => 'lilipink.unicentrovalledupar@lilipink.com', 'password' => bcrypt('1234567'), 'document_type' => 'Cédula de ciudadanía', 'document' => 'ALMT0857', 'verification_code' => '', 'verification_state' => 0,]);
+
         $point127 = User::create(['name' => 'Arrecife', 'last_name' => 'LiliPink', 'email' => 'lilipink.arrecife@lilipink.com', 'password' => bcrypt('1234567'), 'document_type' => 'Cédula de ciudadanía', 'document' => 'ALMT0860', 'verification_code' => '', 'verification_state' => 0,]);
         $point128 = User::create(['name' => 'Cacique', 'last_name' => 'LiliPink', 'email' => 'lilipink.cacique@lilipink.com', 'password' => bcrypt('1234567'), 'document_type' => 'Cédula de ciudadanía', 'document' => 'ALMT0863', 'verification_code' => '', 'verification_state' => 0,]);
         $point129 = User::create(['name' => 'San Andresito San Jose', 'last_name' => 'LiliPink', 'email' => 'lilipink.sanandresito@lilipink.com', 'password' => bcrypt('1234567'), 'document_type' => 'Cédula de ciudadanía', 'document' => 'ALMT0865', 'verification_code' => '', 'verification_state' => 0,]);
@@ -258,7 +258,7 @@ class UsersTableSeeder extends Seeder
         $point203 = User::create(['name' => 'Fr. Prado', 'last_name' => 'LiliPink', 'email' => 'lilipink.pradobogota@lilipink.com', 'password' => bcrypt('1234567'), 'document_type' => 'Cédula de ciudadanía', 'document' => 'ALMT0989', 'verification_code' => '', 'verification_state' => 0,]);
         $point204 = User::create(['name' => 'Fr. Marinilla', 'last_name' => 'LiliPink', 'email' => 'lilipink.marinilla@lilipink.com', 'password' => bcrypt('1234567'), 'document_type' => 'Cédula de ciudadanía', 'document' => 'ALMT0990', 'verification_code' => '', 'verification_state' => 0,]);
         $point205 = User::create(['name' => 'Santa Helenita', 'last_name' => 'LiliPink', 'email' => 'lilipink.santahelenita@lilipink.com', 'password' => bcrypt('1234567'), 'document_type' => 'Cédula de ciudadanía', 'document' => 'ALMT0991', 'verification_code' => '', 'verification_state' => 0,]);
-        $point206 = User::create(['name' => 'Fr. Sabanalarga', 'last_name' => 'LiliPink', 'email' => 'lilipink.sabanalarga@lilipink.com', 'password' => bcrypt('1234567'), 'document_type' => 'Cédula de ciudadanía', 'document' => 'ALMT0992', 'verification_code' => '', 'verification_state' => 0,]);
+
         $point207 = User::create(['name' => 'Multicentro Ibague', 'last_name' => 'LiliPink', 'email' => 'lilipink.multicentroibague@lilipink.com', 'password' => bcrypt('1234567'), 'document_type' => 'Cédula de ciudadanía', 'document' => 'ALMT0995', 'verification_code' => '', 'verification_state' => 0,]);
         $point208 = User::create(['name' => 'Valledupar Centro Dos', 'last_name' => 'LiliPink', 'email' => 'lilipink.valleduparcentro2@lilipink.com', 'password' => bcrypt('1234567'), 'document_type' => 'Cédula de ciudadanía', 'document' => 'ALMT0996', 'verification_code' => '', 'verification_state' => 0,]);
         $point209 = User::create(['name' => 'Casa Blanca Madrid', 'last_name' => 'LiliPink', 'email' => 'lilipink.casablanca@lilipink.com', 'password' => bcrypt('1234567'), 'document_type' => 'Cédula de ciudadanía', 'document' => 'ALMT0997', 'verification_code' => '', 'verification_state' => 0,]);
@@ -343,7 +343,7 @@ class UsersTableSeeder extends Seeder
         $point288 = User::create(['name' => 'Montevideo', 'last_name' => 'LiliPink', 'email' => 'lilipink.montevideo@lilipink.com', 'password' => bcrypt('1234567'), 'document_type' => 'Cédula de ciudadanía', 'document' => 'ALMT1222', 'verification_code' => '', 'verification_state' => 0,]);
         $point289 = User::create(['name' => 'Fr. Piedecuesta', 'last_name' => 'LiliPink', 'email' => 'lilipink.piedecuesta@lilipink.com', 'password' => bcrypt('1234567'), 'document_type' => 'Cédula de ciudadanía', 'document' => 'ALMT1227', 'verification_code' => '', 'verification_state' => 0,]);
         $point290 = User::create(['name' => 'Yoi Gran Plaza Florencia', 'last_name' => 'LiliPink', 'email' => 'yoi.granplazaflorencia@yoi-colombia.com', 'password' => bcrypt('1234567'), 'document_type' => 'Cédula de ciudadanía', 'document' => 'ALMT1228', 'verification_code' => '', 'verification_state' => 0,]);
-        $point291 = User::create(['name' => 'Yoi Gran Plaza Bosa', 'last_name' => 'LiliPink', 'email' => 'yoi.granplazabosa@yoi-colombia.com', 'password' => bcrypt('1234567'), 'document_type' => 'Cédula de ciudadanía', 'document' => 'ALMT1229', 'verification_code' => '', 'verification_state' => 0,]);
+
         $point292 = User::create(['name' => 'Fr. San Gil (Saroga)', 'last_name' => 'LiliPink', 'email' => 'lilipink.sangil@lilipink.com', 'password' => bcrypt('1234567'), 'document_type' => 'Cédula de ciudadanía', 'document' => 'ALMT0907', 'verification_code' => '', 'verification_state' => 0,]);
         $point293 = User::create(['name' => 'San Diego', 'last_name' => 'LiliPink', 'email' => 'lilipink.sandiego@lilipink.com', 'password' => bcrypt('1234567'), 'document_type' => 'Cédula de ciudadanía', 'document' => 'ALMT1231', 'verification_code' => '', 'verification_state' => 0,]);
         $point294 = User::create(['name' => 'Yoi Jardin Plaza Cucuta', 'last_name' => 'LiliPink', 'email' => 'yoi.jardinplaza@yoi-colombia.com', 'password' => bcrypt('1234567'), 'document_type' => 'Cédula de ciudadanía', 'document' => 'ALMT1232', 'verification_code' => '', 'verification_state' => 0,]);
@@ -493,7 +493,7 @@ class UsersTableSeeder extends Seeder
         $point123->assignRole('Point');
         $point124->assignRole('Point');
         $point125->assignRole('Point');
-        $point126->assignRole('Point');
+
         $point127->assignRole('Point');
         $point128->assignRole('Point');
         $point129->assignRole('Point');
@@ -573,7 +573,6 @@ class UsersTableSeeder extends Seeder
         $point203->assignRole('Point');
         $point204->assignRole('Point');
         $point205->assignRole('Point');
-        $point206->assignRole('Point');
         $point207->assignRole('Point');
         $point208->assignRole('Point');
         $point209->assignRole('Point');
@@ -658,7 +657,6 @@ class UsersTableSeeder extends Seeder
         $point288->assignRole('Point');
         $point289->assignRole('Point');
         $point290->assignRole('Point');
-        $point291->assignRole('Point');
         $point292->assignRole('Point');
         $point293->assignRole('Point');
         $point294->assignRole('Point');

@@ -4,11 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/resources/js/app.js" description="import Echo from 'laravel-echo'" line="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9dde37d-980e-4471-b7b8-b7b7dd75cffa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/database/seeds/PointsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/PointsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Admin/Users.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Admin/Users.vue" afterDir="false" />
-    </list>
+    <list default="true" id="c9dde37d-980e-4471-b7b8-b7b7dd75cffa" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,19 +52,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/seeds/PointsTableSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="23" />
+            <state relative-caret-position="464">
+              <caret line="313" column="126" selection-start-line="313" selection-start-column="126" selection-end-line="313" selection-end-column="126" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="20703">
               <caret line="684" column="16" lean-forward="true" selection-start-line="684" selection-start-column="16" selection-end-line="684" selection-end-column="16" />
             </state>
           </provider>
@@ -448,18 +444,18 @@
       <workItem from="1567013166142" duration="2325000" />
       <workItem from="1567088922361" duration="717000" />
       <workItem from="1567119545483" duration="6759000" />
-      <workItem from="1567671809665" duration="3158000" />
+      <workItem from="1567671809665" duration="3423000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="298025000" />
+    <option name="totallyTimeSpent" value="298290000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" id="Database" order="0" sideWeight="0.50239694" visible="true" weight="0.17083333" />
+      <window_info id="Database" order="0" sideWeight="0.50239694" visible="true" weight="0.17083333" />
       <window_info id="Favorites" order="1" sideWeight="0.5011111" weight="0.24453124" />
       <window_info id="npm" order="2" sideWeight="0.36241612" weight="0.19296876" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -475,11 +471,11 @@
       <window_info anchor="bottom" id="Database Console" order="10" weight="0.32962963" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="11" />
       <window_info anchor="bottom" x="-224" y="-651" width="2560" height="222" id="Run" order="12" sideWeight="0.49760306" weight="0.22818792" />
-      <window_info anchor="bottom" x="0" y="23" width="1440" height="877" id="Terminal" order="13" type="FLOATING" weight="0.2751678" />
+      <window_info anchor="bottom" x="0" y="23" width="1440" height="877" id="Terminal" order="13" visible="true" weight="0.2746234" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="3" sideWeight="0.48360655" visible="true" weight="0.18958333" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="3" sideWeight="0.48360655" visible="true" weight="0.18958333" />
       <window_info anchor="right" id="Structure" order="4" sideWeight="0.5011111" side_tool="true" weight="0.33333334" />
     </layout>
   </component>
@@ -889,17 +885,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
+    <entry file="file://$PROJECT_DIR$/database/seeds/PointsTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="684" column="16" lean-forward="true" selection-start-line="684" selection-start-column="16" selection-end-line="684" selection-end-column="16" />
+        <state relative-caret-position="464">
+          <caret line="313" column="126" selection-start-line="313" selection-start-column="126" selection-end-line="313" selection-end-column="126" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/PointsTableSeeder.php">
+    <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="23" />
+        <state relative-caret-position="20703">
+          <caret line="684" column="16" lean-forward="true" selection-start-line="684" selection-start-column="16" selection-end-line="684" selection-end-column="16" />
         </state>
       </provider>
     </entry>
