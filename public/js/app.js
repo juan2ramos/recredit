@@ -2529,6 +2529,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "ModalInfo",
   props: ['credit'],
@@ -16434,14 +16436,22 @@ var render = function() {
           _c("p", [
             _c("b", [_vm._v("Estado del credito:")]),
             _vm._v(
-              " " + _vm._s(_vm.credit.state === 1 ? "Aprobado" : "Denegado")
+              "\n                " +
+                _vm._s(
+                  _vm.credit.state === 1
+                    ? "Aprobado"
+                    : _vm.credit.state === 0
+                    ? "Pendiente"
+                    : "Denegado"
+                ) +
+                "\n            "
             )
           ]),
           _vm._v(" "),
           _vm.credit.reasons_id
             ? _c("p", [
                 _c("b", [_vm._v("Denegado por:")]),
-                _vm._v(" " + _vm._s(_vm.credit.reason))
+                _vm._v(" " + _vm._s(_vm.credit.reason.name))
               ])
             : _vm._e(),
           _vm._v(" "),
@@ -30123,7 +30133,7 @@ __webpack_require__.r(__webpack_exports__);
 window.Pusher = __webpack_require__(/*! pusher-js */ "./node_modules/pusher-js/dist/web/pusher.js");
 window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_4__["default"]({
   broadcaster: 'pusher',
-  key: "b2d6161f7b63c431452c",
+  key: "",
   cluster: 'us2',
   encrypted: true
 });

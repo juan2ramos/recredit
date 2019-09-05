@@ -3,8 +3,10 @@
         <div class="row Modal-content">
             <h4 class="col-16 h-4">Datos del crédito</h4>
             <div class="col-8">
-                <p><b>Estado del credito:</b> {{credit.state === 1 ? 'Aprobado':'Denegado'}}</p>
-                <p v-if="credit.reasons_id"><b>Denegado por:</b> {{credit.reason}}</p>
+                <p><b>Estado del credito:</b>
+                    {{credit.state === 1 ? 'Aprobado':credit.state === 0 ? 'Pendiente':'Denegado'}}
+                </p>
+                <p v-if="credit.reasons_id"><b>Denegado por:</b> {{credit.reason.name}}</p>
                 <p><b>Fecha de solicitud: </b>{{credit.created_at}}</p>
 
             </div>
