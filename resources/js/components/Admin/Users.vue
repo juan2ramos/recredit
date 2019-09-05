@@ -76,7 +76,7 @@
             }
         },
         methods: {
-            openModalMethod(credit){
+            openModalMethod (credit){
                 this.credit = credit;
                 this.openModal = true
             },
