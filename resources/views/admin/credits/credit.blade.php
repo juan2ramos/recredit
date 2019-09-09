@@ -30,7 +30,7 @@
                 <p><b>Ciudad : </b>{{$user->client->residency_city}}</p>
             </div>
             <div class="col-16 col-m-8 col-l-5 m-b-12">
-                <p><b>Punto : </b>{{$user->client->point->name}}</p>
+                <p><b>Punto : </b>{{$user->client->point->trade_name}}</p>
             </div>
             <div class="col-16 col-m-8 col-l-5 m-b-12">
                 <p><b>Teléfono : </b>{{$user->client->phone}}</p>
