@@ -134,12 +134,12 @@
                     </div>
                     <div class="Form-labelContent">
                         <label for="point">Punto</label>
-                        <select v-if="superAdmin" id="point" name="point" v-model="selectedPoint"
+                        <select  style="text-transform: capitalize" v-if="superAdmin" id="point" name="point" v-model="selectedPoint"
                                 class="Request-formSelect">
                             <option value="0">Seleccione un punto</option>
-                            <option v-for="point in pointsLocal" :value="point.id">{{point.trade_name}}</option>
+                            <option v-for="point in pointsLocal" :value="point.id">{{point.name}}</option>
                         </select>
-                        <p v-if="!superAdmin">{{pointsLocal.filter((p)=>p.id === selectedPoint)[0].trade_name}}</p>
+                        <p v-if="!superAdmin" style="text-transform: capitalize">{{pointsLocal.filter((p)=>p.id === selectedPoint)[0].name}}</p>
                     </div>
 
                 </div>
