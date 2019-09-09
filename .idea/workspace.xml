@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9dde37d-980e-4471-b7b8-b7b7dd75cffa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/credits/credit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/credits/credit.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/CreditController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+            <state relative-caret-position="292">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -88,8 +87,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/credits/credit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="712">
-              <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+            <state relative-caret-position="398">
+              <caret line="34" column="55" lean-forward="true" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#6;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -134,8 +136,8 @@
       <find>cap</find>
       <find>CRA. 59A # 79 30</find>
       <find>$config</find>
-      <find>punto</find>
       <find>ana</find>
+      <find>punto</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -482,18 +484,18 @@
       <workItem from="1567671809665" duration="7248000" />
       <workItem from="1567998856171" duration="3576000" />
       <workItem from="1568022885272" duration="7753000" />
-      <workItem from="1568050586365" duration="199000" />
+      <workItem from="1568050586365" duration="406000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="313643000" />
+    <option name="totallyTimeSpent" value="313850000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-224" y="-1080" width="2560" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" id="Database" order="0" sideWeight="0.50239694" visible="true" weight="0.17070313" />
+      <window_info id="Database" order="0" sideWeight="0.50239694" visible="true" weight="0.17070313" />
       <window_info id="Favorites" order="1" sideWeight="0.5011111" weight="0.24453124" />
       <window_info id="npm" order="2" sideWeight="0.36241612" weight="0.19296876" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -509,7 +511,7 @@
       <window_info anchor="bottom" id="Database Console" order="10" weight="0.32962963" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="11" />
       <window_info anchor="bottom" x="-224" y="-651" width="2560" height="222" id="Run" order="12" sideWeight="0.49760306" weight="0.22818792" />
-      <window_info anchor="bottom" x="0" y="23" width="1440" height="877" id="Terminal" order="13" weight="0.27346465" />
+      <window_info active="true" anchor="bottom" x="0" y="23" width="1440" height="877" id="Terminal" order="13" visible="true" weight="0.27325025" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -905,15 +907,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/CreditController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+        <state relative-caret-position="292">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/credits/credit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="712">
-          <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+        <state relative-caret-position="398">
+          <caret line="34" column="55" lean-forward="true" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#6;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
