@@ -20,6 +20,16 @@ class Credit extends Model
         return $this->belongsTo(User::class);
     }
 
+    public function userReviewed()
+    {
+        return $this->belongsTo(User::class,'reviewed_user');
+    }
+
+    public function userFinish()
+    {
+        return $this->belongsTo(User::class,'finished_user');
+    }
+
     public function reason()
     {
         return $this->belongsTo(Reason::class, 'reasons_id');

@@ -43,5 +43,10 @@ return [
             'tolerance' => env('STRIPE_WEBHOOK_TOLERANCE', 300),
         ],
     ],
+    'sendinblue' => [
+        'v3'    => [
+            'key'   => env('SENDINBLUE_APIKEY')
+        ]
+    ],
 
 ];

@@ -33,6 +33,21 @@ class CreditRequest extends FormRequest
             'finished_user' => $this->user()->id,
         ]));
         $this->notify($this->user());
+        $this->sendMail($this->user());
+    }
+
+    private function sendMail($user)
+    {
+        MailTemplate::to($user->email);
+        MailTemplate::send(240);
+
+        MailTemplate::reset();
+
+        $users = User::role(['Analysts'])->get();
+        MailTemplate::to($users);
+        MailTemplate::attribute('NAME', $user->name);
+        MailTemplate::attribute('NUMBER', $user->document);
+        MailTemplate::send(243);
     }
 
     private function getUserToCreate(): User

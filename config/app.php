@@ -226,6 +226,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Menu' => App\Helpers\Menu::class,
+        'MailTemplate' => Juanparati\Sendinblue\Facades\Template::class,
+
     ],
 
 ];

@@ -1,7 +1,9 @@
 <?php
+
 namespace App\Modules\Admin\Request;
 
 
+use App\User;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Auth;
 
@@ -31,7 +33,28 @@ class UpdateCreditRequest extends FormRequest
         ]);
 
         $this->credit->save();
+        $this->sendMail($this->credit->user);
+    }
 
+    private function sendMail($user)
+    {
+        MailTemplate::to($user->email);
+        if ($this->input('approved') == 1) {
+            $r = 'Aprobado';
+            MailTemplate::send(241);
+        } else {
+            $r = 'Negado';
+            MailTemplate::send(242);
+        }
+
+        MailTemplate::reset();
+
+        $finish = $this->credit->load('userFinish');
+        if ($finish->user->hasRole('Point')) {
+            MailTemplate::attribute('RESPONSE', $r);
+            MailTemplate::attribute('NUMBER', $user->document);
+            MailTemplate::send(244);
+        }
     }
 
 }

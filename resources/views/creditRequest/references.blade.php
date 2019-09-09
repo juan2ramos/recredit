@@ -23,7 +23,7 @@
             <div class="Request-formGroup
             {{$errors->has('references.0.name') || $errors->has('references.0.phone') ?'error':''}}"
                  data-errorMessage="El nombre es requerido, el celular debe de ser de 10 dígitos,
-                 no debe la cédula ni el celular del usuario">
+                 no debe ser igual al número de cédula ni el celular del usuario">
                 <label for="name">Referencia personal 1</label>
                 <input type="hidden" name="references[0][id]"
                        value="{{$references->isNotEmpty() ? $references[0]->id : ''}}">
@@ -38,7 +38,7 @@
             <div class="Request-formGroup p-t-28
             {{$errors->has('references.1.name') || $errors->has('references.1.phone') ?'error':''}}"
                  data-errorMessage="El nombre es requerido, el celular debe de ser de 10 dígitos,
-                 no debe la cédula ni el celular del usuario y debe ser diferente al del la referencia 1">
+                 no debe ser igual al número de cédula ni el celular del usuario y debe ser diferente al de la referencia 1">
                 <label for="name">Referencia personal 2</label>
 
                 <input type="hidden" name="references[1][id]"
