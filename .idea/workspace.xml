@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9dde37d-980e-4471-b7b8-b7b7dd75cffa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/CreditRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/CreditRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/front.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/front.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/creditRequest/client.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/creditRequest/client.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,20 +111,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/front.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
+            <state relative-caret-position="533">
               <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/UserController.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/creditRequest/client.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+            <state relative-caret-position="394">
+              <caret line="29" column="71" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -235,7 +234,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/sass/_general.scss" />
         <option value="$PROJECT_DIR$/app/Events/NotificationCredit.php" />
         <option value="$PROJECT_DIR$/routes/channels.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/front.blade.php" />
@@ -286,6 +284,7 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/CreditRequest.php" />
         <option value="$PROJECT_DIR$/routes/front.php" />
+        <option value="$PROJECT_DIR$/resources/views/creditRequest/client.blade.php" />
       </list>
     </option>
   </component>
@@ -420,38 +419,20 @@
             <path>
               <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
               <item name="recreditos" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
               <item name="recreditos" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
               <item name="recreditos" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recreditos" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-              <item name="Request" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recreditos" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="SMS" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="creditRequest" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -566,15 +547,16 @@
       <workItem from="1567671809665" duration="7248000" />
       <workItem from="1567998856171" duration="3576000" />
       <workItem from="1568022885272" duration="7753000" />
-      <workItem from="1568050586365" duration="3371000" />
+      <workItem from="1568050586365" duration="3825000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="316815000" />
+    <option name="totallyTimeSpent" value="317269000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Database" order="0" sideWeight="0.50239694" weight="0.30347222" />
       <window_info id="Favorites" order="1" sideWeight="0.5011111" weight="0.24453124" />
@@ -592,11 +574,11 @@
       <window_info anchor="bottom" id="Database Console" order="10" weight="0.32962963" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="11" />
       <window_info anchor="bottom" x="-224" y="-651" width="2560" height="222" id="Run" order="12" sideWeight="0.49760306" weight="0.22818792" />
-      <window_info active="true" anchor="bottom" x="0" y="23" width="1440" height="877" id="Terminal" order="13" visible="true" weight="0.2723059" />
+      <window_info anchor="bottom" x="0" y="23" width="1440" height="877" id="Terminal" order="13" visible="true" weight="0.2723059" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="3" sideWeight="0.48360655" visible="true" weight="0.20902778" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="3" sideWeight="0.48360655" visible="true" weight="0.20902778" />
       <window_info anchor="right" id="Structure" order="4" sideWeight="0.5011111" side_tool="true" weight="0.33333334" />
     </layout>
   </component>
@@ -812,13 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/creditRequest/client.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="955">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/creditRequest/references.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -1009,8 +984,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/front.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
+        <state relative-caret-position="533">
           <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/creditRequest/client.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="29" column="71" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
         </state>
       </provider>
     </entry>

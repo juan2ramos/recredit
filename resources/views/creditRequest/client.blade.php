@@ -27,7 +27,7 @@
                 <div class="m-t-40">
                     <label for="">Tienda</label>
                     <input type="hidden" name="point" value="{{Auth::user()->point->id}}">
-                    <input type="text" disabled value="{{Auth::user()->point->name}}">
+                    <input type="text" disabled value="{{Auth::user()->name}}">
                 </div>
             @else
                 <points-autocomplete
