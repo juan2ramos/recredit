@@ -38,16 +38,16 @@ class CreditRequest extends FormRequest
 
     private function sendMail($user)
     {
-        MailTemplate::to($user->email);
-        MailTemplate::send(240);
+        \MailTemplate::to($user->email);
+        \MailTemplate::send(240);
 
-        MailTemplate::reset();
+        \MailTemplate::reset();
 
         $users = User::role(['Analysts'])->get();
-        MailTemplate::to($users);
-        MailTemplate::attribute('NAME', $user->name);
-        MailTemplate::attribute('NUMBER', $user->document);
-        MailTemplate::send(243);
+        \MailTemplate::to($users);
+        \MailTemplate::attribute('NAME', $user->name);
+        \MailTemplate::attribute('NUMBER', $user->document);
+        \MailTemplate::send(243);
     }
 
     private function getUserToCreate(): User
