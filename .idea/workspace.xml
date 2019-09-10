@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9dde37d-980e-4471-b7b8-b7b7dd75cffa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/creditRequest/client.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/creditRequest/client.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Request/UpdateCreditRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Request/UpdateCreditRequest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,99 +76,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Request/UpdateCreditRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+            <state relative-caret-position="668">
+              <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Modules/SMS/routes.php">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/CreditController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Modules/SMS/SendSMS.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Requests/CreditRequest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/front.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
+            <state relative-caret-position="413">
               <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/creditRequest/client.blade.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/FileController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="29" column="71" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
+            <state relative-caret-position="245">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="41" column="14" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="14" />
+            <state relative-caret-position="-1340">
+              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/Users.vue">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/PointsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-              <folding>
-                <element signature="n#div#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#section#0;n#template#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="210">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/FormUser.vue">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Request/CreateCityRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3014">
-              <caret line="135" column="48" selection-start-line="135" selection-start-column="43" selection-end-line="135" selection-end-column="48" />
-              <folding>
-                <element signature="n#style#0;n#select#0;n#div#2;n#div#1;n#div#2;n#form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#2;n#div#1;n#div#2;n#form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="-289">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Modules/SMS/SMSManager.php">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Request/CreateUserAdminRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="15" column="40" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="40" />
+            <state relative-caret-position="-972">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/UserSessionController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/CityController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/CodeRequestController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -277,7 +271,6 @@
         <option value="$PROJECT_DIR$/config/services.php" />
         <option value="$PROJECT_DIR$/resources/views/creditRequest/references.blade.php" />
         <option value="$PROJECT_DIR$/app/Models/Credit.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/Request/UpdateCreditRequest.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/credits/credit.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/components/Admin/FormUser.vue" />
         <option value="$PROJECT_DIR$/app/Modules/SMS/SendSMS.php" />
@@ -285,6 +278,7 @@
         <option value="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/CreditRequest.php" />
         <option value="$PROJECT_DIR$/routes/front.php" />
         <option value="$PROJECT_DIR$/resources/views/creditRequest/client.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Request/UpdateCreditRequest.php" />
       </list>
     </option>
   </component>
@@ -394,8 +388,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="x" value="-224" />
+    <option name="y" value="-1080" />
+    <option name="width" value="2560" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -419,20 +415,36 @@
             <path>
               <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
               <item name="recreditos" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="recreditos" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="recreditos" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="recreditos" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Request" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
               <item name="recreditos" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recreditos" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="creditRequest" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -547,15 +559,15 @@
       <workItem from="1567671809665" duration="7248000" />
       <workItem from="1567998856171" duration="3576000" />
       <workItem from="1568022885272" duration="7753000" />
-      <workItem from="1568050586365" duration="3825000" />
+      <workItem from="1568050586365" duration="5284000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="317269000" />
+    <option name="totallyTimeSpent" value="318728000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="-224" y="-1080" width="2560" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Database" order="0" sideWeight="0.50239694" weight="0.30347222" />
@@ -574,11 +586,11 @@
       <window_info anchor="bottom" id="Database Console" order="10" weight="0.32962963" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="11" />
       <window_info anchor="bottom" x="-224" y="-651" width="2560" height="222" id="Run" order="12" sideWeight="0.49760306" weight="0.22818792" />
-      <window_info anchor="bottom" x="0" y="23" width="1440" height="877" id="Terminal" order="13" visible="true" weight="0.2723059" />
+      <window_info active="true" anchor="bottom" x="0" y="23" width="1440" height="877" id="Terminal" order="13" visible="true" weight="0.2253116" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="3" sideWeight="0.48360655" visible="true" weight="0.20902778" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="3" sideWeight="0.48360655" visible="true" weight="0.11757813" />
       <window_info anchor="right" id="Structure" order="4" sideWeight="0.5011111" side_tool="true" weight="0.33333334" />
     </layout>
   </component>
@@ -637,58 +649,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Models/Point.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="23" column="47" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/ValidatedCredit.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/users/user.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="53" column="38" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/creditRequest/user.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="101" column="22" selection-start-line="101" selection-start-column="22" selection-end-line="101" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/captcha.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/ModalInfo.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="665">
@@ -843,13 +803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Request/UpdateCreditRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="845">
-          <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Credit.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -874,13 +827,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/CreditController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/credits/credit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
@@ -888,13 +834,6 @@
           <folding>
             <element signature="n#style#0;n#p#0;n#div#6;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -991,8 +930,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/creditRequest/client.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="29" column="71" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
+        <state relative-caret-position="-127">
+          <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/UserSessionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1340">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/CityController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/CodeRequestController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/CreditController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/FileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/PointsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Request/CreateCityRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Request/CreateUserAdminRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-972">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Request/UpdateCreditRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="668">
+          <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
         </state>
       </provider>
     </entry>

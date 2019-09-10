@@ -38,22 +38,22 @@ class UpdateCreditRequest extends FormRequest
 
     private function sendMail($user)
     {
-        MailTemplate::to($user->email);
+        \MailTemplate::to($user->email);
         if ($this->input('approved') == 1) {
             $r = 'Aprobado';
-            MailTemplate::send(241);
+            \MailTemplate::send(241);
         } else {
             $r = 'Negado';
-            MailTemplate::send(242);
+            \MailTemplate::send(242);
         }
 
-        MailTemplate::reset();
+        \MailTemplate::reset();
 
         $finish = $this->credit->load('userFinish');
         if ($finish->user->hasRole('Point')) {
-            MailTemplate::attribute('RESPONSE', $r);
-            MailTemplate::attribute('NUMBER', $user->document);
-            MailTemplate::send(244);
+            \MailTemplate::attribute('RESPONSE', $r);
+            \MailTemplate::attribute('NUMBER', $user->document);
+            \MailTemplate::send(244);
         }
     }
 
