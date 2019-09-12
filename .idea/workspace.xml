@@ -4,10 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/resources/js/app.js" description="import Echo from 'laravel-echo'" line="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9dde37d-980e-4471-b7b8-b7b7dd75cffa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/js/components/CreditRequest/Email.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/CreditRequest/Email.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/creditRequest/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/creditRequest/user.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="c9dde37d-980e-4471-b7b8-b7b7dd75cffa" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/creditRequest/user.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="45" column="68" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
+            <state relative-caret-position="350">
+              <caret line="46" column="17" lean-forward="true" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -529,16 +526,15 @@
       <workItem from="1567998856171" duration="3576000" />
       <workItem from="1568022885272" duration="7753000" />
       <workItem from="1568050586365" duration="5965000" />
-      <workItem from="1568255551625" duration="2491000" />
+      <workItem from="1568255551625" duration="2547000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="321900000" />
+    <option name="totallyTimeSpent" value="321956000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Database" order="0" sideWeight="0.50239694" weight="0.30347222" />
       <window_info id="Favorites" order="1" sideWeight="0.5011111" weight="0.24453124" />
@@ -975,8 +971,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/creditRequest/user.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="45" column="68" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
+        <state relative-caret-position="350">
+          <caret line="46" column="17" lean-forward="true" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
         </state>
       </provider>
     </entry>
