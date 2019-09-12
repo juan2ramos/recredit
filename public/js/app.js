@@ -2905,6 +2905,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Email',
   props: ['emails', 'before', 'after', 'other', 'error'],
@@ -16184,6 +16185,7 @@ var render = function() {
                         }
                       ],
                       staticClass: "Request-formSelect",
+                      staticStyle: { "text-transform": "capitalize" },
                       attrs: { id: "point", name: "point" },
                       on: {
                         change: function($event) {
@@ -16217,12 +16219,12 @@ var render = function() {
                 : _vm._e(),
               _vm._v(" "),
               !_vm.superAdmin
-                ? _c("p", [
+                ? _c("p", { staticStyle: { "text-transform": "capitalize" } }, [
                     _vm._v(
                       _vm._s(
                         _vm.pointsLocal.filter(function(p) {
                           return p.id === _vm.selectedPoint
-                        })[0].trade_name
+                        })[0].name
                       )
                     )
                   ])
@@ -16969,6 +16971,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
+    _vm._v("\n    " + _vm._s(_vm.error) + "\n    "),
     _c(
       "div",
       {
