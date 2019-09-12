@@ -18,7 +18,6 @@ class CreateUserRequest extends FormRequest
 
     public function rules()
     {
-        dd( $this->all() );
         return [
             'name' => 'required',
             'last_name' => 'required',
