@@ -1,5 +1,6 @@
 <template>
     <div>
+        {{error}}
         <div :class="[{ error: error }, 'Request-formGroup'] "
              data-errorMessage="El campo es requerido o ya ha sido registrado ">
 
