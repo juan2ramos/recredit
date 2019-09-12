@@ -46,7 +46,7 @@
                             <label for="identification">Número de cédula</label>
                             <input type="text" id="identification" name="identification">
                         </div>
-                        <div class="row justify-center Home-formsLinks"><a href="">¿Cómo funciona?</a></div>
+
                         <button class="second" type="submit">SOLICITAR</button>
                     </form>
 

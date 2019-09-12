@@ -1,5 +1,5 @@
 <div class="hide-phone">
-    <p ><a href="" style="text-decoration: underline;">Políticas de uso</a> - <b>sitio web  PINK LIFE</b> </p>
+    <p ><a target="_blank" href="http://creditoslilipink.com/img/politicas-creditos-lilipink.pdf" style="text-decoration: underline;">Políticas de uso</a> - <b>sitio web  PINK LIFE</b> </p>
 </div>
 <ul class="is-list-less row align-middle">
     <li>Síguenos</li>

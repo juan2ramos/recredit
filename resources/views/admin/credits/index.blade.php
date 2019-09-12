@@ -28,7 +28,7 @@
                                 <td>{{$credit->user->document}}</td>
                                 <td>{{$credit->priorityName}}</td>
                                 <td>{{$credit->user->client->point->city->name}}</td>
-                                <td>{{$credit->user->client->point->trade_name}}</td>
+                                <td>{{$credit->user->client->point->name}}</td>
                                 <td >{{$credit->assigned ? $credit->assigned->name : 'Ninguno'}}</td>
                                 <td>
                                     <div class="row justify-center">
