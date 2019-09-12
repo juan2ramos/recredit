@@ -42,6 +42,7 @@
                     :emails="{{$emails}}"
                     before="{{old('beforeEmail',isset($userMail) ? $userMail[0]:'')}}"
                     after="{{old('afterEmail',isset($userMail) ? $userMail[1]:'')}}"
+                    other="{{old('other',isset($userMail) ? $userMail[1]:'')}}"
             >
                 error="{{$errors->has('email') ? true : false}}"
                 >
