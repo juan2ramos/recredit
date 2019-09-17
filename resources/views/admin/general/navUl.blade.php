@@ -63,7 +63,7 @@
                 </div>
             </a>
         </li>
-        @if (auth()->user()->isAdmin() && !auth()->user()->isAnalysts())
+        @if (auth()->user()->isSuperAdmin())
 
             <li>
                 <a href="{{route('usersAdmin.create')}}" class=" {{ \Menu::active('admin/admins') }}">
