@@ -92,7 +92,7 @@
 
                         <tr v-for="i in 13" :key="i">
                             <td>{{i}}</td>
-                            <td>{{i*2.34}}%</td>
+                            <td>{{i*1.5}}%</td>
                         </tr>
 
                         </tbody>

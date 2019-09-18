@@ -17647,7 +17647,7 @@ var render = function() {
                     return _c("tr", { key: i }, [
                       _c("td", [_vm._v(_vm._s(i))]),
                       _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(i * 2.34) + "%")])
+                      _c("td", [_vm._v(_vm._s(i * 1.5) + "%")])
                     ])
                   })
                 ],
