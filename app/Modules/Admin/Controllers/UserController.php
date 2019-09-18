@@ -19,7 +19,6 @@ class UserController extends Controller
         if (!$request->has('search')) {
             return view('admin.dashboard', ['clients' => collect()]);
         }
-1
         $clients = User::role(['Credit', 'Entrepreneur'])->search($request->search)->with('credit.reason', 'client')->take(40)->get();
 
         return view('admin.dashboard', compact('clients'));
