@@ -6,7 +6,6 @@
     <h1 class="h-1">SOLICITUD DE CRÉDITO</h1>
     @include('creditRequest.include.nav')
     <div class="Request">
-
         @if ($errors->any())
             <div class="alert-error m-b-32">
                 <span>¡Tienes error en el formulario! revisa los campos</span>

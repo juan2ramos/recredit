@@ -18,7 +18,7 @@ class RolesPolicy
     }
 
     public function admin(User $user){
-        return $user->isSuperAdmin() || $user->isAnalysts() || $user->point();
+        return $user->isSuperAdmin() || $user->isAnalysts() || $user->isPoint();
     }
 
 }

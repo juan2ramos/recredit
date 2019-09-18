@@ -90,7 +90,7 @@
                             <td>Interés</td>
                         </tr>
 
-                        <tr v-for="i in 13" :key="i">
+                        <tr v-for="i in 12" :key="i">
                             <td>{{i}}</td>
                             <td>{{i*1.5}}%</td>
                         </tr>
