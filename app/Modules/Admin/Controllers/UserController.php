@@ -20,7 +20,7 @@ class UserController extends Controller
             return view('admin.dashboard', ['clients' => collect()]);
         }
 
-        $clients = User::role(['Credit', 'Entrepreneur'])->search($request->search)->with('credit.reason')->take(40)->get();
+        $clients = User::role(['Credit', 'Entrepreneur'])->search($request->search)->with('credit.reason', 'client')->take(40)->get();
 
         return view('admin.dashboard', compact('clients'));
 

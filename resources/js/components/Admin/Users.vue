@@ -44,7 +44,7 @@
                         </a>
                     </div>
                     <div class="row justify-center middle-items" v-if="isPoint">
-                        <a v-if="client.credit" @click="openModalMethod(client.credit)">
+                        <a v-if="client.credit" @click="openModalMethod(client)">
                             ver info
                         </a>
                     </div>
@@ -55,7 +55,7 @@
         <div v-else-if="search">
             <p>No hemos encontrado ningún registro con el término de búsqueda</p>
         </div>
-        <modal-info v-if="openModal" :credit="credit" @close-modal="closeModal"></modal-info>
+        <modal-info v-if="openModal" :client="client" :credit="credit" @close-modal="closeModal"></modal-info>
     </section>
 
 </template>
@@ -71,13 +71,13 @@
         data: function () {
             return {
                 clientsLocal: this.clients,
-                credit: {},
+                client: {},
                 openModal: false
             }
         },
         methods: {
-            openModalMethod (credit){
-                this.credit = credit;
+            openModalMethod(client) {
+                this.client = client;
                 this.openModal = true
             },
             closeModal() {

@@ -52,7 +52,7 @@
             </div>
 
             <div class="row justify-center Request-formGroup">
-                <button type="submit">{{$update ?'ACTUALIZAR':'CONTINUAR'}}</button>
+                <button onclick="this.disabled=true;this.form.submit();"  type="submit">{{$update ?'ACTUALIZAR':'CONTINUAR'}}</button>
             </div>
         </form>
     </div>

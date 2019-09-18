@@ -2531,11 +2531,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "ModalInfo",
-  props: ['credit'],
+  props: ['client'],
   data: function data() {
-    return {};
+    return {
+      credit: this.client.credit
+    };
   },
   methods: {
     closeModal: function closeModal() {
@@ -2748,13 +2751,13 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       clientsLocal: this.clients,
-      credit: {},
+      client: {},
       openModal: false
     };
   },
   methods: {
-    openModalMethod: function openModalMethod(credit) {
-      this.credit = credit;
+    openModalMethod: function openModalMethod(client) {
+      this.client = client;
       this.openModal = true;
     },
     closeModal: function closeModal() {
@@ -16450,6 +16453,11 @@ var render = function() {
             )
           ]),
           _vm._v(" "),
+          _c("p", [
+            _c("b", [_vm._v("Número de celular:")]),
+            _vm._v(" " + _vm._s(_vm.client.client.mobile))
+          ]),
+          _vm._v(" "),
           _vm.credit.reasons_id
             ? _c("p", [
                 _c("b", [_vm._v("Denegado por:")]),
@@ -16467,6 +16475,11 @@ var render = function() {
           _c("p", [
             _c("b", [_vm._v("Número de solicitudes:")]),
             _vm._v(" " + _vm._s(_vm.credit.number_requested))
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _c("b", [_vm._v("Número de télefono:")]),
+            _vm._v(" " + _vm._s(_vm.client.phone))
           ]),
           _vm._v(" "),
           _c("p", [
@@ -16820,9 +16833,7 @@ var render = function() {
                                   {
                                     on: {
                                       click: function($event) {
-                                        return _vm.openModalMethod(
-                                          client.credit
-                                        )
+                                        return _vm.openModalMethod(client)
                                       }
                                     }
                                   },
@@ -16854,7 +16865,7 @@ var render = function() {
       _vm._v(" "),
       _vm.openModal
         ? _c("modal-info", {
-            attrs: { credit: _vm.credit },
+            attrs: { client: _vm.client, credit: _vm.credit },
             on: { "close-modal": _vm.closeModal }
           })
         : _vm._e()
