@@ -18,7 +18,7 @@
                 <td width="20%">{{admin.roles[0].name}}</td>
                 <td width="5%">
                     <div class="row justify-center middle-items" >
-                        <a @click.prevent="deleteClient(admin, i)">
+                        <a @click.prevent="deleteAdmin(admin, i)">
                             <img src="../../../images/delete.svg" alt="">
                         </a>
                     </div>
@@ -37,24 +37,15 @@
 
     export default {
         name: "Admins",
-        props: ['admins', 'token', ],
+        props: ['admins', 'token' ],
         data: function () {
             return {
                 adminsLocal: this.admins
             }
         },
         methods: {
-            stateCredit(credit) {
-                switch (credit.state) {
-                    case 0:
-                        return 'Por aprobar';
-                    case 1:
-                        return 'Aprobado';
-                    case 2:
-                        return `Denegado - ${credit.reason.name}`
-                }
-            },
-            deleteClient(client, index) {
+
+            deleteAdmin(admin, index) {
                 swal({
                     title: "Estás seguro?",
                     text: "Recuerda que no prodrás recuper la información!",
@@ -63,11 +54,12 @@
                     dangerMode: true,
                 }).then((willDelete) => {
                     if (willDelete) {
-                        this.clientsLocal.splice(index, 1);
-                        axios.delete(`/admin/users/${category.id}`)
+
+                        axios.delete(`/admin/usuarios/${admin.document}`)
                             .then((response) => {
+                                console.log(response);
                                 if (response.data.success) {
-                                    this.categoriesLocal.splice(index, 1);
+                                    this.adminsLocal.splice(index, 1);
                                     swal("El cliente ha sido eliminado", {icon: "success",});
                                     return
                                 }

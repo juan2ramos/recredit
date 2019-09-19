@@ -1886,19 +1886,7 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
-    stateCredit: function stateCredit(credit) {
-      switch (credit.state) {
-        case 0:
-          return 'Por aprobar';
-
-        case 1:
-          return 'Aprobado';
-
-        case 2:
-          return "Denegado - ".concat(credit.reason.name);
-      }
-    },
-    deleteClient: function deleteClient(client, index) {
+    deleteAdmin: function deleteAdmin(admin, index) {
       var _this = this;
 
       sweetalert__WEBPACK_IMPORTED_MODULE_0___default()({
@@ -1909,11 +1897,11 @@ __webpack_require__.r(__webpack_exports__);
         dangerMode: true
       }).then(function (willDelete) {
         if (willDelete) {
-          _this.clientsLocal.splice(index, 1);
+          axios__WEBPACK_IMPORTED_MODULE_1___default.a["delete"]("/admin/usuarios/".concat(admin.document)).then(function (response) {
+            console.log(response);
 
-          axios__WEBPACK_IMPORTED_MODULE_1___default.a["delete"]("/admin/users/".concat(category.id)).then(function (response) {
             if (response.data.success) {
-              _this.categoriesLocal.splice(index, 1);
+              _this.adminsLocal.splice(index, 1);
 
               sweetalert__WEBPACK_IMPORTED_MODULE_0___default()("El cliente ha sido eliminado", {
                 icon: "success"
@@ -15258,7 +15246,7 @@ var render = function() {
                             on: {
                               click: function($event) {
                                 $event.preventDefault()
-                                return _vm.deleteClient(admin, i)
+                                return _vm.deleteAdmin(admin, i)
                               }
                             }
                           },

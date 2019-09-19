@@ -46,7 +46,7 @@ class UserController extends Controller
     public function show(User $user)
     {
         $user->load(['client.point.city', 'references', 'files', 'credit']);
-        $credit = $user->credit->load('reason', 'assigned', 'reviewed','finished');
+        $credit = $user->credit->load('reason', 'assigned', 'reviewed', 'finished');
         $cities = City::orderBy('name')->get();
         $points = Point::orderBy('name')->get();
 
@@ -64,10 +64,10 @@ class UserController extends Controller
         return redirect()->back();
     }
 
-
-    public function destroy($id)
+    public function destroy( User $user)
     {
-        //
+        $user->delete();
+        return ['success' => true];
     }
 
     public function loadUserSession(User $user)
