@@ -2170,7 +2170,7 @@ __webpack_require__.r(__webpack_exports__);
           icon: "success"
         });
         setTimeout(function () {
-          return window.location = "/admin";
+          return window.location = "/admin/creditos";
         }, 3000);
       });
     }

@@ -17,6 +17,7 @@
                             <th>Prioridad</th>
                             <th>Ciudad</th>
                             <th>Punto</th>
+                            <th>Fecha de solicitud</th>
                             <th>Asignada</th>
                             <th class="is-text-center">Revisar</th>
                         </tr>
@@ -29,6 +30,7 @@
                                 <td>{{$credit->priorityName}}</td>
                                 <td>{{$credit->user->client->point->city->name}}</td>
                                 <td>{{$credit->user->client->point->name}}</td>
+                                <td>{{$credit->created_at}}</td>
                                 <td >{{$credit->assigned ? $credit->assigned->name : 'Ninguno'}}</td>
                                 <td>
                                     <div class="row justify-center">
