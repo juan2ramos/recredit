@@ -80,8 +80,8 @@
                     <table class="Faq-modalTable">
                         <thead>
                         <tr>
-                            <th>Taza mÍnima legal EA</th>
-                            <th>Taza mÍnima legal EA</th>
+                            <th>Tasa mÍnima legal EA</th>
+                            <th>Tasa mÍnima legal EA</th>
                         </tr>
                         </thead>
                         <tbody>
