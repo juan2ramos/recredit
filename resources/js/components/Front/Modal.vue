@@ -22,7 +22,8 @@
                         <p>
                             Debes tener en cuenta lo siguiente: <br>
                             1. Tu usuario es el e-mail registrado en el momento de la solicitud del crédito <br>
-                            2. Seguido este paso, das CLICK en “Olvidaste contraseña” para reestablecer una contraseña que sea única para ti.
+                            2. Seguido este paso, das CLICK en “Olvidaste contraseña” para reestablecer una contraseña
+                            que sea única para ti.
                         </p>
                     </li>
                     <li>
@@ -52,12 +53,15 @@
 
                     <li>
                         <h4>ES POSIBLE CAMBIAR LAS FECHAS LIMITES DE PAGO DE MI CRÉDITO</h4>
-                        <p>No. Las fechas del pago del crédito Lili Pink no pueden ser modificadas a solicitud del cliente</p>
+                        <p>No. Las fechas del pago del crédito Lili Pink no pueden ser modificadas a solicitud del
+                            cliente</p>
                     </li>
 
                     <li>
                         <h4>SI PRESENTO RETRASO EN MIS CUOTAS</h4>
-                        <p>Serás reportado a centrales de riesgo y de persistir o continuar la mora o ser superior a 90 días se realizará cobro jurídico. Recuerda que tener buenos hábitos de pago es su mejor carta de presentación ante el comercio
+                        <p>Serás reportado a centrales de riesgo y de persistir o continuar la mora o ser superior a 90
+                            días se realizará cobro jurídico. Recuerda que tener buenos hábitos de pago es su mejor
+                            carta de presentación ante el comercio
                             y sector financiero
                         </p>
                     </li>
@@ -74,8 +78,8 @@
             </article>
         </section>
         <section class="Modal row justify-center align-middle Faq-Modal" v-show="openModal">
-            <div class="Modal-content row Contact-content" style="overflow-y: scroll;">
-                <div class="Modal-contentClose modalClose" @click.prevent="modal" >X</div>
+            <div class="Modal-content row Contact-content overflow">
+                <div class="Modal-contentClose modalClose" @click.prevent="modal">X</div>
                 <div class=" table-container">
                     <table class="Faq-modalTable">
                         <thead>
@@ -119,4 +123,8 @@
         }
     }
 </script>
-
+<style scoped>
+    .overflow {
+        overflow-y: scroll;
+    }
+</style>
