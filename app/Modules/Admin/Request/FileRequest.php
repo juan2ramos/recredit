@@ -14,7 +14,7 @@ class FileRequest extends FormRequest
 
     public function authorize()
     {
-        return auth()->user()->isSuperAdmin();
+        return auth()->user()->isSuperAdmin() || auth()->user()->isDocumentary();
     }
 
     public function rules()

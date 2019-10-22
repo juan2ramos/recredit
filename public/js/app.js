@@ -2039,6 +2039,9 @@ __webpack_require__.r(__webpack_exports__);
         'value': 'Analysts',
         'text': 'Analista'
       }, {
+        'value': 'Documentary',
+        'text': 'Analista Documental'
+      }, {
         'value': 'Point',
         'text': 'Punto de venta'
       }]
@@ -2412,7 +2415,7 @@ __webpack_require__.r(__webpack_exports__);
       selectedAddressType: null,
       selectedPoint: null,
       sending: false,
-      typeDocument: ['Cédula de ciudadanía', 'Cédula de extranjería'],
+      typeDocument: ['Cédula de ciudadanía', 'cédula de extranjería'],
       userFiles: this.user.files,
       addressType: ['casa', 'apartamento'],
       dropzoneOptions: {
@@ -2734,7 +2737,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Users",
-  props: ['clients', 'token', 'search', 'isAnalysts', 'isPoint', 'ModalInfo'],
+  props: ['clients', 'token', 'search', 'isAnalysts', 'isDocumentary', 'isPoint', 'ModalInfo'],
   data: function data() {
     return {
       clientsLocal: this.clients,
@@ -16717,12 +16720,14 @@ var render = function() {
                                     }
                                   },
                                   [
-                                    _c("img", {
-                                      attrs: {
-                                        src: __webpack_require__(/*! ../../../images/settings.svg */ "./resources/images/settings.svg"),
-                                        alt: ""
-                                      }
-                                    })
+                                    !_vm.isDocumentary
+                                      ? _c("img", {
+                                          attrs: {
+                                            src: __webpack_require__(/*! ../../../images/settings.svg */ "./resources/images/settings.svg"),
+                                            alt: ""
+                                          }
+                                        })
+                                      : _vm._e()
                                   ]
                                 )
                               : client.credit.state === 1 ||
@@ -16752,12 +16757,14 @@ var render = function() {
                                     }
                                   },
                                   [
-                                    _c("img", {
-                                      attrs: {
-                                        src: __webpack_require__(/*! ../../../images/user-check.svg */ "./resources/images/user-check.svg"),
-                                        alt: ""
-                                      }
-                                    })
+                                    !_vm.isDocumentary
+                                      ? _c("img", {
+                                          attrs: {
+                                            src: __webpack_require__(/*! ../../../images/user-check.svg */ "./resources/images/user-check.svg"),
+                                            alt: ""
+                                          }
+                                        })
+                                      : _vm._e()
                                   ]
                                 ),
                             _vm._v(" "),
@@ -16765,25 +16772,27 @@ var render = function() {
                               ? undefined
                               : _vm._e(),
                             _vm._v(" "),
-                            _c(
-                              "a",
-                              {
-                                on: {
-                                  click: function($event) {
-                                    $event.preventDefault()
-                                    return _vm.viewCode(client.document)
-                                  }
-                                }
-                              },
-                              [
-                                _c("img", {
-                                  attrs: {
-                                    src: __webpack_require__(/*! ../../../images/token.svg */ "./resources/images/token.svg"),
-                                    alt: ""
-                                  }
-                                })
-                              ]
-                            )
+                            !_vm.isDocumentary
+                              ? _c(
+                                  "a",
+                                  {
+                                    on: {
+                                      click: function($event) {
+                                        $event.preventDefault()
+                                        return _vm.viewCode(client.document)
+                                      }
+                                    }
+                                  },
+                                  [
+                                    _c("img", {
+                                      attrs: {
+                                        src: __webpack_require__(/*! ../../../images/token.svg */ "./resources/images/token.svg"),
+                                        alt: ""
+                                      }
+                                    })
+                                  ]
+                                )
+                              : _vm._e()
                           ]
                         )
                       : _c(

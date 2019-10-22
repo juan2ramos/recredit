@@ -228,7 +228,7 @@
                 selectedAddressType: null,
                 selectedPoint: null,
                 sending: false,
-                typeDocument: ['Cédula de ciudadanía', 'Cédula de extranjería'],
+                typeDocument: ['Cédula de ciudadanía', 'cédula de extranjería'],
                 userFiles: this.user.files,
                 addressType: ['casa', 'apartamento'],
                 dropzoneOptions: {

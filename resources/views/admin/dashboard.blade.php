@@ -41,7 +41,8 @@
 
         <users :clients="{{$clients}}"
                :search="{{Request()->search ? 1 : 0}}"
-               is-analysts="{{auth()->user()->isAnalysts()}}"
+               is-analysts="{{auth()->user()->isAnalysts() || auth()->user()->isDocumentary()}}"
+               is-Documentary="{{auth()->user()->isDocumentary()}}"
                is-point="{{auth()->user()->isPoint()}}"
         ></users>
 

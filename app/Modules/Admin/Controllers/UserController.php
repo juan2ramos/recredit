@@ -31,7 +31,7 @@ class UserController extends Controller
         $this->authorize('superAdmin');
         $cities = City::all('name', 'id');
         $points = Point::all();
-        $admins = User::role(['SuperAdmin', 'Analysts', 'Point'])->with('roles')->get();
+        $admins = User::role(['SuperAdmin', 'Analysts', 'Point', 'Documentary'])->with('roles')->get();
 
         return view('admin.users.create', compact('cities', 'points', 'admins'));
     }

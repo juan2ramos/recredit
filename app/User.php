@@ -99,12 +99,16 @@ class User extends Authenticatable
 
     public function isAdmin()
     {
-        return $this->hasRole('SuperAdmin') || $this->hasRole('Analysts') || $this->hasRole('Point');
+        return $this->hasRole('SuperAdmin') || $this->hasRole('Analysts') || $this->hasRole('Point') || $this->hasRole('Documentary') ;
     }
 
     public function isAnalysts()
     {
         return $this->hasRole('SuperAdmin') || $this->hasRole('Analysts');
+    }
+    public function isDocumentary()
+    {
+        return $this->hasRole('SuperAdmin') || $this->hasRole('Documentary');
     }
 
     public function isSuperAdmin()

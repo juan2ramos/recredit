@@ -103,6 +103,7 @@
                 rolesOptions: [
                     {'value': 'SuperAdmin', 'text': 'Super administrador'},
                     {'value': 'Analysts', 'text': 'Analista',},
+                    {'value': 'Documentary', 'text': 'Analista Documental',},
                     {'value': 'Point', 'text': 'Punto de venta',}
                 ]
             }

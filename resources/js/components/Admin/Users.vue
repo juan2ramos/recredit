@@ -22,19 +22,19 @@
 
                     <div class="row justify-center middle-items" v-if="isAnalysts">
                         <a v-if="!client.credit" :href="`/admin/usuario-sesion/${client.document}`">
-                            <img src="../../../images/settings.svg" alt="">
+                            <img v-if="!isDocumentary"  src="../../../images/settings.svg" alt="">
                         </a>
                         <a :href="`/admin/usuarios/${client.document}`"
                            v-else-if="client.credit.state === 1 || client.credit.state === 2 ">
                             <img src="../../../images/edit.svg" alt="">
                         </a>
                         <a :href="`/admin/creditos/${client.credit.id}`" v-else>
-                            <img src="../../../images/user-check.svg" alt="">
+                            <img v-if="!isDocumentary" src="../../../images/user-check.svg" alt="">
                         </a>
                         <a @click.prevent="deleteClient(client, i)" v-if="false">
                             <img src="../../../images/delete.svg" alt="">
                         </a>
-                        <a @click.prevent="viewCode(client.document)">
+                        <a @click.prevent="viewCode(client.document)" v-if="!isDocumentary">
                             <img src="../../../images/token.svg" alt="">
                         </a>
                     </div>
@@ -67,7 +67,7 @@
 
     export default {
         name: "Users",
-        props: ['clients', 'token', 'search', 'isAnalysts', 'isPoint', 'ModalInfo'],
+        props: ['clients', 'token', 'search', 'isAnalysts', 'isDocumentary', 'isPoint', 'ModalInfo'],
         data: function () {
             return {
                 clientsLocal: this.clients,

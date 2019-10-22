@@ -11,7 +11,7 @@
                     :points="{{$points}}"
                     token="{{csrf_token()}}"
                     :credit="{{$credit}}"
-                    super-admin="{{auth()->user()->isSuperAdmin()}}"
+                    super-admin="{{auth()->user()->isSuperAdmin() || auth()->user()->isDocumentary()}}"
             ></form-user>
         </div>
     </div>

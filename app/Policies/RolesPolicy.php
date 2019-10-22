@@ -10,7 +10,7 @@ class RolesPolicy
     use HandlesAuthorization;
 
     public function superAdmin(User $user){
-        return $user->isSuperAdmin();
+        return $user->isSuperAdmin() || $user->isDocumentary();
     }
 
     public function analyst(User $user){
