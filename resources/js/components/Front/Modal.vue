@@ -78,9 +78,9 @@
             </article>
         </section>
         <section class="Modal row justify-center align-middle Faq-Modal" v-show="openModal">
-            <div class="Modal-content row Contact-content overflow">
+            <div class="Modal-content row Contact-content" style="height: 500px;">
                 <div class="Modal-contentClose modalClose" @click.prevent="modal">X</div>
-                <div class=" table-container">
+                <div class=" table-container"  style="max-height: 90%;">
                     <table class="Faq-modalTable">
                         <thead>
                         <tr>
@@ -123,8 +123,4 @@
         }
     }
 </script>
-<style scoped>
-    .overflow {
-        overflow-y: scroll;
-    }
-</style>
+

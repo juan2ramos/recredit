@@ -56,7 +56,6 @@ class CityController extends Controller
 
     public function destroy($id)
     {
-        //
     }
 
 

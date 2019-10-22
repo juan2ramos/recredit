@@ -33,10 +33,15 @@
                     <tr>
                         <td width="20%">{{$city->name}}</td>
                         <td width="20%">{{$city->region->name}}</td>
-                        <td width="5%">
+                        <td width="5%" class="row">
                             <div class="row justify-center middle-items">
                                 <a href="{{route('cities.edit', $city)}}">
                                     <img src="../../../images/edit.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="row justify-center middle-items m-l-4">
+                                <a href="{{route('cities.destroy', $city)}}">
+                                    <img src="../../../images/delete.svg" alt="">
                                 </a>
                             </div>
 
