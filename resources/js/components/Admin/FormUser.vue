@@ -21,7 +21,6 @@
                 <h4 class="col-16 h-4">Datos personales</h4>
                 <div class="col-16 col-m-8 Form-column">
                     <div class="Form-labelContent">
-
                         <label for="name">Nombre</label>
                         <input v-if="superAdmin"
                                type="text"
@@ -40,6 +39,16 @@
                         <p v-if="!superAdmin">{{selectedUser}}</p>
                     </div>
                     <div class="Form-labelContent">
+                        <label for="phone">Teléfono</label>
+                        <input
+                                v-if="superAdmin"
+                                type="text"
+                                :value="user.client.phone"
+                                name="phone"
+                                id="phone">
+                        <p v-if="!superAdmin">{{(user.client.phone)?user.client.phone:'Sin Teléfono'}} </p>
+                    </div>
+                    <div class="Form-labelContent">
                         <label for="email">Correo Electrónico</label>
                         <input
                                 v-if="superAdmin"
@@ -49,6 +58,25 @@
                                 id="email">
                         <p v-if="!superAdmin">{{user.email}}</p>
                     </div>
+                    <div class="Form-labelContent">
+                        <label for="birth_city">Ciudad</label>
+                        <select v-if="superAdmin" id="birth_city" v-model="selectedCity" class="Request-formSelect"
+                                @change="change">
+                            <option v-for="city in cities" :value="city.id">{{city.name}}</option>
+                        </select>
+                        <p v-if="!superAdmin">{{cities.filter((c)=>c.id === selectedCity)[0].name}}</p>
+                    </div>
+                    <div class="Form-labelContent">
+                        <label for="residency_city">Ciudad de residencia</label>
+                        <input
+                                v-if="superAdmin"
+                                type="text"
+                                :value="user.client.residency_city"
+                                name="residency_city"
+                                id="residency_city">
+                        <p v-if="!superAdmin">{{user.client.residency_city}}</p>
+                    </div>
+
                 </div>
                 <div class="col-16 col-m-8 Form-column">
                     <div class="Form-labelContent">
@@ -70,49 +98,6 @@
                         <p v-if="!superAdmin">{{user.document}}</p>
                     </div>
                     <div class="Form-labelContent">
-                        <label for="password">Contraseña</label>
-                        <input
-                                type="password"
-                                name="password"
-                                id="password">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <h4 class="col-16 h-4">Datos de contacto</h4>
-                <div class="col-16 col-m-8 Form-column">
-                    <div class="Form-labelContent">
-                        <label for="residency_city">Ciudad de residencia</label>
-                        <input
-                                v-if="superAdmin"
-                                type="text"
-                                :value="user.client.residency_city"
-                                name="residency_city"
-                                id="residency_city">
-                        <p v-if="!superAdmin">{{user.client.residency_city}}</p>
-                    </div>
-                    <div class="Form-labelContent">
-                        <label for="address">Dirección</label>
-                        <input
-                                v-if="superAdmin"
-                                type="text"
-                                :value="user.client.address"
-                                name="address"
-                                id="address">
-                    </div>
-                    <p v-if="!superAdmin">{{user.client.address}}</p>
-                    <div class="Form-labelContent">
-                        <label for="birth_city">Ciudad</label>
-                        <select v-if="superAdmin" id="birth_city" v-model="selectedCity" class="Request-formSelect"
-                                @change="change">
-                            <option v-for="city in cities" :value="city.id">{{city.name}}</option>
-                        </select>
-                    </div>
-                    <p v-if="!superAdmin">{{cities.filter((c)=>c.id === selectedCity)[0].name}}</p>
-                </div>
-                <div class="col-16 col-m-8 Form-column">
-
-                    <div class="Form-labelContent">
                         <label for="mobile">Celular</label>
                         <input
                                 v-if="superAdmin"
@@ -123,65 +108,99 @@
                         <p v-if="!superAdmin">{{user.client.mobile}}</p>
                     </div>
                     <div class="Form-labelContent">
-                        <label for="phone">Teléfono</label>
+                        <label for="address">Dirección</label>
                         <input
                                 v-if="superAdmin"
                                 type="text"
-                                :value="user.client.phone"
-                                name="phone"
-                                id="phone">
-                        <p v-if="!superAdmin">{{user.client.phone}}</p>
+                                :value="user.client.address"
+                                name="address"
+                                id="address">
+                        <p v-if="!superAdmin">{{user.client.address}}</p>
                     </div>
                     <div class="Form-labelContent">
                         <label for="point">Punto</label>
-                        <select  style="text-transform: capitalize" v-if="superAdmin" id="point" name="point" v-model="selectedPoint"
+                        <select style="text-transform: capitalize" v-if="superAdmin" id="point" name="point"
+                                v-model="selectedPoint"
                                 class="Request-formSelect">
                             <option value="0">Seleccione un punto</option>
                             <option v-for="point in pointsLocal" :value="point.id">{{point.name}}</option>
                         </select>
-                        <p v-if="!superAdmin" style="text-transform: capitalize">{{pointsLocal.filter((p)=>p.id === selectedPoint)[0].name}}</p>
+                        <p v-if="!superAdmin" style="text-transform: capitalize">{{pointsLocal.filter((p)=>p.id ===
+                            selectedPoint)[0].name}}</p>
                     </div>
+                    <div class="Form-labelContent">
+                        <label for="password">Contraseña</label>
+                        <input
+                                type="password"
+                                name="password"
+                                id="password">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-16 col-m-8 Form-column">
+
+
+                </div>
+                <div class="col-16 col-m-8 Form-column">
+
 
                 </div>
             </div>
             <div class="row">
                 <h4 class="col-16 h-4">Referencias personales </h4>
-                <div class="col-16 row" v-for="(reference, i) in user.references">
-                    <h5 class="col-16">Referencia {{ i + 1 }}</h5>
-                    <div class="col-16 col-m-8 Form-column">
-                        <input
-                                v-if="superAdmin"
-                                type="hidden"
-                                :name="`references[${i}][id]`"
-                                :value="reference.id">
-                        <div class="Form-labelContent">
-                            <label :for="`name${i}`">Nombre</label>
-                            <input
-                                    v-if="superAdmin"
-                                    type="text"
-                                    :value="reference.name"
-                                    :name="`references[${i}][name]`"
-                                    :id="`reference.name${i}`">
-                            <p v-if="!superAdmin">{{reference.name}}</p>
-                        </div>
-                    </div>
-                    <div class="col-16 col-m-8 Form-column">
-                        <div class="Form-labelContent">
-                            <label :for="`references.phone${i}`">Teléfono</label>
-                            <input
-                                    v-if="superAdmin"
-                                    type="text"
-                                    :value="reference.phone"
-                                    :name="`references[${i}][phone]`"
-                                    :id="`reference.phone${i}`">
-                            <p v-if="!superAdmin">{{reference.phone}}</p>
-                        </div>
-                    </div>
+                <div class="is-full-width References">
+                    <table class="is-full-width">
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th>Nombre</th>
+                            <th>Celular</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr v-for="(reference, i) in user.references">
+                            <td><h5 class="col-16">Referencia {{ i + 1 }}</h5></td>
+                            <td>
+                                <div class="col-16 col-m-8 Form-column">
+                                    <input
+                                            v-if="superAdmin"
+                                            type="hidden"
+                                            :name="`references[${i}][id]`"
+                                            :value="reference.id">
+                                    <div class="Form-labelContent">
+                                        <input
+                                                v-if="superAdmin"
+                                                type="text"
+                                                :value="reference.name"
+                                                :name="`references[${i}][name]`"
+                                                :id="`reference.name${i}`">
+                                        <p v-if="!superAdmin">{{reference.name}}</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="col-16 col-m-8 Form-column">
+                                    <div class="Form-labelContent">
+                                        <input
+                                                v-if="superAdmin"
+                                                type="text"
+                                                :value="reference.phone"
+                                                :name="`references[${i}][phone]`"
+                                                :id="`reference.phone${i}`">
+                                        <p v-if="!superAdmin">{{reference.phone}}</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
+
             </div>
             <div class="row col-16">
                 <h4 class="col-16 h-4">Archivos</h4>
-                <vue-dropzone v-if="superAdmin"
+                <vue-dropzone v-if="superAdmin || analyst"
                               id="MyDropZoneFileAdmin"
                               :options="dropzoneOptions"
                               @vdropzone-file-added="addFile"
@@ -192,7 +211,7 @@
                 </vue-dropzone>
                 <div class="row m-t-20 justify-around">
                     <div class="File col-3" v-for="(file, index) in userFiles">
-                        <div class="File-delete" v-if="superAdmin" @click="deleteFile(file, index)">x</div>
+                        <div class="File-delete" v-if="superAdmin || analyst" @click="deleteFile(file, index)">x</div>
                         <div class="m-auto is-text-center">
                             <div class="m-auto is-text-center">
                                 <img width="80px" :src="file.temporaryUrl" alt="">
@@ -220,7 +239,7 @@
     export default {
         components: {vueDropzone: vue2Dropzone},
         name: "form-user",
-        props: ['user', 'cities', 'points', 'token', 'authUser', 'superAdmin', 'credit'],
+        props: ['user', 'cities', 'points', 'token', 'authUser', 'superAdmin', 'credit', 'analyst'],
         data: function () {
             return {
                 selectedUser: null,
@@ -294,7 +313,7 @@
     }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     input {
         text-transform: uppercase;
     }
@@ -305,5 +324,15 @@
 
     p {
         text-transform: uppercase;
+    }
+
+    .References {
+        table td, table th {
+            min-width: 30rem !important;
+        }
+
+        td:nth-child(3), th:nth-child(3), td:nth-child(7), th:nth-child(7) {
+            min-width: 30rem !important;
+        }
     }
 </style>

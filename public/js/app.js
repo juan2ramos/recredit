@@ -2399,6 +2399,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -2407,7 +2426,7 @@ __webpack_require__.r(__webpack_exports__);
     vueDropzone: vue2_dropzone__WEBPACK_IMPORTED_MODULE_0___default.a
   },
   name: "form-user",
-  props: ['user', 'cities', 'points', 'token', 'authUser', 'superAdmin', 'credit'],
+  props: ['user', 'cities', 'points', 'token', 'authUser', 'superAdmin', 'credit', 'analyst'],
   data: function data() {
     return {
       selectedUser: null,
@@ -3411,6 +3430,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Admin/FormUser.vue?vue&type=style&index=0&id=6943813a&scoped=true&lang=scss&":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Admin/FormUser.vue?vue&type=style&index=0&id=6943813a&scoped=true&lang=scss& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "input[data-v-6943813a] {\n  text-transform: uppercase;\n}\n.dropzone[data-v-6943813a] {\n  width: 100%;\n}\np[data-v-6943813a] {\n  text-transform: uppercase;\n}\n.References table td[data-v-6943813a], .References table th[data-v-6943813a] {\n  min-width: 30rem !important;\n}\n.References td[data-v-6943813a]:nth-child(3), .References th[data-v-6943813a]:nth-child(3), .References td[data-v-6943813a]:nth-child(7), .References th[data-v-6943813a]:nth-child(7) {\n  min-width: 30rem !important;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Admin/ModalInfo.vue?vue&type=style&index=0&id=81d6e600&scoped=true&lang=scss&":
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Admin/ModalInfo.vue?vue&type=style&index=0&id=81d6e600&scoped=true&lang=scss& ***!
@@ -3481,25 +3519,6 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 // module
 exports.push([module.i, "\n.swal-reasons .swal-button-container {\n    min-width: 100% !important;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Admin/FormUser.vue?vue&type=style&index=0&id=6943813a&scoped=true&lang=css&":
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Admin/FormUser.vue?vue&type=style&index=0&id=6943813a&scoped=true&lang=css& ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "\ninput[data-v-6943813a] {\n    text-transform: uppercase;\n}\n.dropzone[data-v-6943813a] {\n    width: 100%;\n}\np[data-v-6943813a] {\n    text-transform: uppercase;\n}\n", ""]);
 
 // exports
 
@@ -14362,6 +14381,36 @@ exports.getClusterConfig = function (clusterName) {
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Admin/FormUser.vue?vue&type=style&index=0&id=6943813a&scoped=true&lang=scss&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Admin/FormUser.vue?vue&type=style&index=0&id=6943813a&scoped=true&lang=scss& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--7-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./FormUser.vue?vue&type=style&index=0&id=6943813a&scoped=true&lang=scss& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Admin/FormUser.vue?vue&type=style&index=0&id=6943813a&scoped=true&lang=scss&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Admin/ModalInfo.vue?vue&type=style&index=0&id=81d6e600&scoped=true&lang=scss&":
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Admin/ModalInfo.vue?vue&type=style&index=0&id=81d6e600&scoped=true&lang=scss& ***!
@@ -14431,36 +14480,6 @@ if(false) {}
 
 
 var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./CreditButton.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Admin/CreditButton.vue?vue&type=style&index=0&lang=css&");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Admin/FormUser.vue?vue&type=style&index=0&id=6943813a&scoped=true&lang=css&":
-/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Admin/FormUser.vue?vue&type=style&index=0&id=6943813a&scoped=true&lang=css& ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./FormUser.vue?vue&type=style&index=0&id=6943813a&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Admin/FormUser.vue?vue&type=style&index=0&id=6943813a&scoped=true&lang=css&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -15978,6 +15997,29 @@ var render = function() {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "Form-labelContent" }, [
+              _c("label", { attrs: { for: "phone" } }, [_vm._v("Teléfono")]),
+              _vm._v(" "),
+              _vm.superAdmin
+                ? _c("input", {
+                    attrs: { type: "text", name: "phone", id: "phone" },
+                    domProps: { value: _vm.user.client.phone }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.superAdmin
+                ? _c("p", [
+                    _vm._v(
+                      _vm._s(
+                        _vm.user.client.phone
+                          ? _vm.user.client.phone
+                          : "Sin Teléfono"
+                      ) + " "
+                    )
+                  ])
+                : _vm._e()
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "Form-labelContent" }, [
               _c("label", { attrs: { for: "email" } }, [
                 _vm._v("Correo Electrónico")
               ]),
@@ -15992,89 +16034,7 @@ var render = function() {
               !_vm.superAdmin
                 ? _c("p", [_vm._v(_vm._s(_vm.user.email))])
                 : _vm._e()
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-16 col-m-8 Form-column" }, [
-            _c("div", { staticClass: "Form-labelContent" }, [
-              _c("label", { attrs: { for: "last_name" } }, [
-                _vm._v("Apellido")
-              ]),
-              _vm._v(" "),
-              _vm.superAdmin
-                ? _c("input", {
-                    attrs: { type: "text", name: "last_name", id: "last_name" },
-                    domProps: { value: _vm.user.last_name }
-                  })
-                : _vm._e(),
-              _vm._v(" "),
-              !_vm.superAdmin
-                ? _c("p", [_vm._v(_vm._s(_vm.user.last_name))])
-                : _vm._e()
             ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "Form-labelContent" }, [
-              _c("label", { attrs: { for: "document" } }, [
-                _vm._v("Documento")
-              ]),
-              _vm._v(" "),
-              _vm.superAdmin
-                ? _c("input", {
-                    attrs: { type: "text", name: "document", id: "document" },
-                    domProps: { value: _vm.user.document }
-                  })
-                : _vm._e(),
-              _vm._v(" "),
-              !_vm.superAdmin
-                ? _c("p", [_vm._v(_vm._s(_vm.user.document))])
-                : _vm._e()
-            ]),
-            _vm._v(" "),
-            _vm._m(0)
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "row" }, [
-          _c("h4", { staticClass: "col-16 h-4" }, [
-            _vm._v("Datos de contacto")
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-16 col-m-8 Form-column" }, [
-            _c("div", { staticClass: "Form-labelContent" }, [
-              _c("label", { attrs: { for: "residency_city" } }, [
-                _vm._v("Ciudad de residencia")
-              ]),
-              _vm._v(" "),
-              _vm.superAdmin
-                ? _c("input", {
-                    attrs: {
-                      type: "text",
-                      name: "residency_city",
-                      id: "residency_city"
-                    },
-                    domProps: { value: _vm.user.client.residency_city }
-                  })
-                : _vm._e(),
-              _vm._v(" "),
-              !_vm.superAdmin
-                ? _c("p", [_vm._v(_vm._s(_vm.user.client.residency_city))])
-                : _vm._e()
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "Form-labelContent" }, [
-              _c("label", { attrs: { for: "address" } }, [_vm._v("Dirección")]),
-              _vm._v(" "),
-              _vm.superAdmin
-                ? _c("input", {
-                    attrs: { type: "text", name: "address", id: "address" },
-                    domProps: { value: _vm.user.client.address }
-                  })
-                : _vm._e()
-            ]),
-            _vm._v(" "),
-            !_vm.superAdmin
-              ? _c("p", [_vm._v(_vm._s(_vm.user.client.address))])
-              : _vm._e(),
             _vm._v(" "),
             _c("div", { staticClass: "Form-labelContent" }, [
               _c("label", { attrs: { for: "birth_city" } }, [_vm._v("Ciudad")]),
@@ -16119,23 +16079,78 @@ var render = function() {
                     }),
                     0
                   )
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.superAdmin
+                ? _c("p", [
+                    _vm._v(
+                      _vm._s(
+                        _vm.cities.filter(function(c) {
+                          return c.id === _vm.selectedCity
+                        })[0].name
+                      )
+                    )
+                  ])
                 : _vm._e()
             ]),
             _vm._v(" "),
-            !_vm.superAdmin
-              ? _c("p", [
-                  _vm._v(
-                    _vm._s(
-                      _vm.cities.filter(function(c) {
-                        return c.id === _vm.selectedCity
-                      })[0].name
-                    )
-                  )
-                ])
-              : _vm._e()
+            _c("div", { staticClass: "Form-labelContent" }, [
+              _c("label", { attrs: { for: "residency_city" } }, [
+                _vm._v("Ciudad de residencia")
+              ]),
+              _vm._v(" "),
+              _vm.superAdmin
+                ? _c("input", {
+                    attrs: {
+                      type: "text",
+                      name: "residency_city",
+                      id: "residency_city"
+                    },
+                    domProps: { value: _vm.user.client.residency_city }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.superAdmin
+                ? _c("p", [_vm._v(_vm._s(_vm.user.client.residency_city))])
+                : _vm._e()
+            ])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "col-16 col-m-8 Form-column" }, [
+            _c("div", { staticClass: "Form-labelContent" }, [
+              _c("label", { attrs: { for: "last_name" } }, [
+                _vm._v("Apellido")
+              ]),
+              _vm._v(" "),
+              _vm.superAdmin
+                ? _c("input", {
+                    attrs: { type: "text", name: "last_name", id: "last_name" },
+                    domProps: { value: _vm.user.last_name }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.superAdmin
+                ? _c("p", [_vm._v(_vm._s(_vm.user.last_name))])
+                : _vm._e()
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "Form-labelContent" }, [
+              _c("label", { attrs: { for: "document" } }, [
+                _vm._v("Documento")
+              ]),
+              _vm._v(" "),
+              _vm.superAdmin
+                ? _c("input", {
+                    attrs: { type: "text", name: "document", id: "document" },
+                    domProps: { value: _vm.user.document }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.superAdmin
+                ? _c("p", [_vm._v(_vm._s(_vm.user.document))])
+                : _vm._e()
+            ]),
+            _vm._v(" "),
             _c("div", { staticClass: "Form-labelContent" }, [
               _c("label", { attrs: { for: "mobile" } }, [_vm._v("Celular")]),
               _vm._v(" "),
@@ -16152,17 +16167,17 @@ var render = function() {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "Form-labelContent" }, [
-              _c("label", { attrs: { for: "phone" } }, [_vm._v("Teléfono")]),
+              _c("label", { attrs: { for: "address" } }, [_vm._v("Dirección")]),
               _vm._v(" "),
               _vm.superAdmin
                 ? _c("input", {
-                    attrs: { type: "text", name: "phone", id: "phone" },
-                    domProps: { value: _vm.user.client.phone }
+                    attrs: { type: "text", name: "address", id: "address" },
+                    domProps: { value: _vm.user.client.address }
                   })
                 : _vm._e(),
               _vm._v(" "),
               !_vm.superAdmin
-                ? _c("p", [_vm._v(_vm._s(_vm.user.client.phone))])
+                ? _c("p", [_vm._v(_vm._s(_vm.user.client.address))])
                 : _vm._e()
             ]),
             _vm._v(" "),
@@ -16226,84 +16241,91 @@ var render = function() {
                     )
                   ])
                 : _vm._e()
-            ])
+            ]),
+            _vm._v(" "),
+            _vm._m(0)
           ])
         ]),
         _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "row" },
-          [
-            _c("h4", { staticClass: "col-16 h-4" }, [
-              _vm._v("Referencias personales ")
-            ]),
-            _vm._v(" "),
-            _vm._l(_vm.user.references, function(reference, i) {
-              return _c("div", { staticClass: "col-16 row" }, [
-                _c("h5", { staticClass: "col-16" }, [
-                  _vm._v("Referencia " + _vm._s(i + 1))
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-16 col-m-8 Form-column" }, [
-                  _vm.superAdmin
-                    ? _c("input", {
-                        attrs: {
-                          type: "hidden",
-                          name: "references[" + i + "][id]"
-                        },
-                        domProps: { value: reference.id }
-                      })
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "Form-labelContent" }, [
-                    _c("label", { attrs: { for: "name" + i } }, [
-                      _vm._v("Nombre")
+        _vm._m(1),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("h4", { staticClass: "col-16 h-4" }, [
+            _vm._v("Referencias personales ")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "is-full-width References" }, [
+            _c("table", { staticClass: "is-full-width" }, [
+              _vm._m(2),
+              _vm._v(" "),
+              _c(
+                "tbody",
+                _vm._l(_vm.user.references, function(reference, i) {
+                  return _c("tr", [
+                    _c("td", [
+                      _c("h5", { staticClass: "col-16" }, [
+                        _vm._v("Referencia " + _vm._s(i + 1))
+                      ])
                     ]),
                     _vm._v(" "),
-                    _vm.superAdmin
-                      ? _c("input", {
-                          attrs: {
-                            type: "text",
-                            name: "references[" + i + "][name]",
-                            id: "reference.name" + i
-                          },
-                          domProps: { value: reference.name }
-                        })
-                      : _vm._e(),
-                    _vm._v(" "),
-                    !_vm.superAdmin
-                      ? _c("p", [_vm._v(_vm._s(reference.name))])
-                      : _vm._e()
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-16 col-m-8 Form-column" }, [
-                  _c("div", { staticClass: "Form-labelContent" }, [
-                    _c("label", { attrs: { for: "references.phone" + i } }, [
-                      _vm._v("Teléfono")
+                    _c("td", [
+                      _c("div", { staticClass: "col-16 col-m-8 Form-column" }, [
+                        _vm.superAdmin
+                          ? _c("input", {
+                              attrs: {
+                                type: "hidden",
+                                name: "references[" + i + "][id]"
+                              },
+                              domProps: { value: reference.id }
+                            })
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "Form-labelContent" }, [
+                          _vm.superAdmin
+                            ? _c("input", {
+                                attrs: {
+                                  type: "text",
+                                  name: "references[" + i + "][name]",
+                                  id: "reference.name" + i
+                                },
+                                domProps: { value: reference.name }
+                              })
+                            : _vm._e(),
+                          _vm._v(" "),
+                          !_vm.superAdmin
+                            ? _c("p", [_vm._v(_vm._s(reference.name))])
+                            : _vm._e()
+                        ])
+                      ])
                     ]),
                     _vm._v(" "),
-                    _vm.superAdmin
-                      ? _c("input", {
-                          attrs: {
-                            type: "text",
-                            name: "references[" + i + "][phone]",
-                            id: "reference.phone" + i
-                          },
-                          domProps: { value: reference.phone }
-                        })
-                      : _vm._e(),
-                    _vm._v(" "),
-                    !_vm.superAdmin
-                      ? _c("p", [_vm._v(_vm._s(reference.phone))])
-                      : _vm._e()
+                    _c("td", [
+                      _c("div", { staticClass: "col-16 col-m-8 Form-column" }, [
+                        _c("div", { staticClass: "Form-labelContent" }, [
+                          _vm.superAdmin
+                            ? _c("input", {
+                                attrs: {
+                                  type: "text",
+                                  name: "references[" + i + "][phone]",
+                                  id: "reference.phone" + i
+                                },
+                                domProps: { value: reference.phone }
+                              })
+                            : _vm._e(),
+                          _vm._v(" "),
+                          !_vm.superAdmin
+                            ? _c("p", [_vm._v(_vm._s(reference.phone))])
+                            : _vm._e()
+                        ])
+                      ])
+                    ])
                   ])
-                ])
-              ])
-            })
-          ],
-          2
-        ),
+                }),
+                0
+              )
+            ])
+          ])
+        ]),
         _vm._v(" "),
         _c(
           "div",
@@ -16311,7 +16333,7 @@ var render = function() {
           [
             _c("h4", { staticClass: "col-16 h-4" }, [_vm._v("Archivos")]),
             _vm._v(" "),
-            _vm.superAdmin
+            _vm.superAdmin || _vm.analyst
               ? _c("vue-dropzone", {
                   ref: "FilesIDAdmin",
                   attrs: {
@@ -16331,7 +16353,7 @@ var render = function() {
               { staticClass: "row m-t-20 justify-around" },
               _vm._l(_vm.userFiles, function(file, index) {
                 return _c("div", { staticClass: "File col-3" }, [
-                  _vm.superAdmin
+                  _vm.superAdmin || _vm.analyst
                     ? _c(
                         "div",
                         {
@@ -16400,6 +16422,30 @@ var staticRenderFns = [
       _c("input", {
         attrs: { type: "password", name: "password", id: "password" }
       })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-16 col-m-8 Form-column" }),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-16 col-m-8 Form-column" })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th"),
+        _vm._v(" "),
+        _c("th", [_vm._v("Nombre")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Celular")])
+      ])
     ])
   }
 ]
@@ -30442,7 +30488,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _FormUser_vue_vue_type_template_id_6943813a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FormUser.vue?vue&type=template&id=6943813a&scoped=true& */ "./resources/js/components/Admin/FormUser.vue?vue&type=template&id=6943813a&scoped=true&");
 /* harmony import */ var _FormUser_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FormUser.vue?vue&type=script&lang=js& */ "./resources/js/components/Admin/FormUser.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _FormUser_vue_vue_type_style_index_0_id_6943813a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./FormUser.vue?vue&type=style&index=0&id=6943813a&scoped=true&lang=css& */ "./resources/js/components/Admin/FormUser.vue?vue&type=style&index=0&id=6943813a&scoped=true&lang=css&");
+/* empty/unused harmony star reexport *//* harmony import */ var _FormUser_vue_vue_type_style_index_0_id_6943813a_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./FormUser.vue?vue&type=style&index=0&id=6943813a&scoped=true&lang=scss& */ "./resources/js/components/Admin/FormUser.vue?vue&type=style&index=0&id=6943813a&scoped=true&lang=scss&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -30484,19 +30530,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/Admin/FormUser.vue?vue&type=style&index=0&id=6943813a&scoped=true&lang=css&":
-/*!*************************************************************************************************************!*\
-  !*** ./resources/js/components/Admin/FormUser.vue?vue&type=style&index=0&id=6943813a&scoped=true&lang=css& ***!
-  \*************************************************************************************************************/
+/***/ "./resources/js/components/Admin/FormUser.vue?vue&type=style&index=0&id=6943813a&scoped=true&lang=scss&":
+/*!**************************************************************************************************************!*\
+  !*** ./resources/js/components/Admin/FormUser.vue?vue&type=style&index=0&id=6943813a&scoped=true&lang=scss& ***!
+  \**************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_FormUser_vue_vue_type_style_index_0_id_6943813a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./FormUser.vue?vue&type=style&index=0&id=6943813a&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Admin/FormUser.vue?vue&type=style&index=0&id=6943813a&scoped=true&lang=css&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_FormUser_vue_vue_type_style_index_0_id_6943813a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_FormUser_vue_vue_type_style_index_0_id_6943813a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_FormUser_vue_vue_type_style_index_0_id_6943813a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_FormUser_vue_vue_type_style_index_0_id_6943813a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_FormUser_vue_vue_type_style_index_0_id_6943813a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_FormUser_vue_vue_type_style_index_0_id_6943813a_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--7-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./FormUser.vue?vue&type=style&index=0&id=6943813a&scoped=true&lang=scss& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Admin/FormUser.vue?vue&type=style&index=0&id=6943813a&scoped=true&lang=scss&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_FormUser_vue_vue_type_style_index_0_id_6943813a_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_FormUser_vue_vue_type_style_index_0_id_6943813a_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_FormUser_vue_vue_type_style_index_0_id_6943813a_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_FormUser_vue_vue_type_style_index_0_id_6943813a_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_FormUser_vue_vue_type_style_index_0_id_6943813a_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 

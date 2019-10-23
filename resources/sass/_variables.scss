@@ -30,3 +30,14 @@
     }
   }
 }
+
+table {
+  table-layout: fixed !important;
+}
+
+table td, table th {
+  min-width: 13rem !important;
+}
+td:nth-child(3), th:nth-child(3),td:nth-child(7), th:nth-child(7){
+  min-width: 100px !important;
+}

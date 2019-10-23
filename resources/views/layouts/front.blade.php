@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
     <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="https://lilipink.vteximg.com.br/arquivos/favicon.ico?v=636433451257930000" type="image/x-icon" />
 </head>
 <body data-site="{{env('APP_URL')}}" id="body">
 <header class="Header">

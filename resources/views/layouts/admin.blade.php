@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="shortcut icon" href="https://lilipink.vteximg.com.br/arquivos/favicon.ico?v=636433451257930000" type="image/x-icon" />
     <title>@yield('title') - Creditos Lilipink </title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">

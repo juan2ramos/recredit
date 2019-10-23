@@ -17,7 +17,7 @@ class FileController extends Controller
 
     public function destroy(File $file)
     {
-        $this->authorize('superAdmin');
+        $this->authorize('analyst');
         $file->delete();
 
         return ['success' => 'ok'];
