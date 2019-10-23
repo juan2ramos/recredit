@@ -7,6 +7,7 @@ use App\Models\Credit;
 use App\Models\File;
 use App\Models\Point;
 use App\Models\Reference;
+use App\Notifications\MailResetPasswordNotification;
 use Carbon\Carbon;
 use Carbon\Traits\Date;
 use Illuminate\Notifications\Notifiable;
@@ -143,6 +144,11 @@ class User extends Authenticatable
         }
 
         return $clients;
+    }
+
+    public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new MailResetPasswordNotification($token));
     }
 
 }

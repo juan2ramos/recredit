@@ -15,7 +15,7 @@
         "juanparati/sendinblue": "^2.4",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
-        "laraveles/spanish": "^1.2",
+        "laraveles/spanish": "^1.4",
         "league/flysystem-aws-s3-v3": "^1.0",
         "pusher/pusher-php-server": "~4.0",
         "spatie/laravel-permission": "^2.37",

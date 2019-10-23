@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b0ab1e3e25687f49b4b641fdb0c95469",
+    "content-hash": "4b295e88f2415dd9d313ec00107b09ba",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -1170,26 +1170,26 @@
         },
         {
             "name": "laraveles/spanish",
-            "version": "1.2.1",
+            "version": "1.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laraveles/spanish.git",
-                "reference": "8835b6713473f5c383f684e3ca38e5b8a56e3a82"
+                "reference": "4168ca574d70824f1bb60842bb1788aad0b158a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laraveles/spanish/zipball/8835b6713473f5c383f684e3ca38e5b8a56e3a82",
-                "reference": "8835b6713473f5c383f684e3ca38e5b8a56e3a82",
+                "url": "https://api.github.com/repos/Laraveles/spanish/zipball/4168ca574d70824f1bb60842bb1788aad0b158a7",
+                "reference": "4168ca574d70824f1bb60842bb1788aad0b158a7",
                 "shasum": ""
             },
             "require": {
-                "illuminate/console": "~5.4.0|~5.5.0|~5.6.0|~5.7.0|~5.8.0",
-                "illuminate/support": "~5.4.0|~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+                "illuminate/console": ">=5.4.0",
+                "illuminate/support": ">=5.4.0",
                 "php": ">=5.6"
             },
             "require-dev": {
-                "orchestra/testbench": "^3.4",
-                "phpunit/phpunit": "^5.6|^6.3|^7.0"
+                "orchestra/testbench": "^3.4|^4.0",
+                "phpunit/phpunit": "^5.6|^6.3|^7.0|^8.0"
             },
             "type": "library",
             "extra": {
@@ -1228,7 +1228,7 @@
                 "spanish",
                 "traduccion"
             ],
-            "time": "2019-04-09T11:06:59+00:00"
+            "time": "2019-10-14T08:31:46+00:00"
         },
         {
             "name": "league/flysystem",
