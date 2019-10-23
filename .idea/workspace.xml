@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9dde37d-980e-4471-b7b8-b7b7dd75cffa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/images/back-home.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Controllers/FileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Controllers/FileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Request/FileRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Request/FileRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/CreditRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/CreditRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Modules/SMS/SendSMS.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/SMS/SendSMS.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Admin/FormUser.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Admin/FormUser.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/template/front/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/template/front/home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/user.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,20 +44,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/FormUser.vue">
+        <entry file="file://$PROJECT_DIR$/app/Modules/SMS/SendSMS.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="336" column="25" selection-start-line="336" selection-start-column="25" selection-end-line="336" selection-end-column="25" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#template#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#template#0;n#!!top" />
-                <element signature="n#div#4;n#div#0;n#div#1;n#form#0;n#div#0;n#template#0;n#!!top" />
-                <element signature="n#div#2;n#div#1;n#div#1;n#form#0;n#div#0;n#template#0;n#!!top" />
-                <element signature="n#div#3;n#div#1;n#div#1;n#form#0;n#div#0;n#template#0;n#!!top" />
-                <element signature="n#div#4;n#div#1;n#div#1;n#form#0;n#div#0;n#template#0;n#!!top" />
-                <element signature="n#style#0;n#select#0;n#div#4;n#div#1;n#div#1;n#form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#4;n#div#1;n#div#1;n#form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="725">
+              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -87,7 +64,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>o</find>
       <find>email</find>
       <find>error</find>
       <find>admin</find>
@@ -117,6 +93,7 @@
       <find>i</find>
       <find>td</find>
       <find>ciudad</find>
+      <find>table</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -297,8 +274,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="x" value="-294" />
+    <option name="y" value="-1080" />
+    <option name="width" value="2560" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -465,15 +444,15 @@
       <workItem from="1571193431754" duration="33000" />
       <workItem from="1571193498595" duration="28000" />
       <workItem from="1571709329542" duration="5514000" />
-      <workItem from="1571796487117" duration="8634000" />
+      <workItem from="1571796487117" duration="9195000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="353716000" />
+    <option name="totallyTimeSpent" value="354277000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="-294" y="-1080" width="2560" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Database" order="0" sideWeight="0.50239694" weight="0.2013889" />
@@ -492,7 +471,7 @@
       <window_info anchor="bottom" id="Database Console" order="10" weight="0.32962963" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="11" />
       <window_info anchor="bottom" x="-224" y="-651" width="2560" height="222" id="Run" order="12" sideWeight="0.49760306" weight="0.22711472" />
-      <window_info anchor="bottom" x="0" y="23" width="1440" height="877" id="Terminal" order="13" weight="0.40672073" />
+      <window_info anchor="bottom" x="0" y="23" width="1440" height="877" id="Terminal" order="13" weight="0.33652925" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -550,6 +529,12 @@
           <url>file://$PROJECT_DIR$/resources/js/components/Front/Modal.vue</url>
           <line>59</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/resources/js/components/Admin/FormUser.vue</url>
+          <line>1</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -790,13 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/SMS/SendSMS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="949">
-          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/FileController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
@@ -858,8 +836,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/FormUser.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="336" column="25" selection-start-line="336" selection-start-column="25" selection-end-line="336" selection-end-column="25" />
+        <state relative-caret-position="4773">
+          <caret line="183" column="67" selection-start-line="183" selection-start-column="67" selection-end-line="183" selection-end-column="67" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#template#0;n#!!top" />
             <element signature="n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#template#0;n#!!top" />
@@ -870,6 +848,13 @@
             <element signature="n#style#0;n#select#0;n#div#4;n#div#1;n#div#1;n#form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#4;n#div#1;n#div#1;n#form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/SMS/SendSMS.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
         </state>
       </provider>
     </entry>

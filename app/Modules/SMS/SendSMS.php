@@ -26,15 +26,12 @@ class SendSMS extends Controller
             'auth' => $this->authData,
             'json' => [
                 'from' => 'InfoSMS',
-                'destinations' => ['to' => "57{$mobile}"],
-                // 'to' => "57{$mobile}",
+                'to' => "57{$mobile}",
                 'text' => $this->buildTextMessage(),
-                'transliteration' => 'NON_UNICODE',
-                'dataCoding' => 0
             ]
         ]);
 
-        return ['status' => $res->getStatusCode()];
+        return ['status' => $res];
     }
 
 
