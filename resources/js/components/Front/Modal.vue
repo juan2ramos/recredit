@@ -36,9 +36,39 @@
                 <h2>DETALLES DE USO</h2>
                 <ul class="is-list-less">
                     <li>
-                        <h4>¿Puedo iniciar vida crediticia con este crédito?</h4>
-                        <p>Si, este crédito no requiere que tengas un historial crediticio previo, aun así, recuerda que
-                            cualquier solicitud estará sujeta al estudio de tu perfil.</p>
+                        <h4>¿Dónde puedo usar mi crédito?</h4>
+                        <p>Puedes usar tu crédito en cualquier tienda Lili Pink o YOI de Colombia.</p>
+
+                    </li>
+                    <li>
+                        <h4>¿Qué es la tripleta de descuentos?</h4>
+                        <p>La tripleta es un beneficio que adquieres una vez activas tu crédito, 
+                        está conformada por tres descuentos individuales del 10, 15 y 20%. 
+                        Ver TyC en <a href="www.lilipink.com/promociones">www.lilipink.com/promociones</a></p>
+
+                    </li>
+                     <li>
+                        <h4>¿Dónde puedo obtener detalles de mi crédito? (Estado, pago mínimo y movimientos)</h4>
+                        <p>Puedes hacerlo a través de los siguientes medios:
+                           1. Iniciando sesión en <a href="www.creditoslilipink.com">www.creditoslilipink.com</a>
+                           2. Llamando a la línea de atención en Bogotá́ 6702400 Ext: 127, 133 o 236.
+                           3. Solicitando la información en cualquier tienda Lili Pink.
+                        </p>
+
+                    </li>
+                    <li>
+                        <h4>¿Cómo puedo iniciar sesión en <a href="www.creditoslilipink.com">www.creditoslilipink.com</a>?</h4>
+                        <p>Debes tener en cuenta lo siguiente:
+                            1. Ingresa tu usuario. (Este será el correo registrado en el momento de la solicitud del crédito)
+                            2. Seguido este paso, das CLIC en “Olvidaste contraseña” para restablecer una que sea única para ti. (Esto lo haces si nunca has ingresado o si has olvidado tu contraseña)
+
+                        </p>
+
+                    </li>
+                     <li>
+                        <h4>¿Qué debo hacer si no puedo iniciar sesión en <a href="www.creditoslilipink.com">www.creditoslilipink.com</a>?</h4>
+                        <p> Puedes comunicarte a la línea de atención en Bogotá́ 6702400 Ext: 127, 133 o 236 donde uno de nuestros analistas te dará las indicaciones correspondientes.
+  </p>
 
                     </li>
                 </ul>
@@ -48,29 +78,39 @@
                 <ul class="is-list-less">
 
                     <li>
-                        <h4>QUE DEBO HACER SI NO PUEDO INICIAR SESIÓN EN WWW.CREDITOSLILIPINK.COM</h4>
-                        <p>Comunicate a la línea de servicio al cliente en bogotá 670 2400 ext: 133 236.</p>
+                        <h4>¿Qué cobros tiene este crédito?</h4>
+                        <p> - Nuestro crédito no tiene cuota de manejo.
+                            - Diferir tus compras genera un cobro de tasas de interés que van a ser aplicadas de la siguiente forma:  
+                              ver información de tasas</p>
                     </li>
 
                     <li>
-                        <h4>ES POSIBLE CAMBIAR LAS FECHAS LIMITES DE PAGO DE MI CRÉDITO</h4>
-                        <p>No. Las fechas del pago del crédito Lili Pink no pueden ser modificadas a solicitud del
-                            cliente</p>
+                        <h4> ¿Cómo y dónde puedo pagar mi crédito?</h4>
+                        <p>- Puedes diferir tus compras de 1 a 12 cuotas quincenales.
+                           - Los pagos de cada cuota podrás realizarlos en cualquier tienda Lili Pink a nivel Nacional 
+                             o solicitando un Link de pago en nuestra línea de atención en Bogotá́ 6702400 Ext: 127, 133 o 
+                             236,  dicho Link te brindará diferentes opciones de pago (Tarjeta Débito, Crédito, Efecty, Baloto o Codensa)
+
+</p>
                     </li>
 
                     <li>
-                        <h4>SI PRESENTO RETRASO EN MIS CUOTAS</h4>
-                        <p>Serás reportado a centrales de riesgo y de persistir o continuar la mora o ser superior a 90
-                            días se realizará cobro jurídico. Recuerda que tener buenos hábitos de pago es su mejor
-                            carta de presentación ante el comercio
-                            y sector financiero
-                        </p>
+                        <h4>¿Es posible cambiar las fechas limites de pago de mi crédito?</h4>
+                        <p> Las fechas del pago del crédito no pueden ser modificadas, estas estarán sujetas a la fecha en que haya realizado las respectivas compras.
+</p>
                     </li>
 
                     <li>
-                        <h4>CUÁNDO PUEDE ESTAR BLOQUEADO EL CRÉDITO</h4>
-                        <p>Puede estar bloqueado si presenta mora superior a 30 días, suplantación o perdida.</p>
+                        <h4>¿Qué sucede si presento retraso en mis cuotas?</h4>
+                        <p>Serás reportado a centrales de riesgo y de persistir o continuar la mora se realizará cobro jurídico. Recuerda que tener buenos hábitos de pago es tu mejor carta de presentación ante el comercio y sector financiero.
+</p>
                     </li>
+                    <li>
+                        <h4>¿Cuándo puede estar bloqueado el crédito?</h4>
+                        <p>Puede estar bloqueado si presenta mora superior a 30 días o se evidencia suplantación.</p>
+                    </li>
+                    
+                    
                 </ul>
                 <div class="Faq-contentInfo">
                     <h4 class="color-primary ">¿QUIERES MÁS INFORMACIÓN?</h4>
