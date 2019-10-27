@@ -44,6 +44,7 @@
                 </ul>
             </article>
             <article class="col-16 col-m-8">
+                <h2> PAGOS Y COBROS</h2>
                 <ul class="is-list-less">
 
                     <li>

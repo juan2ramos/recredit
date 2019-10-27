@@ -3414,6 +3414,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Modal',
   data: function data() {
@@ -17858,6 +17859,8 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("article", { staticClass: "col-16 col-m-8" }, [
+      _c("h2", [_vm._v(" PAGOS Y COBROS")]),
+      _vm._v(" "),
       _c("ul", { staticClass: "is-list-less" }, [
         _c("li", [
           _c("h4", [
