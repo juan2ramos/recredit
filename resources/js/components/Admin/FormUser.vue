@@ -128,8 +128,8 @@
                         <p v-if="!superAdmin" style="text-transform: capitalize">{{pointsLocal.filter((p)=>p.id ===
                             selectedPoint)[0].name}}</p>
                     </div>
-                    <div class="Form-labelContent">
-                        <label for="password">Contraseña</label>
+                    <div class="Form-labelContent" v-if="superAdmin">
+                        <label for="password" >Contraseña</label>
                         <input
                                 type="password"
                                 name="password"

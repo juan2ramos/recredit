@@ -3415,6 +3415,46 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Modal',
   data: function data() {
@@ -16293,11 +16333,25 @@ var render = function() {
                 : _vm._e()
             ]),
             _vm._v(" "),
-            _vm._m(0)
+            _vm.superAdmin
+              ? _c("div", { staticClass: "Form-labelContent" }, [
+                  _c("label", { attrs: { for: "password" } }, [
+                    _vm._v("Contraseña")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    attrs: {
+                      type: "password",
+                      name: "password",
+                      id: "password"
+                    }
+                  })
+                ])
+              : _vm._e()
           ])
         ]),
         _vm._v(" "),
-        _vm._m(1),
+        _vm._m(0),
         _vm._v(" "),
         _c("div", { staticClass: "row" }, [
           _c("h4", { staticClass: "col-16 h-4" }, [
@@ -16306,7 +16360,7 @@ var render = function() {
           _vm._v(" "),
           _c("div", { staticClass: "is-full-width References" }, [
             _c("table", { staticClass: "is-full-width" }, [
-              _vm._m(2),
+              _vm._m(1),
               _vm._v(" "),
               _c(
                 "tbody",
@@ -16462,18 +16516,6 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "Form-labelContent" }, [
-      _c("label", { attrs: { for: "password" } }, [_vm._v("Contraseña")]),
-      _vm._v(" "),
-      _c("input", {
-        attrs: { type: "password", name: "password", id: "password" }
-      })
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -17782,7 +17824,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("p", [
         _vm._v(
-          "Puedes dirigirte a cualquiera de nuestras tiendas a nivel nacional o puedes solicitarlo ahora\n                        mismo en "
+          "Puedes dirigirte a cualquiera de nuestras tiendas a nivel nacional o puedes solicitarlo ahora\n                            mismo en "
         ),
         _c(
           "a",
@@ -17805,7 +17847,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("p", [
         _vm._v(
-          "En el momento de realizar la validación de datos solo debes presentar tu cédula original en\n                        nuestras tiendas.\n\n                    "
+          "En el momento de realizar la validación de datos solo debes presentar tu cédula original en\n                            nuestras tiendas.\n\n                        "
         )
       ])
     ])
@@ -17819,7 +17861,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("p", [
         _vm._v(
-          "\n                        Nuestro crédito no requiere codeudor, únicamente necesitarás dos referencias personales.\n\n                    "
+          "\n                            Nuestro crédito no requiere codeudor, únicamente necesitarás dos referencias personales.\n\n                        "
         )
       ])
     ])
@@ -17833,7 +17875,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("p", [
         _vm._v(
-          "Si, este crédito no requiere que tengas un historial crediticio previo, aun así, recuerda que\n                        cualquier solicitud estará sujeta al estudio de tu perfil."
+          "Si, este crédito no requiere que tengas un historial crediticio previo, aun así, recuerda que\n                            cualquier solicitud estará sujeta al estudio de tu perfil."
         )
       ])
     ])
@@ -17844,11 +17886,76 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("ul", { staticClass: "is-list-less" }, [
       _c("li", [
-        _c("h4", [_vm._v("¿Puedo iniciar vida crediticia con este crédito?")]),
+        _c("h4", [_vm._v("¿Dónde puedo usar mi crédito?")]),
         _vm._v(" "),
         _c("p", [
           _vm._v(
-            "Si, este crédito no requiere que tengas un historial crediticio previo, aun así, recuerda que\n                        cualquier solicitud estará sujeta al estudio de tu perfil."
+            "Puedes usar tu crédito en cualquier tienda Lili Pink o YOI de Colombia."
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("li", [
+        _c("h4", [_vm._v("¿Qué es la tripleta de descuentos?")]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "La tripleta es un beneficio que adquieres una vez activas tu crédito, \n                        está conformada por tres descuentos individuales del 10, 15 y 20%. \n                        Ver TyC en "
+          ),
+          _c("a", { attrs: { href: "www.lilipink.com/promociones" } }, [
+            _vm._v("www.lilipink.com/promociones")
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("li", [
+        _c("h4", [
+          _vm._v(
+            "¿Dónde puedo obtener detalles de mi crédito? (Estado, pago mínimo y movimientos)"
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "Puedes hacerlo a través de los siguientes medios:\n                           1. Iniciando sesión en "
+          ),
+          _c("a", { attrs: { href: "www.creditoslilipink.com" } }, [
+            _vm._v("www.creditoslilipink.com")
+          ]),
+          _vm._v(
+            "\n                           2. Llamando a la línea de atención en Bogotá́ 6702400 Ext: 127, 133 o 236.\n                           3. Solicitando la información en cualquier tienda Lili Pink.\n                        "
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("li", [
+        _c("h4", [
+          _vm._v("¿Cómo puedo iniciar sesión en "),
+          _c("a", { attrs: { href: "www.creditoslilipink.com" } }, [
+            _vm._v("www.creditoslilipink.com")
+          ]),
+          _vm._v("?")
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "Debes tener en cuenta lo siguiente:\n                            1. Ingresa tu usuario. (Este será el correo registrado en el momento de la solicitud del crédito)\n                            2. Seguido este paso, das CLIC en “Olvidaste contraseña” para restablecer una que sea única para ti. (Esto lo haces si nunca has ingresado o si has olvidado tu contraseña)\n\n                        "
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("li", [
+        _c("h4", [
+          _vm._v("¿Qué debo hacer si no puedo iniciar sesión en "),
+          _c("a", { attrs: { href: "www.creditoslilipink.com" } }, [
+            _vm._v("www.creditoslilipink.com")
+          ]),
+          _vm._v("?")
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            " Puedes comunicarte a la línea de atención en Bogotá́ 6702400 Ext: 127, 133 o 236 donde uno de nuestros analistas te dará las indicaciones correspondientes.\n  "
           )
         ])
       ])
@@ -17863,15 +17970,21 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("ul", { staticClass: "is-list-less" }, [
         _c("li", [
-          _c("h4", [
-            _vm._v(
-              "QUE DEBO HACER SI NO PUEDO INICIAR SESIÓN EN WWW.CREDITOSLILIPINK.COM"
-            )
-          ]),
+          _c("h4", [_vm._v("¿Qué cobros tiene este crédito?")]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "Comunicate a la línea de servicio al cliente en bogotá 670 2400 ext: 133 236."
+              " - Nuestro crédito no tiene cuota de manejo.\n                            - Diferir tus compras genera un cobro de tasas de interés que van a ser aplicadas de la siguiente forma:  \n                              ver información de tasas"
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("h4", [_vm._v(" ¿Cómo y dónde puedo pagar mi crédito?")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "- Puedes diferir tus compras de 1 a 12 cuotas quincenales.\n                           - Los pagos de cada cuota podrás realizarlos en cualquier tienda Lili Pink a nivel Nacional \n                             o solicitando un Link de pago en nuestra línea de atención en Bogotá́ 6702400 Ext: 127, 133 o \n                             236,  dicho Link te brindará diferentes opciones de pago (Tarjeta Débito, Crédito, Efecty, Baloto o Codensa)\n\n"
             )
           ])
         ]),
@@ -17879,33 +17992,33 @@ var staticRenderFns = [
         _c("li", [
           _c("h4", [
             _vm._v(
-              "ES POSIBLE CAMBIAR LAS FECHAS LIMITES DE PAGO DE MI CRÉDITO"
+              "¿Es posible cambiar las fechas limites de pago de mi crédito?"
             )
           ]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "No. Las fechas del pago del crédito Lili Pink no pueden ser modificadas a solicitud del\n                        cliente"
+              " Las fechas del pago del crédito no pueden ser modificadas, estas estarán sujetas a la fecha en que haya realizado las respectivas compras.\n"
             )
           ])
         ]),
         _vm._v(" "),
         _c("li", [
-          _c("h4", [_vm._v("SI PRESENTO RETRASO EN MIS CUOTAS")]),
+          _c("h4", [_vm._v("¿Qué sucede si presento retraso en mis cuotas?")]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "Serás reportado a centrales de riesgo y de persistir o continuar la mora o ser superior a 90\n                        días se realizará cobro jurídico. Recuerda que tener buenos hábitos de pago es su mejor\n                        carta de presentación ante el comercio\n                        y sector financiero\n                    "
+              "Serás reportado a centrales de riesgo y de persistir o continuar la mora se realizará cobro jurídico. Recuerda que tener buenos hábitos de pago es tu mejor carta de presentación ante el comercio y sector financiero.\n"
             )
           ])
         ]),
         _vm._v(" "),
         _c("li", [
-          _c("h4", [_vm._v("CUÁNDO PUEDE ESTAR BLOQUEADO EL CRÉDITO")]),
+          _c("h4", [_vm._v("¿Cuándo puede estar bloqueado el crédito?")]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "Puede estar bloqueado si presenta mora superior a 30 días, suplantación o perdida."
+              "Puede estar bloqueado si presenta mora superior a 30 días o se evidencia suplantación."
             )
           ])
         ])
