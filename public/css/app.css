@@ -3807,12 +3807,6 @@ input:focus {
   font-size: 2rem;
 }
 
-@media (min-width: 45rem) {
-  .h-1 {
-    font-size: 4rem;
-  }
-}
-
 .h-3 {
   color: var(--primary-color);
   position: relative;
@@ -3983,6 +3977,11 @@ select option {
   color: #000;
 }
 
+.logo-request {
+  vertical-align: middle;
+  max-width: 200px;
+}
+
 .autocomplete__box {
   background: none !important;
   border: none !important;
@@ -4073,6 +4072,11 @@ select option {
   display: inline-block;
   position: relative;
   border-radius: 1rem 1rem 0 0;
+}
+
+.Header-logoLili a {
+  padding: 6px 0;
+  display: block;
 }
 
 .Header-logoLiliLink {

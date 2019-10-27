@@ -21,7 +21,7 @@ textarea:focus, input:focus {
   margin: 1rem 0;
   font-size: 2rem;
   @include respond-to(medium) {
-    font-size: 4rem;
+
   }
 }
 
@@ -186,4 +186,8 @@ th {
 select option{
   background: white;
   color: #000;
+}
+.logo-request{
+  vertical-align: middle;
+  max-width: 200px;
 }

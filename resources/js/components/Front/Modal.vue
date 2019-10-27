@@ -2,19 +2,18 @@
     <div>
         <section class="Faq-content container row">
             <article class="col-16 col-m-8">
+                <h2>MI SOLICITUD</h2>
                 <ul class="is-list-less">
                     <li>
-                        <h4>CÓMO PUEDO OBTENER MI CRÉDITO LILI PINK</h4>
-                        <p>Solo debes presentar la cédula original, dos referencias personales y tener buenos hábitos
-                            de
-                            pago; los cuales serán consultados y verificados en centrales de riesgo.
-                            <b>NO NECESITAS CODEUDORES</b>.</p>
+                        <h4>¿Dónde puedo solicitar mi crédito?</h4>
+                        <p>Puedes dirigirte a cualquiera de nuestras tiendas a nivel nacional o puedes solicitarlo ahora
+                            mismo en <a href="www.nuevo.creditoslilipink.com/solicitud-creditos.">www.creditoslilipink.com/solicitud-creditos.</a>
+                        </p>
                     </li>
                     <li>
-                        <h4>CUÁNDO RECIBO MI CRÉDITO LILI PINK</h4>
-                        <p>Presentando la cédula original en la tienda en donde solicitaste el crédito o si lo hiciste
-                            por la página www.creditoslilipink.com, debes pedirla en la tienda que escogiste en el
-                            momento de la inscripción"
+                        <h4>¿Qué documentos necesito para obtener mi crédito?</h4>
+                        <p>En el momento de realizar la validación de datos solo debes presentar tu cédula original en nuestras tiendas.
+
                         </p>
                     </li>
                     <li>
@@ -80,7 +79,7 @@
         <section class="Modal row justify-center align-middle Faq-Modal" v-show="openModal">
             <div class="Modal-content row Contact-content" style="height: 500px;">
                 <div class="Modal-contentClose modalClose" @click.prevent="modal">X</div>
-                <div class=" table-container"  style="max-height: 90%;">
+                <div class=" table-container" style="max-height: 90%;">
                     <table class="Faq-modalTable">
                         <thead>
                         <tr>
@@ -123,4 +122,13 @@
         }
     }
 </script>
+<style scoped lang="scss">
+    h2 {
+        text-align: center;
+        font-size: 2.4rem;
+        margin: 20px 0 -20px;
+        font-weight: 600;
+        color: #46b065;
+    }
+</style>
 

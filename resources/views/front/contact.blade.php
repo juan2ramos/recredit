@@ -16,6 +16,7 @@
             <form class="Contact-contentForm" action="">
                 <input type="text" placeholder="Nombre" name="name">
                 <input type="email" placeholder="Correo electrónico" name="email">
+                <input type="email" placeholder="Número de teléfono" name="phone">
                 <input type="text" placeholder="Ciudad" name="city">
                 <label for="message">Mensaje requerido</label>
                 <textarea name="message" id="message"></textarea>

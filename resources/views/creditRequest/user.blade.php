@@ -3,7 +3,9 @@
 @section('content')
     @php($update = app('request')->route()->getName() == 'users.edit' ?? true)
 
-    <h1 class="h-1">SOLICITUD DE CRÉDITO</h1>
+    <h1 class="h-1"><span style="vertical-align: middle">SOLICITUD</span>
+        <img class="logo-request" src="{{asset('images/logo-lilipink.png')}}" alt="">
+    </h1>
     @include('creditRequest.include.nav')
     <div class="Request">
 

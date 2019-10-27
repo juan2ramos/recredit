@@ -41,7 +41,7 @@ class MailResetPasswordNotification extends ResetPassword
     public function toMail($notifiable)
     {
 
-        $link = url("/reset-password/" . $this->token);
+        $link = url("/password/reset/" . $this->token);
 
         return (new MailMessage)
             ->subject('Restablecer contraseña Créditos Lilipink')

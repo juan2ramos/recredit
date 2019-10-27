@@ -20,6 +20,11 @@
       position: relative;
       border-radius: 1rem 1rem 0 0;
 
+      a {
+        padding: 6px 0;
+        display: block;
+      }
+
       &Link {
         display: block;
         padding: 0 1.4rem;
@@ -95,7 +100,7 @@
     }
   }
 
-  &-close{
+  &-close {
     display: block;
   }
 }

@@ -11,6 +11,7 @@
                     <form method="POST" action="{{ route('login') }}" class="Home-formsForm">
                         @guest
                             @csrf
+                            <img class="logo-home" src="{{asset('/images/logo-lilipink.png')}}" alt="">
                             <h2>INICIAR SESIÓN</h2>
                             <div class="Home-formsGroup {{ $errors->has('email') ? ' is-error' : '' }} ">
                                 <label for="email">E-mail</label>
@@ -64,3 +65,10 @@
 
     </div>
 @endsection
+<style >
+    .logo-home{
+        width: 300px;
+        margin: auto;
+        display: block;
+    }
+</style>
