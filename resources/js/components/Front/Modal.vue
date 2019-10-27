@@ -12,33 +12,34 @@
                     </li>
                     <li>
                         <h4>¿Qué documentos necesito para obtener mi crédito?</h4>
-                        <p>En el momento de realizar la validación de datos solo debes presentar tu cédula original en nuestras tiendas.
+                        <p>En el momento de realizar la validación de datos solo debes presentar tu cédula original en
+                            nuestras tiendas.
 
                         </p>
                     </li>
                     <li>
-                        <h4>CÓMO PUEDO INICIAR SESIÓN EN WWW.CREDITOSLILIPINK.COM</h4>
+                        <h4>¿Debo tener un codeudor?</h4>
                         <p>
-                            Debes tener en cuenta lo siguiente: <br>
-                            1. Tu usuario es el e-mail registrado en el momento de la solicitud del crédito <br>
-                            2. Seguido este paso, das CLICK en “Olvidaste contraseña” para reestablecer una contraseña
-                            que sea única para ti.
+                            Nuestro crédito no requiere codeudor, únicamente necesitarás dos referencias personales.
+
                         </p>
                     </li>
                     <li>
-                        <h4>CÓMO PUEDO CONSULTAR EL ESTADO DE MI CRÉDITO O EL PAGO MÍNIMO</h4>
-                        <p>Puedes hacerlo a través de los siguientes medios: <br>
-                            1. Iniciando sesión en www.creditoslilipink.com <br>
-                            2. Llamando a la línea de servicio al cliente en bogotá 670 2400 ext: 127 133 y 236<br>
-                            3. Solicitando la información en cualquier tienda Lili Pink.</p>
+                        <h4>¿Puedo iniciar vida crediticia con este crédito?</h4>
+                        <p>Si, este crédito no requiere que tengas un historial crediticio previo, aun así, recuerda que
+                            cualquier solicitud estará sujeta al estudio de tu perfil.</p>
                     </li>
                     <li>
-                        <h4>TIENE CUOTA DE UTILIZACIÓN O DE MANEJO</h4>
-                        <p>1. No hay cuota de manejo.<br>
-                            2. Diferir las compras entre 1 y 12 cuotas quincenales generan un cobro de tasas.<br>
-                            de interés de cuantías mínimas que van a ser aplicadas de la siguiente forma:</p>
-
                         <a @click.prevent="modal" class="button openModal">Ver tasas de interés</a>
+                    </li>
+                </ul>
+                <h2>DETALLES DE USO</h2>
+                <ul class="is-list-less">
+                    <li>
+                        <h4>¿Puedo iniciar vida crediticia con este crédito?</h4>
+                        <p>Si, este crédito no requiere que tengas un historial crediticio previo, aun así, recuerda que
+                            cualquier solicitud estará sujeta al estudio de tu perfil.</p>
+
                     </li>
                 </ul>
             </article>

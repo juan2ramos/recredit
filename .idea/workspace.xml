@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9dde37d-980e-4471-b7b8-b7b7dd75cffa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/logo-lilipink.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Notifications/MailResetPasswordNotification.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Notifications/MailResetPasswordNotification.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/Front/Modal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Front/Modal.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_general.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_general.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/template/front/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/template/front/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/creditRequest/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/creditRequest/user.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/general/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/general/nav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/js/components/Front/Modal.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="131" column="23" selection-start-line="131" selection-start-column="23" selection-end-line="131" selection-end-column="23" />
+            <state relative-caret-position="194">
+              <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -494,12 +484,12 @@
       <workItem from="1571193498595" duration="28000" />
       <workItem from="1571709329542" duration="5514000" />
       <workItem from="1571796487117" duration="10145000" />
-      <workItem from="1572207343766" duration="2575000" />
+      <workItem from="1572207343766" duration="3111000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="357802000" />
+    <option name="totallyTimeSpent" value="358338000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="38" y="-768" width="1360" height="768" extended-state="0" />
@@ -908,8 +898,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/Front/Modal.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="131" column="23" selection-start-line="131" selection-start-column="23" selection-end-line="131" selection-end-column="23" />
+        <state relative-caret-position="194">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
         </state>
       </provider>
     </entry>

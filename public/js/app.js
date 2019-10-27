@@ -3413,6 +3413,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Modal',
   data: function data() {
@@ -17677,10 +17678,6 @@ var render = function() {
           _vm._m(3),
           _vm._v(" "),
           _c("li", [
-            _c("h4", [_vm._v("TIENE CUOTA DE UTILIZACIÓN O DE MANEJO")]),
-            _vm._v(" "),
-            _vm._m(4),
-            _vm._v(" "),
             _c(
               "a",
               {
@@ -17695,7 +17692,11 @@ var render = function() {
               [_vm._v("Ver tasas de interés")]
             )
           ])
-        ])
+        ]),
+        _vm._v(" "),
+        _c("h2", [_vm._v("DETALLES DE USO")]),
+        _vm._v(" "),
+        _vm._m(4)
       ]),
       _vm._v(" "),
       _vm._m(5)
@@ -17803,7 +17804,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("p", [
         _vm._v(
-          "En el momento de realizar la validación de datos solo debes presentar tu cédula original en nuestras tiendas.\n\n                    "
+          "En el momento de realizar la validación de datos solo debes presentar tu cédula original en\n                        nuestras tiendas.\n\n                    "
         )
       ])
     ])
@@ -17813,21 +17814,11 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("li", [
-      _c("h4", [
-        _vm._v("CÓMO PUEDO INICIAR SESIÓN EN WWW.CREDITOSLILIPINK.COM")
-      ]),
+      _c("h4", [_vm._v("¿Debo tener un codeudor?")]),
       _vm._v(" "),
       _c("p", [
         _vm._v(
-          "\n                        Debes tener en cuenta lo siguiente: "
-        ),
-        _c("br"),
-        _vm._v(
-          "\n                        1. Tu usuario es el e-mail registrado en el momento de la solicitud del crédito "
-        ),
-        _c("br"),
-        _vm._v(
-          "\n                        2. Seguido este paso, das CLICK en “Olvidaste contraseña” para reestablecer una contraseña\n                        que sea única para ti.\n                    "
+          "\n                        Nuestro crédito no requiere codeudor, únicamente necesitarás dos referencias personales.\n\n                    "
         )
       ])
     ])
@@ -17837,23 +17828,11 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("li", [
-      _c("h4", [
-        _vm._v("CÓMO PUEDO CONSULTAR EL ESTADO DE MI CRÉDITO O EL PAGO MÍNIMO")
-      ]),
+      _c("h4", [_vm._v("¿Puedo iniciar vida crediticia con este crédito?")]),
       _vm._v(" "),
       _c("p", [
-        _vm._v("Puedes hacerlo a través de los siguientes medios: "),
-        _c("br"),
         _vm._v(
-          "\n                        1. Iniciando sesión en www.creditoslilipink.com "
-        ),
-        _c("br"),
-        _vm._v(
-          "\n                        2. Llamando a la línea de servicio al cliente en bogotá 670 2400 ext: 127 133 y 236"
-        ),
-        _c("br"),
-        _vm._v(
-          "\n                        3. Solicitando la información en cualquier tienda Lili Pink."
+          "Si, este crédito no requiere que tengas un historial crediticio previo, aun así, recuerda que\n                        cualquier solicitud estará sujeta al estudio de tu perfil."
         )
       ])
     ])
@@ -17862,16 +17841,16 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("p", [
-      _vm._v("1. No hay cuota de manejo."),
-      _c("br"),
-      _vm._v(
-        "\n                        2. Diferir las compras entre 1 y 12 cuotas quincenales generan un cobro de tasas."
-      ),
-      _c("br"),
-      _vm._v(
-        "\n                        de interés de cuantías mínimas que van a ser aplicadas de la siguiente forma:"
-      )
+    return _c("ul", { staticClass: "is-list-less" }, [
+      _c("li", [
+        _c("h4", [_vm._v("¿Puedo iniciar vida crediticia con este crédito?")]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "Si, este crédito no requiere que tengas un historial crediticio previo, aun así, recuerda que\n                        cualquier solicitud estará sujeta al estudio de tu perfil."
+          )
+        ])
+      ])
     ])
   },
   function() {
