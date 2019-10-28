@@ -3540,7 +3540,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Modal',
   data: function data() {
@@ -17944,8 +17943,414 @@ render._withStripped = true
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {}
-var staticRenderFns = []
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("section", { staticClass: "Faq-content container row" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("article", { staticClass: "col-16 col-m-8" }, [
+        _c("h2", [_vm._v(" PAGOS Y COBROS")]),
+        _vm._v(" "),
+        _c("ul", { staticClass: "is-list-less" }, [
+          _c("li", [
+            _c("h4", [_vm._v("¿Qué cobros tiene este crédito?")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._m(1),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "button openModal",
+                  on: {
+                    click: function($event) {
+                      $event.preventDefault()
+                      return _vm.modal($event)
+                    }
+                  }
+                },
+                [_vm._v("Ver tasas de interés")]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _vm._m(2),
+          _vm._v(" "),
+          _vm._m(3),
+          _vm._v(" "),
+          _vm._m(4),
+          _vm._v(" "),
+          _vm._m(5)
+        ]),
+        _vm._v(" "),
+        _vm._m(6)
+      ])
+    ]),
+    _vm._v(" "),
+    _c(
+      "section",
+      {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value: _vm.openModal,
+            expression: "openModal"
+          }
+        ],
+        staticClass: "Modal row justify-center align-middle Faq-Modal"
+      },
+      [
+        _c(
+          "div",
+          {
+            staticClass: "Modal-content row Contact-content",
+            staticStyle: { height: "500px" }
+          },
+          [
+            _c(
+              "div",
+              {
+                staticClass: "Modal-contentClose modalClose",
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    return _vm.modal($event)
+                  }
+                }
+              },
+              [_vm._v("X")]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: " table-container",
+                staticStyle: { "max-height": "90%" }
+              },
+              [
+                _c("table", { staticClass: "Faq-modalTable" }, [
+                  _vm._m(7),
+                  _vm._v(" "),
+                  _c(
+                    "tbody",
+                    [
+                      _vm._m(8),
+                      _vm._v(" "),
+                      _vm._l(12, function(i) {
+                        return _c("tr", { key: i }, [
+                          _c("td", [_vm._v(_vm._s(i))]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v(_vm._s(i * 1.5) + "%")])
+                        ])
+                      })
+                    ],
+                    2
+                  )
+                ])
+              ]
+            )
+          ]
+        )
+      ]
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("article", { staticClass: "col-16 col-m-8" }, [
+      _c("h2", [_vm._v("MI SOLICITUD")]),
+      _vm._v(" "),
+      _c("ul", { staticClass: "is-list-less" }, [
+        _c("li", [
+          _c("h4", [_vm._v("¿Dónde puedo solicitar mi crédito?")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Puedes dirigirte a cualquiera de nuestras tiendas a nivel nacional o puedes solicitarlo ahora\n                            mismo en "
+            ),
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "www.nuevo.creditoslilipink.com/solicitud-creditos."
+                }
+              },
+              [_vm._v("www.creditoslilipink.com/solicitud-creditos.")]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("h4", [
+            _vm._v("¿Qué documentos necesito para obtener mi crédito?")
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "En el momento de realizar la validación de datos solo debes presentar tu cédula original en\n                            nuestras tiendas.\n\n                        "
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("h4", [_vm._v("¿Debo tener un codeudor?")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "\n                            Nuestro crédito no requiere codeudor, únicamente necesitarás dos referencias personales.\n\n                        "
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("h4", [
+            _vm._v("¿Puedo iniciar vida crediticia con este crédito?")
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Si, este crédito no requiere que tengas un historial crediticio previo, aun así, recuerda que\n                            cualquier solicitud estará sujeta al estudio de tu perfil."
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h2", [_vm._v("DETALLES DE USO")]),
+      _vm._v(" "),
+      _c("ul", { staticClass: "is-list-less" }, [
+        _c("li", [
+          _c("h4", [_vm._v("¿Dónde puedo usar mi crédito?")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Puedes usar tu crédito en cualquier tienda Lili Pink o YOI de Colombia."
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("h4", [_vm._v("¿Qué es la tripleta de descuentos?")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "La tripleta es un beneficio que adquieres una vez activas tu crédito,\n                        está conformada por tres descuentos individuales del 10, 15 y 20%.\n                        Ver TyC en "
+            ),
+            _c("a", { attrs: { href: "www.lilipink.com/promociones" } }, [
+              _vm._v("www.lilipink.com/promociones")
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("h4", [
+            _vm._v(
+              "¿Dónde puedo obtener detalles de mi crédito? (Estado, pago mínimo y movimientos)"
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Puedes hacerlo a través de los siguientes medios:\n                         "
+            ),
+            _c("ol", [
+              _c("li", [
+                _vm._v("1. Iniciando sesión en "),
+                _c("a", { attrs: { href: "www.creditoslilipink.com" } }, [
+                  _vm._v("www.creditoslilipink.com")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _vm._v(
+                  "2. Llamando a la línea de atención en Bogotá́ 6702400 Ext: 127, 133 o 236."
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _vm._v(
+                  "3. Solicitando la información en cualquier tienda Lili Pink."
+                )
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("h4", [
+            _vm._v("¿Cómo puedo iniciar sesión en "),
+            _c("a", { attrs: { href: "www.creditoslilipink.com" } }, [
+              _vm._v("www.creditoslilipink.com")
+            ]),
+            _vm._v("?")
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Debes tener en cuenta lo siguiente:\n                         "
+            ),
+            _c("ol", [
+              _c("li", [
+                _vm._v(
+                  " 1. Ingresa tu usuario. (Este será el correo registrado en el momento de la solicitud del crédito) "
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _vm._v(
+                  " 2. Seguido este paso, das CLIC en “Olvidaste contraseña” para restablecer una que sea única para ti. (Esto lo haces si nunca has ingresado o si has olvidado tu contraseña)"
+                )
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("h4", [
+            _vm._v("¿Qué debo hacer si no puedo iniciar sesión en "),
+            _c("a", { attrs: { href: "www.creditoslilipink.com" } }, [
+              _vm._v("www.creditoslilipink.com")
+            ]),
+            _vm._v("?")
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              " Puedes comunicarte a la línea de atención en Bogotá́ 6702400 Ext: 127, 133 o 236 donde uno de nuestros analistas te dará las indicaciones correspondientes.\n  "
+            )
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("ul", [
+      _c("li", [_vm._v(" - Nuestro crédito no tiene cuota de manejo.")]),
+      _vm._v(" "),
+      _c("li", [
+        _vm._v(
+          "- Diferir tus compras genera un cobro de tasas de interés que van a ser aplicadas de la siguiente forma:\n                          ver información de tasas "
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("h4", [_vm._v(" ¿Cómo y dónde puedo pagar mi crédito?")]),
+      _vm._v(" "),
+      _c("p", [
+        _c("ul", [
+          _c("li", [
+            _vm._v(
+              " - Puedes diferir tus compras de 1 a 12 cuotas quincenales. "
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v(
+              "  - Los pagos de cada cuota podrás realizarlos en cualquier tienda Lili Pink a nivel Nacional\n                          o solicitando un Link de pago en nuestra línea de atención en Bogotá́ 6702400 Ext: 127, 133 o\n                          236,  dicho Link te brindará diferentes opciones de pago (Tarjeta Débito, Crédito, Efecty, Baloto o Codensa)"
+            )
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("h4", [
+        _vm._v("¿Es posible cambiar las fechas limites de pago de mi crédito?")
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          " Las fechas del pago del crédito no pueden ser modificadas, estas estarán sujetas a la fecha en que haya realizado las respectivas compras.\n"
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("h4", [_vm._v("¿Qué sucede si presento retraso en mis cuotas?")]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "Serás reportado a centrales de riesgo y de persistir o continuar la mora se realizará cobro jurídico. Recuerda que tener buenos hábitos de pago es tu mejor carta de presentación ante el comercio y sector financiero.\n"
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("h4", [_vm._v("¿Cuándo puede estar bloqueado el crédito?")]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "Puede estar bloqueado si presenta mora superior a 30 días o se evidencia suplantación."
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "Faq-contentInfo" }, [
+      _c("h4", { staticClass: "color-primary " }, [
+        _vm._v("¿QUIERES MÁS INFORMACIÓN?")
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "PBX: (571) 670 2400 Ext: 127 133 236 carteralilipink@lilipink.com //Cra 19A No 196-23 Bogotá"
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_vm._v("Tasa mÍnima legal EA")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Tasa mÍnima legal EA")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", [_vm._v("Cuotas")]),
+      _vm._v(" "),
+      _c("td", [_vm._v("Interés")])
+    ])
+  }
+]
+render._withStripped = true
 
 
 

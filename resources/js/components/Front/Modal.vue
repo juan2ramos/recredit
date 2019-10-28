@@ -1,5 +1,6 @@
 <template>
     <div>
+
         <section class="Faq-content container row">
             <article class="col-16 col-m-8">
                 <h2>MI SOLICITUD</h2>
@@ -29,9 +30,6 @@
                         <p>Si, este crédito no requiere que tengas un historial crediticio previo, aun así, recuerda que
                             cualquier solicitud estará sujeta al estudio de tu perfil.</p>
                     </li>
-                    <li>
-                        <a @click.prevent="modal" class="button openModal">Ver tasas de interés</a>
-                    </li>
                 </ul>
                 <h2>DETALLES DE USO</h2>
                 <ul class="is-list-less">
@@ -42,8 +40,8 @@
                     </li>
                     <li>
                         <h4>¿Qué es la tripleta de descuentos?</h4>
-                        <p>La tripleta es un beneficio que adquieres una vez activas tu crédito, 
-                        está conformada por tres descuentos individuales del 10, 15 y 20%. 
+                        <p>La tripleta es un beneficio que adquieres una vez activas tu crédito,
+                        está conformada por tres descuentos individuales del 10, 15 y 20%.
                         Ver TyC en <a href="www.lilipink.com/promociones">www.lilipink.com/promociones</a></p>
 
                     </li>
@@ -54,7 +52,7 @@
                            <li>1. Iniciando sesión en <a href="www.creditoslilipink.com">www.creditoslilipink.com</a></li>
                            <li>2. Llamando a la línea de atención en Bogotá́ 6702400 Ext: 127, 133 o 236.</li>
                            <li>3. Solicitando la información en cualquier tienda Lili Pink.</li>
-                          </ol> 
+                          </ol>
                         </p>
 
                     </li>
@@ -82,12 +80,13 @@
 
                     <li>
                         <h4>¿Qué cobros tiene este crédito?</h4>
-                        <p> 
+                        <p>
                         <ul>
                         <li> - Nuestro crédito no tiene cuota de manejo.</li>
-                        <li>- Diferir tus compras genera un cobro de tasas de interés que van a ser aplicadas de la siguiente forma:  
+                        <li>- Diferir tus compras genera un cobro de tasas de interés que van a ser aplicadas de la siguiente forma:
                           ver información de tasas </li>
-                        <ul>  
+                        </ul>
+                        <a @click.prevent="modal" class="button openModal">Ver tasas de interés</a>
                         </p>
                     </li>
 
@@ -96,10 +95,10 @@
                         <p>
                         <ul>
                         <li> - Puedes diferir tus compras de 1 a 12 cuotas quincenales. </li>
-                        <li>  - Los pagos de cada cuota podrás realizarlos en cualquier tienda Lili Pink a nivel Nacional 
-                          o solicitando un Link de pago en nuestra línea de atención en Bogotá́ 6702400 Ext: 127, 133 o 
+                        <li>  - Los pagos de cada cuota podrás realizarlos en cualquier tienda Lili Pink a nivel Nacional
+                          o solicitando un Link de pago en nuestra línea de atención en Bogotá́ 6702400 Ext: 127, 133 o
                           236,  dicho Link te brindará diferentes opciones de pago (Tarjeta Débito, Crédito, Efecty, Baloto o Codensa)</li>
-                        </ul> 
+                        </ul>
                         </p>
                     </li>
 
@@ -118,8 +117,8 @@
                         <h4>¿Cuándo puede estar bloqueado el crédito?</h4>
                         <p>Puede estar bloqueado si presenta mora superior a 30 días o se evidencia suplantación.</p>
                     </li>
-                    
-                    
+
+
                 </ul>
                 <div class="Faq-contentInfo">
                     <h4 class="color-primary ">¿QUIERES MÁS INFORMACIÓN?</h4>
