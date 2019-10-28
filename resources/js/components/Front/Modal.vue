@@ -50,18 +50,21 @@
                      <li>
                         <h4>¿Dónde puedo obtener detalles de mi crédito? (Estado, pago mínimo y movimientos)</h4>
                         <p>Puedes hacerlo a través de los siguientes medios:
-                           1. Iniciando sesión en <a href="www.creditoslilipink.com">www.creditoslilipink.com</a>
-                           2. Llamando a la línea de atención en Bogotá́ 6702400 Ext: 127, 133 o 236.
-                           3. Solicitando la información en cualquier tienda Lili Pink.
+                         <ol>
+                           <li>1. Iniciando sesión en <a href="www.creditoslilipink.com">www.creditoslilipink.com</a></li>
+                           <li>2. Llamando a la línea de atención en Bogotá́ 6702400 Ext: 127, 133 o 236.</li>
+                           <li>3. Solicitando la información en cualquier tienda Lili Pink.</li>
+                          </ol> 
                         </p>
 
                     </li>
                     <li>
                         <h4>¿Cómo puedo iniciar sesión en <a href="www.creditoslilipink.com">www.creditoslilipink.com</a>?</h4>
                         <p>Debes tener en cuenta lo siguiente:
-                            1. Ingresa tu usuario. (Este será el correo registrado en el momento de la solicitud del crédito)
-                            2. Seguido este paso, das CLIC en “Olvidaste contraseña” para restablecer una que sea única para ti. (Esto lo haces si nunca has ingresado o si has olvidado tu contraseña)
-
+                         <ol>
+                            <li> 1. Ingresa tu usuario. (Este será el correo registrado en el momento de la solicitud del crédito) </li>
+                            <li> 2. Seguido este paso, das CLIC en “Olvidaste contraseña” para restablecer una que sea única para ti. (Esto lo haces si nunca has ingresado o si has olvidado tu contraseña)</li>
+                         </ol>
                         </p>
 
                     </li>
@@ -79,19 +82,25 @@
 
                     <li>
                         <h4>¿Qué cobros tiene este crédito?</h4>
-                        <p> - Nuestro crédito no tiene cuota de manejo.
-                            - Diferir tus compras genera un cobro de tasas de interés que van a ser aplicadas de la siguiente forma:  
-                              ver información de tasas</p>
+                        <p> 
+                        <ul>
+                        <li> - Nuestro crédito no tiene cuota de manejo.</li>
+                        <li>- Diferir tus compras genera un cobro de tasas de interés que van a ser aplicadas de la siguiente forma:  
+                          ver información de tasas </li>
+                        <ul>  
+                        </p>
                     </li>
 
                     <li>
                         <h4> ¿Cómo y dónde puedo pagar mi crédito?</h4>
-                        <p>- Puedes diferir tus compras de 1 a 12 cuotas quincenales.
-                           - Los pagos de cada cuota podrás realizarlos en cualquier tienda Lili Pink a nivel Nacional 
-                             o solicitando un Link de pago en nuestra línea de atención en Bogotá́ 6702400 Ext: 127, 133 o 
-                             236,  dicho Link te brindará diferentes opciones de pago (Tarjeta Débito, Crédito, Efecty, Baloto o Codensa)
-
-</p>
+                        <p>
+                        <ul>
+                        <li> - Puedes diferir tus compras de 1 a 12 cuotas quincenales. </li>
+                        <li>  - Los pagos de cada cuota podrás realizarlos en cualquier tienda Lili Pink a nivel Nacional 
+                          o solicitando un Link de pago en nuestra línea de atención en Bogotá́ 6702400 Ext: 127, 133 o 
+                          236,  dicho Link te brindará diferentes opciones de pago (Tarjeta Débito, Crédito, Efecty, Baloto o Codensa)</li>
+                        </ul> 
+                        </p>
                     </li>
 
                     <li>
