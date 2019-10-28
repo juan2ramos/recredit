@@ -11,7 +11,7 @@ class UpdateUserRequest extends FormRequest
 
     public function authorize()
     {
-        return (auth()->user()->isSuperAdmin() || auth()->user()->isDocumentary() ) && $this->user->credit->validated;
+        return (auth()->user()->isSuperAdmin() || auth()->user()->isDocumentary()  || auth()->user()->isAnalysts() ) && $this->user->credit->validated;
     }
 
     public function rules()

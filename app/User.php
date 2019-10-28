@@ -135,13 +135,14 @@ class User extends Authenticatable
                 ->OrWhere('document', 'like', '%' . $search . '%');
         });
 
-        if (auth()->user()->isPoint()) {
+       /** if (auth()->user()->isPoint()) {
             $clients = $clients->whereHas('client', function ($query) {
                 $query->whereHas('point', function ($query) {
                     $query->where('id', auth()->user()->point->id);
                 });
             });
         }
+        */
 
         return $clients;
     }

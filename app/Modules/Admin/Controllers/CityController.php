@@ -21,7 +21,7 @@ class CityController extends Controller
 
     public function create()
     {
-        $this->authorize('superAdmin');
+        $this->authorize('analyst');
         $regions = Region::all('name', 'id');
         $city = new city();
 
@@ -39,7 +39,7 @@ class CityController extends Controller
 
     public function edit(City $city)
     {
-        $this->authorize('superAdmin');
+        $this->authorize('analyst');
         $regions = Region::all('name', 'id');
         $city->load('region');
 

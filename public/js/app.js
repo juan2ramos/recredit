@@ -2418,6 +2418,44 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -2567,6 +2605,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 //
 //
 //
@@ -2601,6 +2641,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Points",
   props: ['points'],
@@ -2609,7 +2655,38 @@ __webpack_require__.r(__webpack_exports__);
       pointsLocal: this.points
     };
   },
-  methods: {}
+  methods: {
+    deleteAdmin: function deleteAdmin(point, index) {
+      var _this = this;
+
+      swal({
+        title: "Estás seguro?",
+        text: "Recuerda que no prodrás recuper la información!",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true
+      }).then(function (willDelete) {
+        if (willDelete) {
+          axios__WEBPACK_IMPORTED_MODULE_0___default.a["delete"]("/admin/tiendas/".concat(point.id)).then(function (response) {
+            console.log(response);
+
+            if (response.data.success) {
+              _this.pointsLocal.splice(index, 1);
+
+              swal("El cliente ha sido eliminado", {
+                icon: "success"
+              });
+              return;
+            }
+
+            swal("Hubo un error! el punto no puede ser eliminado, debes eliminar los clientes asocidos", {
+              icon: "error"
+            });
+          });
+        }
+      });
+    }
+  }
 });
 
 /***/ }),
@@ -16027,7 +16104,17 @@ var render = function() {
                 : _vm._e(),
               _vm._v(" "),
               !_vm.superAdmin
-                ? _c("p", [_vm._v(_vm._s(_vm.user.name))])
+                ? _c("p", [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(_vm.user.name) +
+                        "\n                        "
+                    ),
+                    _c("input", {
+                      attrs: { type: "hidden", name: "name" },
+                      domProps: { value: _vm.user.name }
+                    })
+                  ])
                 : _vm._e()
             ]),
             _vm._v(" "),
@@ -16082,7 +16169,15 @@ var render = function() {
                 : _vm._e(),
               _vm._v(" "),
               !_vm.superAdmin
-                ? _c("p", [_vm._v(_vm._s(_vm.selectedUser))])
+                ? _c("p", [
+                    _vm._v(
+                      _vm._s(_vm.selectedUser) + "\n                        "
+                    ),
+                    _c("input", {
+                      attrs: { type: "hidden", name: "document_type" },
+                      domProps: { value: _vm.selectedUser }
+                    })
+                  ])
                 : _vm._e()
             ]),
             _vm._v(" "),
@@ -16099,12 +16194,22 @@ var render = function() {
               !_vm.superAdmin
                 ? _c("p", [
                     _vm._v(
-                      _vm._s(
-                        _vm.user.client.phone
+                      "\n                        " +
+                        _vm._s(
+                          _vm.user.client.phone
+                            ? _vm.user.client.phone
+                            : "Sin Teléfono"
+                        ) +
+                        "\n                        "
+                    ),
+                    _c("input", {
+                      attrs: { type: "hidden", name: "phone" },
+                      domProps: {
+                        value: _vm.user.client.phone
                           ? _vm.user.client.phone
-                          : "Sin Teléfono"
-                      ) + " "
-                    )
+                          : ""
+                      }
+                    })
                   ])
                 : _vm._e()
             ]),
@@ -16122,7 +16227,17 @@ var render = function() {
                 : _vm._e(),
               _vm._v(" "),
               !_vm.superAdmin
-                ? _c("p", [_vm._v(_vm._s(_vm.user.email))])
+                ? _c("p", [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(_vm.user.email) +
+                        "\n                        "
+                    ),
+                    _c("input", {
+                      attrs: { type: "hidden", name: "email" },
+                      domProps: { value: _vm.user.email }
+                    })
+                  ])
                 : _vm._e()
             ]),
             _vm._v(" "),
@@ -16201,7 +16316,17 @@ var render = function() {
                 : _vm._e(),
               _vm._v(" "),
               !_vm.superAdmin
-                ? _c("p", [_vm._v(_vm._s(_vm.user.client.residency_city))])
+                ? _c("p", [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(_vm.user.client.residency_city) +
+                        "\n                        "
+                    ),
+                    _c("input", {
+                      attrs: { type: "hidden", name: "residency_city" },
+                      domProps: { value: _vm.user.client.residency_city }
+                    })
+                  ])
                 : _vm._e()
             ])
           ]),
@@ -16220,7 +16345,17 @@ var render = function() {
                 : _vm._e(),
               _vm._v(" "),
               !_vm.superAdmin
-                ? _c("p", [_vm._v(_vm._s(_vm.user.last_name))])
+                ? _c("p", [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(_vm.user.last_name) +
+                        "\n                        "
+                    ),
+                    _c("input", {
+                      attrs: { type: "hidden", name: "last_name" },
+                      domProps: { value: _vm.user.last_name }
+                    })
+                  ])
                 : _vm._e()
             ]),
             _vm._v(" "),
@@ -16229,16 +16364,10 @@ var render = function() {
                 _vm._v("Documento")
               ]),
               _vm._v(" "),
-              _vm.superAdmin
-                ? _c("input", {
-                    attrs: { type: "text", name: "document", id: "document" },
-                    domProps: { value: _vm.user.document }
-                  })
-                : _vm._e(),
-              _vm._v(" "),
-              !_vm.superAdmin
-                ? _c("p", [_vm._v(_vm._s(_vm.user.document))])
-                : _vm._e()
+              _c("input", {
+                attrs: { type: "text", name: "document", id: "document" },
+                domProps: { value: _vm.user.document }
+              })
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "Form-labelContent" }, [
@@ -16252,7 +16381,17 @@ var render = function() {
                 : _vm._e(),
               _vm._v(" "),
               !_vm.superAdmin
-                ? _c("p", [_vm._v(_vm._s(_vm.user.client.mobile))])
+                ? _c("p", [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(_vm.user.client.mobile) +
+                        "\n                        "
+                    ),
+                    _c("input", {
+                      attrs: { type: "hidden", name: "mobile" },
+                      domProps: { value: _vm.user.client.mobile }
+                    })
+                  ])
                 : _vm._e()
             ]),
             _vm._v(" "),
@@ -16267,7 +16406,17 @@ var render = function() {
                 : _vm._e(),
               _vm._v(" "),
               !_vm.superAdmin
-                ? _c("p", [_vm._v(_vm._s(_vm.user.client.address))])
+                ? _c("p", [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(_vm.user.client.address) +
+                        "\n                        "
+                    ),
+                    _c("input", {
+                      attrs: { type: "hidden", name: "address" },
+                      domProps: { value: _vm.user.client.address }
+                    })
+                  ])
                 : _vm._e()
             ]),
             _vm._v(" "),
@@ -16323,12 +16472,18 @@ var render = function() {
               !_vm.superAdmin
                 ? _c("p", { staticStyle: { "text-transform": "capitalize" } }, [
                     _vm._v(
-                      _vm._s(
-                        _vm.pointsLocal.filter(function(p) {
-                          return p.id === _vm.selectedPoint
-                        })[0].name
-                      )
-                    )
+                      "\n                        " +
+                        _vm._s(
+                          _vm.pointsLocal.filter(function(p) {
+                            return p.id === _vm.selectedPoint
+                          })[0].name
+                        ) +
+                        "\n                        "
+                    ),
+                    _c("input", {
+                      attrs: { type: "hidden", name: "point" },
+                      domProps: { value: _vm.selectedPoint }
+                    })
                   ])
                 : _vm._e()
             ]),
@@ -16345,6 +16500,14 @@ var render = function() {
                       name: "password",
                       id: "password"
                     }
+                  })
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            !_vm.superAdmin
+              ? _c("p", [
+                  _c("input", {
+                    attrs: { type: "hidden", value: "", name: "password" }
                   })
                 ])
               : _vm._e()
@@ -16397,7 +16560,28 @@ var render = function() {
                             : _vm._e(),
                           _vm._v(" "),
                           !_vm.superAdmin
-                            ? _c("p", [_vm._v(_vm._s(reference.name))])
+                            ? _c("p", [
+                                _vm._v(
+                                  "\n                                        " +
+                                    _vm._s(reference.name) +
+                                    "\n                                        "
+                                ),
+                                _c("input", {
+                                  attrs: {
+                                    type: "hidden",
+                                    name: "references[" + i + "][id]"
+                                  },
+                                  domProps: { value: reference.id }
+                                }),
+                                _vm._v(" "),
+                                _c("input", {
+                                  attrs: {
+                                    type: "hidden",
+                                    name: "references[" + i + "][name]"
+                                  },
+                                  domProps: { value: reference.name }
+                                })
+                              ])
                             : _vm._e()
                         ])
                       ])
@@ -16418,7 +16602,20 @@ var render = function() {
                             : _vm._e(),
                           _vm._v(" "),
                           !_vm.superAdmin
-                            ? _c("p", [_vm._v(_vm._s(reference.phone))])
+                            ? _c("p", [
+                                _vm._v(
+                                  "\n                                        " +
+                                    _vm._s(reference.phone) +
+                                    "\n                                        "
+                                ),
+                                _c("input", {
+                                  attrs: {
+                                    type: "hidden",
+                                    name: "references[" + i + "][phone]"
+                                  },
+                                  domProps: { value: reference.phone }
+                                })
+                              ])
                             : _vm._e()
                         ])
                       ])
@@ -16502,7 +16699,7 @@ var render = function() {
           1
         ),
         _vm._v(" "),
-        _vm.superAdmin
+        _vm.analyst
           ? _c("div", { staticClass: "row justify-center " }, [
               _c(
                 "button",
@@ -16697,24 +16894,60 @@ var render = function() {
                   : _vm._e()
               ]),
               _vm._v(" "),
-              _c("td", { attrs: { width: "5%" } }, [
-                _c("div", { staticClass: "row justify-center middle-items" }, [
+              _c(
+                "td",
+                { staticClass: "row justify-center", attrs: { width: "5%" } },
+                [
                   _c(
-                    "a",
-                    {
-                      attrs: { href: "/admin/tiendas/" + point.id + "/editar" }
-                    },
+                    "div",
+                    { staticClass: "row justify-center middle-items" },
                     [
-                      _c("img", {
-                        attrs: {
-                          src: __webpack_require__(/*! ../../../images/edit.svg */ "./resources/images/edit.svg"),
-                          alt: ""
-                        }
-                      })
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            href: "/admin/tiendas/" + point.id + "/editar"
+                          }
+                        },
+                        [
+                          _c("img", {
+                            attrs: {
+                              src: __webpack_require__(/*! ../../../images/edit.svg */ "./resources/images/edit.svg"),
+                              alt: ""
+                            }
+                          })
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "row justify-center middle-items m-l-8" },
+                    [
+                      _c(
+                        "a",
+                        {
+                          on: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              return _vm.deleteAdmin(point, i)
+                            }
+                          }
+                        },
+                        [
+                          _c("img", {
+                            attrs: {
+                              src: __webpack_require__(/*! ../../../images/delete.svg */ "./resources/images/delete.svg"),
+                              alt: ""
+                            }
+                          })
+                        ]
+                      )
                     ]
                   )
-                ])
-              ])
+                ]
+              )
             ])
           }),
           0

@@ -52,4 +52,14 @@ class PointsController extends Controller
         $cities = City::all();
         return view('admin.points.create', compact('cities', 'point'));
     }
+
+    public function destroy(Point $point){
+
+        if($point->clients->isEmpty()){
+            $point->delete();
+            return ['success' => true];
+        }
+        return ['success' => false];
+
+    }
 }

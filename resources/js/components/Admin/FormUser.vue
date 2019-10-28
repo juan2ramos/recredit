@@ -27,7 +27,10 @@
                                :value="user.name"
                                name="name"
                                id="name">
-                        <p v-if="!superAdmin">{{user.name}}</p>
+                        <p v-if="!superAdmin">
+                            {{user.name}}
+                            <input type="hidden" :value="user.name" name="name">
+                        </p>
                     </div>
                     <div class="Form-labelContent">
                         <label for="document_type">Tipo de documento</label>
@@ -36,7 +39,9 @@
                             <option value="null" selected>Select a name</option>
                             <option v-for="option in typeDocument" :value="option">{{ option }}</option>
                         </select>
-                        <p v-if="!superAdmin">{{selectedUser}}</p>
+                        <p v-if="!superAdmin">{{selectedUser}}
+                            <input type="hidden" :value="selectedUser" name="document_type">
+                        </p>
                     </div>
                     <div class="Form-labelContent">
                         <label for="phone">Teléfono</label>
@@ -46,7 +51,10 @@
                                 :value="user.client.phone"
                                 name="phone"
                                 id="phone">
-                        <p v-if="!superAdmin">{{(user.client.phone)?user.client.phone:'Sin Teléfono'}} </p>
+                        <p v-if="!superAdmin">
+                            {{(user.client.phone)?user.client.phone:'Sin Teléfono'}}
+                            <input type="hidden" :value="(user.client.phone)?user.client.phone:''" name="phone">
+                        </p>
                     </div>
                     <div class="Form-labelContent">
                         <label for="email">Correo Electrónico</label>
@@ -56,7 +64,10 @@
                                 :value="user.email"
                                 name="email"
                                 id="email">
-                        <p v-if="!superAdmin">{{user.email}}</p>
+                        <p v-if="!superAdmin">
+                            {{user.email}}
+                            <input type="hidden" :value="user.email" name="email">
+                        </p>
                     </div>
                     <div class="Form-labelContent">
                         <label for="birth_city">Ciudad</label>
@@ -74,7 +85,10 @@
                                 :value="user.client.residency_city"
                                 name="residency_city"
                                 id="residency_city">
-                        <p v-if="!superAdmin">{{user.client.residency_city}}</p>
+                        <p v-if="!superAdmin">
+                            {{user.client.residency_city}}
+                            <input type="hidden" :value="user.client.residency_city" name="residency_city">
+                        </p>
                     </div>
 
                 </div>
@@ -86,16 +100,20 @@
                                :value="user.last_name"
                                name="last_name"
                                id="last_name">
-                        <p v-if="!superAdmin">{{user.last_name}}</p>
+                        <p v-if="!superAdmin">
+                            {{user.last_name}}
+                            <input type="hidden" :value="user.last_name" name="last_name">
+                        </p>
                     </div>
                     <div class="Form-labelContent">
                         <label for="document">Documento</label>
-                        <input v-if="superAdmin"
+                        <input
                                type="text"
                                :value="user.document"
                                name="document"
                                id="document">
-                        <p v-if="!superAdmin">{{user.document}}</p>
+
+
                     </div>
                     <div class="Form-labelContent">
                         <label for="mobile">Celular</label>
@@ -105,7 +123,10 @@
                                 :value="user.client.mobile"
                                 name="mobile"
                                 id="mobile">
-                        <p v-if="!superAdmin">{{user.client.mobile}}</p>
+                        <p v-if="!superAdmin">
+                            {{user.client.mobile}}
+                            <input type="hidden" :value="user.client.mobile" name="mobile">
+                        </p>
                     </div>
                     <div class="Form-labelContent">
                         <label for="address">Dirección</label>
@@ -115,7 +136,10 @@
                                 :value="user.client.address"
                                 name="address"
                                 id="address">
-                        <p v-if="!superAdmin">{{user.client.address}}</p>
+                        <p v-if="!superAdmin">
+                            {{user.client.address}}
+                            <input type="hidden" :value="user.client.address" name="address">
+                        </p>
                     </div>
                     <div class="Form-labelContent">
                         <label for="point">Punto</label>
@@ -125,8 +149,10 @@
                             <option value="0">Seleccione un punto</option>
                             <option v-for="point in pointsLocal" :value="point.id">{{point.name}}</option>
                         </select>
-                        <p v-if="!superAdmin" style="text-transform: capitalize">{{pointsLocal.filter((p)=>p.id ===
-                            selectedPoint)[0].name}}</p>
+                        <p v-if="!superAdmin" style="text-transform: capitalize">
+                            {{pointsLocal.filter((p)=>p.id === selectedPoint)[0].name}}
+                            <input type="hidden" :value="selectedPoint" name="point">
+                        </p>
                     </div>
                     <div class="Form-labelContent" v-if="superAdmin">
                         <label for="password" >Contraseña</label>
@@ -135,6 +161,9 @@
                                 name="password"
                                 id="password">
                     </div>
+                    <p v-if="!superAdmin">
+                        <input type="hidden" value="" name="password">
+                    </p>
                 </div>
             </div>
             <div class="row">
@@ -175,7 +204,14 @@
                                                 :value="reference.name"
                                                 :name="`references[${i}][name]`"
                                                 :id="`reference.name${i}`">
-                                        <p v-if="!superAdmin">{{reference.name}}</p>
+                                        <p v-if="!superAdmin">
+                                            {{reference.name}}
+                                            <input
+                                                    type="hidden"
+                                                    :name="`references[${i}][id]`"
+                                                    :value="reference.id">
+                                            <input type="hidden" :value="reference.name" :name="`references[${i}][name]`">
+                                        </p>
                                     </div>
                                 </div>
                             </td>
@@ -188,7 +224,9 @@
                                                 :value="reference.phone"
                                                 :name="`references[${i}][phone]`"
                                                 :id="`reference.phone${i}`">
-                                        <p v-if="!superAdmin">{{reference.phone}}</p>
+                                        <p v-if="!superAdmin">
+                                            {{reference.phone}}
+                                            <input type="hidden" :value="reference.phone" :name="`references[${i}][phone]`"></p>
                                     </div>
                                 </div>
                             </td>
@@ -224,7 +262,7 @@
                 </div>
 
             </div>
-            <div class="row justify-center " v-if="superAdmin">
+            <div class="row justify-center " v-if="analyst">
                 <button type="submit" :disabled="sending">Actualizar</button>
             </div>
         </form>

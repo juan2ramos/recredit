@@ -20,9 +20,14 @@
                     <img v-if="point.is_entrepreneur"  src="../../../images/check.svg" alt="">
                 </td>
                 <td class="is-text-center"><img v-if="point.state"  src="../../../images/check.svg" alt=""></td>
-                <td width="5%">
+                <td width="5%" class="row justify-center">
                     <div class="row justify-center middle-items">
                         <a :href="`/admin/tiendas/${point.id}/editar`"><img src="../../../images/edit.svg" alt=""></a>
+                    </div>
+                    <div class="row justify-center middle-items m-l-8" >
+                        <a @click.prevent="deleteAdmin(point, i)">
+                            <img src="../../../images/delete.svg" alt="">
+                        </a>
                     </div>
                 </td>
             </tr>
@@ -33,6 +38,7 @@
 </template>
 
 <script>
+    import axios from 'axios'
     export default {
         name: "Points",
         props: ['points'],
@@ -41,7 +47,31 @@
                 pointsLocal: this.points
             }
         },
-        methods: {}
+        methods: {
+            deleteAdmin(point, index) {
+                swal({
+                    title: "Estás seguro?",
+                    text: "Recuerda que no prodrás recuper la información!",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                }).then((willDelete) => {
+                    if (willDelete) {
+
+                        axios.delete(`/admin/tiendas/${point.id}`)
+                            .then((response) => {
+                                console.log(response);
+                                if (response.data.success) {
+                                    this.pointsLocal.splice(index, 1);
+                                    swal("El cliente ha sido eliminado", {icon: "success",});
+                                    return
+                                }
+                                swal("Hubo un error! el punto no puede ser eliminado, debes eliminar los clientes asocidos", {icon: "error",});
+                            });
+                    }
+                });
+            },
+        }
     }
 </script>
 

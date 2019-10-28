@@ -13,7 +13,7 @@ class CreateCityRequest extends FormRequest
 {
     public function authorize()
     {
-        return $this->user()->isSuperAdmin();
+        return $this->user()->isSuperAdmin()|| $this->user()->isAnalysts();
     }
 
     public function rules()

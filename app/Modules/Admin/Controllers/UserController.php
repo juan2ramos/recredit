@@ -61,7 +61,7 @@ class UserController extends Controller
     public function update(UpdateUserRequest $request, User $user)
     {
         $request->updateUser($user);
-        return redirect()->back();
+        return redirect()->route('usersAdmin.show',$user->document)->with(['success' => 'ok']);
     }
 
     public function destroy( User $user)
