@@ -4,9 +4,9 @@
 
   a {
     display: block;
-    padding: 0 3.2rem 1rem;
+    padding: 1rem 3.2rem 1rem;
     position: relative;
-    top: 2px;
+
 
     &.active {
       border-bottom: 2px solid var(--primary-color);
@@ -158,4 +158,9 @@
     }
   }
 
+}
+.admin-point{
+  background: var(--secondary-color);
+  color: white !important;
+  border-radius: 1rem;
 }

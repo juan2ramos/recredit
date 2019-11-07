@@ -5,7 +5,11 @@
         <li><a href="{{route('faq')}}">PREGUNTAS FRECUENTES</a></li>
         <li><a href="" data-modal="contact" class="openModal">CONTACTO</a></li>
         @auth
-            <li><a href="{{url('admin')}}">ADMIN</a></li>
+            @if (auth()->user()->isPoint())
+                <li><a class="admin-point" href="{{url('admin')}}">SOLICITUDES</a></li>
+            @else
+                <li><a href="{{url('admin')}}">ADMIN</a></li>
+            @endif
         @endauth
     </ul>
 </nav>
