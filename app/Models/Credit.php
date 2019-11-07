@@ -13,7 +13,7 @@ class Credit extends Model
         'check_date' => 'datetime:d-m-Y h:m:s',
     ];
     protected $fillable = ['priority', 'state', 'validated', 'check_date',
-        'number_requested', 'finished_user', 'assigned_user', 'reviewed_user', 'reasons_id'];
+        'number_requested', 'finished_user', 'assigned_user', 'reviewed_user', 'reasons_id', 'user_id'];
 
     public function user()
     {

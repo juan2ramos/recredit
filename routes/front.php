@@ -13,9 +13,3 @@ Route::get('pusher', function () {
 });
 
 
-Route::get('/test', function () {
-    \MailTemplate::to('juan2ramos@gmail.com');
-    \MailTemplate::attribute('NAME', 'Mr User');
-    \MailTemplate::attribute('NUMBER', '8092123');
-    \MailTemplate::send(240);
-});
