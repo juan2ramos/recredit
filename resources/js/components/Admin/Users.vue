@@ -19,7 +19,6 @@
                     <span>{{!client.credit? 'En proceso':stateCredit(client.credit)}}</span>
                 </td>
                 <td width="5%">
-
                     <div class="row justify-center middle-items" v-if="isAnalysts">
                         <a v-if="!client.credit" :href="`/admin/usuario-sesion/${client.document}`">
                             <img v-if="!isDocumentary"  src="../../../images/settings.svg" alt="">
@@ -31,7 +30,7 @@
                         <a :href="`/admin/creditos/${client.credit.id}`" v-else>
                             <img v-if="!isDocumentary" src="../../../images/user-check.svg" alt="">
                         </a>
-                        <a @click.prevent="deleteClient(client, i)" v-if="false">
+                        <a @click.prevent="deleteClient(client, i)" v-if="isSuper">
                             <img src="../../../images/delete.svg" alt="">
                         </a>
                         <a @click.prevent="viewCode(client.document)" v-if="!isDocumentary">
@@ -41,6 +40,11 @@
                     <div class="row justify-center middle-items" v-else>
                         <a v-if="!client.credit" :href="`/admin/usuario-sesion/${client.document}`">
                             <img src="../../../images/settings.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="row justify-center middle-items" v-if="isPoint">
+                        <a v-if="client.credit" @click="openModalMethod(client)">
+                            ver info
                         </a>
                     </div>
                     <div class="row justify-center middle-items" v-if="isPoint">
@@ -67,7 +71,7 @@
 
     export default {
         name: "Users",
-        props: ['clients', 'token', 'search', 'isAnalysts', 'isDocumentary', 'isPoint', 'ModalInfo'],
+        props: ['clients', 'token', 'search', 'isAnalysts', 'isDocumentary', 'isPoint', 'ModalInfo', 'isSuper'],
         data: function () {
             return {
                 clientsLocal: this.clients,
@@ -103,10 +107,11 @@
                 }).then((willDelete) => {
                     if (willDelete) {
                         this.clientsLocal.splice(index, 1);
-                        axios.delete(`/admin/categorias/${category.id}`)
+                        console.log(client)
+                        axios.delete(`/admin/usuarios/${client.document}`)
                             .then((response) => {
                                 if (response.data.success) {
-                                    this.categoriesLocal.splice(index, 1);
+                                    this.clientsLocal.splice(index, 1);
                                     swal("El cliente ha sido eliminado", {icon: "success",});
                                     return
                                 }

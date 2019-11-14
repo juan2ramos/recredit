@@ -27,8 +27,6 @@
             <button type="submit" id="finalizeButton" :disabled="sending">Finalizar</button>
         </div>
     </form>
-
-
 </template>
 <script>
     import vue2Dropzone from 'vue2-dropzone'

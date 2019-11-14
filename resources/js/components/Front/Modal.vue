@@ -134,7 +134,6 @@
                         <thead>
                         <tr>
                             <th>Tasa mÍnima legal EA</th>
-                            <th>Tasa mÍnima legal EA</th>
                         </tr>
                         </thead>
                         <tbody>

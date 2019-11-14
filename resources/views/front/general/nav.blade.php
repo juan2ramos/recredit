@@ -6,7 +6,7 @@
         <li><a href="" data-modal="contact" class="openModal">CONTACTO</a></li>
         @auth
             @if (auth()->user()->isPoint())
-                <li><a class="admin-point" href="{{url('admin')}}">SOLICITUDES</a></li>
+                <li><a class="admin-point" href="{{url('admin')}}">VERIFICAR SOLICITUDES</a></li>
             @else
                 <li><a href="{{url('admin')}}">ADMIN</a></li>
             @endif

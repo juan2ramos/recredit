@@ -4,7 +4,7 @@ Route::resource('solicitud-creditos', 'UserController')
     ->names('users')
     ->parameters(['solicitud-creditos' => 'user'])
     ->except(['show', 'create', 'destroy']);
-
+Route::get('emprendedoras', 'EntrepreneursController@index');
 
 Route::middleware(['auth', 'withoutCredit'])->group(function () {
 

@@ -44,6 +44,7 @@ class User extends Authenticatable
             $user->references()->delete();
             $user->files->each->delete();
             $user->client()->delete();
+            $user->credit()->delete();
 
         });
     }

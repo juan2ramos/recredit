@@ -2828,12 +2828,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Users",
-  props: ['clients', 'token', 'search', 'isAnalysts', 'isDocumentary', 'isPoint', 'ModalInfo'],
+  props: ['clients', 'token', 'search', 'isAnalysts', 'isDocumentary', 'isPoint', 'ModalInfo', 'isSuper'],
   data: function data() {
     return {
       clientsLocal: this.clients,
@@ -2874,9 +2878,10 @@ __webpack_require__.r(__webpack_exports__);
         if (willDelete) {
           _this.clientsLocal.splice(index, 1);
 
-          axios__WEBPACK_IMPORTED_MODULE_1___default.a["delete"]("/admin/categorias/".concat(category.id)).then(function (response) {
+          console.log(client);
+          axios__WEBPACK_IMPORTED_MODULE_1___default.a["delete"]("/admin/usuarios/".concat(client.document)).then(function (response) {
             if (response.data.success) {
-              _this.categoriesLocal.splice(index, 1);
+              _this.clientsLocal.splice(index, 1);
 
               sweetalert__WEBPACK_IMPORTED_MODULE_0___default()("El cliente ha sido eliminado", {
                 icon: "success"
@@ -3383,7 +3388,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
 //
 //
 //
@@ -17147,8 +17151,26 @@ var render = function() {
                                   ]
                                 ),
                             _vm._v(" "),
-                            false
-                              ? undefined
+                            _vm.isSuper
+                              ? _c(
+                                  "a",
+                                  {
+                                    on: {
+                                      click: function($event) {
+                                        $event.preventDefault()
+                                        return _vm.deleteClient(client, i)
+                                      }
+                                    }
+                                  },
+                                  [
+                                    _c("img", {
+                                      attrs: {
+                                        src: __webpack_require__(/*! ../../../images/delete.svg */ "./resources/images/delete.svg"),
+                                        alt: ""
+                                      }
+                                    })
+                                  ]
+                                )
                               : _vm._e(),
                             _vm._v(" "),
                             !_vm.isDocumentary
@@ -17200,6 +17222,32 @@ var render = function() {
                               : _vm._e()
                           ]
                         ),
+                    _vm._v(" "),
+                    _vm.isPoint
+                      ? _c(
+                          "div",
+                          { staticClass: "row justify-center middle-items" },
+                          [
+                            client.credit
+                              ? _c(
+                                  "a",
+                                  {
+                                    on: {
+                                      click: function($event) {
+                                        return _vm.openModalMethod(client)
+                                      }
+                                    }
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                        ver info\n                    "
+                                    )
+                                  ]
+                                )
+                              : _vm._e()
+                          ]
+                        )
+                      : _vm._e(),
                     _vm._v(" "),
                     _vm.isPoint
                       ? _c(
@@ -18331,13 +18379,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", [_vm._v("Tasa mÍnima legal EA")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Tasa mÍnima legal EA")])
-      ])
-    ])
+    return _c("thead", [_c("tr", [_c("th", [_vm._v("Tasa mÍnima legal EA")])])])
   },
   function() {
     var _vm = this
