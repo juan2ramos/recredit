@@ -17,7 +17,10 @@
                 <td width="25%">{{admin.email}}</td>
                 <td width="20%">{{admin.roles[0].name}}</td>
                 <td width="5%">
-                    <div class="row justify-center middle-items" >
+                    <div class="row justify-center middle-items">
+                        <a :href="`/admin/usuarios/${admin.document}/editar`">
+                            <img src="../../../images/edit.svg" alt="">
+                        </a>
                         <a @click.prevent="deleteAdmin(admin, i)">
                             <img src="../../../images/delete.svg" alt="">
                         </a>
@@ -37,7 +40,7 @@
 
     export default {
         name: "Admins",
-        props: ['admins', 'token' ],
+        props: ['admins', 'token'],
         data: function () {
             return {
                 adminsLocal: this.admins

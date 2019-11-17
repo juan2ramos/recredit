@@ -3,16 +3,15 @@
 @section('content')
 
     <div class="container container-admin mt">
-
-        <create-admin
+        <update-admin
                 :cities="{{$cities}}"
                 :points="{{$points}}"
                 token="{{ csrf_token() }}"
-                route="{{ route('usersAdmin.store')}}"
-        >
-        </create-admin>
+                route="{{ route('updateAdmin', $user->document)}}"
+                :admin="{{$user}}"
 
-        <admins :admins="{{$admins}}"></admins>
+        >
+        </update-admin>
 
     </div>
 @endsection

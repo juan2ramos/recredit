@@ -5,6 +5,7 @@ namespace App\Modules\Admin\Controllers;
 use App\Models\City;
 use App\Models\Point;
 use App\Modules\Admin\Request\CreateUserAdminRequest;
+use App\Modules\Admin\Request\UpdateUserAdminRequest;
 use App\Modules\Admin\Request\UpdateUserRequest;
 use App\User;
 use Illuminate\Http\Request;
@@ -53,9 +54,12 @@ class UserController extends Controller
         return view('admin.users.user', compact('user', 'points', 'cities', 'credit'));
     }
 
-    public function edit($id)
+    public function edit(User $user)
     {
-        //
+        $user->load(['point', 'roles']);
+        $cities = City::orderBy('name')->get();
+        $points = Point::orderBy('name')->get();
+        return view('admin.users.update', compact('user', 'cities', 'points'));
     }
 
     public function update(UpdateUserRequest $request, User $user)
@@ -64,6 +68,11 @@ class UserController extends Controller
         return redirect()->route('usersAdmin.show',$user->document)->with(['success' => 'ok']);
     }
 
+    public function updateAdmin(UpdateUserAdminRequest $request, User $user)
+    {
+        $request->updateUser($user);
+        return ['success' => true];
+    }
     public function destroy( User $user)
     {
         $user->delete();

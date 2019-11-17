@@ -4,7 +4,11 @@ Route::resource('solicitud-creditos', 'UserController')
     ->names('users')
     ->parameters(['solicitud-creditos' => 'user'])
     ->except(['show', 'create', 'destroy']);
+
 Route::get('emprendedoras', 'EntrepreneursController@index');
+Route::post('emprendedoras', 'EntrepreneursController@update')->name('entrepreneurs.update');
+Route::post('entrepreneurs-files', 'EntrepreneursController@files')->name('entrepreneurs.files');
+Route::post('entrepreneurs-filesDelete', 'EntrepreneursController@filesDelete')->name('entrepreneurs.filesDelete');
 
 Route::middleware(['auth', 'withoutCredit'])->group(function () {
 

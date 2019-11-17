@@ -11,6 +11,8 @@ Route::resource('usuarios', 'UserController')
     ->names('usersAdmin')
     ->parameters(['usuarios' => 'user']);
 
+Route::put('user-updateUserAdmin/{user}','UserController@updateAdmin')->name('updateAdmin');
+
 Route::resource('creditos', 'CreditController')
     ->names('creditsAdmin')
     ->parameters(['creditos' => 'credit'])

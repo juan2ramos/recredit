@@ -3,9 +3,7 @@
 @section('content')
 
 
-    <h1 class="h-1"><span style="vertical-align: middle">SOLICITUD</span>
-        <img class="logo-request" src="{{asset('images/logo-lilipink.png')}}" alt="">
-    </h1>
+    <h1 class="h-1"><span style="vertical-align: middle">SOLICITUD EMPRENDEDORAS</span></h1>
     <div class="Request">
 
         @if ($errors->any())
@@ -20,7 +18,7 @@
             </div>
         @endif
 
-        <form action=""
+        <form action="{{route('entrepreneurs.update')}}"
               method="post" class="Request-form container">
             @include('creditRequest.include.headerForm')
             @csrf
@@ -66,7 +64,6 @@
                         id="document"
                         name="document">
             </div>
-
             @if(Auth::check()  && Auth::user()->isPoint())
                 <div class="m-t-40">
                     <label for="">Tienda</label>
@@ -74,6 +71,7 @@
                     <input type="text" disabled value="{{Auth::user()->name}}">
                 </div>
             @else
+                <label for="" style="margin: 40px 0 -40px; display: block">Selecciona una tienda </label>
                 <points-autocomplete
                         :cities="{{$cities}}"
                         :points="{{$points}}"
@@ -99,11 +97,13 @@
                    <input value="{{old('address')}}" type="text" id="address" name="address">
                </div>
            </div>
-            <div class="Request-formGroup">
+            <div class="Request-formGroup col-16 {{$errors->has('mobile')?'error':''}}"
+                 data-errorMessage="El campo es requerido y debe tener 10 digitos" >
                 <label for="mobile">Celular</label>
-                <input value="{{old('mobile')}}" type="text" id="mobile" name="mobile">
+                <input value="{{old('mobile')}}" type="number"  id="mobile" name="mobile">
             </div>
 
+            <files-entrepreneurs></files-entrepreneurs>
             <div class="Request-formGroup {{$errors->has('policyPinkLife') ? 'error':'' }}"
                  data-errorMessage="Debes aceptar las politicas de Pink Life">
                 <p class="m-t-40 row middle-items">
@@ -128,7 +128,7 @@
                     </label>
                 </p>
             </div>
-
+            {!! Captcha::display(['add-js' => false]) !!}
             @if($errors->has('g-recaptcha-response'))
                 <div class="error is-text-center">
                     <p>Debes verificar que eres una persona</p>
@@ -136,7 +136,7 @@
             @endif
 
             <div class="row justify-center Request-formGroup">
-                <button type="submit"> {{'CONTINUAR'}}</button>
+                <button type="submit"> CONTINUAR </button>
             </div>
         </form>
     </div>
