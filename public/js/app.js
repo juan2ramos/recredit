@@ -3353,7 +3353,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 
 
@@ -18518,7 +18517,6 @@ var render = function() {
       _vm._v(" "),
       _vm._l(_vm.files, function(file) {
         return _c("div", { key: file.index }, [
-          _vm._v("\n        " + _vm._s(file) + "\n        "),
           _c("input", {
             attrs: { type: "hidden", name: "images[" + file.index + "]" },
             domProps: { value: file.url }

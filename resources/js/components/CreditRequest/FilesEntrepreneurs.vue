@@ -11,7 +11,6 @@
         >
         </vue-dropzone>
         <div v-for="file in files" :key="file.index">
-            {{file}}
             <input type="hidden" :name="`images[${file.index}]`" :value="file.url">
         </div>
     </div>

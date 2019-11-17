@@ -4,6 +4,13 @@
     <div class="container container-admin mt">
 
         <h2 class="is-text-center">Validar crédito</h2>
+        @if($credit->isEntrepreneurs)
+            <div class="row justify-center">
+                <p class="p-12 m-t-20 m-b-36" style="background: #31bb31;color: white;">
+                    Usuario emprendora
+                </p>
+            </div>
+        @endif
         <validated-credit :user="{{auth()->user()->id}}" credit_id="{{$credit->id}}"
                           :assigned="{{$credit->assigned_user}}"></validated-credit>
         <div class="row Request-form " method="post"
@@ -93,6 +100,7 @@
     p {
         text-transform: uppercase;
     }
+
     p b {
         text-transform: capitalize;
     }

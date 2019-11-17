@@ -34,12 +34,14 @@ class EntrepreneursRequest extends FormRequest
             'address' => 'required',
             'residency_city' => 'required',
             'mobile' => ['required', 'digits:10'],
-            'point' => 'required'
+            'point' => 'required',
+            'images' => '',
         ];
     }
 
     public function createUser()
     {
+
         $user = DB::transaction(function () {
 
             $data = $this->validated();
@@ -60,19 +62,17 @@ class EntrepreneursRequest extends FormRequest
                 'point_id' => $data['point'],
             ]);
             $user->client()->save($client);
-            dd($data);
+
             if (!empty($data['images'])) {
-                dd('si');
-            } else {
-                dd('no');
-            }
-            if (!empty($data['images'])) {
-                foreach ($data['images'] as $image)
+                $i = 1;
+                foreach ($data['images'] as $image) {
                     $file = new File([
-                        'name' => $image,
+                        'name' => $user->document . '-' . $i,
                         'url' => $image
                     ]);
-                $user->file()->save($file);
+                    $i++;
+                    $user->files()->save($file);
+                }
             }
             $user->credit()->save(new Credit([
                 'priority' => (auth()->check() && auth()->user()->isAdmin()) ? 1 : 0,

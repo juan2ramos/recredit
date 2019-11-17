@@ -108,7 +108,7 @@
                  data-errorMessage="Debes aceptar las politicas de Pink Life">
                 <p class="m-t-40 row middle-items">
                     <input type="checkbox" id="policyPinkLife" name="policyPinkLife"
-                           value="1" {{old('policyPinkLife')}}>
+                           value="1" {{old('policyPinkLife')?'checked':''}}>
                     <label for="policyPinkLife">
                         Acepto las politicas de uso del sitio de PINK LIFE SAS
                         <a target="_blank" href="{{url('files/politicas-creditos-lilipink.pdf')}}"
@@ -120,7 +120,7 @@
                  data-errorMessage="Debes aceptar las politicas de privacidad">
                 <p class="m-t-20 row middle-items">
                     <input type="checkbox" id="privacyPolicy" name="privacyPolicy"
-                           value="1" {{old('privacyPolicy') }}>
+                           value="1" {{old('privacyPolicy')?'checked':''}} >
                     <label for="privacyPolicy">
                         Acepto las politicas de privacidad de datos
                         <a target="_blank" href="{{url('files/politicas-datos-creditos-lilipink.pdf')}}"
