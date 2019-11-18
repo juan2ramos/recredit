@@ -21,7 +21,7 @@
                 <td width="5%">
                     <div class="row justify-center middle-items" v-if="isAnalysts">
                         <a v-if="!client.credit" :href="`/admin/usuario-sesion/${client.document}`">
-                            <img v-if="!isDocumentary"  src="../../../images/settings.svg" alt="">
+                            <img v-if="!isDocumentary" src="../../../images/settings.svg" alt="">
                         </a>
                         <a :href="`/admin/usuarios/${client.document}`"
                            v-else-if="client.credit.state === 1 || client.credit.state === 2 ">
@@ -36,20 +36,27 @@
                         <a @click.prevent="viewCode(client.document)" v-if="!isDocumentary">
                             <img src="../../../images/token.svg" alt="">
                         </a>
+                        <a v-if="client.credit && client.credit['reconsideration']"
+                           @click="reconsideration(client)">
+                            <img src="../../../images/repeat.svg" alt="">
+                        </a>
                     </div>
                     <div class="row justify-center middle-items" v-else>
+
                         <a v-if="!client.credit" :href="`/admin/usuario-sesion/${client.document}`">
                             <img src="../../../images/settings.svg" alt="">
                         </a>
-                    </div>
-                    <div class="row justify-center middle-items" v-if="isPoint">
-                        <a v-if="client.credit" @click="openModalMethod(client)">
-                            ver info
+                        <a v-if="client.credit && client.credit['reconsideration']"
+                           @click="reconsideration(client)">
+                            <img src="../../../images/repeat.svg" alt="">
                         </a>
                     </div>
                     <div class="row justify-center middle-items" v-if="isPoint">
                         <a v-if="client.credit" @click="openModalMethod(client)">
                             ver info
+                        </a>
+                        <a v-if="!client.credit" :href="`/admin/usuario-sesion/${client.document}`">
+                            <img src="../../../images/settings.svg" alt="">
                         </a>
                     </div>
                 </td>
@@ -83,6 +90,28 @@
             openModalMethod(client) {
                 this.client = client;
                 this.openModal = true
+            },
+            reconsideration(client) {
+                swal({
+                    title: "Estás seguro de reconsiderar el crédito ?",
+                    text: "",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                }).then((willDelete) => {
+                    if (willDelete) {
+                        axios.get(`/admin/reconsideration/${client.document}`)
+                            .then((response) => {
+                                if (response.data.success) {
+                                    swal("El cliente ha sido eliminado", {icon: "success",});
+                                    setTimeout(() => window.location = `/admin/usuario-sesion/${client.document}`, 3000);
+                                    return
+                                }
+                                swal("Hubo un error! Vuelve a intentarlo", {icon: "error",});
+                            });
+
+                    }
+                });
             },
             closeModal() {
                 this.openModal = false

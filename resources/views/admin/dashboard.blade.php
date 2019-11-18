@@ -38,6 +38,7 @@
                 @endrole
             </div>
         </div>
+
         <users :clients="{{$clients}}"
                :search="{{Request()->search ? 1 : 0}}"
                is-analysts="{{auth()->user()->isAnalysts() || auth()->user()->isDocumentary()}}"

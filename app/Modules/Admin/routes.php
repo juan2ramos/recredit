@@ -6,6 +6,7 @@ Route::get('/', 'UserController@index')->name('dashboard');
 Route::post('/assigned/{credit}', 'CreditController@assigned')->name('assigned');
 
 Route::get('/codigo-usuario/{user}','CodeRequestController')->middleware('can:analyst');
+Route::get('/reconsideration/{user}','ReconsiderationController');
 
 Route::resource('usuarios', 'UserController')
     ->names('usersAdmin')

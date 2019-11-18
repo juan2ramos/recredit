@@ -10,8 +10,9 @@ class Credit extends Model
 {
     protected $casts = [
         'created_at' => 'datetime:d-m-Y h:m:s',
-        'check_date' => 'datetime:d-m-Y h:m:s',
+        'check_date' => 'datetime:d-m-Y h:m:s'
     ];
+    protected $appends = ['reconsideration'];
     protected $fillable = ['priority', 'state', 'validated', 'check_date',
         'number_requested', 'finished_user', 'assigned_user', 'reviewed_user', 'reasons_id', 'user_id', 'isEntrepreneurs'];
 
@@ -71,6 +72,12 @@ class Credit extends Model
     {
         return Carbon::parse($value)->toDateTimeString();
 
+    }
+
+    public function getReconsiderationAttribute()
+    {
+        $days = Carbon::now()->diffInDays($this->check_date);
+        return $this->state == 2 && $days > 90;
     }
 
     public function getCheckDateAttribute($value)

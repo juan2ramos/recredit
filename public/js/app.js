@@ -3003,6 +3003,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -3020,6 +3027,33 @@ __webpack_require__.r(__webpack_exports__);
     openModalMethod: function openModalMethod(client) {
       this.client = client;
       this.openModal = true;
+    },
+    reconsideration: function reconsideration(client) {
+      sweetalert__WEBPACK_IMPORTED_MODULE_0___default()({
+        title: "Estás seguro de reconsiderar el crédito ?",
+        text: "",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true
+      }).then(function (willDelete) {
+        if (willDelete) {
+          axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/admin/reconsideration/".concat(client.document)).then(function (response) {
+            if (response.data.success) {
+              sweetalert__WEBPACK_IMPORTED_MODULE_0___default()("El cliente ha sido eliminado", {
+                icon: "success"
+              });
+              setTimeout(function () {
+                return window.location = "/admin/usuario-sesion/".concat(client.document);
+              }, 3000);
+              return;
+            }
+
+            sweetalert__WEBPACK_IMPORTED_MODULE_0___default()("Hubo un error! Vuelve a intentarlo", {
+              icon: "error"
+            });
+          });
+        }
+      });
     },
     closeModal: function closeModal() {
       this.openModal = false;
@@ -18016,6 +18050,27 @@ var render = function() {
                                     })
                                   ]
                                 )
+                              : _vm._e(),
+                            _vm._v(" "),
+                            client.credit && client.credit["reconsideration"]
+                              ? _c(
+                                  "a",
+                                  {
+                                    on: {
+                                      click: function($event) {
+                                        return _vm.reconsideration(client)
+                                      }
+                                    }
+                                  },
+                                  [
+                                    _c("img", {
+                                      attrs: {
+                                        src: __webpack_require__(/*! ../../../images/repeat.svg */ "./resources/images/repeat.svg"),
+                                        alt: ""
+                                      }
+                                    })
+                                  ]
+                                )
                               : _vm._e()
                           ]
                         )
@@ -18037,6 +18092,27 @@ var render = function() {
                                     _c("img", {
                                       attrs: {
                                         src: __webpack_require__(/*! ../../../images/settings.svg */ "./resources/images/settings.svg"),
+                                        alt: ""
+                                      }
+                                    })
+                                  ]
+                                )
+                              : _vm._e(),
+                            _vm._v(" "),
+                            client.credit && client.credit["reconsideration"]
+                              ? _c(
+                                  "a",
+                                  {
+                                    on: {
+                                      click: function($event) {
+                                        return _vm.reconsideration(client)
+                                      }
+                                    }
+                                  },
+                                  [
+                                    _c("img", {
+                                      attrs: {
+                                        src: __webpack_require__(/*! ../../../images/repeat.svg */ "./resources/images/repeat.svg"),
                                         alt: ""
                                       }
                                     })
@@ -18067,30 +18143,25 @@ var render = function() {
                                     )
                                   ]
                                 )
-                              : _vm._e()
-                          ]
-                        )
-                      : _vm._e(),
-                    _vm._v(" "),
-                    _vm.isPoint
-                      ? _c(
-                          "div",
-                          { staticClass: "row justify-center middle-items" },
-                          [
-                            client.credit
+                              : _vm._e(),
+                            _vm._v(" "),
+                            !client.credit
                               ? _c(
                                   "a",
                                   {
-                                    on: {
-                                      click: function($event) {
-                                        return _vm.openModalMethod(client)
-                                      }
+                                    attrs: {
+                                      href:
+                                        "/admin/usuario-sesion/" +
+                                        client.document
                                     }
                                   },
                                   [
-                                    _vm._v(
-                                      "\n                        ver info\n                    "
-                                    )
+                                    _c("img", {
+                                      attrs: {
+                                        src: __webpack_require__(/*! ../../../images/settings.svg */ "./resources/images/settings.svg"),
+                                        alt: ""
+                                      }
+                                    })
                                   ]
                                 )
                               : _vm._e()
@@ -31469,6 +31540,17 @@ module.exports = "/images/delete.svg?499abeb6526a1c2ac354b72110ad5c64";
 /***/ (function(module, exports) {
 
 module.exports = "/images/edit.svg?39493a0ac9950c03ea6d005154497417";
+
+/***/ }),
+
+/***/ "./resources/images/repeat.svg":
+/*!*************************************!*\
+  !*** ./resources/images/repeat.svg ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/repeat.svg?3e0c7bb46c21e2fff87ad3016f5303c7";
 
 /***/ }),
 

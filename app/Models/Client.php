@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
 class Client extends Model
@@ -13,5 +14,6 @@ class Client extends Model
     {
         return $this->belongsTo(Point::class);
     }
+
 
 }
