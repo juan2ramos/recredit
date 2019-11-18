@@ -3,6 +3,7 @@
 namespace App\Modules\CreditRequest\Requests;
 
 use App\Models\Credit;
+use App\Models\CreditHistory;
 use App\Notifications\NewRequestCredit;
 use App\User;
 use Illuminate\Foundation\Http\FormRequest;
@@ -25,11 +26,13 @@ class CreditRequest extends FormRequest
     {
         $user = $this->getUserToCreate();
 
+        $count = $user->historyCredit->count();
+        $count = intval($count) + 1;
         $user->credit()->save(new Credit([
             'priority' => $this->user()->isAdmin(),
             'state' => 0,
             'validated' => 0,
-            'number_requested' => 1,
+            'number_requested' => $count,
             'finished_user' => $this->user()->id,
         ]));
         $this->notify($this->user());
@@ -43,7 +46,7 @@ class CreditRequest extends FormRequest
 
         \MailTemplate::reset();
 
-       // $users = User::role(['Analysts'])->get();
+        // $users = User::role(['Analysts'])->get();
         //\MailTemplate::to($users);
         //\MailTemplate::attribute('NAME', $user->name);
         //\MailTemplate::attribute('NUMBER', $user->document);

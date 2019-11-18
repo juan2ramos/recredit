@@ -4,6 +4,7 @@ namespace App;
 
 use App\Models\Client;
 use App\Models\Credit;
+use App\Models\CreditHistory;
 use App\Models\File;
 use App\Models\Point;
 use App\Models\Reference;
@@ -57,6 +58,10 @@ class User extends Authenticatable
     public function client()
     {
         return $this->hasOne(Client::class);
+    }
+    public function historyCredit()
+    {
+        return $this->hasMany(CreditHistory::class);
     }
 
     public function credit()

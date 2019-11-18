@@ -82,9 +82,24 @@ class EntrepreneursRequest extends FormRequest
                 'isEntrepreneurs' => 1,
                 'finished_user' => (auth()->check() && auth()->user()->isAdmin()) ? auth()->user()->id : $user->id
             ]));
+            $this->sendMail($this->user());
             return $user;
         });
         return $user;
 
     }
+    private function sendMail($user)
+    {
+        \MailTemplate::to($user->email);
+        \MailTemplate::send(242);
+
+        \MailTemplate::reset();
+
+        // $users = User::role(['Analysts'])->get();
+        //\MailTemplate::to($users);
+        //\MailTemplate::attribute('NAME', $user->name);
+        //\MailTemplate::attribute('NUMBER', $user->document);
+        //\MailTemplate::send(243);
+    }
+
 }
