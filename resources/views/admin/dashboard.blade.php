@@ -29,7 +29,7 @@
                         </svg>
                     </button>
                 </form>
-                @role('SuperAdmin')
+                @role('SuperAdmin|Analysts')
                 <div class="m-l-12">
                     <div class="fi fi-xlsx " style="margin: 0">
                         <div class="fi-content">xls</div>

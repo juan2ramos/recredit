@@ -1,5 +1,10 @@
 <?php
 
+use App\Exports\UsersExport;
+use App\User;
+use Illuminate\Support\Facades\Storage;
+use Maatwebsite\Excel\Facades\Excel;
+
 Route::resource('solicitud-creditos', 'UserController')
     ->names('users')
     ->parameters(['solicitud-creditos' => 'user'])
@@ -32,4 +37,8 @@ Route::middleware(['auth', 'withoutCredit'])->group(function () {
     Route::get('delete-user/{action}', 'UserSessionController')
         ->name('session.delete');
 });
+Route::get('excel', function () {
 
+    \App\Jobs\GenerateExcel::dispatch('2019-09-01', '2019-11-01');
+
+});

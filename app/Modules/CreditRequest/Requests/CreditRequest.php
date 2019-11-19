@@ -3,7 +3,6 @@
 namespace App\Modules\CreditRequest\Requests;
 
 use App\Models\Credit;
-use App\Models\CreditHistory;
 use App\Notifications\NewRequestCredit;
 use App\User;
 use Illuminate\Foundation\Http\FormRequest;
