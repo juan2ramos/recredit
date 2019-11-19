@@ -91,7 +91,7 @@ class EntrepreneursRequest extends FormRequest
     private function sendMail($user)
     {
         \MailTemplate::to($user->email);
-        \MailTemplate::send(242);
+        \MailTemplate::send(261);
 
         \MailTemplate::reset();
 

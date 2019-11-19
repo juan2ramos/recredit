@@ -30,6 +30,7 @@ class UpdateCreditRequest extends FormRequest
             'check_date' => now(),
             'reasons_id' => $this->input('reason'),
             'reviewed_user' => Auth::user()->id,
+            'typing_id' => $this->input('typing'),
         ]);
 
         $this->credit->save();
@@ -41,7 +42,8 @@ class UpdateCreditRequest extends FormRequest
         \MailTemplate::to($user->email);
         if ($this->input('approved') == 1) {
             $r = 'Aprobado';
-            \MailTemplate::send(241);
+            $numberTemplate = $this->credit->isEntrepreneurs ? 261 : 241;
+            \MailTemplate::send($numberTemplate);
         } else {
             $r = 'Negado';
             \MailTemplate::send(242);
@@ -49,8 +51,9 @@ class UpdateCreditRequest extends FormRequest
 
         \MailTemplate::reset();
 
-        $finish = $this->credit->load('userFinish');
-        if ($finish->user->hasRole('Point')) {
+        $finish = $this->credit->load('userFinish')->userFinish;
+        if ($finish->hasRole('Point')) {
+            \MailTemplate::to($finish->email);
             \MailTemplate::attribute('RESPONSE', $r);
             \MailTemplate::attribute('NUMBER', $user->document);
             \MailTemplate::send(244);

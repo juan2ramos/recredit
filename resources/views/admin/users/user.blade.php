@@ -13,6 +13,7 @@
                     :credit="{{$credit}}"
                     super-admin="{{auth()->user()->isSuperAdmin() || auth()->user()->isDocumentary()}}"
                     analyst="{{auth()->user()->isAnalysts()}}"
+                    :typings="{{$typings}}"
             ></form-user>
         </div>
     </div>

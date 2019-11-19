@@ -86,11 +86,14 @@
                     </div>
                 @endforeach
             </div>
+            <h3 class="col-16 h-3">  Selecciona una tipificación (Opcional)</h3>
+
             <credit-button
                     :reasons="{{$reasons}}"
                     route="{{route('creditsAdmin.update', $credit->id   )}}"
                     token="{{csrf_token()}}"
                     credit="{{$credit->id}}"
+                    :typings="{{$typings}}"
             ></credit-button>
         </div>
     </div>

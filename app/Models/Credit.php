@@ -14,7 +14,7 @@ class Credit extends Model
     ];
     protected $appends = ['reconsideration'];
     protected $fillable = ['priority', 'state', 'validated', 'check_date',
-        'number_requested', 'finished_user', 'assigned_user', 'reviewed_user', 'reasons_id', 'user_id', 'isEntrepreneurs'];
+        'number_requested', 'finished_user', 'assigned_user', 'reviewed_user', 'reasons_id', 'user_id', 'isEntrepreneurs', 'typing_id'];
 
     public function user()
     {
@@ -34,6 +34,11 @@ class Credit extends Model
     public function reason()
     {
         return $this->belongsTo(Reason::class, 'reasons_id');
+    }
+
+    public function typing()
+    {
+        return $this->belongsTo(Typing::class, 'typing_id');
     }
 
     public function assigned()

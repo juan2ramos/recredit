@@ -51,6 +51,7 @@ class UpdateUserRequest extends FormRequest
 
         $user->update($data);
         $user->client->update($data);
+        $user->credit->update($data);
         $this->updateReferences($user, $data['references']);
 
     }

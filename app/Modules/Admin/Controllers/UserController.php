@@ -4,6 +4,7 @@ namespace App\Modules\Admin\Controllers;
 
 use App\Models\City;
 use App\Models\Point;
+use App\Models\Typing;
 use App\Modules\Admin\Request\CreateUserAdminRequest;
 use App\Modules\Admin\Request\UpdateUserAdminRequest;
 use App\Modules\Admin\Request\UpdateUserRequest;
@@ -20,7 +21,7 @@ class UserController extends Controller
         if (!$request->has('search')) {
             return view('admin.dashboard', ['clients' => collect()]);
         }
-        $clients = User::role(['Credit', 'Entrepreneur'])->search($request->search)->with('credit.reason', 'client')->take(40)->get();
+        $clients = User::role(['Credit', 'Entrepreneur'])->search($request->search)->with('credit.reason', 'credit.typing', 'client')->take(40)->get();
 
         return view('admin.dashboard', compact('clients'));
 
@@ -50,8 +51,9 @@ class UserController extends Controller
         $credit = $user->credit->load('reason', 'assigned', 'reviewed', 'finished');
         $cities = City::orderBy('name')->get();
         $points = Point::orderBy('name')->get();
+        $typings = Typing::all();
 
-        return view('admin.users.user', compact('user', 'points', 'cities', 'credit'));
+        return view('admin.users.user', compact('user', 'points', 'cities', 'credit', 'typings'));
     }
 
     public function edit(User $user)

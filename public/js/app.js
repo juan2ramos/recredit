@@ -2113,11 +2113,27 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['reasons', 'route', 'token', 'credit'],
+  props: ['reasons', 'route', 'token', 'credit', 'typings'],
   name: "CreditButton",
+  data: function data() {
+    return {
+      typing: ''
+    };
+  },
   methods: {
     fail: function fail() {
       var _this = this;
@@ -2152,11 +2168,11 @@ __webpack_require__.r(__webpack_exports__);
     },
     send: function send(message, approved) {
       var reason = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
-      console.log(this.token);
       axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(this.route, {
         _token: this.token,
         reason: reason,
-        approved: approved
+        approved: approved,
+        typing: this.typing
       }).then(function (_ref) {
         var data = _ref.data;
         console.log(data);
@@ -2459,6 +2475,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -2467,7 +2499,7 @@ __webpack_require__.r(__webpack_exports__);
     vueDropzone: vue2_dropzone__WEBPACK_IMPORTED_MODULE_0___default.a
   },
   name: "form-user",
-  props: ['user', 'cities', 'points', 'token', 'authUser', 'superAdmin', 'credit', 'analyst'],
+  props: ['user', 'cities', 'points', 'token', 'authUser', 'superAdmin', 'credit', 'analyst', 'typings'],
   data: function data() {
     return {
       selectedUser: null,
@@ -2478,6 +2510,7 @@ __webpack_require__.r(__webpack_exports__);
       typeDocument: ['Cédula de ciudadanía', 'cédula de extranjería'],
       userFiles: this.user.files,
       addressType: ['casa', 'apartamento'],
+      typing: this.credit.typing_id ? this.credit.typing_id : '',
       dropzoneOptions: {
         url: '/admin/files',
         thumbnailWidth: 150,
@@ -3010,6 +3043,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 
 
@@ -3064,7 +3101,7 @@ __webpack_require__.r(__webpack_exports__);
           return 'Por aprobar';
 
         case 1:
-          return 'Aprobado';
+          return 'Pre - Aprobado';
 
         case 2:
           return "Denegado - ".concat(credit.reason.name);
@@ -16375,13 +16412,61 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "row col-16 justify-center middle-items" }, [
-    _c("a", { staticClass: "Link-primary", on: { click: _vm.success } }, [
-      _vm._v("Pre aprobar crédito")
+  return _c("div", { staticClass: "row is-full-width" }, [
+    _c("div", { staticClass: "is-full-width" }, [
+      _c(
+        "select",
+        {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.typing,
+              expression: "typing"
+            }
+          ],
+          staticStyle: { margin: "0 !important" },
+          on: {
+            change: function($event) {
+              var $$selectedVal = Array.prototype.filter
+                .call($event.target.options, function(o) {
+                  return o.selected
+                })
+                .map(function(o) {
+                  var val = "_value" in o ? o._value : o.value
+                  return val
+                })
+              _vm.typing = $event.target.multiple
+                ? $$selectedVal
+                : $$selectedVal[0]
+            }
+          }
+        },
+        [
+          _c("option", { attrs: { value: "" } }, [_vm._v("NINGUNA")]),
+          _vm._v(" "),
+          _vm._l(_vm.typings, function(typing) {
+            return _c("option", { domProps: { value: typing.id } }, [
+              _vm._v(
+                "\n                " +
+                  _vm._s(typing.analyst_name) +
+                  "\n            "
+              )
+            ])
+          })
+        ],
+        2
+      )
     ]),
     _vm._v(" "),
-    _c("a", { staticClass: "Link-secondary", on: { click: _vm.fail } }, [
-      _vm._v("Reprobar crédito")
+    _c("div", { staticClass: "row col-16 justify-center middle-items" }, [
+      _c("a", { staticClass: "Link-primary", on: { click: _vm.success } }, [
+        _vm._v("Pre aprobar crédito")
+      ]),
+      _vm._v(" "),
+      _c("a", { staticClass: "Link-secondary", on: { click: _vm.fail } }, [
+        _vm._v("Reprobar crédito")
+      ])
     ])
   ])
 }
@@ -17019,8 +17104,6 @@ var render = function() {
           "div",
           { staticClass: "row col-16" },
           [
-            _c("h4", { staticClass: "col-16 h-4" }, [_vm._v("Archivos")]),
-            _vm._v(" "),
             _vm.superAdmin || _vm.analyst
               ? _c("vue-dropzone", {
                   ref: "FilesIDAdmin",
@@ -17085,6 +17168,59 @@ var render = function() {
           ],
           1
         ),
+        _vm._v(" "),
+        _c("div", { staticClass: "row col-16 m-t-20 m-b-20" }, [
+          _c("h4", { staticClass: "col-16 h-4" }, [
+            _vm._v("Selecciona una tipificación (Opcional)")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "is-full-width" }, [
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.typing,
+                    expression: "typing"
+                  }
+                ],
+                staticStyle: { margin: "0 !important" },
+                attrs: { name: "typing_id" },
+                on: {
+                  change: function($event) {
+                    var $$selectedVal = Array.prototype.filter
+                      .call($event.target.options, function(o) {
+                        return o.selected
+                      })
+                      .map(function(o) {
+                        var val = "_value" in o ? o._value : o.value
+                        return val
+                      })
+                    _vm.typing = $event.target.multiple
+                      ? $$selectedVal
+                      : $$selectedVal[0]
+                  }
+                }
+              },
+              [
+                _c("option", { attrs: { value: "" } }, [_vm._v("NINGUNA")]),
+                _vm._v(" "),
+                _vm._l(_vm.typings, function(typing) {
+                  return _c("option", { domProps: { value: typing.id } }, [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(typing.analyst_name) +
+                        "\n                    "
+                    )
+                  ])
+                })
+              ],
+              2
+            )
+          ])
+        ]),
         _vm._v(" "),
         _vm.analyst
           ? _c("div", { staticClass: "row justify-center " }, [
@@ -17934,11 +18070,19 @@ var render = function() {
                   _c("td", { attrs: { width: "20%" } }, [
                     _c("span", [
                       _vm._v(
-                        _vm._s(
-                          !client.credit
-                            ? "En proceso"
-                            : _vm.stateCredit(client.credit)
-                        )
+                        "\n                    " +
+                          _vm._s(
+                            !client.credit
+                              ? "En proceso "
+                              : _vm.stateCredit(client.credit)
+                          ) +
+                          "\n                    " +
+                          _vm._s(
+                            client.credit && client.credit.typing
+                              ? client.credit.typing.point_name
+                              : ""
+                          ) +
+                          "\n\n                "
                       )
                     ])
                   ]),

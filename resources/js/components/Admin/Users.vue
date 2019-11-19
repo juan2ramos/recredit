@@ -16,7 +16,11 @@
                 <td width="20%">{{client.document}}</td>
                 <td width="25%">{{client.email}}</td>
                 <td width="20%">
-                    <span>{{!client.credit? 'En proceso':stateCredit(client.credit)}}</span>
+                    <span>
+                        {{!client.credit? 'En proceso ' : stateCredit(client.credit)}}
+                        {{(client.credit && client.credit.typing)? client.credit.typing.point_name:''}}
+
+                    </span>
                 </td>
                 <td width="5%">
                     <div class="row justify-center middle-items" v-if="isAnalysts">
@@ -121,7 +125,7 @@
                     case 0:
                         return 'Por aprobar';
                     case 1:
-                        return 'Aprobado';
+                        return 'Pre - Aprobado';
                     case 2:
                         return `Denegado - ${credit.reason.name}`
                 }

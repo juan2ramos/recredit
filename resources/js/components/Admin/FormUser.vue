@@ -236,8 +236,9 @@
                 </div>
 
             </div>
+
             <div class="row col-16">
-                <h4 class="col-16 h-4">Archivos</h4>
+
                 <vue-dropzone v-if="superAdmin || analyst"
                               id="MyDropZoneFileAdmin"
                               :options="dropzoneOptions"
@@ -262,6 +263,21 @@
                 </div>
 
             </div>
+
+            <div class="row col-16 m-t-20 m-b-20">
+                <h4 class="col-16 h-4">Selecciona una tipificación (Opcional)</h4>
+                <div class="is-full-width">
+                    <select style="margin: 0 !important; " v-model="typing" name="typing_id">
+                        <option value="">NINGUNA</option>
+
+                        <option v-for="typing in typings"  v-bind:value="typing.id">
+                            {{typing.analyst_name}}
+                        </option>
+
+                    </select>
+                </div>
+            </div>
+
             <div class="row justify-center " v-if="analyst">
                 <button type="submit" :disabled="sending">Actualizar</button>
             </div>
@@ -277,7 +293,7 @@
     export default {
         components: {vueDropzone: vue2Dropzone},
         name: "form-user",
-        props: ['user', 'cities', 'points', 'token', 'authUser', 'superAdmin', 'credit', 'analyst'],
+        props: ['user', 'cities', 'points', 'token', 'authUser', 'superAdmin', 'credit', 'analyst', 'typings'],
         data: function () {
             return {
                 selectedUser: null,
@@ -288,6 +304,7 @@
                 typeDocument: ['Cédula de ciudadanía', 'cédula de extranjería'],
                 userFiles: this.user.files,
                 addressType: ['casa', 'apartamento'],
+                typing: this.credit.typing_id ? this.credit.typing_id:'',
                 dropzoneOptions: {
                     url: '/admin/files',
                     thumbnailWidth: 150,

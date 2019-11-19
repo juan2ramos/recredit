@@ -1,9 +1,20 @@
 <template>
+   <div class="row is-full-width">
+       <div class="is-full-width">
+           <select style="margin: 0 !important; " v-model="typing">
+               <option value="">NINGUNA</option>
 
-    <div class="row col-16 justify-center middle-items">
-        <a @click="success" class="Link-primary">Pre aprobar crédito</a>
-        <a @click="fail" class="Link-secondary">Reprobar crédito</a>
-    </div>
+               <option v-for="typing in typings"  v-bind:value="typing.id">
+                   {{typing.analyst_name}}
+               </option>
+
+           </select>
+       </div>
+       <div class="row col-16 justify-center middle-items">
+           <a @click="success" class="Link-primary">Pre aprobar crédito</a>
+           <a @click="fail" class="Link-secondary">Reprobar crédito</a>
+       </div>
+   </div>
 
 </template>
 
@@ -12,8 +23,13 @@
     import axios from 'axios';
 
     export default {
-        props: ['reasons', 'route', 'token', 'credit'],
+        props: ['reasons', 'route', 'token', 'credit', 'typings'],
         name: "CreditButton",
+        data: function () {
+            return {
+                typing: ''
+            }
+        },
         methods: {
             fail: function () {
                 const buttons = {};
@@ -35,8 +51,8 @@
                     });
             },
             send: function (message, approved, reason = 0) {
-                console.log(this.token)
-                axios.put(this.route, {_token: this.token, reason, approved})
+
+                axios.put(this.route, {_token: this.token, reason, approved, typing: this.typing})
                     .then(({data}) => {
                         console.log(data)
                         swal(message, {icon: "success"});
