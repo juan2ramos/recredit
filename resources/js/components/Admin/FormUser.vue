@@ -309,7 +309,7 @@
                     url: '/admin/files',
                     thumbnailWidth: 150,
                     maxFilesize: 5,
-                    maxFiles: 5
+                    maxFiles: 5,
 		    paramName: 'files',
                     dictDefaultMessage: '<div class="dropzone-buttonMessage">Selecciona los documentos</div>',
                     headers: {"X-CSRF-TOKEN": document.head.querySelector("[name=csrf-token]").content},
