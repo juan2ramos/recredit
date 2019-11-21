@@ -41,7 +41,7 @@ class UpdateCreditRequest extends FormRequest
     {
         \MailTemplate::to($user->email);
         if ($this->input('approved') == 1) {
-            $r = 'Aprobado';
+            $r = 'Pre aprobada';
             $numberTemplate = $this->credit->isEntrepreneurs ? 261 : 241;
             \MailTemplate::send($numberTemplate);
         } else {

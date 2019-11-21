@@ -375,8 +375,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/Users.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+            <state relative-caret-position="502">
+              <caret line="55" column="10" lean-forward="true" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
               <folding>
                 <element signature="n#div#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#section#0;n#template#0;n#!!top" />
               </folding>
@@ -855,18 +855,18 @@
       <workItem from="1574188126023" duration="28000" />
       <workItem from="1574192406855" duration="368000" />
       <workItem from="1574204285968" duration="209000" />
-      <workItem from="1574354104372" duration="2159000" />
+      <workItem from="1574354104372" duration="2376000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="484879000" />
+    <option name="totallyTimeSpent" value="485096000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="2560" height="1080" extended-state="0" />
     <layout>
-      <window_info id="Database" order="0" sideWeight="0.50239694" visible="true" weight="0.1921875" />
-      <window_info id="Favorites" order="1" sideWeight="0.5011111" weight="0.1984375" />
+      <window_info id="Database" order="0" sideWeight="0.50239694" weight="0.1921875" />
+      <window_info active="true" id="Favorites" order="1" sideWeight="0.5011111" visible="true" weight="0.1984375" />
       <window_info id="npm" order="2" sideWeight="0.36241612" weight="0.19296876" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -881,7 +881,7 @@
       <window_info anchor="bottom" id="Database Console" order="10" weight="0.2703739" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="11" />
       <window_info anchor="bottom" x="-224" y="-651" width="2560" height="222" id="Run" order="12" sideWeight="0.49760306" weight="0.2253116" />
-      <window_info active="true" anchor="bottom" x="0" y="23" width="1440" height="877" id="Terminal" order="13" visible="true" weight="0.3835091" />
+      <window_info anchor="bottom" x="0" y="23" width="1440" height="877" id="Terminal" order="13" visible="true" weight="0.3835091" />
       <window_info anchor="bottom" id="SQL Generator" order="14" weight="0.32908458" />
       <window_info anchor="bottom" id="TypeScript" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1346,8 +1346,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/Users.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        <state relative-caret-position="502">
+          <caret line="55" column="10" lean-forward="true" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
           <folding>
             <element signature="n#div#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#section#0;n#template#0;n#!!top" />
           </folding>
