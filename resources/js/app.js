@@ -3,6 +3,7 @@ import adminComponents from './components/Admin';
 import creditRequestComponents from './components/CreditRequest';
 import Front from './components/Front';
 import Echo from 'laravel-echo'
+import VueClipboard from 'vue-clipboard2'
 
 window.Pusher = require('pusher-js');
 window.Echo = new Echo({
@@ -19,7 +20,7 @@ components.forEach(component => {
 });
 
 new Vue({el: '#app',});
-
+Vue.use(VueClipboard)
 
 import contact from './Modal';
 import nav from './nav';

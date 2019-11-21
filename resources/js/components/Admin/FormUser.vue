@@ -108,10 +108,10 @@
                     <div class="Form-labelContent">
                         <label for="document">Documento</label>
                         <input
-                               type="text"
-                               :value="user.document"
-                               name="document"
-                               id="document">
+                                type="text"
+                                :value="user.document"
+                                name="document"
+                                id="document">
 
 
                     </div>
@@ -155,7 +155,7 @@
                         </p>
                     </div>
                     <div class="Form-labelContent" v-if="superAdmin">
-                        <label for="password" >Contraseña</label>
+                        <label for="password">Contraseña</label>
                         <input
                                 type="password"
                                 name="password"
@@ -176,6 +176,7 @@
 
                 </div>
             </div>
+
             <div class="row">
                 <h4 class="col-16 h-4">Referencias personales </h4>
                 <div class="is-full-width References">
@@ -189,7 +190,7 @@
                         </thead>
                         <tbody>
                         <tr v-for="(reference, i) in user.references">
-                            <td><h5 class="col-16">Referencia {{ i + 1 }}</h5></td>
+                            <td><h5 class="col-16">Referencia{{ i + 1 }}</h5></td>
                             <td>
                                 <div class="col-16 col-m-8 Form-column">
                                     <input
@@ -210,7 +211,8 @@
                                                     type="hidden"
                                                     :name="`references[${i}][id]`"
                                                     :value="reference.id">
-                                            <input type="hidden" :value="reference.name" :name="`references[${i}][name]`">
+                                            <input type="hidden" :value="reference.name"
+                                                   :name="`references[${i}][name]`">
                                         </p>
                                     </div>
                                 </div>
@@ -226,13 +228,16 @@
                                                 :id="`reference.phone${i}`">
                                         <p v-if="!superAdmin">
                                             {{reference.phone}}
-                                            <input type="hidden" :value="reference.phone" :name="`references[${i}][phone]`"></p>
+                                            <input type="hidden" :value="reference.phone"
+                                                   :name="`references[${i}][phone]`"></p>
                                     </div>
                                 </div>
                             </td>
                         </tr>
                         </tbody>
                     </table>
+
+                    <button class="m-b-40 References-btn" type="button" @click="doCopy">copiar referencias!</button>
                 </div>
 
             </div>
@@ -270,7 +275,7 @@
                     <select style="margin: 0 !important; " v-model="typing" name="typing_id">
                         <option value="">NINGUNA</option>
 
-                        <option v-for="typing in typings"  v-bind:value="typing.id">
+                        <option v-for="typing in typings" v-bind:value="typing.id">
                             {{typing.analyst_name}}
                         </option>
 
@@ -290,6 +295,7 @@
     import 'vue2-dropzone/dist/vue2Dropzone.min.css'
     import axios from 'axios'
 
+
     export default {
         components: {vueDropzone: vue2Dropzone},
         name: "form-user",
@@ -301,17 +307,18 @@
                 selectedAddressType: null,
                 selectedPoint: null,
                 sending: false,
+                message: 'Copy asdasdasd Text',
                 typeDocument: ['Cédula de ciudadanía', 'cédula de extranjería'],
                 userFiles: this.user.files,
                 addressType: ['casa', 'apartamento'],
-                typing: this.credit.typing_id ? this.credit.typing_id:'',
+                typing: this.credit.typing_id ? this.credit.typing_id : '',
                 dropzoneOptions: {
                     url: '/admin/files',
                     thumbnailWidth: 150,
                     maxFilesize: 5,
                     maxFiles: 5,
-                    parallelUploads:5,
-		    paramName: 'files',
+                    parallelUploads: 5,
+                    paramName: 'files',
                     dictDefaultMessage: '<div class="dropzone-buttonMessage">Selecciona los documentos</div>',
                     headers: {"X-CSRF-TOKEN": document.head.querySelector("[name=csrf-token]").content},
                     params: {user: this.user.id}
@@ -331,6 +338,57 @@
             }
         },
         methods: {
+
+            doCopy: function () {
+                const r1 = this.user.references['0'];
+                const r2 = this.user.references['1'];
+                this.message =
+                    `<table><tbody>
+<tr>
+    <td>Referencia1</td>
+    <td>${r1.name}</td>
+    <td>${r1.phone}</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Referencia2</td>
+<td>${r2.name}</td>
+<td>${r2.phone}</td>
+</tr>
+</tbody>
+</table>`;
+                this.$copyText(this.message).then(function (e) {
+                    alert('Copied')
+
+                }, function (e) {
+                    alert('Can not copy')
+                    console.log(e)
+                })
+            },
             change: function () {
                 this.selectedPoint = 0;
             },
@@ -391,5 +449,14 @@
         td:nth-child(3), th:nth-child(3), td:nth-child(7), th:nth-child(7) {
             min-width: 30rem !important;
         }
+
+        &-btn {
+            font-size: 16px;
+            min-width: 200px;
+            background: #46b065;
+            box-shadow: none;
+            border-radius: 0;
+        }
     }
+
 </style>
