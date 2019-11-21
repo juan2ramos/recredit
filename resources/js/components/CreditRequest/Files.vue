@@ -48,6 +48,7 @@
                     acceptedFiles: 'image/*',
                     thumbnailWidth: 150,
                     maxFilesize: 5,
+                    parallelUploads:5,
                     paramName: 'files',
                     dictDefaultMessage: '<div class="dropzone-buttonMessage">Selecciona tus documentos</div>' +
                         '<div class="dropzone-message">(FOTOCOPIA DE LA CÉDULA)</div>',

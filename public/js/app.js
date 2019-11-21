@@ -2516,6 +2516,7 @@ __webpack_require__.r(__webpack_exports__);
         thumbnailWidth: 150,
         maxFilesize: 5,
         maxFiles: 5,
+        parallelUploads: 5,
         paramName: 'files',
         dictDefaultMessage: '<div class="dropzone-buttonMessage">Selecciona los documentos</div>',
         headers: {
@@ -3048,6 +3049,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 
@@ -3328,6 +3331,7 @@ __webpack_require__.r(__webpack_exports__);
         acceptedFiles: 'image/*',
         thumbnailWidth: 150,
         maxFilesize: 5,
+        parallelUploads: 5,
         paramName: 'files',
         dictDefaultMessage: '<div class="dropzone-buttonMessage">Selecciona tus documentos</div>' + '<div class="dropzone-message">(FOTOCOPIA DE LA CÉDULA)</div>',
         headers: {
@@ -18075,15 +18079,11 @@ var render = function() {
                           _vm._s(
                             !client.credit
                               ? "En proceso "
+                              : client.credit && client.credit.typing
+                              ? client.credit.typing.point_name
                               : _vm.stateCredit(client.credit)
                           ) +
-                          "\n                    " +
-                          _vm._s(
-                            client.credit && client.credit.typing
-                              ? client.credit.typing.point_name
-                              : ""
-                          ) +
-                          "\n\n                "
+                          "\n\n\n                "
                       )
                     ])
                   ]),

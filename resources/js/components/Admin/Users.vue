@@ -17,8 +17,10 @@
                 <td width="25%">{{client.email}}</td>
                 <td width="20%">
                     <span>
-                        {{!client.credit? 'En proceso ' : stateCredit(client.credit)}}
-                        {{(client.credit && client.credit.typing)? client.credit.typing.point_name:''}}
+                        {{!client.credit? 'En proceso ' :
+                            (client.credit && client.credit.typing? client.credit.typing.point_name:stateCredit(client.credit))
+                        }}
+
 
                     </span>
                 </td>
@@ -113,7 +115,6 @@
                                 }
                                 swal("Hubo un error! Vuelve a intentarlo", {icon: "error",});
                             });
-
                     }
                 });
             },
