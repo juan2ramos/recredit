@@ -130,10 +130,10 @@
             <div class="Modal-content row Contact-content" style="height: 500px;">
                 <div class="Modal-contentClose modalClose" @click.prevent="modal">X</div>
                 <div class=" table-container" style="max-height: 90%;">
-                    <table class="Faq-modalTable">
+                    <table class="Faq-modalTable" style="display: inline-table;">
                         <thead>
-                        <tr>
-                            <th>Tasa mÍnima legal EA</th>
+                        <tr class="is-text-center">
+                            <th  colspan="2">Tasa mÍnima legal EA</th>
                         </tr>
                         </thead>
                         <tbody>

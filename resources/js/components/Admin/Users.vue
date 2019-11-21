@@ -49,17 +49,16 @@
                     </div>
                     <div class="row justify-center middle-items" v-else>
 
-                        <a v-if="!client.credit" :href="`/admin/usuario-sesion/${client.document}`">
-                            <img src="../../../images/settings.svg" alt="">
-                        </a>
-                        <a v-if="client.credit && client.credit['reconsideration']"
-                           @click="reconsideration(client)">
-                            <img src="../../../images/repeat.svg" alt="">
-                        </a>
+
+
                     </div>
                     <div class="row justify-center middle-items" v-if="isPoint">
                         <a v-if="client.credit" @click="openModalMethod(client)">
                             ver info
+                        </a>
+                        <a v-if="client.credit && client.credit['reconsideration']"
+                           @click="reconsideration(client)">
+                            <img src="../../../images/repeat.svg" alt="">
                         </a>
                         <a v-if="!client.credit" :href="`/admin/usuario-sesion/${client.document}`">
                             <img src="../../../images/settings.svg" alt="">
@@ -109,7 +108,7 @@
                         axios.get(`/admin/reconsideration/${client.document}`)
                             .then((response) => {
                                 if (response.data.success) {
-                                    swal("El cliente ha sido eliminado", {icon: "success",});
+                                    swal("La reconsideración fue exitosa", {icon: "success",});
                                     setTimeout(() => window.location = `/admin/usuario-sesion/${client.document}`, 3000);
                                     return
                                 }

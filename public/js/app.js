@@ -3050,7 +3050,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 
 
@@ -3080,7 +3079,7 @@ __webpack_require__.r(__webpack_exports__);
         if (willDelete) {
           axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/admin/reconsideration/".concat(client.document)).then(function (response) {
             if (response.data.success) {
-              sweetalert__WEBPACK_IMPORTED_MODULE_0___default()("El cliente ha sido eliminado", {
+              sweetalert__WEBPACK_IMPORTED_MODULE_0___default()("La reconsideración fue exitosa", {
                 icon: "success"
               });
               setTimeout(function () {
@@ -18219,27 +18218,29 @@ var render = function() {
                               : _vm._e()
                           ]
                         )
-                      : _c(
+                      : _c("div", {
+                          staticClass: "row justify-center middle-items"
+                        }),
+                    _vm._v(" "),
+                    _vm.isPoint
+                      ? _c(
                           "div",
                           { staticClass: "row justify-center middle-items" },
                           [
-                            !client.credit
+                            client.credit
                               ? _c(
                                   "a",
                                   {
-                                    attrs: {
-                                      href:
-                                        "/admin/usuario-sesion/" +
-                                        client.document
+                                    on: {
+                                      click: function($event) {
+                                        return _vm.openModalMethod(client)
+                                      }
                                     }
                                   },
                                   [
-                                    _c("img", {
-                                      attrs: {
-                                        src: __webpack_require__(/*! ../../../images/settings.svg */ "./resources/images/settings.svg"),
-                                        alt: ""
-                                      }
-                                    })
+                                    _vm._v(
+                                      "\n                        ver info\n                    "
+                                    )
                                   ]
                                 )
                               : _vm._e(),
@@ -18261,31 +18262,6 @@ var render = function() {
                                         alt: ""
                                       }
                                     })
-                                  ]
-                                )
-                              : _vm._e()
-                          ]
-                        ),
-                    _vm._v(" "),
-                    _vm.isPoint
-                      ? _c(
-                          "div",
-                          { staticClass: "row justify-center middle-items" },
-                          [
-                            client.credit
-                              ? _c(
-                                  "a",
-                                  {
-                                    on: {
-                                      click: function($event) {
-                                        return _vm.openModalMethod(client)
-                                      }
-                                    }
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                        ver info\n                    "
-                                    )
                                   ]
                                 )
                               : _vm._e(),
@@ -19169,25 +19145,32 @@ var render = function() {
                 staticStyle: { "max-height": "90%" }
               },
               [
-                _c("table", { staticClass: "Faq-modalTable" }, [
-                  _vm._m(7),
-                  _vm._v(" "),
-                  _c(
-                    "tbody",
-                    [
-                      _vm._m(8),
-                      _vm._v(" "),
-                      _vm._l(12, function(i) {
-                        return _c("tr", { key: i }, [
-                          _c("td", [_vm._v(_vm._s(i))]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v(_vm._s(i * 1.5) + "%")])
-                        ])
-                      })
-                    ],
-                    2
-                  )
-                ])
+                _c(
+                  "table",
+                  {
+                    staticClass: "Faq-modalTable",
+                    staticStyle: { display: "inline-table" }
+                  },
+                  [
+                    _vm._m(7),
+                    _vm._v(" "),
+                    _c(
+                      "tbody",
+                      [
+                        _vm._m(8),
+                        _vm._v(" "),
+                        _vm._l(12, function(i) {
+                          return _c("tr", { key: i }, [
+                            _c("td", [_vm._v(_vm._s(i))]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v(_vm._s(i * 1.5) + "%")])
+                          ])
+                        })
+                      ],
+                      2
+                    )
+                  ]
+                )
               ]
             )
           ]
@@ -19468,7 +19451,11 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("thead", [_c("tr", [_c("th", [_vm._v("Tasa mÍnima legal EA")])])])
+    return _c("thead", [
+      _c("tr", { staticClass: "is-text-center" }, [
+        _c("th", { attrs: { colspan: "2" } }, [_vm._v("Tasa mÍnima legal EA")])
+      ])
+    ])
   },
   function() {
     var _vm = this
