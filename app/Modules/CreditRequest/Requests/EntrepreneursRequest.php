@@ -90,6 +90,7 @@ class EntrepreneursRequest extends FormRequest
     }
     private function sendMail($user)
     {
+
         \MailTemplate::to($user->email);
         \MailTemplate::send(261);
 

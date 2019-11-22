@@ -350,8 +350,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Requests/EntrepreneursRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+            <state relative-caret-position="602">
+              <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -766,12 +766,12 @@
       <workItem from="1574188126023" duration="28000" />
       <workItem from="1574192406855" duration="368000" />
       <workItem from="1574204285968" duration="209000" />
-      <workItem from="1574354104372" duration="18961000" />
+      <workItem from="1574354104372" duration="19084000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="501681000" />
+    <option name="totallyTimeSpent" value="501804000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="2560" height="1080" extended-state="0" />
@@ -1280,8 +1280,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Requests/EntrepreneursRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+        <state relative-caret-position="602">
+          <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
         </state>
       </provider>
     </entry>
