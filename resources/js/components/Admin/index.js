@@ -8,5 +8,6 @@ import CreditButton from './CreditButton';
 import ValidatedCredit from './ValidatedCredit';
 import Admins from './Admins';
 import ModalInfo from './ModalInfo';
+import Excel from './Excel';
 
-export default [Users, FormUser, Points, Sliders, CreateAdmin, CreditButton, ValidatedCredit, Admins, ModalInfo, UpdateAdmin];
+export default [Users, FormUser, Points, Sliders, CreateAdmin, CreditButton, ValidatedCredit, Admins, ModalInfo, UpdateAdmin, Excel];

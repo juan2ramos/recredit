@@ -37,8 +37,3 @@ Route::middleware(['auth', 'withoutCredit'])->group(function () {
     Route::get('delete-user/{action}', 'UserSessionController')
         ->name('session.delete');
 });
-Route::get('excel', function () {
-
-    \App\Jobs\GenerateExcel::dispatch('2019-09-01', '2019-11-01');
-
-});

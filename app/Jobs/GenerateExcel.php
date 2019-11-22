@@ -9,6 +9,7 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Maatwebsite\Excel\Facades\Excel;
@@ -19,11 +20,13 @@ class GenerateExcel implements ShouldQueue
 
     protected $dateInit;
     protected $dateEnd;
+    protected $user;
 
-    public function __construct($dateInit, $dateEnd)
+    public function __construct($dateInit, $dateEnd, $user)
     {
         $this->dateInit = $dateInit;
         $this->dateEnd = $dateEnd;
+        $this->user = $user;
     }
 
     public function handle()
@@ -32,7 +35,7 @@ class GenerateExcel implements ShouldQueue
         Excel::store(new UsersExport($this->dateInit, $this->dateInit), 'creditos/Excel/users-' .$str. '.xlsx', 'spaces');
         $url = Storage::temporaryUrl('creditos/Excel/users.xlsx', now()->addMinutes(120));
 
-        \MailTemplate::to('juan2ramos@gmail.com');
+        \MailTemplate::to( $this->user->email);
         \MailTemplate::attribute('URL', $url);
         \MailTemplate::send(263);
     }

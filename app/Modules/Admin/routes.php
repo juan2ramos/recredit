@@ -29,3 +29,6 @@ Route::resource('files', 'FileController')
 Route::resource('ciudades', 'CityController')
     ->names('cities')
     ->parameters(['ciudades' => 'city']);
+
+
+Route::post('DownloadExcel', 'DownloadExcel');

@@ -30,11 +30,7 @@
                     </button>
                 </form>
                 @role('SuperAdmin|Analysts')
-                <div class="m-l-12">
-                    <div class="fi fi-xlsx " style="margin: 0">
-                        <div class="fi-content">xls</div>
-                    </div>
-                </div>
+                    <excel token="{{csrf_token()}}"></excel>
                 @endrole
             </div>
         </div>
@@ -45,9 +41,6 @@
                is-point="{{auth()->user()->isPoint()}}"
                is-super="{{auth()->user()->isSuperAdmin()}}"
         ></users>
-
-
     </div>
-
 @endsection
 
