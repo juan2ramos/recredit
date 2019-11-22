@@ -82,7 +82,7 @@ class EntrepreneursRequest extends FormRequest
                 'isEntrepreneurs' => 1,
                 'finished_user' => (auth()->check() && auth()->user()->isAdmin()) ? auth()->user()->id : $user->id
             ]));
-            $this->sendMail($this->user());
+            $this->sendMail($user);
             return $user;
         });
         return $user;
