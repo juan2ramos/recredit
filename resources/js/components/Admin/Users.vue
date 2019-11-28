@@ -125,7 +125,7 @@
                     case 0:
                         return 'Por aprobar';
                     case 1:
-                        return 'Pre - Aprobado';
+                        return 'Aprobado';
                     case 2:
                         return `Denegado - ${credit.reason.name}`
                 }

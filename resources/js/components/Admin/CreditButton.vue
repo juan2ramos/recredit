@@ -11,7 +11,7 @@
            </select>
        </div>
        <div class="row col-16 justify-center middle-items">
-           <a @click="success" class="Link-primary">Pre aprobar crédito</a>
+           <a @click="success" class="Link-primary">Aprobar crédito</a>
            <a @click="fail" class="Link-secondary">Reprobar crédito</a>
        </div>
    </div>
@@ -46,7 +46,7 @@
                 swal({title: "Estas seguro de aprobar el crédito?", icon: "warning", buttons: true, dangerMode: true,})
                     .then((willDelete) => {
                         if (willDelete) {
-                            this.send('Credito pre aprobado', 1)
+                            this.send('Credito aprobado', 1)
                         }
                     });
             },

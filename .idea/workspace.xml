@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9dde37d-980e-4471-b7b8-b7b7dd75cffa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/EntrepreneursRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/EntrepreneursRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/UserImport.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/UserImport.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -329,7 +331,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
+            <state relative-caret-position="1120">
               <caret line="32" column="26" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="26" />
             </state>
           </provider>
@@ -338,7 +340,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/Excel.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
+            <state relative-caret-position="1925">
               <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -347,11 +349,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Requests/EntrepreneursRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
+            <state relative-caret-position="2975">
+              <caret line="93" column="40" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Imports/UsersImport.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="35">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Console/Commands/UserImport.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -368,7 +388,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>deleteFile</find>
       <find>images</find>
       <find>filesDelete</find>
       <find>$admins</find>
@@ -398,6 +417,7 @@
       <find>doCopy</find>
       <find>92905</find>
       <find>copy</find>
+      <find>94417</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -416,13 +436,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2019_11_15_072419_add_entrepreneur_to_credits_table.php" />
         <option value="$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/EntrepreneursFileController.php" />
         <option value="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/EntrepreneursFileRequest.php" />
         <option value="$PROJECT_DIR$/app/Modules/CreditRequest/Controllers/EntrepreneursController.php" />
@@ -450,7 +466,6 @@
         <option value="$PROJECT_DIR$/app/Models/Credit.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/credits/credit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/users/user.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/Controllers/UserController.php" />
         <option value="$PROJECT_DIR$/resources/js/components/Admin/CreditButton.vue" />
         <option value="$PROJECT_DIR$/app/Modules/Admin/Request/UpdateUserRequest.php" />
         <option value="$PROJECT_DIR$/.env" />
@@ -473,6 +488,8 @@
         <option value="$PROJECT_DIR$/app/Modules/Admin/Controllers/DownloadExcel.php" />
         <option value="$PROJECT_DIR$/resources/js/components/Admin/Excel.vue" />
         <option value="$PROJECT_DIR$/app/Modules/CreditRequest/Requests/EntrepreneursRequest.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/UserImport.php" />
       </list>
     </option>
   </component>
@@ -589,9 +606,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="1440" />
-    <option name="width" value="2560" />
-    <option name="height" value="1080" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -599,6 +615,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -609,19 +626,49 @@
             <path>
               <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
               <item name="recreditos" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
               <item name="recreditos" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="recreditos" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="recreditos" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="recreditos" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="recreditos" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="recreditos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="recreditos" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="storage" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -638,19 +685,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Models" />
-      <recent name="$PROJECT_DIR$/app/Modules/CreditRequest/Controllers" />
-      <recent name="$PROJECT_DIR$/public/storage" />
-      <recent name="$PROJECT_DIR$/public/images" />
-      <recent name="$PROJECT_DIR$/resources/images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/js/components/Admin" />
       <recent name="$PROJECT_DIR$/app/Modules/Admin/Controllers" />
       <recent name="$PROJECT_DIR$/app/Modules/Admin/Request" />
       <recent name="$PROJECT_DIR$/resources/views/admin/users" />
       <recent name="$PROJECT_DIR$/app/Modules/CreditRequest/Requests" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/storage" />
+      <recent name="$PROJECT_DIR$/app/Models" />
+      <recent name="$PROJECT_DIR$/app/Modules/CreditRequest/Controllers" />
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/resources/images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -766,18 +813,19 @@
       <workItem from="1574188126023" duration="28000" />
       <workItem from="1574192406855" duration="368000" />
       <workItem from="1574204285968" duration="209000" />
-      <workItem from="1574354104372" duration="19084000" />
+      <workItem from="1574354104372" duration="19533000" />
+      <workItem from="1574729505952" duration="2063000" />
+      <workItem from="1574732630851" duration="1917000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="501804000" />
+    <option name="totallyTimeSpent" value="506233000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="0" width="2560" height="1080" extended-state="0" />
-    <editor active="true" />
+    <frame x="1440" y="-147" width="2560" height="1080" extended-state="0" />
     <layout>
-      <window_info id="Database" order="0" sideWeight="0.50239694" visible="true" weight="0.1921875" />
+      <window_info id="Database" order="0" sideWeight="0.50239694" visible="true" weight="0.1078125" />
       <window_info id="Favorites" order="1" sideWeight="0.5011111" weight="0.1984375" />
       <window_info id="npm" order="2" sideWeight="0.36241612" weight="0.19296876" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -787,19 +835,19 @@
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="7" weight="0.32981783" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32981783" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="10" weight="0.2703739" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="11" weight="0.32981783" />
       <window_info anchor="bottom" x="-224" y="-651" width="2560" height="222" id="Run" order="12" sideWeight="0.49760306" weight="0.2253116" />
-      <window_info active="true" anchor="bottom" x="0" y="23" width="1440" height="877" id="Terminal" order="13" visible="true" weight="0.16778524" />
+      <window_info active="true" anchor="bottom" x="0" y="23" width="1440" height="877" id="Terminal" order="13" visible="true" weight="0.33461168" />
       <window_info anchor="bottom" id="SQL Generator" order="14" weight="0.32908458" />
       <window_info anchor="bottom" id="TypeScript" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="3" sideWeight="0.48360655" visible="true" weight="0.2566406" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="3" sideWeight="0.48360655" visible="true" weight="0.14414063" />
       <window_info anchor="right" id="Structure" order="4" sideWeight="0.5011111" side_tool="true" weight="0.33333334" />
     </layout>
     <layout-to-restore>
@@ -892,41 +940,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/credits/credit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="699">
-          <caret line="95" column="19" selection-start-line="95" selection-start-column="19" selection-end-line="95" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/queue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Commands/GenerateExcel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Commands/UserImport.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/auth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-244" />
@@ -1068,25 +1081,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://099abab8-17ba-472f-957b-93c6ffbf2e2e/schema/recreditos/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="e6a6f0d9-aee1-402c-8c33-41823630f41e">
-          <filtering>
-            <filter text="91854" />
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://099abab8-17ba-472f-957b-93c6ffbf2e2e/schema/recreditos/table/credits">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="e6a6f0d9-aee1-402c-8c33-41823630f41e">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/front/faq.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -1220,11 +1214,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2019-11-21.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2019-11-21.log" />
     <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2019-11-19.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1261,16 +1251,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Imports/ClientsImport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
+        <state relative-caret-position="1120">
           <caret line="32" column="26" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/Excel.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
+        <state relative-caret-position="1925">
           <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
           <folding>
             <element signature="n#style#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -1280,8 +1277,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/CreditRequest/Requests/EntrepreneursRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
+        <state relative-caret-position="2975">
+          <caret line="93" column="40" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/GenerateExcel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Imports/UsersImport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="76" column="5" lean-forward="true" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://099abab8-17ba-472f-957b-93c6ffbf2e2e/schema/recreditos/table/credits">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="82ef36db-f9ee-45ef-8db6-9cf4039f5ac6">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://099abab8-17ba-472f-957b-93c6ffbf2e2e/schema/recreditos/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="82ef36db-f9ee-45ef-8db6-9cf4039f5ac6">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/UserImport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="39" />
         </state>
       </provider>
     </entry>

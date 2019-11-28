@@ -41,9 +41,10 @@ class UserImport extends Command
      */
     public function handle()
     {
-        for ($i= 87777;$i < 91420; $i++ ){
+
+        for ($i= 94226;$i < 94418; $i++ ){
             $user = User::find($i);
-            $user->assignRole('Credit');
+           $user->assignRole('Credit');
         }
        //Excel::import(new UsersImport(), '1.xlsx', 'public');
     }
