@@ -2162,7 +2162,7 @@ __webpack_require__.r(__webpack_exports__);
         dangerMode: true
       }).then(function (willDelete) {
         if (willDelete) {
-          _this2.send('Credito pre aprobado', 1);
+          _this2.send('Credito aprobado', 1);
         }
       });
     },
@@ -3196,7 +3196,7 @@ __webpack_require__.r(__webpack_exports__);
           return 'Por aprobar';
 
         case 1:
-          return 'Pre - Aprobado';
+          return 'Aprobado';
 
         case 2:
           return "Denegado - ".concat(credit.reason.name);
@@ -16717,7 +16717,7 @@ var render = function() {
     _vm._v(" "),
     _c("div", { staticClass: "row col-16 justify-center middle-items" }, [
       _c("a", { staticClass: "Link-primary", on: { click: _vm.success } }, [
-        _vm._v("Pre aprobar crédito")
+        _vm._v("Aprobar crédito")
       ]),
       _vm._v(" "),
       _c("a", { staticClass: "Link-secondary", on: { click: _vm.fail } }, [
