@@ -27,6 +27,8 @@ class File extends Model
 
     public function getTemporaryUrlAttribute()
     {
-        return Storage::temporaryUrl($this->url, now()->addMinutes(5));
+        if($url = Storage::temporaryUrl($this->url, now()->addMinutes(5)))
+            return $url;
+        return '';
     }
 }
