@@ -189,7 +189,51 @@
                         </tr>
                         </thead>
                         <tbody>
-
+                        <tr v-for="(reference, i) in user.references">
+                            <td><h5 class="col-16">Referencia{{ i + 1 }}</h5></td>
+                            <td>
+                                <div class="col-16 col-m-8 Form-column">
+                                    <input
+                                            v-if="superAdmin"
+                                            type="hidden"
+                                            :name="`references[${i}][id]`"
+                                            :value="reference.id">
+                                    <div class="Form-labelContent">
+                                        <input
+                                                v-if="superAdmin"
+                                                type="text"
+                                                :value="reference.name"
+                                                :name="`references[${i}][name]`"
+                                                :id="`reference.name${i}`">
+                                        <p v-if="!superAdmin">
+                                            {{reference.name}}
+                                            <input
+                                                    type="hidden"
+                                                    :name="`references[${i}][id]`"
+                                                    :value="reference.id">
+                                            <input type="hidden" :value="reference.name"
+                                                   :name="`references[${i}][name]`">
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="col-16 col-m-8 Form-column">
+                                    <div class="Form-labelContent">
+                                        <input
+                                                v-if="superAdmin"
+                                                type="text"
+                                                :value="reference.phone"
+                                                :name="`references[${i}][phone]`"
+                                                :id="`reference.phone${i}`">
+                                        <p v-if="!superAdmin">
+                                            {{reference.phone}}
+                                            <input type="hidden" :value="reference.phone"
+                                                   :name="`references[${i}][phone]`"></p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
 

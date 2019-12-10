@@ -2527,6 +2527,50 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -17286,7 +17330,109 @@ var render = function() {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "is-full-width References" }, [
-            _vm._m(1),
+            _c("table", { staticClass: "is-full-width" }, [
+              _vm._m(1),
+              _vm._v(" "),
+              _c(
+                "tbody",
+                _vm._l(_vm.user.references, function(reference, i) {
+                  return _c("tr", [
+                    _c("td", [
+                      _c("h5", { staticClass: "col-16" }, [
+                        _vm._v("Referencia" + _vm._s(i + 1))
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("div", { staticClass: "col-16 col-m-8 Form-column" }, [
+                        _vm.superAdmin
+                          ? _c("input", {
+                              attrs: {
+                                type: "hidden",
+                                name: "references[" + i + "][id]"
+                              },
+                              domProps: { value: reference.id }
+                            })
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "Form-labelContent" }, [
+                          _vm.superAdmin
+                            ? _c("input", {
+                                attrs: {
+                                  type: "text",
+                                  name: "references[" + i + "][name]",
+                                  id: "reference.name" + i
+                                },
+                                domProps: { value: reference.name }
+                              })
+                            : _vm._e(),
+                          _vm._v(" "),
+                          !_vm.superAdmin
+                            ? _c("p", [
+                                _vm._v(
+                                  "\n                                        " +
+                                    _vm._s(reference.name) +
+                                    "\n                                        "
+                                ),
+                                _c("input", {
+                                  attrs: {
+                                    type: "hidden",
+                                    name: "references[" + i + "][id]"
+                                  },
+                                  domProps: { value: reference.id }
+                                }),
+                                _vm._v(" "),
+                                _c("input", {
+                                  attrs: {
+                                    type: "hidden",
+                                    name: "references[" + i + "][name]"
+                                  },
+                                  domProps: { value: reference.name }
+                                })
+                              ])
+                            : _vm._e()
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("div", { staticClass: "col-16 col-m-8 Form-column" }, [
+                        _c("div", { staticClass: "Form-labelContent" }, [
+                          _vm.superAdmin
+                            ? _c("input", {
+                                attrs: {
+                                  type: "text",
+                                  name: "references[" + i + "][phone]",
+                                  id: "reference.phone" + i
+                                },
+                                domProps: { value: reference.phone }
+                              })
+                            : _vm._e(),
+                          _vm._v(" "),
+                          !_vm.superAdmin
+                            ? _c("p", [
+                                _vm._v(
+                                  "\n                                        " +
+                                    _vm._s(reference.phone) +
+                                    "\n                                        "
+                                ),
+                                _c("input", {
+                                  attrs: {
+                                    type: "hidden",
+                                    name: "references[" + i + "][phone]"
+                                  },
+                                  domProps: { value: reference.phone }
+                                })
+                              ])
+                            : _vm._e()
+                        ])
+                      ])
+                    ])
+                  ])
+                }),
+                0
+              )
+            ]),
             _vm._v(" "),
             _c(
               "button",
@@ -17450,18 +17596,14 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("table", { staticClass: "is-full-width" }, [
-      _c("thead", [
-        _c("tr", [
-          _c("th"),
-          _vm._v(" "),
-          _c("th", [_vm._v("Nombre")]),
-          _vm._v(" "),
-          _c("th", [_vm._v("Celular")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("tbody")
+    return _c("thead", [
+      _c("tr", [
+        _c("th"),
+        _vm._v(" "),
+        _c("th", [_vm._v("Nombre")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Celular")])
+      ])
     ])
   }
 ]
