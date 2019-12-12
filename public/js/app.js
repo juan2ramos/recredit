@@ -2285,6 +2285,290 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -16542,9 +16826,768 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _c("div", [
+    _c(
+      "form",
+      {
+        staticClass: "Request-form col-16",
+        attrs: {
+          action: "/admin/usuarios/" + _vm.user.document,
+          method: "post"
+        }
+      },
+      [
+        _c("input", {
+          attrs: { name: "_method", type: "hidden", value: "PUT" }
+        }),
+        _vm._v(" "),
+        _c("input", {
+          attrs: { name: "_token", type: "hidden" },
+          domProps: { value: _vm.token }
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("h4", { staticClass: "col-16 h-4" }, [
+            _vm._v("Datos del crédito")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-8" }, [
+            _c("p", [
+              _c("b", [_vm._v("Estado del credito:")]),
+              _vm._v(
+                " " + _vm._s(_vm.credit.state === 1 ? "Aprobado" : "Denegado")
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _c("b", [_vm._v("Fecha de solicitud: ")]),
+              _vm._v(_vm._s(_vm.credit.created_at))
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _c("b", [_vm._v("Fecha de cierre: ")]),
+              _vm._v(_vm._s(_vm.credit.check_date))
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-8" }, [
+            _c("p", [
+              _c("b", [_vm._v("Número de solicitudes:")]),
+              _vm._v(" " + _vm._s(_vm.credit.number_requested))
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("h4", { staticClass: "col-16 h-4" }, [_vm._v("Datos personales")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-16 col-m-8 Form-column" }, [
+            _c("div", { staticClass: "Form-labelContent" }, [
+              _c("label", { attrs: { for: "name" } }, [_vm._v("Nombre")]),
+              _vm._v(" "),
+              _vm.superAdmin
+                ? _c("input", {
+                    attrs: { type: "text", name: "name", id: "name" },
+                    domProps: { value: _vm.user.name }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.superAdmin
+                ? _c("p", [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(_vm.user.name) +
+                        "\n                        "
+                    ),
+                    _c("input", {
+                      attrs: { type: "hidden", name: "name" },
+                      domProps: { value: _vm.user.name }
+                    })
+                  ])
+                : _vm._e()
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "Form-labelContent" }, [
+              _c("label", { attrs: { for: "document_type" } }, [
+                _vm._v("Tipo de documento")
+              ]),
+              _vm._v(" "),
+              _vm.superAdmin
+                ? _c(
+                    "select",
+                    {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.selectedUser,
+                          expression: "selectedUser"
+                        }
+                      ],
+                      staticClass: "Request-formSelect",
+                      attrs: { name: "document_type", id: "document_type" },
+                      on: {
+                        change: function($event) {
+                          var $$selectedVal = Array.prototype.filter
+                            .call($event.target.options, function(o) {
+                              return o.selected
+                            })
+                            .map(function(o) {
+                              var val = "_value" in o ? o._value : o.value
+                              return val
+                            })
+                          _vm.selectedUser = $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        }
+                      }
+                    },
+                    [
+                      _c("option", { attrs: { value: "null", selected: "" } }, [
+                        _vm._v("Select a name")
+                      ]),
+                      _vm._v(" "),
+                      _vm._l(_vm.typeDocument, function(option) {
+                        return _c("option", { domProps: { value: option } }, [
+                          _vm._v(_vm._s(option))
+                        ])
+                      })
+                    ],
+                    2
+                  )
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.superAdmin
+                ? _c("p", [
+                    _vm._v(
+                      _vm._s(_vm.selectedUser) + "\n                        "
+                    ),
+                    _c("input", {
+                      attrs: { type: "hidden", name: "document_type" },
+                      domProps: { value: _vm.selectedUser }
+                    })
+                  ])
+                : _vm._e()
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "Form-labelContent" }, [
+              _c("label", { attrs: { for: "phone" } }, [_vm._v("Teléfono")]),
+              _vm._v(" "),
+              _vm.superAdmin
+                ? _c("input", {
+                    attrs: { type: "text", name: "phone", id: "phone" },
+                    domProps: { value: _vm.user.client.phone }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.superAdmin
+                ? _c("p", [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.user.client.phone
+                            ? _vm.user.client.phone
+                            : "Sin Teléfono"
+                        ) +
+                        "\n                        "
+                    ),
+                    _c("input", {
+                      attrs: { type: "hidden", name: "phone" },
+                      domProps: {
+                        value: _vm.user.client.phone
+                          ? _vm.user.client.phone
+                          : ""
+                      }
+                    })
+                  ])
+                : _vm._e()
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "Form-labelContent" }, [
+              _c("label", { attrs: { for: "email" } }, [
+                _vm._v("Correo Electrónico")
+              ]),
+              _vm._v(" "),
+              _vm.superAdmin
+                ? _c("input", {
+                    attrs: { type: "email", name: "email", id: "email" },
+                    domProps: { value: _vm.user.email }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.superAdmin
+                ? _c("p", [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(_vm.user.email) +
+                        "\n                        "
+                    ),
+                    _c("input", {
+                      attrs: { type: "hidden", name: "email" },
+                      domProps: { value: _vm.user.email }
+                    })
+                  ])
+                : _vm._e()
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "Form-labelContent" }, [
+              _c("label", { attrs: { for: "birth_city" } }, [_vm._v("Ciudad")]),
+              _vm._v(" "),
+              _vm.superAdmin
+                ? _c(
+                    "select",
+                    {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.selectedCity,
+                          expression: "selectedCity"
+                        }
+                      ],
+                      staticClass: "Request-formSelect",
+                      attrs: { id: "birth_city" },
+                      on: {
+                        change: [
+                          function($event) {
+                            var $$selectedVal = Array.prototype.filter
+                              .call($event.target.options, function(o) {
+                                return o.selected
+                              })
+                              .map(function(o) {
+                                var val = "_value" in o ? o._value : o.value
+                                return val
+                              })
+                            _vm.selectedCity = $event.target.multiple
+                              ? $$selectedVal
+                              : $$selectedVal[0]
+                          },
+                          _vm.change
+                        ]
+                      }
+                    },
+                    _vm._l(_vm.cities, function(city) {
+                      return _c("option", { domProps: { value: city.id } }, [
+                        _vm._v(_vm._s(city.name))
+                      ])
+                    }),
+                    0
+                  )
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.superAdmin
+                ? _c("p", [
+                    _vm._v(
+                      _vm._s(
+                        _vm.cities.filter(function(c) {
+                          return c.id === _vm.selectedCity
+                        })[0].name
+                      )
+                    )
+                  ])
+                : _vm._e()
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "Form-labelContent" }, [
+              _c("label", { attrs: { for: "residency_city" } }, [
+                _vm._v("Ciudad de residencia")
+              ]),
+              _vm._v(" "),
+              _vm.superAdmin
+                ? _c("input", {
+                    attrs: {
+                      type: "text",
+                      name: "residency_city",
+                      id: "residency_city"
+                    },
+                    domProps: { value: _vm.user.client.residency_city }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.superAdmin
+                ? _c("p", [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(_vm.user.client.residency_city) +
+                        "\n                        "
+                    ),
+                    _c("input", {
+                      attrs: { type: "hidden", name: "residency_city" },
+                      domProps: { value: _vm.user.client.residency_city }
+                    })
+                  ])
+                : _vm._e()
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-16 col-m-8 Form-column" }, [
+            _c("div", { staticClass: "Form-labelContent" }, [
+              _c("label", { attrs: { for: "last_name" } }, [
+                _vm._v("Apellido")
+              ]),
+              _vm._v(" "),
+              _vm.superAdmin
+                ? _c("input", {
+                    attrs: { type: "text", name: "last_name", id: "last_name" },
+                    domProps: { value: _vm.user.last_name }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.superAdmin
+                ? _c("p", [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(_vm.user.last_name) +
+                        "\n                        "
+                    ),
+                    _c("input", {
+                      attrs: { type: "hidden", name: "last_name" },
+                      domProps: { value: _vm.user.last_name }
+                    })
+                  ])
+                : _vm._e()
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "Form-labelContent" }, [
+              _c("label", { attrs: { for: "document" } }, [
+                _vm._v("Documento")
+              ]),
+              _vm._v(" "),
+              _c("input", {
+                attrs: { type: "text", name: "document", id: "document" },
+                domProps: { value: _vm.user.document }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "Form-labelContent" }, [
+              _c("label", { attrs: { for: "mobile" } }, [_vm._v("Celular")]),
+              _vm._v(" "),
+              _vm.superAdmin
+                ? _c("input", {
+                    attrs: { type: "text", name: "mobile", id: "mobile" },
+                    domProps: { value: _vm.user.client.mobile }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.superAdmin
+                ? _c("p", [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(_vm.user.client.mobile) +
+                        "\n                        "
+                    ),
+                    _c("input", {
+                      attrs: { type: "hidden", name: "mobile" },
+                      domProps: { value: _vm.user.client.mobile }
+                    })
+                  ])
+                : _vm._e()
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "Form-labelContent" }, [
+              _c("label", { attrs: { for: "address" } }, [_vm._v("Dirección")]),
+              _vm._v(" "),
+              _vm.superAdmin
+                ? _c("input", {
+                    attrs: { type: "text", name: "address", id: "address" },
+                    domProps: { value: _vm.user.client.address }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.superAdmin
+                ? _c("p", [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(_vm.user.client.address) +
+                        "\n                        "
+                    ),
+                    _c("input", {
+                      attrs: { type: "hidden", name: "address" },
+                      domProps: { value: _vm.user.client.address }
+                    })
+                  ])
+                : _vm._e()
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "Form-labelContent" }, [
+              _c("label", { attrs: { for: "point" } }, [_vm._v("Punto")]),
+              _vm._v(" "),
+              _vm.superAdmin
+                ? _c(
+                    "select",
+                    {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.selectedPoint,
+                          expression: "selectedPoint"
+                        }
+                      ],
+                      staticClass: "Request-formSelect",
+                      staticStyle: { "text-transform": "capitalize" },
+                      attrs: { id: "point", name: "point" },
+                      on: {
+                        change: function($event) {
+                          var $$selectedVal = Array.prototype.filter
+                            .call($event.target.options, function(o) {
+                              return o.selected
+                            })
+                            .map(function(o) {
+                              var val = "_value" in o ? o._value : o.value
+                              return val
+                            })
+                          _vm.selectedPoint = $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        }
+                      }
+                    },
+                    [
+                      _c("option", { attrs: { value: "0" } }, [
+                        _vm._v("Seleccione un punto")
+                      ]),
+                      _vm._v(" "),
+                      _vm._l(_vm.pointsLocal, function(point) {
+                        return _c("option", { domProps: { value: point.id } }, [
+                          _vm._v(_vm._s(point.name))
+                        ])
+                      })
+                    ],
+                    2
+                  )
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.superAdmin
+                ? _c("p", { staticStyle: { "text-transform": "capitalize" } }, [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.pointsLocal.filter(function(p) {
+                            return p.id === _vm.selectedPoint
+                          })[0].name
+                        ) +
+                        "\n                        "
+                    ),
+                    _c("input", {
+                      attrs: { type: "hidden", name: "point" },
+                      domProps: { value: _vm.selectedPoint }
+                    })
+                  ])
+                : _vm._e()
+            ]),
+            _vm._v(" "),
+            _vm.superAdmin
+              ? _c("div", { staticClass: "Form-labelContent" }, [
+                  _c("label", { attrs: { for: "password" } }, [
+                    _vm._v("Contraseña")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    attrs: {
+                      type: "password",
+                      name: "password",
+                      id: "password"
+                    }
+                  })
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            !_vm.superAdmin
+              ? _c("p", [
+                  _c("input", {
+                    attrs: { type: "hidden", value: "", name: "password" }
+                  })
+                ])
+              : _vm._e()
+          ])
+        ]),
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("h4", { staticClass: "col-16 h-4" }, [
+            _vm._v("Referencias personales ")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "is-full-width References" }, [
+            _c("table", { staticClass: "is-full-width" }, [
+              _vm._m(1),
+              _vm._v(" "),
+              _c(
+                "tbody",
+                _vm._l(_vm.user.references, function(reference, i) {
+                  return _c("tr", [
+                    _c("td", [
+                      _c("h5", { staticClass: "col-16" }, [
+                        _vm._v("Referencia" + _vm._s(i + 1))
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("div", { staticClass: "col-16 col-m-8 Form-column" }, [
+                        _vm.superAdmin
+                          ? _c("input", {
+                              attrs: {
+                                type: "hidden",
+                                name: "references[" + i + "][id]"
+                              },
+                              domProps: { value: reference.id }
+                            })
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "Form-labelContent" }, [
+                          _vm.superAdmin
+                            ? _c("input", {
+                                attrs: {
+                                  type: "text",
+                                  name: "references[" + i + "][name]",
+                                  id: "reference.name" + i
+                                },
+                                domProps: { value: reference.name }
+                              })
+                            : _vm._e(),
+                          _vm._v(" "),
+                          !_vm.superAdmin
+                            ? _c("p", [
+                                _vm._v(
+                                  "\n                                        " +
+                                    _vm._s(reference.name) +
+                                    "\n                                        "
+                                ),
+                                _c("input", {
+                                  attrs: {
+                                    type: "hidden",
+                                    name: "references[" + i + "][id]"
+                                  },
+                                  domProps: { value: reference.id }
+                                }),
+                                _vm._v(" "),
+                                _c("input", {
+                                  attrs: {
+                                    type: "hidden",
+                                    name: "references[" + i + "][name]"
+                                  },
+                                  domProps: { value: reference.name }
+                                })
+                              ])
+                            : _vm._e()
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("div", { staticClass: "col-16 col-m-8 Form-column" }, [
+                        _c("div", { staticClass: "Form-labelContent" }, [
+                          _vm.superAdmin
+                            ? _c("input", {
+                                attrs: {
+                                  type: "text",
+                                  name: "references[" + i + "][phone]",
+                                  id: "reference.phone" + i
+                                },
+                                domProps: { value: reference.phone }
+                              })
+                            : _vm._e(),
+                          _vm._v(" "),
+                          !_vm.superAdmin
+                            ? _c("p", [
+                                _vm._v(
+                                  "\n                                        " +
+                                    _vm._s(reference.phone) +
+                                    "\n                                        "
+                                ),
+                                _c("input", {
+                                  attrs: {
+                                    type: "hidden",
+                                    name: "references[" + i + "][phone]"
+                                  },
+                                  domProps: { value: reference.phone }
+                                })
+                              ])
+                            : _vm._e()
+                        ])
+                      ])
+                    ])
+                  ])
+                }),
+                0
+              )
+            ]),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "m-b-40 References-btn",
+                attrs: { type: "button" },
+                on: { click: _vm.doCopy }
+              },
+              [_vm._v("copiar referencias!")]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "row col-16" },
+          [
+            _vm.superAdmin || _vm.analyst
+              ? _c("vue-dropzone", {
+                  ref: "FilesIDAdmin",
+                  attrs: {
+                    id: "MyDropZoneFileAdmin",
+                    options: _vm.dropzoneOptions
+                  },
+                  on: {
+                    "vdropzone-file-added": _vm.addFile,
+                    "vdropzone-success": _vm.successFile,
+                    "vdropzone-error": _vm.error
+                  }
+                })
+              : _vm._e(),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "row m-t-20 justify-around" },
+              _vm._l(_vm.userFiles, function(file, index) {
+                return _c("div", { staticClass: "File col-3" }, [
+                  _vm.superAdmin || _vm.analyst
+                    ? _c(
+                        "div",
+                        {
+                          staticClass: "File-delete",
+                          on: {
+                            click: function($event) {
+                              return _vm.deleteFile(file, index)
+                            }
+                          }
+                        },
+                        [_vm._v("x")]
+                      )
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "m-auto is-text-center" }, [
+                    _c("div", { staticClass: "m-auto is-text-center" }, [
+                      _c("img", {
+                        attrs: {
+                          width: "80px",
+                          src: file.temporaryUrl,
+                          alt: ""
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "is-text-center" }, [
+                    _vm._v(_vm._s(file.name)),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      { attrs: { target: "_blank", href: file.temporaryUrl } },
+                      [_vm._v("Ver archivo")]
+                    )
+                  ])
+                ])
+              }),
+              0
+            )
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "row col-16 m-t-20 m-b-20" }, [
+          _c("h4", { staticClass: "col-16 h-4" }, [
+            _vm._v("Selecciona una tipificación (Opcional)")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "is-full-width" }, [
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.typing,
+                    expression: "typing"
+                  }
+                ],
+                staticStyle: { margin: "0 !important" },
+                attrs: { name: "typing_id" },
+                on: {
+                  change: function($event) {
+                    var $$selectedVal = Array.prototype.filter
+                      .call($event.target.options, function(o) {
+                        return o.selected
+                      })
+                      .map(function(o) {
+                        var val = "_value" in o ? o._value : o.value
+                        return val
+                      })
+                    _vm.typing = $event.target.multiple
+                      ? $$selectedVal
+                      : $$selectedVal[0]
+                  }
+                }
+              },
+              [
+                _c("option", { attrs: { value: "" } }, [_vm._v("NINGUNA")]),
+                _vm._v(" "),
+                _vm._l(_vm.typings, function(typing) {
+                  return _c("option", { domProps: { value: typing.id } }, [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(typing.analyst_name) +
+                        "\n                    "
+                    )
+                  ])
+                })
+              ],
+              2
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _vm.analyst
+          ? _c("div", { staticClass: "row justify-center " }, [
+              _c(
+                "button",
+                { attrs: { type: "submit", disabled: _vm.sending } },
+                [_vm._v("Actualizar")]
+              )
+            ])
+          : _vm._e()
+      ]
+    )
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-16 col-m-8 Form-column" }),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-16 col-m-8 Form-column" })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th"),
+        _vm._v(" "),
+        _c("th", [_vm._v("Nombre")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Celular")])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
