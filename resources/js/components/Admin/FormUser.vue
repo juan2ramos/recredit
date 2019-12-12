@@ -7,12 +7,14 @@
                 <h4 class="col-16 h-4">Datos del crédito</h4>
                 <div class="col-8">
                     <p><b>Estado del credito:</b> {{credit.state === 1 ? 'Aprobado':'Denegado'}}</p>
-
+                    <p v-if="credit.reasons_id"><b>Denegado por:</b> {{credit.reason.name}}</p>
                     <p><b>Fecha de solicitud: </b>{{credit.created_at}}</p>
                     <p><b>Fecha de cierre: </b>{{credit.check_date}}</p>
                 </div>
                 <div class="col-8">
                     <p><b>Número de solicitudes:</b> {{credit.number_requested}}</p>
+                    <p><b>Usuario que finalizó la solicitud:</b> {{credit.finished.name}}</p>
+                    <p><b>Usuario que valido el crédito:</b> {{credit.reviewed.name}}</p>
                 </div>
             </div>
             <div class="row">
@@ -340,7 +342,8 @@
             doCopy: function () {
                 const r1 = this.user.references['0'];
                 const r2 = this.user.references['1'];
-                this.message = `<table><tbody>
+                this.message =
+                    `<table><tbody>
 <tr>
     <td>Referencia1</td>
     <td>${r1.name}</td>

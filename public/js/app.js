@@ -2569,6 +2569,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 
@@ -16859,6 +16861,13 @@ var render = function() {
               )
             ]),
             _vm._v(" "),
+            _vm.credit.reasons_id
+              ? _c("p", [
+                  _c("b", [_vm._v("Denegado por:")]),
+                  _vm._v(" " + _vm._s(_vm.credit.reason.name))
+                ])
+              : _vm._e(),
+            _vm._v(" "),
             _c("p", [
               _c("b", [_vm._v("Fecha de solicitud: ")]),
               _vm._v(_vm._s(_vm.credit.created_at))
@@ -16874,6 +16883,16 @@ var render = function() {
             _c("p", [
               _c("b", [_vm._v("Número de solicitudes:")]),
               _vm._v(" " + _vm._s(_vm.credit.number_requested))
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _c("b", [_vm._v("Usuario que finalizó la solicitud:")]),
+              _vm._v(" " + _vm._s(_vm.credit.finished.name))
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _c("b", [_vm._v("Usuario que valido el crédito:")]),
+              _vm._v(" " + _vm._s(_vm.credit.reviewed.name))
             ])
           ])
         ]),
