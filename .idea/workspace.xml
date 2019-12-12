@@ -355,14 +355,7 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/FormUser.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="344" column="32" selection-start-line="344" selection-start-column="32" selection-end-line="344" selection-end-column="32" />
-              <folding>
-                <element signature="n#style#0;n#select#0;n#div#0;n#div#5;n#form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -802,12 +795,12 @@
       <workItem from="1575214560368" duration="3298000" />
       <workItem from="1575507667890" duration="375000" />
       <workItem from="1575558045897" duration="248000" />
-      <workItem from="1576013177475" duration="1555000" />
+      <workItem from="1576013177475" duration="1598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="512370000" />
+    <option name="totallyTimeSpent" value="512413000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -918,11 +911,6 @@
           <url>file://$PROJECT_DIR$/resources/js/components/Front/Modal.vue</url>
           <line>103</line>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/resources/js/components/Admin/FormUser.vue</url>
-          <line>1</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1305,14 +1293,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/FormUser.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="344" column="32" selection-start-line="344" selection-start-column="32" selection-end-line="344" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#select#0;n#div#0;n#div#5;n#form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
