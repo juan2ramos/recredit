@@ -356,8 +356,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/FormUser.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="209" column="50" lean-forward="true" selection-start-line="209" selection-start-column="50" selection-end-line="209" selection-end-column="50" />
+            <state relative-caret-position="168">
+              <caret line="344" column="32" selection-start-line="344" selection-start-column="32" selection-end-line="344" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#select#0;n#div#0;n#div#5;n#form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
               </folding>
@@ -404,7 +404,6 @@
       <find>92913</find>
       <find>92912</find>
       <find>91854</find>
-      <find>name</find>
       <find>refere</find>
       <find>doCopy</find>
       <find>92905</find>
@@ -414,8 +413,9 @@
       <find>aproba</find>
       <find>files</find>
       <find>dd</find>
-      <find>DD</find>
       <find>Referencias</find>
+      <find>DD</find>
+      <find>name</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -802,12 +802,12 @@
       <workItem from="1575214560368" duration="3298000" />
       <workItem from="1575507667890" duration="375000" />
       <workItem from="1575558045897" duration="248000" />
-      <workItem from="1576013177475" duration="761000" />
+      <workItem from="1576013177475" duration="1555000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="511576000" />
+    <option name="totallyTimeSpent" value="512370000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1306,8 +1306,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/Admin/FormUser.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="209" column="50" lean-forward="true" selection-start-line="209" selection-start-column="50" selection-end-line="209" selection-end-column="50" />
+        <state relative-caret-position="168">
+          <caret line="344" column="32" selection-start-line="344" selection-start-column="32" selection-end-line="344" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#select#0;n#div#0;n#div#5;n#form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>

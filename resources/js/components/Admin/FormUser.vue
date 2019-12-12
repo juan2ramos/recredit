@@ -342,45 +342,7 @@
             doCopy: function () {
                 const r1 = this.user.references['0'];
                 const r2 = this.user.references['1'];
-                this.message =
-                    `<table><tbody>
-<tr>
-    <td>Referencia1</td>
-    <td>${r1.name}</td>
-    <td>${r1.phone}</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Referencia2</td>
-<td>${r2.name}</td>
-<td>${r2.phone}</td>
-</tr>
-</tbody>
-</table>`;
+                this.message = ``;
                 this.$copyText(this.message).then(function (e) {
                     alert('Copied')
 

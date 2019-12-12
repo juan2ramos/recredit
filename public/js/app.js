@@ -2628,7 +2628,7 @@ __webpack_require__.r(__webpack_exports__);
     doCopy: function doCopy() {
       var r1 = this.user.references['0'];
       var r2 = this.user.references['1'];
-      this.message = "<table><tbody>\n<tr>\n    <td>Referencia1</td>\n    <td>".concat(r1.name, "</td>\n    <td>").concat(r1.phone, "</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Referencia2</td>\n<td>").concat(r2.name, "</td>\n<td>").concat(r2.phone, "</td>\n</tr>\n</tbody>\n</table>");
+      this.message = "";
       this.$copyText(this.message).then(function (e) {
         alert('Copied');
       }, function (e) {
