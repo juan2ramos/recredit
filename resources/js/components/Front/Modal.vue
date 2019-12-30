@@ -138,7 +138,7 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td>Cuotas</td>
+                            <td>Cuotas quincenales  </td>
                             <td>Interés</td>
                         </tr>
 

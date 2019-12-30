@@ -24,11 +24,15 @@
             <div class="col-16 col-m-8 col-l-5 m-b-12">
                 <p><b>Cedula : </b>{{$user->document}}</p>
             </div>
+
             <div class="col-16 col-m-8 col-l-5 m-b-12">
-                <p><b>Correo : </b>{{$user->email}}</p>
+                <p><b>Teléfono : </b>{{$user->client->phone}}</p>
             </div>
             <div class="col-16 col-m-8 col-l-5 m-b-12">
                 <p><b>celular : </b>{{$user->client->mobile}}</p>
+            </div>
+            <div class="col-16 col-m-8 col-l-5 m-b-12">
+                <p><b>Correo : </b>{{$user->email}}</p>
             </div>
             <div class="col-16 col-m-8 col-l-5 m-b-12">
                 <p><b>Dirección : </b>{{$user->client->address}}</p>
@@ -39,11 +43,7 @@
             <div class="col-16 col-m-8 col-l-5 m-b-12">
                 <p style="text-transform: capitalize"><b>Punto : </b>{{$user->client->point->name}}</p>
             </div>
-            <div class="col-16 col-m-8 col-l-5 m-b-12">
-                <p><b>Teléfono : </b>{{$user->client->phone}}</p>
-            </div>
-
-
+            
             <h3 class="col-16 h-3 m-t-20">Referencias</h3>
             <div class="row col-16 is-text-center">
                 <div class="col-5 m-b-12">
@@ -61,7 +61,7 @@
                     <div class="col-16 row ">
 
                         <div class="col-5 m-b-12">
-                            <p>Referencia {{$loop->iteration}}</p>
+                            <p>Referencia{{$loop->iteration}}</p>
                         </div>
                         <div class="col-5 m-b-12">
                             <p>{{$reference->name}}</p>
@@ -99,12 +99,3 @@
     </div>
 
 @endsection
-<style scope lang="scss">
-    p {
-        text-transform: uppercase;
-    }
-
-    p b {
-        text-transform: capitalize;
-    }
-</style>

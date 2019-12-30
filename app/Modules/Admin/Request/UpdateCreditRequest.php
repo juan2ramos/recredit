@@ -18,7 +18,8 @@ class UpdateCreditRequest extends FormRequest
     {
         return [
             'reason' => 'required',
-            'approved' => 'required'
+            'approved' => 'required',
+            'value_data_credit' => 'required',
         ];
     }
 
@@ -31,10 +32,11 @@ class UpdateCreditRequest extends FormRequest
             'reasons_id' => $this->input('reason'),
             'reviewed_user' => Auth::user()->id,
             'typing_id' => $this->input('typing'),
+            'value_data_credit' => $this->input('value_data_credit'),
         ]);
 
         $this->credit->save();
-        $this->sendMail($this->credit->user);
+        //$this->sendMail($this->credit->user);
     }
 
     private function sendMail($user)

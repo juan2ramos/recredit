@@ -59,7 +59,9 @@
                     mobile-old="{{old('mobile',$client->mobile)}}"
             ></sms>
 
-            <div class="Request-formGroup">
+            <div class="Request-formGroup {{$errors->has('phone')?'error':''}}"
+                data-errorMessage="El teléfono debe tener 7 números"
+                >
                 <label for="phone">Teléfono fijo</label>
                 <input value="{{old('phone',$client->phone)}}" type="text" id="phone" name="phone">
             </div>

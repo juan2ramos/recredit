@@ -11,6 +11,7 @@ use App\Modules\Admin\Request\UpdateUserRequest;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Credit;
 use Illuminate\Support\Facades\Gate;
 
 class UserController extends Controller
@@ -47,12 +48,11 @@ class UserController extends Controller
 
     public function show(User $user)
     {
-        $user->load(['client.point.city', 'references', 'files', 'credit']);
+        $user->load(['client.point.city', 'references', 'files', 'credit', 'validations']);
         $credit = $user->credit->load('reason', 'assigned', 'reviewed', 'finished');
         $cities = City::orderBy('name')->get();
         $points = Point::orderBy('name')->get();
         $typings = Typing::all();
-
         return view('admin.users.user', compact('user', 'points', 'cities', 'credit', 'typings'));
     }
 

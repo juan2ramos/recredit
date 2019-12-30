@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="container container-admin mt">
-        <div class="row justify-between middle-items">
+        <div class="row justify-between middle-items"> 
 
             <form-user
                     :user="{{$user}}"
@@ -18,3 +18,4 @@
         </div>
     </div>
 @endsection
+

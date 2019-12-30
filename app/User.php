@@ -8,6 +8,7 @@ use App\Models\CreditHistory;
 use App\Models\File;
 use App\Models\Point;
 use App\Models\Reference;
+use App\Models\Validation;
 use App\Notifications\MailResetPasswordNotification;
 use Carbon\Carbon;
 use Carbon\Traits\Date;
@@ -62,6 +63,11 @@ class User extends Authenticatable
     public function historyCredit()
     {
         return $this->hasMany(CreditHistory::class);
+    }
+
+    public function validations(){
+
+        return $this->hasOne(Validation::class);
     }
 
     public function credit()

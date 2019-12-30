@@ -14,7 +14,9 @@ class Credit extends Model
     ];
     protected $appends = ['reconsideration'];
     protected $fillable = ['priority', 'state', 'validated', 'check_date',
-        'number_requested', 'finished_user', 'assigned_user', 'reviewed_user', 'reasons_id', 'user_id', 'isEntrepreneurs', 'typing_id'];
+        'number_requested', 'finished_user', 'assigned_user',
+        'reviewed_user', 'reasons_id', 'user_id', 'isEntrepreneurs',
+        'typing_id', 'value_data_credit'];
 
     public function user()
     {

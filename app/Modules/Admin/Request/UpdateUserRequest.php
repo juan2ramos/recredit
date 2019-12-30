@@ -11,7 +11,7 @@ class UpdateUserRequest extends FormRequest
 
     public function authorize()
     {
-        return (auth()->user()->isSuperAdmin() || auth()->user()->isDocumentary()  || auth()->user()->isAnalysts() ) && $this->user->credit->validated;
+        return (auth()->user()->isSuperAdmin() || auth()->user()->isDocumentary() || auth()->user()->isAnalysts()) && $this->user->credit->validated;
     }
 
     public function rules()
@@ -41,6 +41,7 @@ class UpdateUserRequest extends FormRequest
     {
         $data = $this->all();
 
+
         if ($data['password'] != null) {
             $data['password'] = bcrypt($data['password']);
         } else {
@@ -52,7 +53,22 @@ class UpdateUserRequest extends FormRequest
         $user->update($data);
         $user->client->update($data);
         $user->credit->update($data);
-        $this->updateReferences($user, $data['references']);
+
+        if ($user->validations) {
+            $data = $this->mergeData($data);
+            $user->validations->update($data);
+        } else {
+            $user->validations()->create([
+                'documentValidation' => $data['documentValidation'] ?? 0,
+                'authorization' => $data['authorization'] ?? 0,
+                'fingerprint' => $data['fingerprint'] ?? 0,
+                'dataCredit' => $data['dataCredit'] ?? 0,
+                'observation' => $data['observation'] ?? '',
+                'other' => $data['other'] ?? '',
+            ]);
+        }
+        if(isset($data['references']))
+            $this->updateReferences($user, $data['references']);
 
     }
 
@@ -69,6 +85,19 @@ class UpdateUserRequest extends FormRequest
 
             $reference->save();
         }
+    }
+    private function mergeData($data){
+        $validation =
+            [
+                'documentValidation' => 0,
+                'authorization' => 0,
+                'fingerprint' => 0,
+                'observation' => '',
+                'other' => '',
+                'dataCredit' => 0
+            ];
+        ;
+        return array_merge($validation, $data);
     }
 
 }

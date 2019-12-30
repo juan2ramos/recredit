@@ -25,7 +25,7 @@ class ClientRequest extends FormRequest
                     $fail('No se ha validado el número de celular');
                 }
             }],
-            'phone' => '',
+            'phone' => ['nullable','size:7','not_regex:/[^0-9]/'],
             'point' => 'required'
         ];
     }

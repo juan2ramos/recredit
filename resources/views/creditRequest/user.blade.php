@@ -64,11 +64,10 @@
             <div class="Request-formGroup {{$errors->has('document')?'error':''}}"
                  data-errorMessage="El campo es requerido o documento ya ha sido registrado">
                 <label for="document">Nº de documento</label>
-                <input
-                        value="{{old('document', $user->document ? $user->document : app('request')->input('identification'))}}"
-                        type="text"
-                        id="document"
-                        name="document">
+                <Document
+                    document-old="{{old('document', $user->document ? $user->document : app('request')->input('identification'))}}"
+                />
+
             </div>
             <div class="Request-formGroup {{$errors->has('policyPinkLife') ? 'error':'' }}"
                  data-errorMessage="Debes aceptar las politicas de Pink Life">
@@ -77,7 +76,7 @@
                            value="1" {{old('policyPinkLife') || $user->document ?'checked':''}}>
                     <label for="policyPinkLife">
                         Acepto las politicas de uso del sitio de PINK LIFE SAS
-                        <a target="_blank" href="{{url('files/politicas-creditos-lilipink.pdf')}}"
+                        <a target="_blank" href="{{url('files/POLÍTICAS_DE_PRIVACIDAD_EN_LA_INFORMACIÓN_PINK_LIFE_S.A.S._2019.pdf')}}"
                            class="link-show">Descargar</a>
                     </label>
                 </p>
@@ -90,7 +89,7 @@
                            value="1" {{old('privacyPolicy') || $user->document ? 'checked':'' }}>
                     <label for="privacyPolicy">
                         Acepto las politicas de privacidad de datos
-                        <a target="_blank" href="{{url('files/politicas-datos-creditos-lilipink.pdf')}}"
+                        <a target="_blank" href="{{url('files/POLÍTICAS_DE_PRIVACIDAD_EN_LA_INFORMACIÓN_PINK_LIFE_S.A.S._2019.pdf')}}"
                            class="link-show">Descargar</a>
                     </label>
                 </p>
