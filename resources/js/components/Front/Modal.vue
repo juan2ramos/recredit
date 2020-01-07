@@ -95,7 +95,7 @@
                         <p>
                         <ul>
                         <li> - Puedes diferir tus compras de 1 a 12 cuotas quincenales. </li>
-                        <li>  - Los pagos de cada cuota podrás realizarlos en cualquier tienda Lili Pink a nivel Nacional
+                        <li> - Los pagos de cada cuota podrás realizarlos en cualquier tienda Lili Pink a nivel Nacional
                           o solicitando un Link de pago en nuestra línea de atención en Bogotá́ 6702400 Ext: 127, 133 o
                           236,  dicho Link te brindará diferentes opciones de pago (Tarjeta Débito, Crédito, Efecty, Baloto o Codensa)</li>
                         </ul>
@@ -110,10 +110,10 @@
 
                     <li>
                         <h4>¿Qué sucede si presento retraso en mis cuotas?</h4>
-                        <p>- Previamente te contactaremos (vía mail, telefónicamente, whatsapp o sms) para notificarte que serás reportado en centrales.</p>
-                        <p>- Si llegas hacer reportado en centrales de riesgo también te lo notificaremos por los medios mencionados.</p>
-                        <p>- De persistir o continuar la mora se realizará, cobro jurídico,. Recuerda que tener buenos hábitos de pago es tu mejor carta de presentación ante el comercioy sector financiero.</p>
-                        <p>Nota: Los contactos se realizarán a los medios suministrados por el cliente incluyendo sus referencias personales*</p>
+                        <li>- Previamente te contactaremos (vía mail, telefónicamente, whatsapp o sms) para notificarte que serás reportado en centrales.</li>
+                        <li>- Si llegas hacer reportado en centrales de riesgo también te lo notificaremos por los medios mencionados.</li>
+                        <li>- De persistir o continuar la mora se realizará, cobro jurídico,. Recuerda que tener buenos hábitos de pago es tu mejor carta de presentación ante el comercioy sector financiero.</li>
+                        <li>Nota: Los contactos se realizarán a los medios suministrados por el cliente incluyendo sus referencias personales*</li>
                     </li>
                     <li>
                         <h4>¿Cuándo puede estar bloqueado el crédito?</h4>
