@@ -4305,6 +4305,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Modal',
   data: function data() {
@@ -20596,29 +20598,31 @@ var staticRenderFns = [
     return _c("li", [
       _c("h4", [_vm._v("¿Qué sucede si presento retraso en mis cuotas?")]),
       _vm._v(" "),
-      _c("ul", [
-        _c("li", [
-          _vm._v(
-            "- Previamente te contactaremos (vía mail, telefónicamente, whatsapp o sms) para notificarte que serás reportado en centrales."
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _vm._v(
-            "- Si llegas hacer reportado en centrales de riesgo también te lo notificaremos por los medios mencionados."
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _vm._v(
-            "- De persistir o continuar la mora se realizará, cobro jurídico,. Recuerda que tener buenos hábitos de pago es tu mejor carta de presentación ante el comercioy sector financiero."
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _vm._v(
-            "Nota: Los contactos se realizarán a los medios suministrados por el cliente incluyendo sus referencias personales*"
-          )
+      _c("p", [
+        _c("ul", [
+          _c("li", [
+            _vm._v(
+              "- Previamente te contactaremos (vía mail, telefónicamente, whatsapp o sms) para notificarte que serás reportado en centrales."
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v(
+              "- Si llegas hacer reportado en centrales de riesgo también te lo notificaremos por los medios mencionados."
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v(
+              "- De persistir o continuar la mora se realizará, cobro jurídico,. Recuerda que tener buenos hábitos de pago es tu mejor carta de presentación ante el comercioy sector financiero."
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v(
+              "Nota: Los contactos se realizarán a los medios suministrados por el cliente incluyendo sus referencias personales*"
+            )
+          ])
         ])
       ])
     ])

@@ -110,13 +110,15 @@
 
                     <li>
                         <h4>¿Qué sucede si presento retraso en mis cuotas?</h4>
+                        <p>
                         <ul>
-                               <li>- Previamente te contactaremos (vía mail, telefónicamente, whatsapp o sms) para notificarte que serás reportado en centrales.</li>
+                            <li>- Previamente te contactaremos (vía mail, telefónicamente, whatsapp o sms) para notificarte que serás reportado en centrales.</li>
                         <li>- Si llegas hacer reportado en centrales de riesgo también te lo notificaremos por los medios mencionados.</li>
                         <li>- De persistir o continuar la mora se realizará, cobro jurídico,. Recuerda que tener buenos hábitos de pago es tu mejor carta de presentación ante el comercioy sector financiero.</li>
                         <li>Nota: Los contactos se realizarán a los medios suministrados por el cliente incluyendo sus referencias personales*</li>
-                    
+
                         </ul>
+                         </p>
                      </li>
                     <li>
                         <h4>¿Cuándo puede estar bloqueado el crédito?</h4>
