@@ -110,8 +110,10 @@
 
                     <li>
                         <h4>¿Qué sucede si presento retraso en mis cuotas?</h4>
-                        <p>Serás reportado a centrales de riesgo y de persistir o continuar la mora se realizará cobro jurídico. Recuerda que tener buenos hábitos de pago es tu mejor carta de presentación ante el comercio y sector financiero.
-</p>
+                        <p>- Previamente te contactaremos (vía mail, telefónicamente, whatsapp o sms) para notificarte que serás reportado en centrales.</p>
+                        <p>- Si llegas hacer reportado en centrales de riesgo también te lo notificaremos por los medios mencionados.</p>
+                        <p>- De persistir o continuar la mora se realizará, cobro jurídico,. Recuerda que tener buenos hábitos de pago es tu mejor carta de presentación ante el comercioy sector financiero.</p>
+                        <p>Nota: Los contactos se realizarán a los medios suministrados por el cliente incluyendo sus referencias personales*</p>
                     </li>
                     <li>
                         <h4>¿Cuándo puede estar bloqueado el crédito?</h4>
@@ -138,7 +140,7 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td>Cuotas quincenales  </td>
+                            <td>Cuotas <br>  </td>
                             <td>Interés</td>
                         </tr>
 
