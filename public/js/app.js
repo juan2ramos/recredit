@@ -2887,7 +2887,7 @@ __webpack_require__.r(__webpack_exports__);
     this.selectedPoint = this.user.client.point.id;
     this.selectedCity = this.user.client.point.city.id;
 
-    if (this.user.validations.other) {
+    if (this.user.validations && this.user.validations.other) {
       this.otherValidation = true;
     }
 
@@ -17275,7 +17275,11 @@ var render = function() {
               _c("b", [_vm._v("Usuario que valido el crédito:")]),
               _vm._v(
                 "\n                    " +
-                  _vm._s(_vm.credit.reviewed.name) +
+                  _vm._s(
+                    _vm.credit.reviewed && _vm.credit.reviewed.name
+                      ? _vm.credit.reviewed.name
+                      : ""
+                  ) +
                   "\n                "
               )
             ])

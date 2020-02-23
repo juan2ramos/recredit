@@ -31,7 +31,7 @@
                     </p>
                     <p>
                         <b>Usuario que valido el crédito:</b>
-                        {{ credit.reviewed.name }}
+                        {{ (credit.reviewed && credit.reviewed.name) ? credit.reviewed.name : ''}}
                     </p>
                 </div>
             </div>
@@ -600,7 +600,7 @@ export default {
         this.selectedPoint = this.user.client.point.id;
         this.selectedCity = this.user.client.point.city.id;
 
-        if (this.user.validations.other) {
+        if (this.user.validations && this.user.validations.other) {
             this.otherValidation = true;
         }
 
