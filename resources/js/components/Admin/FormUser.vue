@@ -4,7 +4,7 @@
             :action="`/admin/usuarios/${user.document}`"
             method="post"
             class="Request-form col-16"
-        >
+        >65
             <input name="_method" type="hidden" value="PUT" />
             <input name="_token" type="hidden" :value="token" />
             <div class="row">

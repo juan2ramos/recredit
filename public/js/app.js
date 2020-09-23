@@ -17208,6 +17208,7 @@ var render = function() {
         }
       },
       [
+        _vm._v("65\n        "),
         _c("input", {
           attrs: { name: "_method", type: "hidden", value: "PUT" }
         }),
@@ -34670,8 +34671,8 @@ var ButtonOpen = document.querySelector('#ButtonOpen'),
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/juanramos/Sites/recreditos/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/juanramos/Sites/recreditos/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/juanramos/Projects/recreditos/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/juanramos/Projects/recreditos/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
