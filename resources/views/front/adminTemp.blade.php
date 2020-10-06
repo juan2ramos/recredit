@@ -11,7 +11,6 @@
                     <form method="POST" action="{{ route('login') }}" class="Home-formsForm">
                         @guest
                             @csrf
-                            <img class="logo-home" src="{{asset('/images/logo-lilipink.png')}}" alt="">
                             <h2>INICIAR SESIÓN</h2>
                             <div class="Home-formsGroup {{ $errors->has('email') ? ' is-error' : '' }} ">
                                 <label for="email">E-mail</label>
@@ -42,7 +41,7 @@
                         @endauth
                     </form>
                     <form action="{{route('users.index')}}" method="get" class="Home-formsForm">
-                        <h2 class="second">SOLICITAR CRÉDITO PERSONAL</h2>
+                        <h2 class="second">SOLICITAR TU CREDIPINK</h2>
                         <div class="Home-formsGroup">
                             <label for="identification">Número de cédula</label>
                             <input type="text" id="identification" name="identification">

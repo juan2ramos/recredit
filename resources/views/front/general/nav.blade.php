@@ -1,7 +1,7 @@
 <nav class="container Nav hide-phone">
     <ul class="is-list-less row justify-center m-a" style="margin: auto">
         <li><a href="/">INICIO</a></li>
-        <li><a href="{{route('users.index')}}">SOLICITUD DE CRÉDITO</a></li>
+        <li><a href="{{route('users.index')}}">SOLICITUD DE CREDIPINK</a></li>
         <li><a href="{{route('faq')}}">PREGUNTAS FRECUENTES</a></li>
         <li><a href="" data-modal="contact" class="openModal">CONTACTO</a></li>
         @auth

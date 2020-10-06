@@ -6,13 +6,13 @@
                 <h2>MI SOLICITUD</h2>
                 <ul class="is-list-less">
                     <li>
-                        <h4>¿Dónde puedo solicitar mi crédito?</h4>
+                        <h4>¿Dónde puedo solicitar mi CREDIPINK?</h4>
                         <p>Puedes dirigirte a cualquiera de nuestras tiendas a nivel nacional o puedes solicitarlo ahora
                             mismo en <a href="www.nuevo.creditoslilipink.com/solicitud-creditos.">www.creditoslilipink.com/solicitud-creditos.</a>
                         </p>
                     </li>
                     <li>
-                        <h4>¿Qué documentos necesito para obtener mi crédito?</h4>
+                        <h4>¿Qué documentos necesito para obtener mi CREDIPINK?</h4>
                         <p>En el momento de realizar la validación de datos solo debes presentar tu cédula original en
                             nuestras tiendas.
 
@@ -21,35 +21,35 @@
                     <li>
                         <h4>¿Debo tener un codeudor?</h4>
                         <p>
-                            Nuestro crédito no requiere codeudor, únicamente necesitarás dos referencias personales.
+                            Nuestro CREDIPINK no requiere codeudor, únicamente necesitarás dos referencias personales.
 
                         </p>
                     </li>
                     <li>
-                        <h4>¿Puedo iniciar vida crediticia con este crédito?</h4>
-                        <p>Si, este crédito no requiere que tengas un historial crediticio previo, aun así, recuerda que
+                        <h4>¿Puedo iniciar vida crediticia con este CREDIPINK?</h4>
+                        <p>Si, este CREDIPINK no requiere que tengas un historial crediticio previo, aun así, recuerda que
                             cualquier solicitud estará sujeta al estudio de tu perfil.</p>
                     </li>
                 </ul>
                 <h2>DETALLES DE USO</h2>
                 <ul class="is-list-less">
                     <li>
-                        <h4>¿Dónde puedo usar mi crédito?</h4>
-                        <p>Puedes usar tu crédito en cualquier tienda Lili Pink o YOI de Colombia.</p>
+                        <h4>¿Dónde puedo usar mi CREDIPINK?</h4>
+                        <p>Puedes usar tu CREDIPINK en cualquier tienda Lili Pink o YOI de Colombia.</p>
 
                     </li>
                     <li>
                         <h4>¿Qué es la tripleta de descuentos?</h4>
-                        <p>La tripleta es un beneficio que adquieres una vez activas tu crédito,
+                        <p>La tripleta es un beneficio que adquieres una vez activas tu CREDIPINK,
                         está conformada por tres descuentos individuales del 10, 15 y 20%.
                         Ver TyC en <a href="www.lilipink.com/promociones">www.lilipink.com/promociones</a></p>
 
                     </li>
                      <li>
-                        <h4>¿Dónde puedo obtener detalles de mi crédito? (Estado, pago mínimo y movimientos)</h4>
+                        <h4>¿Dónde puedo obtener detalles de mi CREDIPINK? (Estado, pago mínimo y movimientos)</h4>
                         <p>Puedes hacerlo a través de los siguientes medios:
                          <ol>
-                           <li>1. Iniciando sesión en <a href="www.creditoslilipink.com">www.creditoslilipink.com</a></li>
+                           <li>1. Iniciando sesión en <a href="www.credipink.com">www.credipink.com</a></li>
                            <li>2. Llamando a la línea de atención en Bogotá́ 6702400 Ext: 127, 133 o 236.</li>
                            <li>3. Solicitando la información en cualquier tienda Lili Pink.</li>
                           </ol>
@@ -57,17 +57,17 @@
 
                     </li>
                     <li>
-                        <h4>¿Cómo puedo iniciar sesión en <a href="www.creditoslilipink.com">www.creditoslilipink.com</a>?</h4>
+                        <h4>¿Cómo puedo iniciar sesión en <a href="www.credipink.com">www.credipink.com</a>?</h4>
                         <p>Debes tener en cuenta lo siguiente:
                          <ol>
-                            <li> 1. Ingresa tu usuario. (Este será el correo registrado en el momento de la solicitud del crédito) </li>
+                            <li> 1. Ingresa tu usuario. (Este será el correo registrado en el momento de la solicitud del CREDIPINK) </li>
                             <li> 2. Seguido este paso, das CLIC en “Olvidaste contraseña” para restablecer una que sea única para ti. (Esto lo haces si nunca has ingresado o si has olvidado tu contraseña)</li>
                          </ol>
                         </p>
 
                     </li>
                      <li>
-                        <h4>¿Qué debo hacer si no puedo iniciar sesión en <a href="www.creditoslilipink.com">www.creditoslilipink.com</a>?</h4>
+                        <h4>¿Qué debo hacer si no puedo iniciar sesión en <a href="www.credipink.com">www.credipink.com</a>?</h4>
                         <p> Puedes comunicarte a la línea de atención en Bogotá́ 6702400 Ext: 127, 133 o 236 donde uno de nuestros analistas te dará las indicaciones correspondientes.
   </p>
 
@@ -79,10 +79,10 @@
                 <ul class="is-list-less">
 
                     <li>
-                        <h4>¿Qué cobros tiene este crédito?</h4>
+                        <h4>¿Qué cobros tiene este CREDIPINK?</h4>
                         <p>
                         <ul>
-                        <li> - Nuestro crédito no tiene cuota de manejo.</li>
+                        <li> - Nuestro CREDIPINK no tiene cuota de manejo.</li>
                         <li>- Diferir tus compras genera un cobro de tasas de interés que van a ser aplicadas de la siguiente forma:
                           ver información de tasas </li>
                         </ul>
@@ -91,20 +91,20 @@
                     </li>
 
                     <li>
-                        <h4> ¿Cómo y dónde puedo pagar mi crédito?</h4>
+                        <h4> ¿Cómo y dónde puedo pagar mi CREDIPINK?</h4>
                         <p>
                         <ul>
                         <li> - Puedes diferir tus compras de 1 a 12 cuotas quincenales. </li>
                         <li> - Los pagos de cada cuota podrás realizarlos en cualquier tienda Lili Pink a nivel Nacional
                           o solicitando un Link de pago en nuestra línea de atención en Bogotá́ 6702400 Ext: 127, 133 o
-                          236,  dicho Link te brindará diferentes opciones de pago (Tarjeta Débito, Crédito, Efecty, Baloto o Codensa)</li>
+                          236,  dicho Link te brindará diferentes opciones de pago (Tarjeta Débito, CREDIPINK, Efecty, Baloto o Codensa)</li>
                         </ul>
                         </p>
                     </li>
 
                     <li>
                         <h4>¿Es posible cambiar las fechas limites de pago de mi crédito?</h4>
-                        <p> Las fechas del pago del crédito no pueden ser modificadas, estas estarán sujetas a la fecha en que haya realizado las respectivas compras.
+                        <p> Las fechas del pago del CREDIPINK no pueden ser modificadas, estas estarán sujetas a la fecha en que haya realizado las respectivas compras.
 </p>
                     </li>
 
@@ -121,7 +121,7 @@
                          </p>
                      </li>
                     <li>
-                        <h4>¿Cuándo puede estar bloqueado el crédito?</h4>
+                        <h4>¿Cuándo puede estar bloqueado el CREDIPINK?</h4>
                         <p>Puede estar bloqueado si presenta mora superior a 30 días o se evidencia suplantación.</p>
                     </li>
 

@@ -41,8 +41,6 @@
 </div>
 <div class="row justify-center Header-logoBig">
     <a href="{{route('home')}}">
-        <svg width="320px" height="52px" viewBox="0 0 442 80">
-            <use href="#icon-logo"></use>
-        </svg>
+        <img width="300px" src="{{asset('images/logo-credi-pink.png')}}" alt="">
     </a>
 </div>

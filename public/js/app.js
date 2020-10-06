@@ -20262,7 +20262,7 @@ var render = function() {
         _vm._v(" "),
         _c("ul", { staticClass: "is-list-less" }, [
           _c("li", [
-            _c("h4", [_vm._v("¿Qué cobros tiene este crédito?")]),
+            _c("h4", [_vm._v("¿Qué cobros tiene este CREDIPINK?")]),
             _vm._v(" "),
             _c("p", [
               _vm._m(1),
@@ -20382,7 +20382,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("ul", { staticClass: "is-list-less" }, [
         _c("li", [
-          _c("h4", [_vm._v("¿Dónde puedo solicitar mi crédito?")]),
+          _c("h4", [_vm._v("¿Dónde puedo solicitar mi CREDIPINK?")]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
@@ -20402,7 +20402,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("li", [
           _c("h4", [
-            _vm._v("¿Qué documentos necesito para obtener mi crédito?")
+            _vm._v("¿Qué documentos necesito para obtener mi CREDIPINK?")
           ]),
           _vm._v(" "),
           _c("p", [
@@ -20417,19 +20417,19 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "\n                            Nuestro crédito no requiere codeudor, únicamente necesitarás dos referencias personales.\n\n                        "
+              "\n                            Nuestro CREDIPINK no requiere codeudor, únicamente necesitarás dos referencias personales.\n\n                        "
             )
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("h4", [
-            _vm._v("¿Puedo iniciar vida crediticia con este crédito?")
+            _vm._v("¿Puedo iniciar vida crediticia con este CREDIPINK?")
           ]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "Si, este crédito no requiere que tengas un historial crediticio previo, aun así, recuerda que\n                            cualquier solicitud estará sujeta al estudio de tu perfil."
+              "Si, este CREDIPINK no requiere que tengas un historial crediticio previo, aun así, recuerda que\n                            cualquier solicitud estará sujeta al estudio de tu perfil."
             )
           ])
         ])
@@ -20439,11 +20439,11 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("ul", { staticClass: "is-list-less" }, [
         _c("li", [
-          _c("h4", [_vm._v("¿Dónde puedo usar mi crédito?")]),
+          _c("h4", [_vm._v("¿Dónde puedo usar mi CREDIPINK?")]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "Puedes usar tu crédito en cualquier tienda Lili Pink o YOI de Colombia."
+              "Puedes usar tu CREDIPINK en cualquier tienda Lili Pink o YOI de Colombia."
             )
           ])
         ]),
@@ -20453,7 +20453,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "La tripleta es un beneficio que adquieres una vez activas tu crédito,\n                        está conformada por tres descuentos individuales del 10, 15 y 20%.\n                        Ver TyC en "
+              "La tripleta es un beneficio que adquieres una vez activas tu CREDIPINK,\n                        está conformada por tres descuentos individuales del 10, 15 y 20%.\n                        Ver TyC en "
             ),
             _c("a", { attrs: { href: "www.lilipink.com/promociones" } }, [
               _vm._v("www.lilipink.com/promociones")
@@ -20464,7 +20464,7 @@ var staticRenderFns = [
         _c("li", [
           _c("h4", [
             _vm._v(
-              "¿Dónde puedo obtener detalles de mi crédito? (Estado, pago mínimo y movimientos)"
+              "¿Dónde puedo obtener detalles de mi CREDIPINK? (Estado, pago mínimo y movimientos)"
             )
           ]),
           _vm._v(" "),
@@ -20475,8 +20475,8 @@ var staticRenderFns = [
             _c("ol", [
               _c("li", [
                 _vm._v("1. Iniciando sesión en "),
-                _c("a", { attrs: { href: "www.creditoslilipink.com" } }, [
-                  _vm._v("www.creditoslilipink.com")
+                _c("a", { attrs: { href: "www.credipink.com" } }, [
+                  _vm._v("www.credipink.com")
                 ])
               ]),
               _vm._v(" "),
@@ -20498,8 +20498,8 @@ var staticRenderFns = [
         _c("li", [
           _c("h4", [
             _vm._v("¿Cómo puedo iniciar sesión en "),
-            _c("a", { attrs: { href: "www.creditoslilipink.com" } }, [
-              _vm._v("www.creditoslilipink.com")
+            _c("a", { attrs: { href: "www.credipink.com" } }, [
+              _vm._v("www.credipink.com")
             ]),
             _vm._v("?")
           ]),
@@ -20511,7 +20511,7 @@ var staticRenderFns = [
             _c("ol", [
               _c("li", [
                 _vm._v(
-                  " 1. Ingresa tu usuario. (Este será el correo registrado en el momento de la solicitud del crédito) "
+                  " 1. Ingresa tu usuario. (Este será el correo registrado en el momento de la solicitud del CREDIPINK) "
                 )
               ]),
               _vm._v(" "),
@@ -20527,8 +20527,8 @@ var staticRenderFns = [
         _c("li", [
           _c("h4", [
             _vm._v("¿Qué debo hacer si no puedo iniciar sesión en "),
-            _c("a", { attrs: { href: "www.creditoslilipink.com" } }, [
-              _vm._v("www.creditoslilipink.com")
+            _c("a", { attrs: { href: "www.credipink.com" } }, [
+              _vm._v("www.credipink.com")
             ]),
             _vm._v("?")
           ]),
@@ -20547,7 +20547,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("ul", [
-      _c("li", [_vm._v(" - Nuestro crédito no tiene cuota de manejo.")]),
+      _c("li", [_vm._v(" - Nuestro CREDIPINK no tiene cuota de manejo.")]),
       _vm._v(" "),
       _c("li", [
         _vm._v(
@@ -20561,7 +20561,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("li", [
-      _c("h4", [_vm._v(" ¿Cómo y dónde puedo pagar mi crédito?")]),
+      _c("h4", [_vm._v(" ¿Cómo y dónde puedo pagar mi CREDIPINK?")]),
       _vm._v(" "),
       _c("p", [
         _c("ul", [
@@ -20573,7 +20573,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("li", [
             _vm._v(
-              " - Los pagos de cada cuota podrás realizarlos en cualquier tienda Lili Pink a nivel Nacional\n                          o solicitando un Link de pago en nuestra línea de atención en Bogotá́ 6702400 Ext: 127, 133 o\n                          236,  dicho Link te brindará diferentes opciones de pago (Tarjeta Débito, Crédito, Efecty, Baloto o Codensa)"
+              " - Los pagos de cada cuota podrás realizarlos en cualquier tienda Lili Pink a nivel Nacional\n                          o solicitando un Link de pago en nuestra línea de atención en Bogotá́ 6702400 Ext: 127, 133 o\n                          236,  dicho Link te brindará diferentes opciones de pago (Tarjeta Débito, CREDIPINK, Efecty, Baloto o Codensa)"
             )
           ])
         ])
@@ -20591,7 +20591,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("p", [
         _vm._v(
-          " Las fechas del pago del crédito no pueden ser modificadas, estas estarán sujetas a la fecha en que haya realizado las respectivas compras.\n"
+          " Las fechas del pago del CREDIPINK no pueden ser modificadas, estas estarán sujetas a la fecha en que haya realizado las respectivas compras.\n"
         )
       ])
     ])
@@ -20637,7 +20637,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("li", [
-      _c("h4", [_vm._v("¿Cuándo puede estar bloqueado el crédito?")]),
+      _c("h4", [_vm._v("¿Cuándo puede estar bloqueado el CREDIPINK?")]),
       _vm._v(" "),
       _c("p", [
         _vm._v(
